@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:id="@+id/totals_layout" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <LinearLayout android:gravity="bottom" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <TextView android:id="@+id/text_item_total" android:layout_width="0dp" android:layout_height="wrap_content" android:text="@string/item_total" android:layout_weight="1" style="@style/TextGrey"/>
+        <TextView android:id="@+id/text_item_total_value" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/TextGrey.Bold"/>
+    </LinearLayout>
+    <LinearLayout android:gravity="bottom" android:orientation="horizontal" android:id="@+id/shipping_row" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_medium">
+        <TextView android:layout_width="0dp" android:layout_height="wrap_content" android:text="@string/shipping_price_label" android:layout_weight="1" style="@style/TextGrey"/>
+        <TextView android:id="@+id/text_shipping_value" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/TextGrey.Bold"/>
+    </LinearLayout>
+    <LinearLayout android:gravity="bottom" android:orientation="horizontal" android:id="@+id/coupon_row" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_medium">
+        <TextView android:id="@+id/text_coupon_title" android:layout_width="0dp" android:layout_height="wrap_content" android:text="@string/coupon_label" android:layout_weight="1" style="@style/TextGrey"/>
+        <TextView android:id="@+id/text_coupon_value" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/TextGrey.Bold"/>
+    </LinearLayout>
+    <LinearLayout android:gravity="bottom" android:orientation="horizontal" android:id="@+id/tax_row" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_medium">
+        <TextView android:id="@+id/text_tax" android:layout_width="0dp" android:layout_height="wrap_content" android:text="@string/ipp_sales_tax" android:layout_weight="1" style="@style/TextGrey"/>
+        <TextView android:id="@+id/text_tax_value" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/TextGrey.Bold"/>
+    </LinearLayout>
+    <LinearLayout android:gravity="bottom" android:orientation="horizontal" android:id="@+id/vat_row" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_medium">
+        <TextView android:id="@+id/text_vat" android:layout_width="0dp" android:layout_height="wrap_content" android:text="@string/vat_total" android:layout_weight="1" style="@style/TextGrey"/>
+        <TextView android:id="@+id/text_vat_value" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/TextGrey.Bold"/>
+    </LinearLayout>
+    <LinearLayout android:gravity="bottom" android:orientation="horizontal" android:id="@+id/discount_row" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_medium">
+        <TextView android:layout_width="0dp" android:layout_height="wrap_content" android:text="@string/ipp_discount_label" android:layout_weight="1" style="@style/TextGrey"/>
+        <TextView android:id="@+id/text_discount_value" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/TextGrey.Bold"/>
+    </LinearLayout>
+    <View style="@style/ReceiptTotalsDivider"/>
+    <LinearLayout android:gravity="bottom" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_medium_large">
+        <TextView android:id="@+id/text_order_total" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_marginLeft="0dp" android:text="@string/order_total" android:layout_weight="1" style="?attr/receiptTitleText"/>
+        <TextView android:textSize="@dimen/text_xxlarge" android:id="@+id/text_order_total_value" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/TextGreen.XLarge"/>
+    </LinearLayout>
+    <TextView android:id="@+id/text_transparent_pricing" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_small" style="@style/TextLightGrey.Small"/>
+    <TextView android:textColorLink="@color/sk_orange_30" android:linksClickable="true" android:id="@+id/text_vat_invoice" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_medium" android:text="@string/vat_view_invoice" style="@style/TextGrey"/>
+    <TextView android:textColorLink="@color/sk_orange_30" android:linksClickable="true" android:id="@+id/text_vat_desc" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_large" android:text="@string/vat_desc" style="@style/TextGrey"/>
+    <LinearLayout android:orientation="vertical" android:id="@+id/refund_view" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="vertical" android:id="@+id/refund_list_layout" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+        <View style="@style/ReceiptTotalsDivider"/>
+        <LinearLayout android:gravity="bottom" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_medium_large">
+            <TextView android:layout_width="0dp" android:layout_height="wrap_content" android:layout_marginLeft="0dp" android:text="@string/adjusted_total" android:layout_weight="1" style="?attr/receiptTitleText"/>
+            <TextView android:textSize="@dimen/text_xxlarge" android:id="@+id/text_adjusted_total_value" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/TextGreen.XLarge"/>
+        </LinearLayout>
+    </LinearLayout>
+    <TextView android:id="@+id/text_coupon_details" android:background="@color/sk_orange_10" android:padding="@dimen/padding_large" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_medium" android:layout_marginBottom="@dimen/margin_medium" style="@style/TextGrey"/>
+</LinearLayout>

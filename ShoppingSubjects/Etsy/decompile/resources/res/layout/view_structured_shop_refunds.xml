@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="match_parent" android:layout_height="match_parent">
+    <TextView android:id="@+id/txt_subhead_accepted_summary" android:layout_width="wrap_content" android:layout_height="wrap_content" style="?attr/structuredPoliciesSubheadStyle"/>
+    <TextView android:id="@+id/txt_contact_within" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/fixed_medium" style="?attr/structuredPoliciesTextStyle"/>
+    <TextView android:id="@+id/txt_return_within" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/fixed_medium" style="?attr/structuredPoliciesTextStyle"/>
+    <TextView android:id="@+id/txt_cancel_within" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/fixed_medium" style="?attr/structuredPoliciesTextStyle"/>
+    <Space android:id="@+id/spacer" android:layout_width="match_parent" android:layout_height="@dimen/fixed_xlarge"/>
+    <TextView android:id="@+id/txt_subhead_not_accepted_summary" android:layout_width="wrap_content" android:layout_height="wrap_content" style="?attr/structuredPoliciesSubheadStyle"/>
+    <TextView android:id="@+id/txt_not_accepted_info" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/fixed_medium" style="?attr/structuredPoliciesTextStyle"/>
+    <TextView android:id="@+id/btn_expand" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/fixed_xlarge" style="@style/StructuredPoliciesButtonSeeMore"/>
+    <LinearLayout android:orientation="vertical" android:id="@+id/expansion_section" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <TextView android:id="@+id/txt_subhead_nonreturnable" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/fixed_xlarge" android:text="@string/structured_refunds_nonreturnable_title" style="?attr/structuredPoliciesSubheadStyle"/>
+        <TextView android:id="@+id/txt_nonreturnable_info" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/fixed_medium" android:text="@string/structured_refunds_nonreturnable_message" style="?attr/structuredPoliciesTextStyle"/>
+        <TextView android:id="@+id/txt_nonreturnable_items" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/fixed_medium" android:lineSpacingExtra="@dimen/fixed_medium" style="?attr/structuredPoliciesTextStyle"/>
+        <TextView android:id="@+id/txt_subhead_return_conditions" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/fixed_xlarge" android:text="@string/structured_refunds_returns_title" style="?attr/structuredPoliciesSubheadStyle"/>
+        <TextView android:id="@+id/txt_return_conditions_info" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/fixed_medium" android:text="@string/structured_refunds_returns_message" style="?attr/structuredPoliciesTextStyle"/>
+        <TextView android:id="@+id/txt_subhead_questions" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/fixed_xlarge" android:text="@string/structured_refunds_questions_header" style="?attr/structuredPoliciesSubheadStyle"/>
+        <TextView android:id="@+id/txt_questions_info" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/fixed_medium" style="?attr/structuredPoliciesTextStyle"/>
+        <TextView android:id="@+id/textview_unstructured_refunds_header" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/fixed_xlarge" android:text="@string/shop_returns_and_exchange_details" style="?attr/structuredPoliciesSubheadStyle"/>
+        <TextView android:id="@+id/textview_unstructured_refunds_message" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/fixed_medium" style="?attr/structuredPoliciesTextStyle"/>
+    </LinearLayout>
+</merge>

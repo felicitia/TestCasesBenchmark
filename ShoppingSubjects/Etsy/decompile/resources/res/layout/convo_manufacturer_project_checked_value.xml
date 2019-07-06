@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" style="@style/Convo2.ManufacturerProject.Value">
+    <com.etsy.android.iconsy.views.IconView android:layout_gravity="bottom" android:layout_width="@dimen/text_large" android:layout_height="@dimen/text_large" android:layout_marginRight="@dimen/margin_medium" app:hasSelector="false" app:iconChar="@+id/ic_etsy_check" app:iconColor="@color/text_dark_grey"/>
+    <TextView android:id="@+id/manufacturer_project_checked_value" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/Convo2.ContextValue"/>
+</LinearLayout>

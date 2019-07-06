@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="match_parent" android:layout_height="match_parent" android:fillViewport="true">
+    <LinearLayout android:orientation="vertical" android:paddingTop="@dimen/sk_space_4" android:layout_width="match_parent" android:layout_height="wrap_content" android:animateLayoutChanges="true">
+        <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/sk_space_4" android:layout_marginRight="@dimen/sk_space_4" android:layout_marginBottom="@dimen/sk_space_2" android:text="@string/notification_alerts" style="@style/textview_notification_settings_title"/>
+        <android.support.v7.widget.CardView android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/sk_space_4" android:layout_marginRight="@dimen/sk_space_4" app:cardCornerRadius="@dimen/sk_cardview_corner_radius" app:cardElevation="@dimen/sk_cardview_elevation">
+            <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:divider="@drawable/divider_grey" android:showDividers="middle">
+                <android.support.v7.widget.SwitchCompat android:id="@+id/switch_sound" android:padding="@dimen/sk_space_4" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/notifications_sound" style="@style/sk_switchcompat"/>
+                <FrameLayout android:id="@+id/card_ringtone" android:layout_width="match_parent" android:layout_height="wrap_content" android:foreground="@drawable/sk_touch_selector">
+                    <LinearLayout android:orientation="horizontal" android:padding="@dimen/sk_space_4" android:layout_width="match_parent" android:layout_height="wrap_content">
+                        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/notifications_ringtone" style="@style/sk_text_body"/>
+                        <TextView android:textColor="@color/sk_text_gray_lighter" android:ellipsize="end" android:gravity="right|center_vertical|center_horizontal|center" android:id="@+id/txt_selected_ringtone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/sk_space_1" android:text="@string/notifications" android:maxLines="1" android:layout_marginStart="@dimen/sk_space_1" style="@style/sk_text_body_smaller"/>
+                    </LinearLayout>
+                </FrameLayout>
+                <LinearLayout android:orientation="vertical" android:id="@+id/card_cha_ching" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <android.support.v7.widget.SwitchCompat android:id="@+id/switch_cha_ching" android:padding="@dimen/sk_space_4" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/notifications_cha_ching" style="@style/sk_switchcompat"/>
+                </LinearLayout>
+                <android.support.v7.widget.SwitchCompat android:id="@+id/switch_vibrate" android:padding="@dimen/sk_space_4" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/notifications_vibrate" style="@style/sk_switchcompat"/>
+                <android.support.v7.widget.SwitchCompat android:id="@+id/switch_light" android:padding="@dimen/sk_space_4" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/notifications_light" style="@style/sk_switchcompat"/>
+                <FrameLayout android:id="@+id/card_show_orders_convos_nav_bar" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <android.support.v7.widget.SwitchCompat android:id="@+id/switch_show_orders_and_convos_count_in_nav_bar" android:padding="@dimen/sk_space_4" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/notifications_show_orders_convos_in_nav_bar" style="@style/sk_switchcompat"/>
+                </FrameLayout>
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+        <TextView android:id="@+id/server_driven_settings_section_header" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/sk_space_4" android:layout_marginTop="@dimen/sk_space_4" android:layout_marginRight="@dimen/sk_space_4" android:layout_marginBottom="@dimen/sk_space_2" style="@style/textview_notification_settings_title"/>
+        <android.support.v7.widget.CardView android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/sk_space_4" android:layout_marginRight="@dimen/sk_space_4" android:layout_marginBottom="@dimen/sk_space_4">
+            <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+                <include android:id="@+id/loading_notification_settings" android:layout_width="match_parent" android:layout_height="wrap_content" layout="@layout/partial_loading"/>
+                <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@+id/error_view" android:paddingLeft="@dimen/sk_space_4" android:paddingTop="@dimen/sk_space_4" android:paddingRight="@dimen/sk_space_4" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <TextView android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/loading_problem" style="@style/sk_text_title"/>
+                    <com.etsy.android.stylekit.EtsyButton android:id="@+id/btn_retry_endless" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/sk_space_1" android:text="@string/try_again" style="@style/sk_btn_flat"/>
+                </LinearLayout>
+                <LinearLayout android:orientation="vertical" android:id="@+id/server_driven_settings_section" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:divider="@drawable/divider_grey" android:showDividers="middle"/>
+            </RelativeLayout>
+        </android.support.v7.widget.CardView>
+    </LinearLayout>
+</android.support.v4.widget.NestedScrollView>

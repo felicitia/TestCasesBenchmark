@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt">
+    <TextView android:textSize="@dimen/text_large" android:gravity="center" android:layout_gravity="center" android:id="@+id/text" android:layout_width="wrap_content" android:layout_height="match_parent" style="@style/TextWhite.Bold"/>
+    <FrameLayout android:layout_gravity="center" android:id="@+id/activity_indicator" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="match_parent">
+        <com.etsy.android.uikit.view.LoadingIndicatorView android:id="@+id/activity_indicator_view" android:layout_width="wrap_content" android:layout_height="match_parent" android:scaleType="center"/>
+    </FrameLayout>
+</merge>

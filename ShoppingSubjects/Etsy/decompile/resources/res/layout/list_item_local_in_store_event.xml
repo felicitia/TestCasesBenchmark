@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <LinearLayout android:orientation="vertical" android:background="@drawable/bg_outline" android:padding="@dimen/divider_width" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <FrameLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:foreground="@drawable/standard_selector">
+            <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <TextView android:layout_gravity="top" android:id="@+id/market_date" android:padding="@dimen/padding_large" android:layout_width="match_parent" android:layout_height="wrap_content" style="@style/TextGrey.Bold"/>
+                <include android:id="@+id/image_layout_1" layout="@layout/local_image_row"/>
+                <include android:id="@+id/image_layout_2" layout="@layout/local_image_row"/>
+                <TextView android:ellipsize="end" android:layout_gravity="center_vertical" android:id="@+id/market_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="@dimen/margin_medium_large" android:maxLines="1" style="@style/TextBlue.Large.Bold"/>
+                <TextView android:ellipsize="end" android:id="@+id/market_attendance" android:paddingLeft="@dimen/padding_medium_large" android:paddingRight="@dimen/padding_medium_large" android:paddingBottom="@dimen/padding_medium_large" android:layout_width="match_parent" android:layout_height="wrap_content" android:maxLines="1" style="@style/TextGrey"/>
+            </LinearLayout>
+        </FrameLayout>
+    </LinearLayout>
+</FrameLayout>

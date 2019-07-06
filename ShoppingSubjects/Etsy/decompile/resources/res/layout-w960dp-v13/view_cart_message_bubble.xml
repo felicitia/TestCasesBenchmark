@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <RelativeLayout android:id="@+id/message_bubble" android:background="@drawable/cart_message_bubble" android:padding="@dimen/padding_medium" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <android.support.v7.widget.AppCompatImageView android:gravity="center" android:id="@+id/icon" android:background="@drawable/circle" android:padding="4dp" android:layout_width="38dp" android:layout_height="38dp" android:layout_marginTop="@dimen/margin_small" android:layout_marginRight="@dimen/margin_medium" android:tint="@color/sk_orange_30" android:includeFontPadding="false" android:maxLength="1" app:backgroundTint="@color/sk_bg_white"/>
+        <TextView android:id="@+id/txt_message" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_medium" android:layout_marginBottom="@dimen/margin_medium" android:layout_toRightOf="@+id/icon" android:lineSpacingExtra="@dimen/margin_medium" style="@style/TextDarkGrey"/>
+        <com.etsy.android.uikit.view.ZeroSpinner android:id="@+id/btn_resolution" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toRightOf="@+id/icon" android:layout_below="@+id/txt_message" style="@style/UnderlinedSpinner"/>
+        <Button android:gravity="center" android:id="@+id/btn_dismiss" android:background="@drawable/bg_ten_percent_white_selector" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/okay" android:layout_below="@+id/txt_message" android:layout_alignParentRight="true"/>
+    </RelativeLayout>
+    <ImageView android:id="@+id/pointer" android:visibility="gone" android:layout_width="40dp" android:layout_height="26dp" android:src="@drawable/cart_message_bubble_pointer"/>
+</merge>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="wrap_content" android:layout_height="wrap_content">
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <FrameLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+            <android.support.v7.widget.GridLayout android:id="@+id/collection_image_grid" android:layout_width="match_parent" android:layout_height="wrap_content" app:alignmentMode="alignBounds" app:columnCount="2"/>
+            <TextView android:layout_gravity="bottom|right|center_vertical|center_horizontal|center" android:id="@+id/collection_badge" android:background="?attr/token_listing_card__ad__background" android:padding="@dimen/sk_space_1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="13dp" android:layout_marginBottom="@dimen/sk_space_3" android:includeFontPadding="false" style="?attr/token_listing_card__ad__textview_style"/>
+        </FrameLayout>
+        <FrameLayout android:id="@+id/collection_content" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+    </LinearLayout>
+</merge>

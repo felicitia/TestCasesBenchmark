@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt">
+    <FrameLayout android:id="@+id/search_content_view" android:background="@color/sk_bg_white" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    <com.etsy.android.ui.search.v2.SearchSuggestionsPager android:id="@+id/search_input_layout" android:background="@color/sk_bg_white" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent"/>
+</merge>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:id="@+id/root_view" android:layout_width="match_parent" android:layout_height="match_parent">
+    <include layout="@layout/partial_loading"/>
+    <include layout="@layout/partial_no_internet"/>
+    <include layout="@layout/partial_empty_result"/>
+    <RelativeLayout android:orientation="horizontal" android:id="@+id/receipt_layout" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_below="@+id/panel_shop_header">
+        <ScrollView android:id="@+id/sidebar" android:paddingTop="@dimen/margin_medium" android:clipToPadding="false" android:layout_width="@dimen/tablet_left_sidebar_width" android:layout_height="wrap_content">
+            <LinearLayout android:orientation="vertical" android:paddingLeft="@dimen/padding_medium_large" android:paddingRight="@dimen/padding_medium_large" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/margin_medium_large" android:layout_marginTop="@dimen/margin_medium_large" android:layout_marginRight="@dimen/margin_medium_large" android:text="@string/order_details" style="@style/TextBlack.Larger.Bold"/>
+                <LinearLayout android:orientation="vertical" android:id="@+id/payment_status_layout" style="@style/ReceiptLayout">
+                    <TextView android:id="@+id/payment_status" style="?attr/receiptTitleText"/>
+                    <TextView android:layout_marginTop="@dimen/margin_small" android:text="@string/payment_method_label" style="?attr/receiptSubTitleText"/>
+                    <TextView android:id="@+id/payment_details" style="@style/ReceiptText"/>
+                </LinearLayout>
+                <LinearLayout android:orientation="vertical" android:id="@+id/shipping_status_layout" style="@style/ReceiptLayout">
+                    <LinearLayout android:orientation="vertical" android:id="@+id/shipments" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+                    <TextView android:layout_marginTop="@dimen/margin_medium" android:text="@string/shipping_address" style="?attr/receiptSubTitleText"/>
+                    <TextView android:id="@+id/shipping_address" android:textIsSelectable="true" style="@style/ReceiptText"/>
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+        <FrameLayout android:id="@+id/totals_layout_wrapper" android:paddingLeft="@dimen/padding_medium_large" android:paddingRight="@dimen/padding_medium_large" android:layout_width="@dimen/tablet_right_sidebar_width" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_medium" android:layout_alignParentRight="true" style="@style/ReceiptLayout">
+            <include layout="@layout/table_receipt_totals"/>
+        </FrameLayout>
+        <ListView android:id="@android:id/list" android:paddingTop="@dimen/margin_medium" android:clipToPadding="false" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_toLeftOf="@+id/totals_layout_wrapper" android:layout_toRightOf="@+id/sidebar" style="@style/ListView.NoSelector"/>
+    </RelativeLayout>
+    <include layout="@layout/shop_overlap_header"/>
+</RelativeLayout>

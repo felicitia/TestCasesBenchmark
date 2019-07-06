@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="@dimen/list_item_height" style="@style/DialogListRow.Text">
+    <TextView android:gravity="center_vertical" android:id="@+id/currency_symbol" android:layout_width="60dp" android:layout_height="wrap_content" style="@style/sk_text_title"/>
+    <TextView android:ellipsize="end" android:gravity="left|center_vertical|center_horizontal|center" android:id="@+id/currency_code" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/fixed_medium" android:maxLines="1" android:layout_weight="0.25" style="@style/TextBlack"/>
+    <TextView android:ellipsize="end" android:gravity="center_vertical" android:id="@+id/currency_name" android:paddingLeft="@dimen/fixed_medium" android:layout_width="0dp" android:layout_height="@dimen/list_item_height" android:maxLines="1" android:layout_weight="1" style="@style/TextBlack.Large"/>
+</LinearLayout>

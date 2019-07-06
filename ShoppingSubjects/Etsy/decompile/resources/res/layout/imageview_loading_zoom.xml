@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:gravity="center" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.etsy.android.uikit.view.TouchImageView android:id="@+id/image" android:layout_width="match_parent" android:layout_height="match_parent" android:scaleType="fitCenter"/>
+    <FrameLayout android:id="@+id/activity_indicator" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true">
+        <com.etsy.android.uikit.view.LoadingIndicatorView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/spinner_white" android:scaleType="center"/>
+    </FrameLayout>
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@+id/unsupported_view" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true">
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="@dimen/margin_large" android:text="@string/error_image" style="@style/TextWhite.Larger"/>
+        <Button android:id="@+id/view_btn" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/error_image_button" style="@style/ButtonWhiteV2"/>
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <LinearLayout android:orientation="vertical" android:id="@+id/calculated_shipping_content" android:layout_width="match_parent" android:layout_height="match_parent">
+        <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <TextView android:id="@+id/heading_calculated_shipping_cost" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/margin_large" android:text="@string/shipping_panel_cost_label" style="@style/TextDarkGrey.Bold"/>
+            <TextView android:id="@+id/button_shipping_cost_calculate" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/shipping_cost_action_calculate" style="@style/TextBlue"/>
+        </LinearLayout>
+        <LinearLayout android:id="@+id/section_shipping_costs_view_only" android:paddingTop="@dimen/margin_small" android:paddingBottom="@dimen/margin_small" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+                <TextView android:textSize="@dimen/text_medium" android:id="@+id/txt_shipping_costs_view_only_destination" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/margin_large" android:maxWidth="@dimen/listing_country_width" android:text="@string/shipping_to_default" android:layout_alignParentLeft="true"/>
+                <TextView android:id="@+id/button_shipping_costs_view_only_update" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/shipping_cost_action_update" android:layout_toRightOf="@+id/txt_shipping_costs_view_only_destination" style="@style/TextBlue"/>
+                <TextView android:gravity="right" android:id="@+id/txt_shipping_costs_view_only_cost" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentRight="true" style="@style/TextGreen"/>
+            </RelativeLayout>
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:id="@+id/section_shipping_costs_edit" android:paddingTop="0dp" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <Button android:id="@+id/button_shipping_costs_edit_country" android:paddingLeft="0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/shipping_cost_action_calculate" android:layout_weight="1" style="@style/DropDownButton"/>
+            <EditText android:id="@+id/input_shipping_costs_edit_zip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:hint="@string/shipping_to_hint_zip" android:maxLines="1" android:maxLength="5" android:layout_weight="1" android:inputType="number" style="@style/EditText"/>
+        </LinearLayout>
+        <TextView android:id="@+id/txt_shipping_cost_error" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_medium_large" style="@style/TextGrey"/>
+    </LinearLayout>
+    <LinearLayout android:gravity="center" android:id="@+id/calculated_shipping_view_loading" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent">
+        <com.etsy.android.uikit.view.LoadingIndicatorView android:background="@android:color/transparent" android:padding="@dimen/padding_large" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/progress_spinner_etsy" android:scaleType="center"/>
+    </LinearLayout>
+</FrameLayout>

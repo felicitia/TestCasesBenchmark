@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:background="@drawable/bg_card" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/shop_share_card_home_margin_horizontal" android:layout_marginTop="@dimen/shop_share_card_home_margin_vertical" android:layout_marginRight="@dimen/shop_share_card_home_margin_horizontal" android:layout_marginBottom="@dimen/shop_share_card_home_margin_vertical">
+    <include layout="@layout/partial_card_shop_share_header"/>
+    <com.etsy.android.uikit.view.SquareTaggableImageView android:id="@+id/shop_share_image" android:background="@color/even_lighter_grey" android:layout_width="match_parent" android:layout_height="wrap_content" android:contentDescription="@string/shop_share_image_description"/>
+    <TextView android:ellipsize="end" android:gravity="left|center_vertical|center_horizontal|center" android:id="@+id/caption" android:padding="@dimen/fixed_large" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="2" android:minLines="2" style="@style/TextGrey"/>
+</LinearLayout>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" style="@style/MultiShopCartGroupItem">
+    <View android:id="@+id/divider" android:background="@color/divider_dark" android:layout_width="match_parent" android:layout_height="@dimen/divider_height" android:layout_marginBottom="@dimen/margin_large"/>
+    <TextView android:id="@+id/txt_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/margin_medium" android:maxWidth="260dp" android:text="@string/total" android:layout_below="@+id/divider" android:layout_alignParentLeft="true" style="@style/TextBlack.Bold"/>
+    <TextView android:id="@+id/txt_value" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_below="@+id/divider" android:layout_alignParentRight="true" style="@style/TextBlack.Bold"/>
+</RelativeLayout>

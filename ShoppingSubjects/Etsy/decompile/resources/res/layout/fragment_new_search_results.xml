@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="match_parent" android:layout_height="match_parent">
+    <include layout="@layout/new_search_filters_sheet"/>
+    <RelativeLayout android:id="@+id/root_view" android:layout_width="match_parent" android:layout_height="match_parent">
+        <android.support.v4.widget.SwipeRefreshLayout android:id="@+id/swipe_refresh_layout" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <android.support.v7.widget.RecyclerView android:id="@+id/recycler_view" android:paddingLeft="@dimen/margin_medium" android:paddingRight="@dimen/card_view_margin" android:paddingBottom="@dimen/card_view_margin" android:scrollbars="vertical" android:clipToPadding="false" android:layout_width="match_parent" android:layout_height="match_parent"/>
+        </android.support.v4.widget.SwipeRefreshLayout>
+        <include layout="@layout/partial_new_search_empty_results"/>
+        <include layout="@layout/partial_new_search_loading"/>
+        <include layout="@layout/partial_no_internet"/>
+    </RelativeLayout>
+</FrameLayout>

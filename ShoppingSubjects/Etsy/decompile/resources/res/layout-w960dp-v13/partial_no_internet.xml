@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:id="@+id/no_internet" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" android:fillViewport="true">
+    <LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="horizontal" android:padding="@dimen/padding_large" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="vertical" android:layout_width="@dimen/button_wide_width" android:layout_height="wrap_content" android:layout_marginRight="@dimen/margin_large">
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_large" android:text="@string/loading_problem" style="@style/sk_text_body_larger"/>
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_large" android:text="@string/loading_no_internet" style="@style/TextGrey.Larger"/>
+            <Button android:id="@+id/btn_retry_internet" android:layout_width="@dimen/button_wide_width" android:layout_height="@dimen/button_height" android:layout_marginTop="@dimen/margin_large" android:text="@string/try_again" style="@style/ButtonWhiteV2"/>
+        </LinearLayout>
+        <com.etsy.android.uikit.view.LazyNativeAssetImageView android:id="@+id/no_internet_image" android:layout_width="wrap_content" android:layout_height="wrap_content" app:img="@drawable/error_sorry_girl"/>
+    </LinearLayout>
+</android.support.v4.widget.NestedScrollView>

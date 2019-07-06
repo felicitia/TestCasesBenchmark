@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:id="@+id/see_other_local_events_button" android:paddingBottom="@dimen/padding_large" android:layout_width="match_parent" android:layout_height="wrap_content" android:foreground="@drawable/standard_selector">
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <View android:background="@color/list_divider" android:layout_width="match_parent" android:layout_height="@dimen/divider_height"/>
+        <TextView android:gravity="center" android:paddingLeft="@dimen/local_market_details_card_internal_side_padding" android:paddingTop="@dimen/padding_large" android:paddingRight="@dimen/local_market_details_card_internal_side_padding" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/see_other_local_events" android:textAllCaps="true" style="@style/TextBlue.Bold"/>
+    </LinearLayout>
+</FrameLayout>

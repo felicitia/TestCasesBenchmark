@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:gravity="bottom" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_medium">
+    <TextView android:id="@+id/refund_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/refunded" style="@style/TextGrey"/>
+    <TextView android:id="@+id/text_refund_value" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignBaseline="@+id/refund_title" android:layout_alignParentRight="true" style="@style/TextGrey.Bold"/>
+    <TextView android:id="@+id/refund_reason" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_below="@+id/refund_title" style="@style/TextMidGrey.Small"/>
+</RelativeLayout>

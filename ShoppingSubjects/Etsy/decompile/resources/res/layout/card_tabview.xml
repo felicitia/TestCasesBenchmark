@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <TabHost android:id="@android:id/tabhost" android:background="@color/sk_bg_white" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <TabWidget android:orientation="horizontal" android:id="@android:id/tabs" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1"/>
+            <FrameLayout android:id="@android:id/tabcontent" android:layout_width="0dp" android:layout_height="0dp"/>
+        </LinearLayout>
+    </TabHost>
+    <com.etsy.android.uikit.view.WrapHeightSwipeDisableViewPager android:id="@+id/viewpager" android:layout_width="match_parent" android:layout_height="wrap_content" app:swipeEnabled="false"/>
+</LinearLayout>

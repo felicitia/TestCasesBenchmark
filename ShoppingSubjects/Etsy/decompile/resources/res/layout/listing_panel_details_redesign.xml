@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:id="@+id/listing_panel_details" android:background="@drawable/bg_card" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/listing_card_middle_padding">
+    <RelativeLayout android:id="@+id/panel_title_feedback" android:background="@drawable/bg_ten_percent_black_selector" android:layout_width="match_parent" android:layout_height="@dimen/actionbar_height">
+        <include android:id="@+id/img_feedback_open" layout="@layout/expand_arrow_view"/>
+        <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginLeft="@dimen/margin_medium" android:layout_toLeftOf="@+id/img_feedback_open" android:layout_alignParentLeft="true">
+            <com.etsy.android.uikit.view.RatingIconView android:layout_gravity="center_vertical" android:id="@+id/rating" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/margin_medium" android:contentDescription="@null" app:starSize="@dimen/listing_star_size"/>
+            <TextView android:ellipsize="end" android:id="@+id/txt_feedback_title" android:layout_width="0dp" android:layout_height="match_parent" android:layout_marginLeft="@dimen/margin_medium" android:maxLines="1" android:layout_weight="1" style="@style/ListingPanelSectionTitle"/>
+            <TextView android:id="@+id/txt_hidden_content" android:layout_width="1dp" android:layout_height="match_parent" android:contentDescription="@null"/>
+        </LinearLayout>
+        <View android:id="@+id/panel_details_feedback_divider" android:background="@color/divider_dark" android:layout_width="match_parent" android:layout_height="@dimen/divider_height" android:layout_alignParentBottom="true"/>
+    </RelativeLayout>
+    <LinearLayout android:orientation="vertical" android:id="@+id/panel_details_feedback" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+    <RelativeLayout android:id="@+id/panel_title_overview" android:background="@drawable/bg_ten_percent_black_selector" android:layout_width="match_parent" android:layout_height="@dimen/actionbar_height">
+        <include android:id="@+id/img_overview_open" layout="@layout/expand_arrow_view"/>
+        <TextView android:id="@+id/txt_overview_title" android:layout_width="match_parent" android:layout_height="match_parent" android:text="@string/item_overview" android:layout_toLeftOf="@+id/img_overview_open" style="@style/ListingPanelSectionTitle"/>
+    </RelativeLayout>
+    <LinearLayout android:orientation="vertical" android:id="@+id/panel_details_overview" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <View android:background="@color/divider_dark" android:layout_width="match_parent" android:layout_height="@dimen/divider_height"/>
+        <TableLayout android:id="@+id/table_overview" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/margin_large"/>
+    </LinearLayout>
+    <View android:id="@+id/panel_divider_item_overview" android:background="@color/divider_dark" android:layout_width="match_parent" android:layout_height="@dimen/divider_height"/>
+    <RelativeLayout android:id="@+id/panel_title_description" android:background="@drawable/bg_ten_percent_black_selector" android:layout_width="match_parent" android:layout_height="@dimen/actionbar_height">
+        <include android:id="@+id/img_description_open" layout="@layout/expand_arrow_view"/>
+        <TextView android:id="@+id/txt_description_title" android:layout_width="match_parent" android:layout_height="match_parent" android:text="@string/item_details" android:layout_toLeftOf="@+id/img_description_open" style="@style/ListingPanelSectionTitle"/>
+    </RelativeLayout>
+    <LinearLayout android:orientation="vertical" android:id="@+id/panel_details_description" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <View android:background="@color/divider_dark" android:layout_width="match_parent" android:layout_height="@dimen/divider_height" android:layout_marginBottom="@dimen/margin_large"/>
+        <TextView android:id="@+id/text_seller_discount_description" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/sk_space_4" android:layout_marginRight="@dimen/sk_space_4" android:layout_marginBottom="@dimen/sk_space_4" style="@style/ListingDescriptionText"/>
+        <TextView android:id="@+id/text_seller_free_shipping_description" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/sk_space_4" android:layout_marginRight="@dimen/sk_space_4" android:layout_marginBottom="@dimen/sk_space_4" style="@style/ListingDescriptionText"/>
+        <View android:id="@+id/divider_seller_promotion_descriptions" android:background="@color/divider_header" android:visibility="gone" android:layout_width="match_parent" android:layout_height="@dimen/divider_height" android:layout_marginLeft="@dimen/sk_space_4" android:layout_marginRight="@dimen/sk_space_4" android:layout_marginBottom="@dimen/sk_space_4"/>
+        <com.etsy.android.uikit.view.MachineTranslationOneClickView android:id="@+id/machine_translation_one_click" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/margin_large" android:layout_marginRight="@dimen/margin_large" android:layout_marginBottom="@dimen/margin_medium_large" app:activeButtonColor="@color/sk_orange_30" app:textSize="@dimen/text_medium"/>
+        <TextView android:id="@+id/text_description" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/margin_large" android:layout_marginRight="@dimen/margin_large" android:layout_marginBottom="@dimen/margin_large" style="@style/ListingDescriptionText"/>
+        <LinearLayout android:orientation="vertical" android:id="@+id/human_scale" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/margin_large" android:layout_marginRight="@dimen/margin_large" android:layout_marginBottom="@dimen/margin_large" android:divider="@drawable/divider_header_horizontal" android:showDividers="beginning">
+            <TextView android:id="@+id/human_scale_manufacturers" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_medium_large" android:drawableLeft="@drawable/ic_humanscale" android:drawablePadding="@dimen/padding_medium" style="@style/ListingDescriptionText"/>
+        </LinearLayout>
+    </LinearLayout>
+    <RelativeLayout android:id="@+id/panel_title_shipping" android:background="@drawable/bg_ten_percent_black_selector" android:layout_width="match_parent" android:layout_height="@dimen/actionbar_height">
+        <View android:background="@color/divider_dark" android:layout_width="match_parent" android:layout_height="@dimen/divider_height" android:layout_alignParentTop="true"/>
+        <include android:id="@+id/img_shipping_open" layout="@layout/expand_arrow_view"/>
+        <TextView android:gravity="center_vertical" android:id="@+id/txt_shipping_title" android:paddingLeft="@dimen/padding_large" android:layout_width="match_parent" android:layout_height="match_parent" android:text="@string/shipping_payment" android:layout_toLeftOf="@+id/img_shipping_open" style="@style/ListingPanelSectionTitle"/>
+    </RelativeLayout>
+    <LinearLayout android:orientation="vertical" android:id="@+id/panel_details_shipping" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <View android:background="@color/divider_dark" android:layout_width="match_parent" android:layout_height="@dimen/divider_height"/>
+        <include layout="@layout/listing_panel_shipping"/>
+        <include layout="@layout/listing_panel_shipping_policy"/>
+    </LinearLayout>
+    <RelativeLayout android:id="@+id/panel_title_shipping_and_policies" android:background="@drawable/bg_ten_percent_black_selector" android:layout_width="match_parent" android:layout_height="@dimen/actionbar_height">
+        <View android:background="@color/divider_dark" android:layout_width="match_parent" android:layout_height="@dimen/divider_height" android:layout_alignParentTop="true"/>
+        <include android:id="@+id/img_shipping_and_policies_open" layout="@layout/expand_arrow_view"/>
+        <TextView android:gravity="center_vertical" android:id="@+id/txt_shipping_and_policies_title" android:paddingLeft="@dimen/padding_large" android:layout_width="match_parent" android:layout_height="match_parent" android:text="@string/shipping_and_policies" android:layout_toLeftOf="@+id/img_shipping_and_policies_open" style="@style/ListingPanelSectionTitle"/>
+    </RelativeLayout>
+    <LinearLayout android:orientation="vertical" android:id="@+id/panel_details_shipping_and_policies" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <View android:background="@color/divider_dark" android:layout_width="match_parent" android:layout_height="@dimen/divider_height"/>
+        <include layout="@layout/listing_panel_shipping_and_policies"/>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.etsy.android.uikit.view.RatingIconView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:gravity="left" android:id="@+id/rating" android:background="@color/sk_bg_white" android:padding="0dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/neg_fixed_medium" android:contentDescription="@null" app:starSize="@dimen/shop2_home_review_star_size"/>

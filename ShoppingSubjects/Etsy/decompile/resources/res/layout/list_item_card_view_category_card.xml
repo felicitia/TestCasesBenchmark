@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:id="@+id/segment_frame" android:layout_width="match_parent" android:layout_height="wrap_content" style="@style/CardViewElementStyle">
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <FrameLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+            <ImageView android:id="@+id/img_segment" android:layout_width="match_parent" android:layout_height="wrap_content" android:scaleType="centerCrop" android:contentDescription="@string/listing_image_content_description"/>
+            <TextView android:layout_gravity="bottom|right|center_vertical|center_horizontal|center" android:id="@+id/txt_shop_name" android:visibility="gone" style="@style/ActivityFeedItemCount"/>
+        </FrameLayout>
+        <View android:background="@color/list_divider" android:layout_width="match_parent" android:layout_height="@dimen/divider_height"/>
+        <LinearLayout android:orientation="horizontal" android:id="@+id/listing_info" android:padding="@dimen/padding_small_medium" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <TextView android:ellipsize="end" android:id="@+id/txt_title" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/fixed_small" android:layout_marginRight="@dimen/fixed_small" android:maxLines="1" android:includeFontPadding="false" android:layout_weight="1" style="@style/TextDarkGrey"/>
+        </LinearLayout>
+    </LinearLayout>
+</android.support.v7.widget.CardView>

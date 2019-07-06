@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+        <TextView android:ellipsize="end" android:gravity="center" android:id="@+id/conversation_subject" android:background="@color/sk_bg_white" android:padding="@dimen/padding_medium_large" android:layout_width="match_parent" android:layout_height="wrap_content" android:maxLines="2" android:textIsSelectable="true" style="@style/sk_text_title"/>
+        <FrameLayout android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1">
+            <include layout="@layout/partial_loading"/>
+            <include layout="@layout/partial_no_internet"/>
+            <include layout="@layout/partial_empty_result"/>
+            <ListView android:id="@android:id/list" android:clipToPadding="false" android:descendantFocusability="beforeDescendants" android:layout_width="match_parent" android:layout_height="match_parent" style="@style/ConvoThread"/>
+            <View style="@style/Divider.Horizontal.Gradient"/>
+        </FrameLayout>
+    </LinearLayout>
+    <View android:id="@+id/convo_vertical_divider" android:visibility="gone" style="@style/Divider.Vertical.Gradient"/>
+</FrameLayout>

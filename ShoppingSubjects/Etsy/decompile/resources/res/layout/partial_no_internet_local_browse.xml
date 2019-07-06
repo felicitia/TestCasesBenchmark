@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:id="@+id/no_internet" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" android:fillViewport="true">
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <View android:id="@+id/no_internet_map_click_area" android:layout_width="match_parent" android:layout_height="@dimen/local_browse_header_map_height"/>
+        <LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="vertical" android:background="@color/background_main_v2" android:padding="@dimen/padding_large" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1">
+            <TextView android:gravity="center" android:id="@+id/empty_view_text" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/loading_problem" style="@style/EmptyTextTitle"/>
+            <Button android:gravity="center" android:id="@+id/btn_retry_internet" android:paddingLeft="@dimen/padding_xlarge" android:paddingRight="@dimen/padding_xlarge" android:layout_width="wrap_content" android:layout_height="@dimen/button_height" android:layout_marginTop="@dimen/margin_large" android:text="@string/try_again" android:textAllCaps="true" style="@style/ButtonWhiteV2"/>
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

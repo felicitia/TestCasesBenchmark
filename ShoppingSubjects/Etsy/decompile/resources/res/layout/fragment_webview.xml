@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:id="@+id/root_view" android:layout_width="match_parent" android:layout_height="match_parent">
+    <include layout="@layout/partial_no_internet"/>
+    <WebView android:id="@+id/webview" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    <FrameLayout android:id="@+id/webview_cover" android:background="@color/sk_gray_10" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent">
+        <com.etsy.android.uikit.view.LoadingIndicatorView android:layout_gravity="center" android:id="@+id/activity_indicator" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/progress_spinner_etsy" android:scaleType="center"/>
+    </FrameLayout>
+    <ProgressBar android:layout_gravity="top" android:id="@+id/progress_bar" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/progressbar_padding_fix" style="@style/Widget.AppCompat.ProgressBar.Horizontal"/>
+</FrameLayout>

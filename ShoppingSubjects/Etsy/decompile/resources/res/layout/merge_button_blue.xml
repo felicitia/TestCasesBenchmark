@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt">
+    <Button android:textSize="@dimen/text_large" android:gravity="center" android:layout_gravity="center" android:id="@+id/button" android:paddingLeft="@dimen/padding_large_xlarge" android:paddingTop="@dimen/padding_medium" android:paddingRight="@dimen/padding_large_xlarge" android:paddingBottom="@dimen/padding_medium" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/see_all" style="?attr/buttonBlueV2"/>
+</merge>

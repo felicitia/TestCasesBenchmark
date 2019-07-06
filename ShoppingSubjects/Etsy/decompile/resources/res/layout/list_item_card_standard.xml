@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:paddingLeft="@dimen/margin_medium_large" android:paddingTop="@dimen/margin_medium_large" android:paddingRight="@dimen/margin_medium_large" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <FrameLayout android:id="@+id/click_region" android:background="@drawable/bg_card" android:layout_width="match_parent" android:layout_height="wrap_content" android:foreground="@drawable/fg_card_selector">
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:baselineAligned="false">
+            <include layout="@layout/card_standard_row"/>
+        </LinearLayout>
+    </FrameLayout>
+</FrameLayout>

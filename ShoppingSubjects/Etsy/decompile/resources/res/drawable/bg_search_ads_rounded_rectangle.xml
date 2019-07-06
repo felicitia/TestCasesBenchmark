@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt">
+    <solid android:color="@color/light_white_transparent"/>
+    <corners android:radius="@dimen/search_ads_indicator_radius"/>
+    <padding android:left="@dimen/search_ads_indicator_horizontal_padding" android:top="@dimen/search_ads_indicator_vertical_padding" android:right="@dimen/search_ads_indicator_horizontal_padding" android:bottom="@dimen/search_ads_indicator_vertical_padding"/>
+</shape>

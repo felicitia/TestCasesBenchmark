@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="horizontal" android:background="@drawable/bg_ten_percent_black_selector" android:paddingTop="@dimen/padding_small" android:paddingBottom="@dimen/padding_small" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <ImageView android:layout_gravity="center_vertical" android:id="@+id/etsy_menu_badge_icon" android:visibility="visible" android:layout_width="@dimen/nav_add_user_avatar" android:layout_height="@dimen/nav_add_user_avatar" style="@style/ShopAvatarLarge"/>
+    <TextView android:textAppearance="?attr/textAppearanceListItem" android:ellipsize="end" android:gravity="left|center_vertical|center_horizontal|center|start" android:id="@+id/etsy_menu_text" android:layout_width="0dp" android:layout_height="match_parent" android:layout_marginLeft="?attr/listPreferredItemPaddingLeft" android:maxLines="1" android:layout_weight="1" style="@style/TextWhite.Small"/>
+</LinearLayout>

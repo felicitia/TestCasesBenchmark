@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:background="@color/sk_bg_white" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <TextView android:id="@+id/search_suggestions_recent_title" android:padding="@dimen/fixed_large" android:layout_width="0dp" android:layout_height="wrap_content" android:text="@string/recent_searches" android:layout_weight="1" style="@style/sk_text_title"/>
+        <ImageView android:id="@+id/search_suggestions_recent_clear_btn" android:background="@drawable/bg_unbounded_selector" android:padding="@dimen/sk_space_4" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/sk_space_1" android:tint="@color/sk_gray_50" android:contentDescription="@string/clear" app:srcCompat="@drawable/sk_ic_close"/>
+    </LinearLayout>
+    <android.support.v7.widget.RecyclerView android:id="@+id/search_suggestions_recyclerview" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1"/>
+</LinearLayout>

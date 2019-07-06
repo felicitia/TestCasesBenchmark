@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.etsy.android.lib.convos.BaseSplitView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:id="@+id/base_split_view" android:layout_width="match_parent" android:layout_height="match_parent" app:empty_layout="@layout/partial_empty_convos" app:no_internet_layout="@layout/partial_no_internet"/>

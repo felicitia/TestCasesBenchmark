@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="horizontal" android:background="@drawable/list_selector" android:paddingLeft="@dimen/divider_padding" android:paddingRight="@dimen/divider_padding" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="@dimen/convo_list_item_height">
+    <FrameLayout android:layout_gravity="center_vertical" android:id="@+id/convo_user_img_frame" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_marginRight="@dimen/padding_medium">
+        <ImageView android:layout_gravity="center_vertical" android:id="@+id/convo_user_img" style="@style/Avatar.Convos.Recent"/>
+    </FrameLayout>
+    <TextView android:gravity="center_vertical" android:id="@+id/convo_username" android:fadingEdge="horizontal" android:layout_width="0dp" android:layout_height="@dimen/convo_list_item_height" android:layout_weight="1" style="?@style/TextDarkGrey.Large"/>
+</LinearLayout>

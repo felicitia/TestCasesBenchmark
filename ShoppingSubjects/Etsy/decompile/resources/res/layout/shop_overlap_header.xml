@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="horizontal" android:id="@+id/panel_shop_header" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <View android:id="@+id/shop_header_background" android:background="@drawable/bg_header_selector" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignBottom="@+id/shop_header_overlap_info_details"/>
+    <com.etsy.android.uikit.view.ClickableImageView android:id="@+id/shop_header_avatar" android:layout_width="@dimen/shop_listing_header_avatar" android:layout_height="@dimen/shop_listing_header_avatar" android:layout_marginLeft="@dimen/margin_medium" android:layout_marginTop="@dimen/shop_listing_header_avatar_top_margin" android:layout_marginRight="@dimen/margin_medium" android:scaleType="centerCrop" android:contentDescription="@string/shop_avatar_content_description" style="@style/ShopAvatarSmall"/>
+    <include android:id="@+id/shop_header_overlap_info_details" android:layout_width="wrap_content" android:layout_height="@dimen/actionbar_height" android:layout_toLeftOf="@+id/shop_header_actions_container" android:layout_toRightOf="@+id/shop_header_avatar" layout="@layout/header_shop_overlap_info_details"/>
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@+id/shop_header_actions_container" android:layout_width="wrap_content" android:layout_height="@dimen/actionbar_portrait_height" android:layout_alignParentRight="true">
+        <Button android:id="@+id/header_follow_button" android:visibility="gone" android:layout_width="wrap_content" android:layout_marginRight="@dimen/margin_medium" android:text="@string/follow" style="@style/ButtonWhiteV2.Header"/>
+        <FrameLayout android:id="@+id/header_favorite_button" android:visibility="gone" android:layout_marginRight="@dimen/margin_medium" style="?attr/buttonWhiteV2Image">
+            <ImageView android:id="@+id/heart_image" android:layout_width="match_parent" android:layout_height="match_parent" android:src="@drawable/ic_favorite_selector" android:scaleType="center"/>
+        </FrameLayout>
+        <ImageButton android:id="@+id/header_contact_button" android:visibility="gone" android:layout_marginRight="@dimen/margin_large" android:tint="@color/sk_orange_30" app:srcCompat="@drawable/sk_ic_conversations" style="?attr/buttonWhiteV2Image"/>
+    </LinearLayout>
+</RelativeLayout>

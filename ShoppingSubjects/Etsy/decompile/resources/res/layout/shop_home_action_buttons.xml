@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:background="@drawable/bg_card" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/fixed_large_card" android:layout_marginTop="@dimen/fixed_medium" android:layout_marginRight="@dimen/fixed_large_card" android:layout_marginBottom="@dimen/fixed_large_xlarge" android:divider="@drawable/divider_grey_vertical" android:showDividers="middle">
+    <FrameLayout android:id="@+id/fav_click_region" android:layout_width="0dp" android:layout_height="wrap_content" android:foreground="@drawable/standard_selector" android:layout_weight="1">
+        <TextView android:layout_gravity="center" android:id="@+id/fav_txt" android:padding="@dimen/fixed_medium_large" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/favorite" android:drawablePadding="@dimen/padding_medium_large" style="@style/sk_text_title"/>
+    </FrameLayout>
+    <FrameLayout android:id="@+id/contact_click_region" android:layout_width="0dp" android:layout_height="wrap_content" android:foreground="@drawable/standard_selector" android:layout_weight="1">
+        <com.etsy.android.stylekit.CompoundVectorTextView android:layout_gravity="center" android:id="@+id/contact_txt" android:padding="@dimen/fixed_medium_large" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/contact" app:sk_drawableLeft="@drawable/sk_ic_conversations" app:sk_drawablePadding="@dimen/padding_medium_large" app:sk_drawableTint="@color/sk_gray_50" style="@style/sk_text_title"/>
+    </FrameLayout>
+</LinearLayout>

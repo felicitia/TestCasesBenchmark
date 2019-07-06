@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <ImageView android:id="@+id/shop_avatar" android:layout_width="@dimen/shop_avatar" android:layout_height="@dimen/shop_avatar" style="@style/ShopAvatarLarge"/>
+    <TextView android:textColor="@color/social_share_shop_name" android:id="@+id/shop_owner_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_medium_large" style="@style/TextDarkGrey.Bold"/>
+    <TextView android:textColor="@color/social_share_shop_description" android:gravity="center_horizontal" android:id="@+id/shop_description" android:paddingLeft="@dimen/social_share_text_padding" android:paddingTop="@dimen/fixed_small" android:paddingRight="@dimen/social_share_text_padding" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/TextLightGrey"/>
+    <com.etsy.android.uikit.view.RatingIconView android:id="@+id/rating" android:paddingTop="@dimen/fixed_small_medium" android:layout_width="wrap_content" android:layout_height="wrap_content" android:contentDescription="@null" app:starSize="@dimen/review_star_size_small"/>
+</LinearLayout>

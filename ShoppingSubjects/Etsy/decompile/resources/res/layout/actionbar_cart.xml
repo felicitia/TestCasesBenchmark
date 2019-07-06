@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:id="@+id/view_cart_badge" android:background="@drawable/bg_unbounded_selector" android:layout_width="wrap_content" android:layout_height="wrap_content">
+    <RelativeLayout android:layout_width="@dimen/abc_action_button_min_width_material" android:layout_height="@dimen/abc_action_button_min_height_material">
+        <ImageView android:id="@+id/cart_icon" android:layout_width="@dimen/actionbar_icon" android:layout_height="@dimen/actionbar_icon" android:tint="@color/sk_gray_70" android:layout_centerInParent="true" android:contentDescription="@string/shopping_cart_icon" app:srcCompat="@drawable/sk_ic_cart"/>
+        <TextView android:textSize="14sp" android:gravity="center" android:id="@+id/cart_badge" android:background="@drawable/bg_cart_badge" android:paddingLeft="2dp" android:paddingRight="2dp" android:paddingBottom="3dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/cart_badge_offset" android:layout_marginRight="@dimen/cart_badge_offset_right" android:minWidth="@dimen/cart_badge_width" android:minHeight="@dimen/cart_badge_width" android:layout_alignParentTop="true" android:layout_alignParentRight="true" style="@style/TextWhite"/>
+    </RelativeLayout>
+</FrameLayout>

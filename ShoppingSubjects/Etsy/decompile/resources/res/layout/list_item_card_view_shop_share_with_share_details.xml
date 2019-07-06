@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <com.etsy.android.uikit.view.SquareTaggableImageView android:id="@+id/shop_share_image" android:background="@color/sk_gray_30" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:contentDescription="@string/shop_share_image_description"/>
+    <LinearLayout android:orientation="vertical" android:id="@+id/share_details" android:layout_width="@dimen/share_details_width" android:layout_height="wrap_content">
+        <include layout="@layout/partial_card_shop_share_header"/>
+        <ScrollView android:id="@+id/caption_scroll_view" android:paddingLeft="@dimen/fixed_large" android:paddingRight="@dimen/fixed_large" android:layout_width="match_parent" android:layout_height="0dp" android:layout_marginRight="@dimen/margin_large" android:layout_weight="1">
+            <TextView android:id="@+id/caption" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/TextGrey"/>
+        </ScrollView>
+        <TextView android:id="@+id/tag_label" android:paddingLeft="@dimen/fixed_large" android:paddingTop="@dimen/fixed_large" android:paddingRight="@dimen/fixed_large" android:paddingBottom="0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/TextLightGrey.Small.Bold"/>
+        <FrameLayout android:id="@+id/share_listing" android:padding="1dp" android:layout_width="@dimen/share_listing_card_width" android:layout_height="wrap_content" android:layout_margin="@dimen/fixed_large" style="@style/CardStyle.Listing.Light"/>
+    </LinearLayout>
+</merge>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="match_parent">
+    <TextView android:ellipsize="end" android:gravity="left|center_vertical|center_horizontal|center|start" android:id="@+id/etsy_menu_text" android:layout_width="0dp" android:layout_height="match_parent" android:maxLines="2" android:drawablePadding="@dimen/design_navigation_icon_padding" android:layout_weight="1" style="@style/sk_text_title"/>
+    <ImageView android:layout_gravity="center_vertical" android:id="@+id/etsy_menu_badge_icon" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+    <TextView android:gravity="left|center_vertical|center_horizontal|center" android:layout_gravity="center_vertical" android:id="@+id/etsy_menu_badge_text" android:background="@drawable/bg_nav_badge" android:paddingLeft="4dp" android:paddingTop="2dp" android:paddingRight="4dp" android:paddingBottom="2dp" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:includeFontPadding="false" style="@style/sk_text_title_smallest"/>
+</merge>

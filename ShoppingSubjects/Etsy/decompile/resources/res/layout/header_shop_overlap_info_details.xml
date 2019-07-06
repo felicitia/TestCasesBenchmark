@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:gravity="center_vertical" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="@dimen/actionbar_height" android:layout_marginRight="@dimen/margin_medium">
+    <TextView android:ellipsize="end" android:id="@+id/shop_header_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" fontPath="@string/sk_typeface_bold" style="@style/sk_text_body_larger"/>
+    <com.etsy.android.stylekit.CompoundVectorTextView android:ellipsize="end" android:gravity="center_vertical" android:id="@+id/shop_header_location" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/fixed_tiny" android:maxLines="1" android:includeFontPadding="false" app:sk_drawableLeft="@drawable/sk_ic_location" app:sk_drawablePadding="@dimen/fixed_tiny" app:sk_drawableSize="@dimen/sk_size_icon_smaller" app:sk_drawableTint="@color/sk_gray_50" style="@style/sk_text_body_smaller"/>
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@+id/rating_layout" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <com.etsy.android.uikit.view.RatingIconView android:id="@+id/shop_rating" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/margin_small" android:contentDescription="@null" app:starSize="@dimen/review_star_size_small"/>
+        <TextView android:id="@+id/rating_count" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/TextGrey.Small"/>
+    </LinearLayout>
+</LinearLayout>

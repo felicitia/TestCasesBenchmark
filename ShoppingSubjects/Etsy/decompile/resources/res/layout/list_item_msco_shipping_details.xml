@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" style="@style/MultiShopCartGroupItem">
+    <LinearLayout android:orientation="horizontal" android:id="@+id/layout_shipping_option" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/sk_space_2">
+        <TextView android:layout_gravity="center_vertical" android:id="@+id/txt_shipping_option_label" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/sk_space_2" android:text="@string/shipping" style="@style/sk_text_body"/>
+        <Spinner android:layout_gravity="center_vertical" android:id="@+id/spinner_shipping_options" android:layout_width="match_parent" android:layout_height="wrap_content" android:spinnerMode="dialog" style="@style/UnderlinedSpinner"/>
+    </LinearLayout>
+    <com.etsy.android.ui.cart.view.PromotionView android:id="@+id/promotion" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/sk_space_2"/>
+    <TextView android:id="@+id/txt_free_shipping" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/sk_space_4" style="@style/sk_text_body"/>
+    <TextView android:id="@+id/txt_estimated_delivery" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/sk_space_1" style="@style/sk_text_body"/>
+    <TextView android:id="@+id/txt_processing_time" android:layout_width="match_parent" android:layout_height="wrap_content" style="@style/sk_text_body"/>
+</LinearLayout>

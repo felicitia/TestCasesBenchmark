@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <View android:background="@color/divider_header" android:layout_width="match_parent" android:layout_height="@dimen/divider_height" android:layout_marginLeft="@dimen/listing_structured_policies_divider_margin_left"/>
+    <LinearLayout android:orientation="horizontal" android:paddingBottom="@dimen/fixed_xlarge" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <TextView android:paddingRight="@dimen/listing_structured_policies_heading_padding_right" android:layout_width="@dimen/listing_structured_policies_heading_width" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/fixed_large" android:layout_marginTop="@dimen/margin_large" android:layout_marginRight="@dimen/margin_large" android:text="@string/terms_and_conditions_title" style="@style/TextDarkGrey.Large.Bold"/>
+        <TextView android:id="@+id/txt_terms_and_conditions" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/listing_structured_policies_content_margin_left" android:layout_marginTop="@dimen/margin_large" android:layout_marginRight="@dimen/margin_large" android:layout_marginBottom="@dimen/margin_large" android:layout_weight="1" android:lineSpacingMultiplier="@dimen/shop_home_text_line_spacing_mult" style="@style/TextGrey"/>
+    </LinearLayout>
+</LinearLayout>

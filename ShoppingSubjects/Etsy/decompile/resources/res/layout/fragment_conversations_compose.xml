@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <ViewStub android:id="@+id/convo_header" android:layout="@layout/convo_new_header" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+    <ScrollView android:layout_width="match_parent" android:layout_height="0dp" android:fillViewport="true" android:layout_weight="1">
+        <LinearLayout android:orientation="vertical" android:background="@color/sk_bg_white" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <RelativeLayout android:layout_width="match_parent" android:layout_height="0dp" android:layout_marginLeft="@dimen/padding_large" android:layout_marginTop="@dimen/padding_medium_large" android:layout_marginRight="@dimen/padding_large" android:layout_marginBottom="@dimen/padding_medium_large" android:layout_weight="1">
+                <com.etsy.android.uikit.view.ContactsAutoComplete android:ellipsize="end" android:id="@+id/edit_username" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="@string/convo_username_hint" android:maxLines="1" android:completionThreshold="1" android:layout_alignParentLeft="true" android:layout_alignParentTop="true" android:inputType="text" style="@style/EditText.AutoComplete"/>
+                <EditText android:ellipsize="end" android:id="@+id/edit_subject" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_medium" android:hint="@string/convo_subject_hint" android:maxLines="1" android:scrollHorizontally="true" android:layout_below="@+id/edit_username" android:inputType="text" style="@style/EditText"/>
+                <EditText android:gravity="top" android:id="@+id/edit_message" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_medium" android:hint="@string/convo_message_hint" android:layout_below="@+id/edit_subject" style="@style/EditText.MultiLine"/>
+                <com.etsy.android.uikit.view.ImageAttachmentLayout android:gravity="bottom" android:orientation="horizontal" android:id="@+id/linear_convo_image_attachments" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/padding_large" android:layout_below="@+id/edit_message" app:attachmentPadding="@dimen/padding_large"/>
+            </RelativeLayout>
+            <View style="@style/Divider.Horizontal"/>
+            <com.etsy.android.stylekit.CompoundVectorTextView android:gravity="center_vertical" android:id="@+id/button_image" android:background="@drawable/list_selector" android:padding="@dimen/margin_medium" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/convos_add_photo" android:textAllCaps="true" app:sk_drawableLeft="@drawable/sk_ic_camera" app:sk_drawablePadding="@dimen/margin_medium" app:sk_drawableTint="@color/sk_orange_30" style="@style/TextBlack"/>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

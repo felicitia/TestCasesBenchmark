@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/margin_medium">
+    <com.etsy.android.uikit.view.ClickableImageView android:layout_gravity="center" android:id="@+id/shop_icon" android:layout_width="@dimen/shop_home_main_avatar" android:layout_height="@dimen/shop_home_main_avatar" style="@style/ShopAvatarLarge"/>
+    <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginLeft="@dimen/margin_medium">
+        <TextView android:ellipsize="end" android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/ap_landing_page_more_from_this_shop" android:maxLines="1" style="@style/TextLightGrey.Bold"/>
+        <TextView android:gravity="center" android:id="@+id/shop_name" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/sk_text_title"/>
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@+id/rating_layout" android:paddingTop="@dimen/padding_tiny" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <TextView android:ellipsize="end" android:gravity="center" android:id="@+id/shop_location" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" style="@style/TextLightGrey"/>
+            <View android:id="@+id/divider" android:background="@drawable/list_divider_dark" android:layout_width="@dimen/fixed_one" android:layout_height="match_parent" android:layout_marginLeft="@dimen/margin_medium" android:layout_marginTop="@dimen/margin_tiny" android:layout_marginRight="@dimen/margin_medium"/>
+            <TextView android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/reviews" style="@style/TextLightGrey"/>
+            <com.etsy.android.uikit.view.RatingIconView android:gravity="center" android:id="@+id/shop_rating" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/margin_small" android:layout_marginRight="@dimen/margin_small" android:contentDescription="@null" app:starSize="@dimen/review_star_size_medium"/>
+            <TextView android:id="@+id/rating_count" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/TextLightGrey"/>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

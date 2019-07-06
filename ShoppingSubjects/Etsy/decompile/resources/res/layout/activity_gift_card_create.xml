@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:background="@color/sk_bg_white" android:layout_width="match_parent" android:layout_height="match_parent">
+    <include android:id="@+id/error_view" layout="@layout/partial_no_internet"/>
+    <ScrollView android:id="@+id/form_layout" android:layout_width="match_parent" android:layout_height="match_parent">
+        <LinearLayout android:orientation="vertical" android:paddingTop="@dimen/padding_large" android:paddingBottom="@dimen/padding_large" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <TextView android:paddingBottom="@dimen/sk_space_2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/gift_card_create_choose_design" style="@style/GiftCardInputTitleTextView"/>
+            <com.etsy.android.ui.giftcards.GiftCardDesignSelecterView android:id="@+id/view_gift_card_design_selector" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+            <android.support.design.widget.TextInputLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/margin_large" android:layout_marginRight="@dimen/margin_large" style="@style/EtsyWidgetTextInputLayout">
+                <EditText android:id="@+id/txt_recipient_name" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="@string/hint_recipient_name" android:maxLines="1" android:lines="1" android:maxLength="120" style="@style/Widget.Design.TextInputLayout"/>
+            </android.support.design.widget.TextInputLayout>
+            <android.support.design.widget.TextInputLayout android:layout_width="match_parent" android:layout_height="wrap_content" style="@style/EtsyWidgetTextInputLayout">
+                <EditText android:id="@+id/txt_sender_name" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="@string/hint_sender_name" android:maxLines="1" android:lines="1" android:maxLength="120" style="@style/Widget.Design.TextInputLayout"/>
+            </android.support.design.widget.TextInputLayout>
+            <android.support.design.widget.TextInputLayout android:layout_width="match_parent" android:layout_height="wrap_content" app:counterEnabled="true" app:errorEnabled="true" style="@style/EtsyWidgetTextInputLayout">
+                <EditText android:gravity="top" android:id="@+id/txt_message" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="@string/hint_gift_card_message" android:lines="1" android:maxLength="500" style="@style/Widget.Design.TextInputLayout"/>
+            </android.support.design.widget.TextInputLayout>
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/gift_card_create_choose_amount" style="@style/GiftCardInputTitleTextView"/>
+            <RadioGroup android:orientation="horizontal" android:id="@+id/card_value" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/margin_large" android:layout_marginTop="@dimen/margin_medium" android:layout_marginRight="@dimen/margin_large" android:layout_marginBottom="@dimen/margin_large" android:checkedButton="@+id/value_25"/>
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/gift_card_delivery_method" style="@style/GiftCardInputTitleTextView"/>
+            <RadioGroup android:orientation="horizontal" android:id="@+id/delivery_option" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/margin_large" android:layout_marginTop="@dimen/margin_medium" android:layout_marginRight="@dimen/margin_large" android:layout_marginBottom="@dimen/margin_large" android:weightSum="2" android:checkedButton="@+id/option_emailed">
+                <RadioButton android:id="@+id/option_emailed" android:text="@string/gift_card_create_opt_emailed" android:layout_weight="1" style="?attr/radioButtonBlue"/>
+                <RadioButton android:id="@+id/option_printable" android:layout_width="match_parent" android:layout_marginLeft="@dimen/margin_tiny" android:layout_marginRight="@dimen/margin_tiny" android:text="@string/gift_card_create_opt_printed" android:singleLine="false" android:layout_weight="1" style="?attr/radioButtonBlue"/>
+            </RadioGroup>
+            <LinearLayout android:orientation="vertical" android:id="@+id/layout_email" android:layout_width="match_parent" android:layout_height="wrap_content" android:animateLayoutChanges="true">
+                <android.support.design.widget.TextInputLayout android:layout_width="match_parent" android:layout_height="wrap_content" style="@style/EtsyWidgetTextInputLayout">
+                    <AutoCompleteTextView android:id="@+id/txt_email" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="@string/hint_recipient_email_address" android:inputType="textEmailAddress" style="@style/Widget.Design.TextInputLayout"/>
+                </android.support.design.widget.TextInputLayout>
+                <android.support.design.widget.TextInputLayout android:layout_width="match_parent" android:layout_height="wrap_content" style="@style/EtsyWidgetTextInputLayout">
+                    <AutoCompleteTextView android:id="@+id/txt_email_confirm" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="@string/hint_confirm_email" android:inputType="textEmailAddress" style="@style/Widget.Design.TextInputLayout"/>
+                </android.support.design.widget.TextInputLayout>
+            </LinearLayout>
+            <View android:background="@color/sk_gray_20" android:layout_width="match_parent" android:layout_height="@dimen/divider_height" android:layout_marginTop="@dimen/margin_large" android:layout_marginBottom="@dimen/margin_large"/>
+            <Button android:enabled="false" android:id="@+id/button_add_to_cart" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/margin_large" android:layout_marginRight="@dimen/margin_large" android:text="@string/add_to_cart" style="?attr/buttonGreenV3"/>
+        </LinearLayout>
+    </ScrollView>
+    <include android:id="@+id/loading_view" layout="@layout/partial_loading"/>
+</FrameLayout>

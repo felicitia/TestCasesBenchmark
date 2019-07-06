@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="vertical" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" style="@style/DialogRow.Text">
+        <TextView android:id="@+id/snippet_title" android:layout_width="match_parent" android:layout_height="wrap_content" style="@style/TextDarkGrey.Bold"/>
+        <TextView android:ellipsize="end" android:id="@+id/snippet_content" android:layout_width="match_parent" android:layout_height="wrap_content" android:maxLines="1" style="@style/TextLightGrey.Small"/>
+    </LinearLayout>
+    <com.etsy.android.iconsy.views.IconView android:layout_gravity="right|center_vertical|center_horizontal|center" android:id="@+id/overflow_menu_icon" android:background="@drawable/list_selector" android:padding="@dimen/dotted_menu_padding" android:layout_width="@dimen/dotted_menu_size" android:layout_height="@dimen/dotted_menu_size" app:hasSelector="true" style="@style/MenuIcon"/>
+</LinearLayout>

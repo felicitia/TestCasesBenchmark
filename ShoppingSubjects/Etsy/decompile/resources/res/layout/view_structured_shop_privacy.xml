@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt">
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+        <com.etsy.android.iconsy.views.IconView android:id="@+id/edit_icon" android:layout_width="@dimen/fixed_large" android:layout_height="@dimen/fixed_large" android:layout_alignParentTop="true" android:layout_alignParentRight="true" app:gravity="center" app:iconChar="@+id/ic_etsy_write" app:iconColor="@color/lighter_grey"/>
+        <TextView android:id="@+id/txt_privacy_info" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_toLeftOf="@+id/edit_icon" style="?attr/structuredPoliciesTextStyle"/>
+    </RelativeLayout>
+    <TextView android:id="@+id/txt_privacy_items" android:paddingTop="@dimen/fixed_large" android:layout_width="wrap_content" android:layout_height="wrap_content" android:lineSpacingExtra="@dimen/fixed_medium" style="?attr/structuredPoliciesTextStyle"/>
+    <TextView android:id="@+id/btn_privacy_other_expand" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/fixed_medium" style="@style/StructuredPoliciesButtonSeeMore"/>
+</merge>

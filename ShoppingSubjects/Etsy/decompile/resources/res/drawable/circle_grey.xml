@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:shape="rectangle">
+    <corners android:topLeftRadius="@dimen/convo_count_radius" android:topRightRadius="@dimen/convo_count_radius" android:bottomLeftRadius="@dimen/convo_count_radius" android:bottomRightRadius="@dimen/convo_count_radius"/>
+    <solid android:color="@color/circle"/>
+    <size android:height="@dimen/convo_count_height"/>
+    <margin android:left="@dimen/fixed_medium" android:top="@dimen/fixed_medium" android:right="@dimen/fixed_medium" android:bottom="@dimen/fixed_medium"/>
+</shape>

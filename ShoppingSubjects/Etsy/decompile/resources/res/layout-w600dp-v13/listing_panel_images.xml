@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_below="@+id/shop_header_background">
+    <android.support.v4.widget.Space android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1"/>
+    <FrameLayout android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="6">
+        <com.etsy.android.uikit.view.DynamicHeightViewPager android:id="@+id/viewpager_listing_images" android:background="@drawable/bg_card" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/card_shadow_padding" android:fadeScrollbars="false"/>
+        <include layout="@layout/listing_panel_image_page_indicator"/>
+        <com.etsy.android.stylekit.CompoundVectorTextView android:layout_gravity="top|left|center_vertical|center_horizontal|center" android:id="@+id/instant_download" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" app:sk_drawableLeft="@drawable/sk_ic_downloadcloud" app:sk_drawablePadding="@dimen/padding_small" app:sk_drawableTint="@color/sk_gray_50" style="@style/InstantDownload"/>
+    </FrameLayout>
+    <android.support.v4.widget.Space android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1"/>
+</LinearLayout>

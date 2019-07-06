@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt">
+    <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/margin_large" android:layout_marginTop="@dimen/margin_large" android:layout_marginRight="@dimen/margin_large" android:layout_marginBottom="@dimen/margin_small" android:text="@string/payment_methods_label" style="@style/TextBlack.Bold"/>
+    <LinearLayout android:orientation="horizontal" android:id="@+id/payments_layout" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/margin_large" android:layout_marginTop="@dimen/margin_small" android:layout_marginRight="@dimen/margin_large">
+        <ImageView android:id="@+id/paypal_payments" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/margin_medium" android:src="@drawable/cc_paypal" android:scaleType="center" android:contentDescription="@string/payment_method_label_paypal"/>
+        <LinearLayout android:orientation="horizontal" android:id="@+id/credit_card_payments" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/margin_medium" android:src="@drawable/cc_visa" android:scaleType="center" android:contentDescription="@string/credit_card_name_visa"/>
+            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/margin_medium" android:src="@drawable/cc_mastercard" android:scaleType="center" android:contentDescription="@string/credit_card_name_mastercard"/>
+            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/margin_medium" android:src="@drawable/cc_amex" android:scaleType="center" android:contentDescription="@string/credit_card_name_amex"/>
+            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/cc_discover" android:scaleType="center" android:contentDescription="@string/credit_card_name_discover"/>
+        </LinearLayout>
+    </LinearLayout>
+    <View android:id="@+id/estimated_delivery_divider" android:background="@color/divider_header" android:visibility="gone" android:layout_width="match_parent" android:layout_height="@dimen/divider_height" android:layout_marginLeft="@dimen/margin_large" android:layout_marginTop="@dimen/margin_medium_large" android:layout_marginRight="@dimen/margin_large"/>
+    <TextView android:id="@+id/estimated_delivery_first_line" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/margin_large" android:layout_marginTop="@dimen/margin_large" android:layout_marginRight="@dimen/margin_large" style="@style/TextBlack"/>
+    <TextView android:id="@+id/estimated_delivery_second_text" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/margin_large" android:layout_marginTop="@dimen/fixed_medium" android:layout_marginRight="@dimen/margin_large" android:lineSpacingMultiplier="1.25"/>
+    <TextView android:id="@+id/text_payment_method_others" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/margin_large" android:layout_marginRight="@dimen/margin_large" style="@style/TextGrey"/>
+    <LinearLayout android:orientation="vertical" android:id="@+id/panel_calculated_shipping" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <include layout="@layout/listing_panel_shipping_calculate"/>
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/margin_medium_large">
+        <TextView android:id="@+id/shipping_time" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/margin_large" android:layout_marginTop="@dimen/margin_medium_large" android:layout_marginRight="@dimen/margin_large" android:layout_marginBottom="@dimen/margin_small"/>
+        <TextView android:id="@+id/shipping_origin" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/margin_large" android:layout_marginRight="@dimen/margin_large"/>
+    </LinearLayout>
+    <include layout="@layout/view_listing_panel_gift_options"/>
+</merge>

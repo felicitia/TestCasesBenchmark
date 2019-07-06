@@ -1,0 +1,515 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="countries_array">
+        <item>Allemagne</item>
+        <item>Australie</item>
+        <item>Canada</item>
+        <item>Espagne</item>
+        <item>Etats-Unis</item>
+        <item>France</item>
+        <item>Grèce</item>
+        <item>Irlande</item>
+        <item>Italie</item>
+        <item>Japon</item>
+        <item>Nouvelle-Zélande</item>
+        <item>Pays-Bas</item>
+        <item>Portugal</item>
+        <item>Royaume-Uni</item>
+        <item>Russie</item>
+        <item>Afghanistan</item>
+        <item>Afrique du Sud</item>
+        <item>Albanie</item>
+        <item>Algérie</item>
+        <item>Allemagne</item>
+        <item>Andorre</item>
+        <item>Angola</item>
+        <item>Anguilla</item>
+        <item>Antigua-et-Barbuda</item>
+        <item>Antilles néerlandaises</item>
+        <item>Arabie saoudite</item>
+        <item>Argentine</item>
+        <item>Arménie</item>
+        <item>Aruba</item>
+        <item>Australie</item>
+        <item>Autriche</item>
+        <item>Azerbaïdjan</item>
+        <item>Bahamas</item>
+        <item>Bahreïn</item>
+        <item>Bangladesh</item>
+        <item>Barbade</item>
+        <item>Belgique</item>
+        <item>Belize</item>
+        <item>Bénin</item>
+        <item>Bermudes</item>
+        <item>Bhoutan</item>
+        <item>Biélorussie</item>
+        <item>Birmanie</item>
+        <item>Bolivie</item>
+        <item>Bosnie-Herzégovine</item>
+        <item>Botswana</item>
+        <item>Brésil</item>
+        <item>Brunei</item>
+        <item>Bulgarie</item>
+        <item>Burkina Faso</item>
+        <item>Burundi</item>
+        <item>Cambodge</item>
+        <item>Cameroun</item>
+        <item>Canada</item>
+        <item>Cap-Vert</item>
+        <item>Chili</item>
+        <item>Chine</item>
+        <item>Chypre</item>
+        <item>Colombie</item>
+        <item>Comores</item>
+        <item>Congo-Brazzaville</item>
+        <item>Corée du Sud</item>
+        <item>Costa Rica</item>
+        <item>Côte d&apos;Ivoire</item>
+        <item>Croatie</item>
+        <item>Curaçao</item>
+        <item>Danemark</item>
+        <item>Djibouti</item>
+        <item>Dominique</item>
+        <item>Egypte</item>
+        <item>Emirats arabes unis</item>
+        <item>Equateur</item>
+        <item>Erythrée</item>
+        <item>Espagne</item>
+        <item>Estonie</item>
+        <item>Etats-Unis</item>
+        <item>Ethiopie</item>
+        <item>Fidji</item>
+        <item>Finlande</item>
+        <item>France</item>
+        <item>Gabon</item>
+        <item>Gambie</item>
+        <item>Géorgie</item>
+        <item>Géorgie du Sud-et-les Iles Sandwich du Sud</item>
+        <item>Ghana</item>
+        <item>Gibraltar</item>
+        <item>Grèce</item>
+        <item>Grenade</item>
+        <item>Groenland</item>
+        <item>Guadeloupe</item>
+        <item>Guam</item>
+        <item>Guatemala</item>
+        <item>Guinée</item>
+        <item>Guinée-Bissau</item>
+        <item>Guinée équatoriale</item>
+        <item>Guyana</item>
+        <item>Guyane</item>
+        <item>Haïti</item>
+        <item>Honduras</item>
+        <item>Hong Kong</item>
+        <item>Hongrie</item>
+        <item>Île Bouvet</item>
+        <item>Île Christmas</item>
+        <item>Île de Man</item>
+        <item>Iles Caïmans</item>
+        <item>Iles Cocos</item>
+        <item>Iles Cook</item>
+        <item>Iles Féroé</item>
+        <item>Iles Heard-et-MacDonald</item>
+        <item>Iles Malouines</item>
+        <item>Iles Mariannes du Nord</item>
+        <item>Iles mineures éloignées des Etats-Unis</item>
+        <item>Iles Turques-et-Caïques</item>
+        <item>Iles Vierges britanniques</item>
+        <item>Iles Vierges des Etats-Unis</item>
+        <item>Inde</item>
+        <item>Indonésie</item>
+        <item>Irak</item>
+        <item>Irlande</item>
+        <item>Islande</item>
+        <item>Israël</item>
+        <item>Italie</item>
+        <item>Jamaïque</item>
+        <item>Japon</item>
+        <item>Jordanie</item>
+        <item>Kazakhstan</item>
+        <item>Kenya</item>
+        <item>Kirghizistan</item>
+        <item>Kiribati</item>
+        <item>Kosovo</item>
+        <item>Koweït</item>
+        <item>Laos</item>
+        <item>La Réunion</item>
+        <item>Lesotho</item>
+        <item>Lettonie</item>
+        <item>Liban</item>
+        <item>Liberia</item>
+        <item>Libye</item>
+        <item>Liechtenstein</item>
+        <item>Lituanie</item>
+        <item>Luxembourg</item>
+        <item>Macao</item>
+        <item>Macédoine</item>
+        <item>Madagascar</item>
+        <item>Malaisie</item>
+        <item>Malawi</item>
+        <item>Maldives</item>
+        <item>Mali</item>
+        <item>Malte</item>
+        <item>Maroc</item>
+        <item>Marshall</item>
+        <item>Martinique</item>
+        <item>Maurice</item>
+        <item>Mauritanie</item>
+        <item>Mayotte</item>
+        <item>Mexique</item>
+        <item>Micronésie</item>
+        <item>Moldavie</item>
+        <item>Monaco</item>
+        <item>Mongolie</item>
+        <item>Monténégro</item>
+        <item>Montserrat</item>
+        <item>Mozambique</item>
+        <item>Namibie</item>
+        <item>Nauru</item>
+        <item>Népal</item>
+        <item>Nicaragua</item>
+        <item>Niger</item>
+        <item>Nigeria</item>
+        <item>Niue</item>
+        <item>Norfolk</item>
+        <item>Norvège</item>
+        <item>Nouvelle-Calédonie</item>
+        <item>Nouvelle-Zélande</item>
+        <item>Oman</item>
+        <item>Ouganda</item>
+        <item>Ouzbékistan</item>
+        <item>Pakistan</item>
+        <item>Palaos</item>
+        <item>Palestine</item>
+        <item>Panamá</item>
+        <item>Papouasie-Nouvelle-Guinée</item>
+        <item>Paraguay</item>
+        <item>Pays-Bas</item>
+        <item>Pérou</item>
+        <item>Philippines</item>
+        <item>Pologne</item>
+        <item>Polynésie française</item>
+        <item>Porto Rico</item>
+        <item>Portugal</item>
+        <item>Qatar</item>
+        <item>Rép. dém. du Congo</item>
+        <item>République centrafricaine</item>
+        <item>République dominicaine</item>
+        <item>République tchèque</item>
+        <item>Roumanie</item>
+        <item>Royaume-Uni</item>
+        <item>Russie</item>
+        <item>Rwanda</item>
+        <item>Sahara occidental</item>
+        <item>Saint-Christophe-et-Niévès</item>
+        <item>Sainte-Hélène, Ascension et Tristan da Cunha</item>
+        <item>Sainte-Lucie</item>
+        <item>Saint-Marin</item>
+        <item>Saint-Martin (Antilles françaises)</item>
+        <item>Saint-Martin (Pays-Bas)</item>
+        <item>Saint-Pierre-et-Miquelon</item>
+        <item>Saint-Siège (État de la Cité du Vatican)</item>
+        <item>Saint-Vincent-et-les Grenadines</item>
+        <item>Salomon</item>
+        <item>Salvador</item>
+        <item>Samoa</item>
+        <item>Samoa américaines</item>
+        <item>Sao Tomé-et-Principe</item>
+        <item>Sénégal</item>
+        <item>Serbie</item>
+        <item>Seychelles</item>
+        <item>Sierra Leone</item>
+        <item>Singapour</item>
+        <item>Slovaquie</item>
+        <item>Slovénie</item>
+        <item>Somalie</item>
+        <item>Soudan du Sud</item>
+        <item>Sri Lanka</item>
+        <item>Suède</item>
+        <item>Suisse</item>
+        <item>Suriname</item>
+        <item>Svalbard et île Jan Mayen</item>
+        <item>Swaziland</item>
+        <item>Tadjikistan</item>
+        <item>Taïwan</item>
+        <item>Tanzanie</item>
+        <item>Tchad</item>
+        <item>Terres australes et antarctiques françaises</item>
+        <item>Territoire britannique de l&apos;océan Indien</item>
+        <item>Thaïlande</item>
+        <item>Timor oriental</item>
+        <item>Togo</item>
+        <item>Tokelau</item>
+        <item>Tonga</item>
+        <item>Trinité-et-Tobago</item>
+        <item>Tunisie</item>
+        <item>Turkménistan</item>
+        <item>Turquie</item>
+        <item>Tuvalu</item>
+        <item>Ukraine</item>
+        <item>Uruguay</item>
+        <item>Vanuatu</item>
+        <item>Venezuela</item>
+        <item>Viêt Nam</item>
+        <item>Wallis-et-Futuna</item>
+        <item>Yémen</item>
+        <item>Zambie</item>
+        <item>Zimbabwe</item>
+    </array>
+    <array name="country_ids_array">
+        <item>91</item>
+        <item>61</item>
+        <item>79</item>
+        <item>99</item>
+        <item>209</item>
+        <item>103</item>
+        <item>112</item>
+        <item>123</item>
+        <item>128</item>
+        <item>131</item>
+        <item>167</item>
+        <item>164</item>
+        <item>177</item>
+        <item>105</item>
+        <item>181</item>
+        <item>55</item>
+        <item>215</item>
+        <item>57</item>
+        <item>95</item>
+        <item>91</item>
+        <item>228</item>
+        <item>56</item>
+        <item>251</item>
+        <item>252</item>
+        <item>243</item>
+        <item>183</item>
+        <item>59</item>
+        <item>60</item>
+        <item>253</item>
+        <item>61</item>
+        <item>62</item>
+        <item>63</item>
+        <item>229</item>
+        <item>232</item>
+        <item>68</item>
+        <item>237</item>
+        <item>65</item>
+        <item>72</item>
+        <item>66</item>
+        <item>225</item>
+        <item>76</item>
+        <item>71</item>
+        <item>153</item>
+        <item>73</item>
+        <item>70</item>
+        <item>77</item>
+        <item>74</item>
+        <item>75</item>
+        <item>69</item>
+        <item>67</item>
+        <item>64</item>
+        <item>135</item>
+        <item>84</item>
+        <item>79</item>
+        <item>222</item>
+        <item>81</item>
+        <item>82</item>
+        <item>89</item>
+        <item>86</item>
+        <item>259</item>
+        <item>85</item>
+        <item>136</item>
+        <item>87</item>
+        <item>83</item>
+        <item>118</item>
+        <item>338</item>
+        <item>93</item>
+        <item>92</item>
+        <item>261</item>
+        <item>97</item>
+        <item>58</item>
+        <item>96</item>
+        <item>98</item>
+        <item>99</item>
+        <item>100</item>
+        <item>209</item>
+        <item>101</item>
+        <item>234</item>
+        <item>102</item>
+        <item>103</item>
+        <item>104</item>
+        <item>109</item>
+        <item>106</item>
+        <item>294</item>
+        <item>107</item>
+        <item>226</item>
+        <item>112</item>
+        <item>245</item>
+        <item>113</item>
+        <item>265</item>
+        <item>266</item>
+        <item>114</item>
+        <item>108</item>
+        <item>110</item>
+        <item>111</item>
+        <item>116</item>
+        <item>115</item>
+        <item>119</item>
+        <item>117</item>
+        <item>219</item>
+        <item>120</item>
+        <item>254</item>
+        <item>257</item>
+        <item>269</item>
+        <item>247</item>
+        <item>258</item>
+        <item>260</item>
+        <item>241</item>
+        <item>267</item>
+        <item>262</item>
+        <item>283</item>
+        <item>302</item>
+        <item>299</item>
+        <item>231</item>
+        <item>248</item>
+        <item>122</item>
+        <item>121</item>
+        <item>125</item>
+        <item>123</item>
+        <item>126</item>
+        <item>127</item>
+        <item>128</item>
+        <item>129</item>
+        <item>131</item>
+        <item>130</item>
+        <item>132</item>
+        <item>133</item>
+        <item>134</item>
+        <item>270</item>
+        <item>271</item>
+        <item>137</item>
+        <item>138</item>
+        <item>304</item>
+        <item>143</item>
+        <item>146</item>
+        <item>139</item>
+        <item>140</item>
+        <item>141</item>
+        <item>272</item>
+        <item>144</item>
+        <item>145</item>
+        <item>273</item>
+        <item>151</item>
+        <item>149</item>
+        <item>159</item>
+        <item>158</item>
+        <item>238</item>
+        <item>152</item>
+        <item>227</item>
+        <item>147</item>
+        <item>274</item>
+        <item>275</item>
+        <item>239</item>
+        <item>157</item>
+        <item>276</item>
+        <item>150</item>
+        <item>277</item>
+        <item>148</item>
+        <item>278</item>
+        <item>154</item>
+        <item>155</item>
+        <item>279</item>
+        <item>156</item>
+        <item>160</item>
+        <item>280</item>
+        <item>166</item>
+        <item>163</item>
+        <item>161</item>
+        <item>162</item>
+        <item>281</item>
+        <item>282</item>
+        <item>165</item>
+        <item>233</item>
+        <item>167</item>
+        <item>168</item>
+        <item>206</item>
+        <item>210</item>
+        <item>169</item>
+        <item>284</item>
+        <item>285</item>
+        <item>170</item>
+        <item>173</item>
+        <item>178</item>
+        <item>164</item>
+        <item>171</item>
+        <item>172</item>
+        <item>174</item>
+        <item>263</item>
+        <item>175</item>
+        <item>177</item>
+        <item>179</item>
+        <item>216</item>
+        <item>78</item>
+        <item>94</item>
+        <item>90</item>
+        <item>180</item>
+        <item>105</item>
+        <item>181</item>
+        <item>182</item>
+        <item>213</item>
+        <item>287</item>
+        <item>286</item>
+        <item>244</item>
+        <item>291</item>
+        <item>288</item>
+        <item>337</item>
+        <item>289</item>
+        <item>268</item>
+        <item>249</item>
+        <item>242</item>
+        <item>187</item>
+        <item>290</item>
+        <item>250</item>
+        <item>292</item>
+        <item>185</item>
+        <item>189</item>
+        <item>293</item>
+        <item>186</item>
+        <item>220</item>
+        <item>191</item>
+        <item>192</item>
+        <item>188</item>
+        <item>339</item>
+        <item>142</item>
+        <item>193</item>
+        <item>80</item>
+        <item>190</item>
+        <item>295</item>
+        <item>194</item>
+        <item>199</item>
+        <item>204</item>
+        <item>205</item>
+        <item>196</item>
+        <item>264</item>
+        <item>255</item>
+        <item>198</item>
+        <item>296</item>
+        <item>197</item>
+        <item>297</item>
+        <item>298</item>
+        <item>201</item>
+        <item>202</item>
+        <item>200</item>
+        <item>203</item>
+        <item>300</item>
+        <item>207</item>
+        <item>208</item>
+        <item>221</item>
+        <item>211</item>
+        <item>212</item>
+        <item>224</item>
+        <item>214</item>
+        <item>217</item>
+        <item>218</item>
+    </array>
+</resources>

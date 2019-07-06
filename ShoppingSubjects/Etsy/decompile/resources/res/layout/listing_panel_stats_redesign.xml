@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:gravity="center" android:orientation="horizontal" android:padding="@dimen/fixed_medium_large" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <TextView android:ellipsize="end" android:id="@+id/listed_on_detailed" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/fixed_small" android:text="@string/listed_on_detailed" android:maxLines="1" style="@style/TextLightGrey.Small"/>
+    <TextView android:ellipsize="end" android:id="@+id/txt_listed_date" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" style="@style/TextLightGrey.Small"/>
+    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/fixed_medium" android:layout_marginRight="@dimen/fixed_medium" android:text="@string/dash" style="@style/TextLightGrey.Small"/>
+    <TextView android:ellipsize="end" android:id="@+id/txt_num_favorites" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/fixed_small" android:maxLines="1" style="@style/TextLightGrey.Small"/>
+    <TextView android:ellipsize="end" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/favorites" android:maxLines="1" style="@style/TextLightGrey.Small"/>
+</LinearLayout>

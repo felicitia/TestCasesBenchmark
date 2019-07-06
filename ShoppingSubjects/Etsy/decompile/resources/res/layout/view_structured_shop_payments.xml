@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt">
+    <com.etsy.android.stylekit.CompoundVectorTextView android:gravity="center_vertical" android:id="@+id/txt_subhead_secure_options" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/structured_payment_secure_options" android:drawablePadding="@dimen/padding_small" app:sk_drawableLeft="@drawable/sk_ic_lock" app:sk_drawableTint="@color/sk_gray_50" style="?attr/structuredPoliciesSubheadStyle"/>
+    <com.etsy.android.uikit.view.PaymentMethodsView android:id="@+id/payment_methods" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/fixed_large" app:horizontalSpacing="@dimen/fixed_small" app:verticalSpacing="@dimen/fixed_small"/>
+    <TextView android:id="@+id/txt_secure_options_info" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/fixed_large" android:text="@string/structured_payment_secure_options_info" style="?attr/structuredPoliciesTextStyle"/>
+    <TextView android:id="@+id/btn_expand" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/fixed_xlarge" style="@style/StructuredPoliciesButtonSeeMore"/>
+    <LinearLayout android:orientation="vertical" android:id="@+id/expansion_section" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <TextView android:id="@+id/txt_subhead_payment_methods" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/structured_payment_payment_methods" style="?attr/structuredPoliciesSubheadStyle"/>
+        <TextView android:id="@+id/txt_subhead_other_options" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/fixed_xlarge" android:text="@string/structured_payment_other_options" style="?attr/structuredPoliciesSubheadStyle"/>
+        <TextView android:id="@+id/txt_other_options_info" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/fixed_large" style="?attr/structuredPoliciesTextStyle"/>
+    </LinearLayout>
+</merge>

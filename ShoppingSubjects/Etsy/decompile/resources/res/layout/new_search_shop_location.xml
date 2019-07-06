@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:divider="@drawable/list_divider_light" android:showDividers="none|middle|end">
+        <TextView android:id="@+id/search_filters_shop_location_anywhere_option" android:padding="@dimen/fixed_large" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/new_search_filter_shop_location_anywhere" style="@style/TextGrey.Large"/>
+        <TextView android:id="@+id/search_filters_shop_location_local_option" android:padding="@dimen/fixed_large" android:layout_width="match_parent" android:layout_height="wrap_content" style="@style/TextGrey.Large"/>
+        <LinearLayout android:orientation="vertical" android:padding="@dimen/fixed_large" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/new_search_filter_shop_location_custom_title" style="@style/TextGrey"/>
+            <EditText android:textAppearance="@style/TextGrey.Large" android:id="@+id/search_filters_shop_location_custom_option" android:paddingBottom="@dimen/fixed_large" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="@string/new_search_filter_shop_location_custom_hint" android:maxLines="1" android:drawablePadding="@dimen/fixed_medium" android:inputType="text" android:imeOptions="actionGo" style="@style/EditText"/>
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

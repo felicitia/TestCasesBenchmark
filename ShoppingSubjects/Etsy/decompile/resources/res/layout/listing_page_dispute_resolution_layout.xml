@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <TextView android:id="@+id/txt_dispute_resolution" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/listing_structured_policies_content_margin_left" android:layout_marginTop="@dimen/margin_large" android:layout_marginRight="@dimen/margin_large" android:layout_marginBottom="@dimen/margin_large" android:text="@string/dispute_resolution_text" android:singleLine="false" style="@style/TextGrey"/>
+    <View android:background="@color/divider_header" android:layout_width="match_parent" android:layout_height="@dimen/divider_height" android:layout_marginLeft="@dimen/listing_structured_policies_divider_margin_left"/>
+</LinearLayout>

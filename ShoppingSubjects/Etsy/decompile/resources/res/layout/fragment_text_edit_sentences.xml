@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <ScrollView android:layout_width="match_parent" android:layout_height="match_parent" android:fillViewport="true">
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <EditText android:textSize="@dimen/text_larger" android:gravity="top" android:id="@+id/edit_text" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/margin_medium_large" android:layout_marginTop="@dimen/margin_medium" android:layout_marginRight="@dimen/margin_medium_large" android:minLines="@integer/edit_text_default_min_lines" android:singleLine="false" android:inputType="none|text|textCapSentences|textAutoCorrect|textMultiLine|textImeMultiLine" android:imeOptions="actionDone"/>
+            <TextView android:textColor="@color/text_warn" android:id="@+id/error_text" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/margin_large" android:layout_marginTop="@dimen/margin_small" android:layout_marginRight="@dimen/margin_large" style="@style/TextLightGrey.Small"/>
+            <TextView android:id="@+id/help_subtext" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/margin_large" android:layout_marginTop="@dimen/margin_small" android:layout_marginRight="@dimen/margin_large" style="@style/TextLightGrey"/>
+            <com.etsy.android.iconsy.views.IconView android:layout_gravity="center_horizontal" android:id="@+id/help_button" android:visibility="gone" android:layout_margin="@dimen/margin_medium_large" style="@style/HelpIcon"/>
+            <com.etsy.android.uikit.view.CharacterCounterView android:layout_gravity="right" android:id="@+id/character_counter" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/margin_large" style="@style/TextLightGrey.Small"/>
+        </LinearLayout>
+    </ScrollView>
+    <View android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1"/>
+</LinearLayout>

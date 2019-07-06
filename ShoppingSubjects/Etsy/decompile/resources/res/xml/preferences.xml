@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="https://schemas.android.com/tools" xmlns:aapt="http://schemas.android.com/aapt">
+    <Preference android:persistent="false" android:title="@string/config_refresh_server_info_title" android:key="@string/config_refresh_server_info"/>
+    <Preference android:persistent="false" android:title="@string/qualtrics_force_prompt_title" android:key="@string/qualtrics_force_prompt"/>
+    <CheckBoxPreference android:title="@string/admin_toolbar_title" android:key="@string/config_prefs_admin_toolbar" android:defaultValue="false"/>
+    <PreferenceCategory android:title="@string/config_prefs_category_title">
+        <ListPreference android:entries="@array/etsy_environments" android:title="@string/config_prefs_environment_title" android:key="@string/config_prefs_environment" android:defaultValue="@string/config_prefs_prod_value" android:entryValues="@array/etsy_environments_values"/>
+        <EditTextPreference android:title="@string/config_prefs_vm_title" android:key="@string/config_prefs_vm"/>
+        <CheckBoxPreference android:title="@string/config_prefs_dev_proxy_title" android:key="@string/config_prefs_dev_proxy"/>
+    </PreferenceCategory>
+    <PreferenceCategory android:title="@string/config_section_networking">
+        <CheckBoxPreference android:title="@string/config_output_json_to_logcat" android:key="@string/config_prefs_output_json" android:defaultValue="false"/>
+    </PreferenceCategory>
+    <PreferenceCategory android:title="@string/config_build_info">
+        <Preference android:persistent="false" android:title="@string/config_build_version_title" android:key="@string/config_build_version"/>
+        <Preference android:persistent="false" android:title="@string/config_build_date_title" android:key="@string/config_build_date"/>
+        <Preference android:persistent="false" android:title="@string/config_build_branch_title" android:key="@string/config_build_branch"/>
+        <Preference android:persistent="false" android:title="@string/config_build_hash_title" android:key="@string/config_build_hash"/>
+    </PreferenceCategory>
+    <PreferenceCategory android:title="Logging">
+        <Preference android:persistent="false" android:title="@string/logs_send_all" android:key="@string/config_send_all_logs"/>
+        <Preference android:persistent="false" android:title="@string/logs_wipe_all" android:key="@string/config_wipe_logs"/>
+        <CheckBoxPreference android:title="@string/config_pref_event_horizon_title" android:key="@string/config_prefs_event_horizon"/>
+    </PreferenceCategory>
+    <PreferenceCategory android:title="Etsy Local">
+        <CheckBoxPreference android:title="@string/config_override_location_preference" android:key="@string/config_override_location"/>
+        <EditTextPreference android:title="Latitude" android:key="@string/config_latitude"/>
+        <EditTextPreference android:title="Longitude" android:key="@string/config_longitude"/>
+    </PreferenceCategory>
+    <PreferenceCategory android:title="Crash Reporting">
+        <Preference android:persistent="false" android:title="@string/throw_test_exception" android:key="@string/config_test_crash_reporting"/>
+    </PreferenceCategory>
+</PreferenceScreen>

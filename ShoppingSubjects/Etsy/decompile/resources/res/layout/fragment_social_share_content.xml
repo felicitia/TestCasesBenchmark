@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:id="@+id/social_share_content" android:background="@color/sk_bg_transparency" android:paddingBottom="@dimen/padding_xlarge" android:layout_width="match_parent" android:layout_height="match_parent">
+    <TextView android:gravity="center_horizontal" android:id="@+id/social_share_title" android:paddingLeft="@dimen/social_share_padding" android:paddingTop="@dimen/padding_large_xlarge" android:paddingRight="@dimen/social_share_padding" android:paddingBottom="@dimen/padding_medium_large" android:layout_width="match_parent" android:layout_height="wrap_content" style="@style/sk_text_title"/>
+    <TextView android:gravity="center_horizontal" android:id="@+id/social_share_message" android:paddingLeft="@dimen/social_share_message_padding" android:paddingRight="@dimen/social_share_message_padding" android:paddingBottom="@dimen/padding_large" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" style="@style/TextLightGrey"/>
+    <FrameLayout android:paddingLeft="@dimen/social_share_padding" android:paddingTop="@dimen/card_margin_padding_fix" android:paddingRight="@dimen/social_share_padding" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <View android:layout_gravity="center_vertical" android:background="#d5d5d5" android:layout_width="match_parent" android:layout_height="1dp"/>
+        <TextView android:textSize="@dimen/social_share_share_with_text" android:textColor="@color/text_mid_grey" android:layout_gravity="center" android:background="@color/sk_bg_white" android:padding="@dimen/fixed_medium" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/share_with_no_ellipsis" android:textAllCaps="true" style="@style/TextDarkGrey.Large"/>
+    </FrameLayout>
+    <FrameLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+        <include layout="@layout/partial_loading"/>
+        <android.support.v7.widget.RecyclerView android:id="@+id/recycler_view" android:background="@android:color/white" android:paddingLeft="@dimen/social_share_grid_padding" android:paddingRight="@dimen/social_share_grid_padding" android:clipToPadding="false" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    </FrameLayout>
+</LinearLayout>

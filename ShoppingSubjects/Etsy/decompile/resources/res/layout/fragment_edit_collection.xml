@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:id="@+id/dialog_scroll" android:scrollbars="none" android:layout_width="match_parent" android:layout_height="match_parent" android:fillViewport="true">
+    <RelativeLayout android:layout_gravity="center_horizontal" android:id="@+id/collection_form" android:background="@color/transparent" android:padding="@dimen/padding_large" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="vertical" android:id="@+id/dialog_card" android:background="@drawable/bg_card_dark" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="@dimen/margin_small">
+            <LinearLayout android:orientation="horizontal" android:id="@+id/dialog_header" android:background="@color/sk_bg_white" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <TextView android:ellipsize="end" android:id="@+id/txt_title" android:padding="@dimen/fixed_large" android:layout_width="0dp" android:layout_height="wrap_content" android:text="@string/collection_edit" android:maxLines="1" android:layout_weight="1" style="@style/sk_text_title"/>
+            </LinearLayout>
+            <View android:id="@+id/divider" android:background="@color/list_divider_dark" android:layout_width="match_parent" android:layout_height="@dimen/divider_height"/>
+            <LinearLayout android:orientation="vertical" android:id="@+id/collection_input" android:background="@color/sk_bg_white" android:padding="@dimen/padding_large" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <TextView android:ellipsize="end" android:gravity="left" android:id="@+id/name_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_small" android:text="@string/collection_name_title" android:maxLines="1" style="@style/EditCollectionModalFieldTextLabel"/>
+                <EditText android:textColorHint="@color/sk_gray_50" android:id="@+id/collection_name" android:paddingBottom="@dimen/padding_medium" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/sk_space_4" android:hint="@string/collection_create_name_hint" android:maxLines="1"/>
+                <TextView android:ellipsize="end" android:gravity="left" android:id="@+id/privacy_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/collection_privacy_title" android:maxLines="1" style="@style/EditCollectionModalFieldTextLabel"/>
+                <RadioGroup android:orientation="vertical" android:id="@+id/privacy_options" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/padding_medium">
+                    <RadioButton android:id="@+id/privacy_option_public" android:layout_width="match_parent" android:layout_height="wrap_content" android:checked="true" android:text="@string/privacy_description_public" style="@style/sk_radiobutton"/>
+                    <RadioButton android:id="@+id/privacy_option_private" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/sk_space_1" android:text="@string/privacy_description_private" style="@style/sk_radiobutton"/>
+                </RadioGroup>
+            </LinearLayout>
+            <Button android:textColor="@color/sk_white" android:id="@+id/button_save" android:background="@drawable/btn_blue_selector_v2" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/margin_large" android:layout_marginRight="@dimen/margin_large" android:layout_marginBottom="@dimen/margin_medium_large" android:text="@string/save" style="@style/sk_text_title"/>
+        </LinearLayout>
+        <LinearLayout android:layout_gravity="center" android:orientation="horizontal" android:id="@+id/delete_button" android:background="@drawable/bg_ten_percent_black_selector" android:padding="@dimen/padding_medium" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_below="@+id/dialog_card" android:layout_centerHorizontal="true">
+            <ImageView android:layout_gravity="center_vertical" android:id="@+id/delete_icon" android:layout_width="@dimen/sk_size_icon" android:layout_height="@dimen/sk_size_icon" android:tint="@color/sk_orange_30" app:srcCompat="@drawable/sk_ic_trash"/>
+            <TextView android:textSize="@dimen/text_large" android:textColor="@color/button_blue" android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/margin_medium" android:text="@string/collection_btn_delete"/>
+        </LinearLayout>
+    </RelativeLayout>
+</ScrollView>

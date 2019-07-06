@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:id="@+id/new_collection_form" android:background="@color/sk_bg_gray" android:padding="@dimen/padding_large" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <ImageView android:id="@+id/listing_icon" android:background="@color/sk_bg_white" android:layout_width="@dimen/listingcollection_thumbnail" android:layout_height="@dimen/listingcollection_thumbnail" android:layout_marginRight="@dimen/margin_medium" android:scaleType="centerCrop"/>
+    <LinearLayout android:orientation="vertical" android:id="@+id/collection_input" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_toRightOf="@+id/listing_icon">
+        <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <EditText android:id="@+id/new_collection_name" android:paddingBottom="@dimen/padding_medium" android:layout_width="0dp" android:layout_height="wrap_content" android:hint="@string/collection_create_name_hint" android:maxLines="1" android:layout_weight="1"/>
+            <Button android:id="@+id/btn_add" android:background="@drawable/list_selector" android:paddingLeft="@dimen/padding_small" android:paddingRight="@dimen/padding_small" android:layout_width="wrap_content" android:layout_height="@dimen/button_height_small" android:minWidth="48dp" android:text="@string/collection_btn_add" android:textAllCaps="true" style="@style/TextBlue.Bold"/>
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.lyft.android.scissors.CropView android:id="@+id/cropped_image" android:layout_width="match_parent" android:layout_height="match_parent" app:cropviewViewportOverlayPadding="@dimen/fixed_large"/>
+    <TextView android:gravity="center" android:id="@+id/crop_help_text" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_xlarge" android:lineSpacingMultiplier="@dimen/line_spacing_multiplier_tight" style="@style/TextGreyWhite.Large"/>
+</FrameLayout>

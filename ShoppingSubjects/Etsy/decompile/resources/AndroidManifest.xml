@@ -1,0 +1,432 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" android:versionCode="50600025" android:versionName="5.6.0" package="com.etsy.android">
+    <uses-sdk android:minSdkVersion="16" android:targetSdkVersion="23"/>
+    <permission android:name="com.etsy.android.permission.C2D_MESSAGE" android:protectionLevel="signature"/>
+    <uses-permission android:name="com.etsy.android.permission.C2D_MESSAGE"/>
+    <meta-data android:name="com.usebutton.applicationid" android:value="app-1afabbaf4599120d"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE"/>
+    <uses-permission android:name="android.permission.GET_ACCOUNTS"/>
+    <uses-permission android:name="android.permission.VIBRATE"/>
+    <uses-permission android:name="android.permission.WAKE_LOCK"/>
+    <uses-permission android:name="android.permission.GET_TASKS"/>
+    <uses-permission android:name="android.permission.USE_CREDENTIALS"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <uses-feature android:name="android.hardware.location.gps" android:required="false"/>
+    <uses-feature android:name="android.hardware.camera" android:required="false"/>
+    <uses-feature android:name="android.hardware.camera.autofocus" android:required="false"/>
+    <uses-feature android:glEsVersion="20000" android:required="true"/>
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"/>
+    <uses-permission android:name="com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE"/>
+    <application android:theme="@style/Theme.Etsy" android:label="@string/app_name" android:icon="@drawable/ic_launcher" android:name="com.etsy.android.BOEApplication" android:allowBackup="false" android:hardwareAccelerated="true" android:supportsRtl="true">
+        <provider android:name="com.etsy.android.contentproviders.EtsyProvider" android:exported="false" android:authorities="com.etsy.android.contentproviders.EtsyProvider"/>
+        <provider android:name="com.etsy.android.contentproviders.EtsyConvoProvider" android:exported="false" android:authorities="com.etsy.android.contentproviders.EtsyConvoProvider"/>
+        <provider android:name="android.support.v4.content.FileProvider" android:exported="false" android:authorities="com.etsy.android.contentproviders.FileProvider" android:grantUriPermissions="true">
+            <meta-data android:name="android.support.FILE_PROVIDER_PATHS" android:resource="@xml/file_provider_paths"/>
+        </provider>
+        <meta-data android:name="com.google.android.gms.version" android:value="@integer/google_play_services_version"/>
+        <meta-data android:name="com.google.android.gms.wallet.api.enabled" android:value="true"/>
+        <meta-data android:name="android.app.searchable" android:resource="@xml/searchable"/>
+        <activity android:theme="@style/Theme.Etsy.Splash" android:label="@string/app_name" android:name="com.etsy.android.ui.homescreen.HomescreenTabsActivity" android:launchMode="singleTop">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <activity android:name="com.etsy.android.ui.homescreen.LandingPageActivity" android:parentActivityName="com.etsy.android.ui.homescreen.HomescreenTabsActivity">
+            <meta-data android:name="android.support.PARENT_ACTIVITY" android:value=".ui.homescreen.HomescreenTabsActivity"/>
+        </activity>
+        <activity android:name="com.etsy.android.ui.shophome.ShopHomeActivity" android:parentActivityName="com.etsy.android.ui.homescreen.HomescreenTabsActivity">
+            <meta-data android:name="android.support.PARENT_ACTIVITY" android:value=".ui.homescreen.HomescreenTabsActivity"/>
+        </activity>
+        <activity android:name="com.etsy.android.ui.homescreen.RecentlyViewedListingsActivity"/>
+        <activity android:name="com.etsy.android.ui.homescreen.ShopSharePageActivity"/>
+        <activity android:name="com.etsy.android.ui.finds.FindsActivity">
+            <meta-data android:name="android.support.PARENT_ACTIVITY" android:value=".ui.homescreen.HomescreenTabsActivity"/>
+        </activity>
+        <activity android:name="com.etsy.android.ui.search.v2.SearchV2Activity" android:launchMode="singleTop" android:windowSoftInputMode="adjustPan" android:parentActivityName="com.etsy.android.ui.homescreen.HomescreenTabsActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.SEARCH"/>
+                <action android:name="android.intent.action.VIEW"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="com.google.android.gms.actions.SEARCH_ACTION"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+            <meta-data android:name="android.app.searchable" android:value=".ui.search.v2.SearchV2Activity" android:resource="@xml/searchable"/>
+            <meta-data android:name="android.support.PARENT_ACTIVITY" android:value=".ui.homescreen.HomescreenTabsActivity"/>
+        </activity>
+        <activity android:theme="@style/Theme.Etsy.FullScreen.BlackBg" android:name="com.etsy.android.ui.core.ShopAboutVideoActivity" android:configChanges="keyboardHidden|orientation|screenSize" android:windowSoftInputMode="adjustPan"/>
+        <activity android:name="com.etsy.android.ui.convos.ConvoBaseActivity" android:launchMode="singleTop"/>
+        <activity android:name="com.etsy.android.ui.convos.ConvoViewActivity" android:launchMode="singleTop" android:windowSoftInputMode="adjustPan" android:parentActivityName="com.etsy.android.ui.convos.ConvoBaseActivity">
+            <meta-data android:name="android.support.PARENT_ACTIVITY" android:value="com.etsy.android.ui.convos.ConvoBaseActivity"/>
+        </activity>
+        <activity android:theme="@style/ConvoTheme" android:name="com.etsy.android.ui.convos.convoredesign.ConvoActivity" android:launchMode="singleTop" android:windowSoftInputMode="stateHidden" android:parentActivityName="com.etsy.android.ui.convos.ConvoBaseActivity"/>
+        <activity android:name="com.etsy.android.ui.convos.convolistredesign.ConvoListActivity" android:launchMode="singleTop"/>
+        <activity android:name="com.etsy.android.ui.convos.ManufacturerProjectActivity" android:launchMode="singleTop" android:parentActivityName="com.etsy.android.ui.convos.ConvoViewActivity">
+            <meta-data android:name="android.support.PARENT_ACTIVITY" android:value="com.etsy.android.ui.convos.ConvoViewActivity"/>
+        </activity>
+        <activity android:name="com.etsy.android.ui.convos.ConvoComposeActivity" android:launchMode="singleTop" android:configChanges="keyboardHidden|orientation|screenSize" android:parentActivityName="com.etsy.android.ui.convos.ConvoBaseActivity">
+            <meta-data android:name="android.support.PARENT_ACTIVITY" android:value="com.etsy.android.ui.convos.ConvoBaseActivity"/>
+        </activity>
+        <activity android:theme="@style/Theme.Etsy.Transparent" android:name="com.etsy.android.ui.convos.ConvoComposeDialogActivity" android:launchMode="singleTop" android:configChanges="keyboardHidden|orientation|screenSize" android:parentActivityName="com.etsy.android.ui.convos.ConvoBaseActivity">
+            <meta-data android:name="android.support.PARENT_ACTIVITY" android:value="com.etsy.android.ui.convos.ConvoBaseActivity"/>
+        </activity>
+        <activity android:name="com.etsy.android.ui.local.LocalSearchActivity" android:parentActivityName="com.etsy.android.ui.homescreen.HomescreenTabsActivity">
+            <meta-data android:name="android.support.PARENT_ACTIVITY" android:value=".ui.homescreen.HomescreenTabsActivity"/>
+        </activity>
+        <activity android:name="com.etsy.android.ui.local.marketdetails.LocalEventActivity" android:parentActivityName="com.etsy.android.ui.local.LocalSearchActivity">
+            <meta-data android:name="android.support.PARENT_ACTIVITY" android:value=".ui.local.LocalSearchActivity"/>
+        </activity>
+        <activity android:name="com.etsy.android.ui.local.marketdetails.LocalDatesAttendingActivity" android:parentActivityName="com.etsy.android.ui.local.marketdetails.LocalEventActivity">
+            <meta-data android:name="android.support.PARENT_ACTIVITY" android:value=".ui.local.marketdetails.LocalEventActivity"/>
+        </activity>
+        <activity android:name="com.etsy.android.ui.local.marketdetails.LocalStoreInfoDetailsActivity" android:parentActivityName="com.etsy.android.ui.local.marketdetails.LocalEventActivity">
+            <meta-data android:name="android.support.PARENT_ACTIVITY" android:value=".ui.local.marketdetails.LocalEventActivity"/>
+        </activity>
+        <activity android:name="com.etsy.android.ui.user.PurchasesActivity" android:launchMode="singleTop" android:parentActivityName="com.etsy.android.ui.user.UserActivity">
+            <meta-data android:name="android.support.PARENT_ACTIVITY" android:value="com.etsy.android.ui.user.UserActivity"/>
+        </activity>
+        <activity android:name="com.etsy.android.ui.user.UserActivity" android:launchMode="singleTop" android:parentActivityName="com.etsy.android.ui.homescreen.HomescreenTabsActivity">
+            <meta-data android:name="android.support.PARENT_ACTIVITY" android:value=".ui.homescreen.HomescreenTabsActivity"/>
+        </activity>
+        <activity android:name="com.etsy.android.ui.CropImageActivity" android:launchMode="singleTop" android:parentActivityName="com.etsy.android.ui.homescreen.HomescreenTabsActivity">
+            <meta-data android:name="android.support.PARENT_ACTIVITY" android:value=".ui.homescreen.HomescreenTabsActivity"/>
+        </activity>
+        <activity android:theme="@style/Theme.Etsy.Transparent" android:name="com.etsy.android.ui.user.SettingsActivity" android:launchMode="singleTop" android:configChanges="keyboardHidden|orientation|screenSize"/>
+        <activity android:name="com.etsy.android.ui.user.LegalInfoActivity"/>
+        <activity android:name="com.etsy.android.ui.user.CurrencySelectionActivity"/>
+        <activity android:name="com.etsy.android.ui.user.NotificationSettingsActivity"/>
+        <activity android:name="com.etsy.android.ui.user.PhabletsActivity"/>
+        <activity android:name="com.etsy.android.ui.ExploreActivity"/>
+        <activity android:theme="@style/Theme.Etsy.Transparent" android:name="com.etsy.android.ui.user.auth.SignInActivity" android:launchMode="singleTop" android:configChanges="orientation|screenSize" android:parentActivityName="com.etsy.android.ui.homescreen.HomescreenTabsActivity">
+            <intent-filter>
+                <data android:scheme="http" android:host="etsyapp.io"/>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+            </intent-filter>
+            <meta-data android:name="android.support.PARENT_ACTIVITY" android:value=".ui.homescreen.HomescreenTabsActivity"/>
+        </activity>
+        <activity android:theme="@style/Theme.Etsy.Transparent" android:name="com.etsy.android.ui.user.auth.ForgotPasswordDialogActivity" android:launchMode="singleTop" android:configChanges="keyboardHidden|orientation|screenSize"/>
+        <activity android:name="com.etsy.android.ui.giftcards.GiftCardCreateActivity" android:launchMode="singleTop"/>
+        <activity android:name="com.etsy.android.ui.cart.CartWithSavedActivity" android:launchMode="singleTop" android:windowSoftInputMode="adjustPan"/>
+        <activity android:theme="@style/Theme.Etsy.Transparent" android:name="com.etsy.android.ui.cart.CartVariationSelectActivity" android:launchMode="singleTop" android:configChanges="keyboardHidden|orientation|screenSize"/>
+        <activity android:name="com.etsy.android.ui.shop.ShopSubActivity" android:windowSoftInputMode="adjustPan" android:parentActivityName="com.etsy.android.ui.core.CoreActivity">
+            <meta-data android:name="android.support.PARENT_ACTIVITY" android:value="com.etsy.android.ui.core.CoreActivity"/>
+        </activity>
+        <activity android:name="com.etsy.android.ui.core.CoreActivity" android:windowSoftInputMode="adjustPan" android:parentActivityName="com.etsy.android.ui.homescreen.HomescreenTabsActivity">
+            <meta-data android:name="android.support.PARENT_ACTIVITY" android:value=".ui.homescreen.HomescreenTabsActivity"/>
+        </activity>
+        <activity android:name="com.etsy.android.ui.favorites.FavoritesActivity" android:launchMode="singleTop"/>
+        <activity android:theme="@style/Theme.Etsy.Transparent" android:name="com.etsy.android.ui.promos.VersionPromoActivity" android:launchMode="singleTop" android:configChanges="keyboardHidden|orientation|screenSize"/>
+        <activity android:theme="@style/Theme.Etsy.Transparent" android:name="com.etsy.android.ui.favorites.ListingCollectionsActivity" android:launchMode="singleTop" android:configChanges="keyboardHidden|orientation|screenSize"/>
+        <activity android:theme="@style/Theme.Etsy.Transparent" android:name="com.etsy.android.ui.favorites.CollectionEditActivity" android:launchMode="singleTop" android:configChanges="keyboardHidden|orientation|screenSize"/>
+        <activity android:name="com.etsy.android.ui.user.CirclesActivity" android:launchMode="singleTop"/>
+        <activity android:theme="@style/Theme.Etsy.FullScreen.BlackBg" android:name="com.etsy.android.ui.core.DetailedImageActivity" android:launchMode="singleTop"/>
+        <activity android:theme="@style/Theme.Etsy.FullScreen.BlackBg" android:name="com.etsy.android.ui.core.ShopAboutDetailedImageActivity" android:launchMode="singleTop"/>
+        <activity android:theme="@style/Theme.Etsy.Transparent" android:name="com.etsy.android.deeplinking.bitly.BitlyActivity" android:finishOnTaskLaunch="true" android:configChanges="keyboardHidden|orientation|screenSize" android:noHistory="true">
+            <intent-filter android:autoVerify="true">
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <action android:name="android.intent.action.VIEW"/>
+                <data android:scheme="http" android:host="etsy.me"/>
+                <data android:scheme="https" android:host="etsy.me"/>
+            </intent-filter>
+        </activity>
+        <activity android:theme="@style/Theme.Etsy.Splash" android:name="com.etsy.android.ui.nav.NotificationActivity" android:finishOnTaskLaunch="true" android:launchMode="singleTask" android:configChanges="keyboardHidden|orientation|screenSize" android:noHistory="true">
+            <intent-filter>
+                <data android:scheme="etsy"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <action android:name="android.intent.action.VIEW"/>
+            </intent-filter>
+            <intent-filter android:autoVerify="true">
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:scheme="https" android:host="etsy.app.link"/>
+                <data android:scheme="https" android:host="etsy-alternate.app.link"/>
+            </intent-filter>
+            <intent-filter android:autoVerify="true">
+                <data android:scheme="http"/>
+                <data android:scheme="https"/>
+                <data android:host="www.etsy.com"/>
+                <data android:pathPattern="/listing/.*"/>
+                <data android:pathPattern="/../listing/.*"/>
+                <data android:pathPattern="/people/.*"/>
+                <data android:pathPattern="/../people/.*"/>
+                <data android:pathPattern="/shop/.*"/>
+                <data android:pathPattern="/../shop/.*"/>
+                <data android:pathPattern="/browse/.*"/>
+                <data android:pathPattern="/../browse/.*"/>
+                <data android:pathPattern="/browse"/>
+                <data android:pathPattern="/../browse"/>
+                <data android:pathPattern="/search"/>
+                <data android:pathPattern="/search/"/>
+                <data android:pathPattern="/search/.*"/>
+                <data android:pathPattern="/../search"/>
+                <data android:pathPattern="/../search/"/>
+                <data android:pathPattern="/../search/.*"/>
+                <data android:pathPattern="/c/.*"/>
+                <data android:pathPattern="/../c/.*"/>
+                <data android:pathPattern="/market/.*"/>
+                <data android:pathPattern="/../market/.*"/>
+                <data android:pathPattern="/local/event/.*"/>
+                <data android:pathPattern="/../local/event/.*"/>
+                <data android:pathPattern="/local"/>
+                <data android:pathPattern="/../local"/>
+                <data android:pathPattern="/local/store/.*"/>
+                <data android:pathPattern="/../local/store/.*"/>
+                <data android:pathPattern="/local-market/.*"/>
+                <data android:pathPattern="/../local-market/.*"/>
+                <data android:pathPattern="/conversations/.*"/>
+                <data android:pathPattern="/../conversations/.*"/>
+                <data android:pathPattern="/conversations"/>
+                <data android:pathPattern="/../conversations"/>
+                <data android:pathPattern="/your/purchases"/>
+                <data android:pathPattern="/../your/purchases"/>
+                <data android:pathPattern="/your/purchases/.*/review/.*"/>
+                <data android:pathPattern="/../your/purchases/.*/review/.*"/>
+                <data android:pathPattern="/your/orders/.*/order_tracking/.*"/>
+                <data android:pathPattern="/../your/orders/.*/order_tracking/.*"/>
+                <data android:pathPattern="/your/purchases/.*"/>
+                <data android:pathPattern="/../your/purchases/.*"/>
+                <data android:pathPattern="/transaction/.*/buyer-photo"/>
+                <data android:pathPattern="/../transaction/.*/buyer-photo"/>
+                <data android:pathPattern="/transaction/.*"/>
+                <data android:pathPattern="/../transaction/.*"/>
+                <data android:pathPattern="/featured"/>
+                <data android:pathPattern="/../featured"/>
+                <data android:pathPattern="/featured/.*"/>
+                <data android:pathPattern="/../featured/.*"/>
+                <data android:pathPattern="/../"/>
+                <data android:pathPattern="/.."/>
+                <data android:path="/"/>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+            </intent-filter>
+            <intent-filter android:autoVerify="true">
+                <action android:name="android.intent.action.VIEW"/>
+                <data android:scheme="https"/>
+                <data android:host="etsy.bttn.io"/>
+                <data android:pathPattern=".*"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+            </intent-filter>
+        </activity>
+        <activity android:name="com.etsy.android.ui.EtsyWebActivity" android:launchMode="singleTop" android:configChanges="keyboardHidden|orientation|screenSize"/>
+        <activity android:theme="@style/Theme.Etsy.Prefs" android:name="com.etsy.android.ui.EtsyPreferenceActivity" android:launchMode="singleTop" android:configChanges="keyboardHidden|orientation|screenSize"/>
+        <activity android:theme="@style/Theme.Etsy.Transparent" android:name="com.etsy.android.ui.user.LeaveFeedbackDialogActivity" android:launchMode="singleTop" android:configChanges="keyboardHidden|orientation|screenSize" android:windowSoftInputMode="adjustResize" android:parentActivityName="com.etsy.android.ui.user.PurchasesActivity">
+            <meta-data android:name="android.support.PARENT_ACTIVITY" android:value="com.etsy.android.ui.user.PurchasesActivity"/>
+        </activity>
+        <activity android:theme="@style/Theme.Etsy.Transparent" android:name="com.etsy.android.ui.user.ShareFeedbackDialogActivity" android:launchMode="singleTop" android:configChanges="keyboardHidden|orientation|screenSize"/>
+        <activity android:name="com.etsy.android.ui.user.LeaveFeedbackActivity" android:launchMode="singleTop" android:windowSoftInputMode="adjustUnspecified|stateHidden|adjustResize" android:parentActivityName="com.etsy.android.ui.user.PurchasesActivity">
+            <meta-data android:name="android.support.PARENT_ACTIVITY" android:value="com.etsy.android.ui.user.PurchasesActivity"/>
+        </activity>
+        <activity android:theme="@style/Theme.Etsy.Transparent" android:name="com.etsy.android.ui.user.ShareDialogActivity" android:launchMode="singleTop" android:configChanges="keyboardHidden|orientation|screenSize"/>
+        <activity android:theme="@style/Theme.Etsy.Transparent" android:name="com.etsy.android.ui.user.SocialShareDialogActivity" android:launchMode="singleTop" android:configChanges="keyboardHidden|orientation|screenSize"/>
+        <activity android:theme="@style/Theme.Etsy.Transparent" android:name="com.etsy.android.ui.dialog.TextInfoActivity" android:launchMode="singleTop" android:configChanges="keyboardHidden|orientation|screenSize"/>
+        <activity android:theme="@style/Theme.Etsy.Transparent" android:name="com.etsy.android.ui.core.SingleListingCheckoutActivity" android:launchMode="singleTop" android:configChanges="keyboardHidden|orientation|screenSize"/>
+        <activity android:theme="@style/Theme.Etsy.DialogActivity" android:name="com.etsy.android.ui.core.EtsyDialogLauncherActivity" android:windowSoftInputMode="adjustResize"/>
+        <activity android:theme="@style/Theme.Etsy.Transparent" android:name="com.etsy.android.ui.core.GiftWrapDescriptionActivity" android:launchMode="singleTop" android:configChanges="keyboardHidden|orientation|screenSize"/>
+        <activity android:name="com.etsy.android.ui.feedback.FeedbackActivity" android:launchMode="singleTop"/>
+        <activity android:name="com.etsy.android.ui.shop.AppreciationPhotoLandingPageActivity" android:launchMode="singleTop" android:parentActivityName="com.etsy.android.ui.homescreen.HomescreenTabsActivity">
+            <meta-data android:name="android.support.PARENT_ACTIVITY" android:value=".ui.homescreen.HomescreenTabsActivity"/>
+        </activity>
+        <activity android:name="com.etsy.android.ui.BOEVespaDemoActivity"/>
+        <service android:name="com.etsy.android.messaging.EtsyGcmListenerService" android:exported="false">
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.RECEIVE"/>
+            </intent-filter>
+        </service>
+        <receiver android:name="com.google.android.gms.gcm.GcmReceiver" android:permission="com.google.android.c2dm.permission.SEND" android:exported="true">
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.RECEIVE"/>
+                <action android:name="com.google.android.c2dm.intent.REGISTRATION"/>
+                <category android:name="com.etsy.android"/>
+            </intent-filter>
+            <intent-filter android:priority="-999">
+                <action android:name="com.google.android.c2dm.intent.RECEIVE"/>
+                <category android:name="com.etsy.android"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:name="com.etsy.android.messaging.MessageOpenedReceiver" android:exported="false">
+            <intent-filter>
+                <action android:name="com.etsy.android.beta.MESSAGE_OPENED"/>
+            </intent-filter>
+        </receiver>
+        <service android:name="com.etsy.android.lib.logger.elk.uploading.ElkLogUploadJobService" android:exported="false">
+            <intent-filter>
+                <action android:name="com.firebase.jobdispatcher.ACTION_EXECUTE"/>
+            </intent-filter>
+        </service>
+        <service android:label="@string/log_service_name" android:icon="@drawable/ic_launcher" android:name="com.etsy.android.lib.logger.legacy.LegacyUploadService" android:enabled="true" android:exported="false"/>
+        <service android:label="@string/analytics_service_name" android:icon="@drawable/ic_launcher" android:name="com.etsy.android.lib.logger.AnalyticsUploadService" android:enabled="true" android:exported="false"/>
+        <meta-data android:name="com.google.android.gms.analytics.globalConfigResource" android:resource="@xml/analytics_global"/>
+        <receiver android:name="com.google.android.gms.analytics.AnalyticsReceiver" android:enabled="true">
+            <intent-filter>
+                <action android:name="com.google.android.gms.analytics.ANALYTICS_DISPATCH"/>
+            </intent-filter>
+        </receiver>
+        <service android:name="com.google.android.gms.analytics.AnalyticsService" android:enabled="true" android:exported="false"/>
+        <meta-data android:name="com.google.android.maps.v2.API_KEY" android:value="AIzaSyDiMb-AqUoRJbm2rlfwMCXoGOSCJwWONFA"/>
+        <meta-data android:name="io.branch.sdk.BranchKey" android:value="@string/branch_api_key"/>
+        <meta-data android:name="io.branch.sdk.BranchKey.test" android:value="@string/branch_api_test_key"/>
+        <meta-data android:name="io.branch.sdk.TestMode" android:value="false"/>
+        <receiver android:name="com.etsy.android.util.InstallReferrerReceiver" android:exported="true">
+            <intent-filter>
+                <action android:name="com.android.vending.INSTALL_REFERRER"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:name="com.etsy.android.lib.core.InstallStateReceiver" android:enabled="true" android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.PACKAGE_ADDED"/>
+                <action android:name="android.intent.action.PACKAGE_REMOVED"/>
+                <data android:scheme="package"/>
+            </intent-filter>
+        </receiver>
+        <activity android:theme="@style/bughunt_theme" android:name="com.etsy.android.uikit.ui.bughunt.BugHuntActivity" android:launchMode="singleTop"/>
+        <service android:name="com.etsy.android.lib.messaging.InstanceIdService" android:exported="false">
+            <intent-filter>
+                <action android:name="com.google.android.gms.iid.InstanceID"/>
+            </intent-filter>
+        </service>
+        <activity android:name="com.etsy.android.uikit.CustomViewDemoActivity"/>
+        <activity android:name="com.etsy.android.lib.toolbar.AdminToolbarActivity" android:exported="false" android:launchMode="singleTop" android:windowSoftInputMode="adjustResize"/>
+        <activity android:name="com.etsy.android.lib.toolbar.AdminToolbarJSONActivity" android:exported="false" android:launchMode="singleTop" android:windowSoftInputMode="adjustResize"/>
+        <service android:name="com.etsy.android.lib.core.posts.EtsyPostService" android:enabled="true" android:exported="false"/>
+        <receiver android:name="com.etsy.android.lib.util.CrossProcessSharedPreferences$Receiver" android:exported="false">
+            <intent-filter>
+                <action android:name="com.etsy.android.crossprocesssharedpref.PUT_STRING"/>
+                <action android:name="com.etsy.android.crossprocesssharedpref.PUT_INT"/>
+                <action android:name="com.etsy.android.crossprocesssharedpref.PUT_LONG"/>
+                <action android:name="com.etsy.android.crossprocesssharedpref.PUT_FLOAT"/>
+                <action android:name="com.etsy.android.crossprocesssharedpref.PUT_BOOLEAN"/>
+                <action android:name="com.etsy.android.crossprocesssharedpref.REMOVE"/>
+            </intent-filter>
+        </receiver>
+        <meta-data android:name="com.facebook.sdk.ApplicationId" android:value="@string/facebook_app_id"/>
+        <activity android:theme="@style/com_facebook_activity_theme" android:label="@string/app_name" android:name="com.facebook.FacebookActivity" android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|screenSize"/>
+        <activity android:name="com.facebook.CustomTabActivity" android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:scheme="@string/fb_login_protocol_scheme"/>
+            </intent-filter>
+        </activity>
+        <service android:name="com.firebase.jobdispatcher.GooglePlayReceiver" android:permission="com.google.android.gms.permission.BIND_NETWORK_TASK_SERVICE" android:exported="true">
+            <intent-filter>
+                <action android:name="com.google.android.gms.gcm.ACTION_TASK_READY"/>
+            </intent-filter>
+        </service>
+        <activity android:name="com.salesforce.marketingcloud.notifications.DefaultUrlPresenter"/>
+        <receiver android:name="com.salesforce.marketingcloud.location.LocationReceiver" android:exported="false"/>
+        <service android:name="com.salesforce.marketingcloud.MCProximityService" android:exported="false"/>
+        <service android:name="com.salesforce.marketingcloud.MCService" android:exported="false"/>
+        <service android:name="com.salesforce.marketingcloud.MCJobService" android:permission="android.permission.BIND_JOB_SERVICE" android:exported="false"/>
+        <receiver android:name="com.salesforce.marketingcloud.MCReceiver" android:enabled="true" android:exported="false">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED"/>
+                <action android:name="android.intent.action.ACTION_SHUTDOWN"/>
+                <action android:name="android.intent.action.MY_PACKAGE_REPLACED"/>
+                <action android:name="android.intent.action.TIMEZONE_CHANGED"/>
+                <action android:name="com.etsy.android.com.salesforce.marketingcloud.WAKE_FOR_ALARM"/>
+            </intent-filter>
+        </receiver>
+        <service android:name="com.salesforce.marketingcloud.messages.push.MCGcmListenerService" android:exported="false">
+            <intent-filter android:priority="-999">
+                <action android:name="com.google.android.c2dm.intent.RECEIVE"/>
+            </intent-filter>
+        </service>
+        <service android:name="com.salesforce.marketingcloud.messages.push.MCInstanceIdListenerService" android:exported="false">
+            <intent-filter android:priority="-999">
+                <action android:name="com.google.android.gms.iid.InstanceID"/>
+            </intent-filter>
+        </service>
+        <provider android:name="com.salesforce.marketingcloud.MCInitContentProvider" android:enabled="true" android:exported="false" android:authorities="com.etsy.android.com.salesforce.marketingcloud.initprovider"/>
+        <provider android:name="androidx.work.impl.WorkManagerInitializer" android:exported="false" android:multiprocess="true" android:authorities="com.etsy.android.workmanager-init"/>
+        <service android:name="androidx.work.impl.background.systemalarm.SystemAlarmService" android:enabled="@bool/enable_system_alarm_service_default" android:exported="false"/>
+        <service android:name="androidx.work.impl.background.systemjob.SystemJobService" android:permission="android.permission.BIND_JOB_SERVICE" android:enabled="@bool/enable_system_job_service_default" android:exported="true"/>
+        <receiver android:name="androidx.work.impl.utils.ForceStopRunnable$BroadcastReceiver" android:enabled="true" android:exported="false"/>
+        <receiver android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryChargingProxy" android:enabled="false">
+            <intent-filter>
+                <action android:name="android.intent.action.ACTION_POWER_CONNECTED"/>
+                <action android:name="android.intent.action.ACTION_POWER_DISCONNECTED"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryNotLowProxy" android:enabled="false">
+            <intent-filter>
+                <action android:name="android.intent.action.BATTERY_OKAY"/>
+                <action android:name="android.intent.action.BATTERY_LOW"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$StorageNotLowProxy" android:enabled="false">
+            <intent-filter>
+                <action android:name="android.intent.action.DEVICE_STORAGE_LOW"/>
+                <action android:name="android.intent.action.DEVICE_STORAGE_OK"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$NetworkStateProxy" android:enabled="false">
+            <intent-filter>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:name="androidx.work.impl.background.systemalarm.RescheduleReceiver" android:enabled="false">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED"/>
+                <action android:name="android.intent.action.TIME_SET"/>
+                <action android:name="android.intent.action.TIMEZONE_CHANGED"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:name="androidx.work.impl.background.systemalarm.ConstraintProxyUpdateReceiver" android:enabled="@bool/enable_system_alarm_service_default" android:exported="false">
+            <intent-filter>
+                <action android:name="androidx.work.impl.background.systemalarm.UpdateProxies"/>
+            </intent-filter>
+        </receiver>
+        <provider android:name="android.arch.lifecycle.ProcessLifecycleOwnerInitializer" android:exported="false" android:multiprocess="true" android:authorities="com.etsy.android.lifecycle-trojan"/>
+        <meta-data android:name="android.support.VERSION" android:value="26.1.0"/>
+        <activity android:theme="@style/Theme.Translucent.NoTitleBar" android:name="com.google.android.gms.auth.api.signin.internal.SignInHubActivity" android:exported="false" android:excludeFromRecents="true"/>
+        <service android:name="com.google.android.gms.auth.api.signin.RevocationBoundService" android:permission="com.google.android.gms.auth.api.signin.permission.REVOCATION_NOTIFICATION" android:exported="true"/>
+        <service android:name="com.google.firebase.components.ComponentDiscoveryService">
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.analytics.connector.internal.AnalyticsConnectorRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.iid.Registrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+        </service>
+        <receiver android:name="com.google.android.gms.measurement.AppMeasurementReceiver" android:enabled="true" android:exported="false"/>
+        <receiver android:name="com.google.android.gms.measurement.AppMeasurementInstallReferrerReceiver" android:permission="android.permission.INSTALL_PACKAGES" android:enabled="true" android:exported="true">
+            <intent-filter>
+                <action android:name="com.android.vending.INSTALL_REFERRER"/>
+            </intent-filter>
+        </receiver>
+        <service android:name="com.google.android.gms.measurement.AppMeasurementService" android:enabled="true" android:exported="false"/>
+        <service android:name="com.google.android.gms.measurement.AppMeasurementJobService" android:permission="android.permission.BIND_JOB_SERVICE" android:enabled="true" android:exported="false"/>
+        <receiver android:name="com.google.firebase.iid.FirebaseInstanceIdReceiver" android:permission="com.google.android.c2dm.permission.SEND" android:exported="true">
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.RECEIVE"/>
+                <category android:name="com.etsy.android"/>
+            </intent-filter>
+        </receiver>
+        <service android:name="com.google.firebase.iid.FirebaseInstanceIdService" android:exported="true">
+            <intent-filter android:priority="-500">
+                <action android:name="com.google.firebase.INSTANCE_ID_EVENT"/>
+            </intent-filter>
+        </service>
+        <activity android:theme="@style/Theme.Translucent.NoTitleBar" android:name="com.google.android.gms.common.api.GoogleApiActivity" android:exported="false"/>
+        <provider android:name="com.google.firebase.provider.FirebaseInitProvider" android:exported="false" android:authorities="com.etsy.android.firebaseinitprovider" android:initOrder="100"/>
+        <activity android:theme="@style/Theme.Translucent" android:name="com.google.android.gms.ads.AdActivity" android:exported="false" android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize"/>
+        <activity android:theme="@style/Theme.Transparent" android:name="rx_activity_result2.HolderActivity" android:configChanges="keyboardHidden|orientation|screenSize"/>
+        <activity android:name="com.facebook.CustomTabMainActivity"/>
+        <provider android:name="com.facebook.marketing.internal.MarketingInitProvider" android:exported="false" android:authorities="com.etsy.android.MarketingInitProvider"/>
+        <provider android:name="com.facebook.internal.FacebookInitProvider" android:exported="false" android:authorities="com.etsy.android.FacebookInitProvider"/>
+        <receiver android:name="com.facebook.CurrentAccessTokenExpirationBroadcastReceiver" android:exported="false">
+            <intent-filter>
+                <action android:name="com.facebook.sdk.ACTION_CURRENT_ACCESS_TOKEN_CHANGED"/>
+            </intent-filter>
+        </receiver>
+    </application>
+</manifest>

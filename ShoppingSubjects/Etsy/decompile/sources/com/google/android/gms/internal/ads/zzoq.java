@@ -1,0 +1,164 @@
+package com.google.android.gms.internal.ads;
+
+import android.os.Bundle;
+import android.support.annotation.Nullable;
+import android.view.View;
+import com.google.android.gms.dynamic.IObjectWrapper;
+import com.google.android.gms.dynamic.ObjectWrapper;
+import java.util.List;
+
+@bu
+public final class zzoq extends zzqp implements alo {
+    private Bundle mExtras;
+    private Object mLock = new Object();
+    private String zzbhw;
+    private List<zzon> zzbhx;
+    private String zzbhy;
+    private String zzbia;
+    @Nullable
+    private zzoj zzbie;
+    @Nullable
+    private zzlo zzbif;
+    @Nullable
+    private View zzbig;
+    @Nullable
+    private IObjectWrapper zzbih;
+    @Nullable
+    private String zzbii;
+    /* access modifiers changed from: private */
+    public alk zzbij;
+    private zzpw zzbil;
+    private String zzbim;
+
+    public zzoq(String str, List<zzon> list, String str2, zzpw zzpw, String str3, String str4, @Nullable zzoj zzoj, Bundle bundle, zzlo zzlo, View view, IObjectWrapper iObjectWrapper, String str5) {
+        this.zzbhw = str;
+        this.zzbhx = list;
+        this.zzbhy = str2;
+        this.zzbil = zzpw;
+        this.zzbia = str3;
+        this.zzbim = str4;
+        this.zzbie = zzoj;
+        this.mExtras = bundle;
+        this.zzbif = zzlo;
+        this.zzbig = view;
+        this.zzbih = iObjectWrapper;
+        this.zzbii = str5;
+    }
+
+    public final void destroy() {
+        hd.a.post(new ale(this));
+        this.zzbhw = null;
+        this.zzbhx = null;
+        this.zzbhy = null;
+        this.zzbil = null;
+        this.zzbia = null;
+        this.zzbim = null;
+        this.zzbie = null;
+        this.mExtras = null;
+        this.mLock = null;
+        this.zzbif = null;
+        this.zzbig = null;
+    }
+
+    public final String getAdvertiser() {
+        return this.zzbim;
+    }
+
+    public final String getBody() {
+        return this.zzbhy;
+    }
+
+    public final String getCallToAction() {
+        return this.zzbia;
+    }
+
+    public final String getCustomTemplateId() {
+        return "";
+    }
+
+    public final Bundle getExtras() {
+        return this.mExtras;
+    }
+
+    public final String getHeadline() {
+        return this.zzbhw;
+    }
+
+    public final List getImages() {
+        return this.zzbhx;
+    }
+
+    @Nullable
+    public final String getMediationAdapterClassName() {
+        return this.zzbii;
+    }
+
+    public final zzlo getVideoController() {
+        return this.zzbif;
+    }
+
+    public final void performClick(Bundle bundle) {
+        synchronized (this.mLock) {
+            if (this.zzbij == null) {
+                gv.c("#001 Attempt to perform click before app native ad initialized.");
+            } else {
+                this.zzbij.b(bundle);
+            }
+        }
+    }
+
+    public final boolean recordImpression(Bundle bundle) {
+        synchronized (this.mLock) {
+            if (this.zzbij == null) {
+                gv.c("#002 Attempt to record impression before native ad initialized.");
+                return false;
+            }
+            boolean a = this.zzbij.a(bundle);
+            return a;
+        }
+    }
+
+    public final void reportTouchEvent(Bundle bundle) {
+        synchronized (this.mLock) {
+            if (this.zzbij == null) {
+                gv.c("#003 Attempt to report touch event before native ad initialized.");
+            } else {
+                this.zzbij.c(bundle);
+            }
+        }
+    }
+
+    public final void zzb(alk alk) {
+        synchronized (this.mLock) {
+            this.zzbij = alk;
+        }
+    }
+
+    public final IObjectWrapper zzka() {
+        return ObjectWrapper.wrap(this.zzbij);
+    }
+
+    public final String zzkb() {
+        return "1";
+    }
+
+    public final zzoj zzkc() {
+        return this.zzbie;
+    }
+
+    public final View zzkd() {
+        return this.zzbig;
+    }
+
+    public final IObjectWrapper zzke() {
+        return this.zzbih;
+    }
+
+    public final zzps zzkf() {
+        return this.zzbie;
+    }
+
+    public final zzpw zzkg() {
+        return this.zzbil;
+    }
+}

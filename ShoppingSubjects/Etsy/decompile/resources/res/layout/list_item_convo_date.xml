@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:textSize="@dimen/sk_text_body_smaller" android:textColor="@color/sk_gray_40" android:gravity="center" android:id="@+id/date" android:paddingTop="@dimen/sk_space_4" android:paddingBottom="@dimen/sk_space_2" android:layout_width="match_parent" android:layout_height="wrap_content"/>

@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/margin_medium_large">
+    <ImageView android:layout_gravity="center" android:id="@+id/appreciation_photo" android:layout_width="@dimen/share_feedback_photo_width" android:layout_height="@dimen/share_feedback_photo_height" android:contentDescription="@string/appreciation_photo_content_description"/>
+</FrameLayout>

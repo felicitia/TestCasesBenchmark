@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="abc_action_bar_default_height_material">48dp</dimen>
+    <dimen name="abc_action_bar_progress_bar_size">32dp</dimen>
+    <dimen name="abc_text_size_subtitle_material_toolbar">12dp</dimen>
+    <dimen name="abc_text_size_title_material_toolbar">14dp</dimen>
+    <dimen name="cart_html_text_margin">@dimen/margin_large_xlarge</dimen>
+    <dimen name="etsy_asap_padding_left">20dp</dimen>
+    <dimen name="etsy_asap_padding_right">20dp</dimen>
+    <dimen name="listing_country_width">240dp</dimen>
+    <dimen name="new_search_filter_sheet_centered_margin">32dp</dimen>
+    <dimen name="new_search_filter_sheet_top_margin">75dp</dimen>
+    <dimen name="shop2_home_announcement_padding">0dp</dimen>
+    <dimen name="shop2_search_card_conditional_space">0dp</dimen>
+    <dimen name="toolbar_height">56dp</dimen>
+</resources>

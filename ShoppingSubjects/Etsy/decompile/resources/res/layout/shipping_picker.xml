@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:background="@color/sk_bg_white" android:paddingLeft="@dimen/margin_large" android:paddingRight="@dimen/margin_large" android:paddingBottom="@dimen/fixed_large" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <com.etsy.android.iconsy.views.IconView android:id="@+id/estimate_delete" android:padding="@dimen/fixed_large" android:layout_width="@dimen/fixed_xxlarge" android:layout_height="@dimen/fixed_xxlarge" android:layout_alignParentTop="true" android:layout_alignParentRight="true" app:gravity="center" app:hasSelector="true" app:iconChar="@+id/ic_standard_delete" app:iconColor="@color/light_grey"/>
+    <com.etsy.android.uikit.view.ShippingPicker android:id="@+id/shipping_picker" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/fixed_large" android:layout_toLeftOf="@+id/estimate_delete"/>
+    <View android:background="@color/lighter_grey" android:layout_width="match_parent" android:layout_height="@dimen/divider_height" android:layout_below="@+id/shipping_picker"/>
+</RelativeLayout>

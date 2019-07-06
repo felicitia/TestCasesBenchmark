@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:background="@color/sk_bg_gray" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <RelativeLayout android:id="@+id/new_collection_prompt" android:background="@drawable/bg_ten_percent_black_selector" android:padding="@dimen/collection_row_padding" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <ImageView android:id="@+id/plus_icon" android:background="@color/sk_bg_white" android:padding="14dp" android:layout_width="@dimen/listingcollection_thumbnail" android:layout_height="@dimen/listingcollection_thumbnail" android:layout_marginRight="@dimen/margin_medium" android:tint="@color/sk_orange_30" android:layout_centerVertical="true" app:srcCompat="@drawable/sk_ic_add"/>
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/collection_create_new" android:layout_toRightOf="@+id/plus_icon" android:layout_centerVertical="true" style="@style/TextGrey.Large"/>
+    </RelativeLayout>
+</FrameLayout>

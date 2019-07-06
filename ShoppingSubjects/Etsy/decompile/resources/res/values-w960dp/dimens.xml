@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="cart_inner_padding">@dimen/padding_medium</dimen>
+    <dimen name="cart_inner_padding_adj">12dp</dimen>
+    <dimen name="cart_listing_image_buffer">@dimen/padding_medium</dimen>
+    <dimen name="cart_outer_padding">@dimen/padding_small</dimen>
+    <dimen name="cart_outer_top_padding">0dp</dimen>
+    <dimen name="grid_horizontal_padding">24dp</dimen>
+    <dimen name="list_horizontal_card_padding">52dp</dimen>
+    <dimen name="list_horizontal_padding">56dp</dimen>
+    <dimen name="listing_page_variation_title_max_width">160dp</dimen>
+    <dimen name="listview_extra_padding">32dp</dimen>
+    <dimen name="local_browse_header_panel_side_margin">240dp</dimen>
+    <dimen name="local_browse_list_side_padding">16dp</dimen>
+    <dimen name="share_details_width">420dp</dimen>
+    <dimen name="share_listing_card_width">275dp</dimen>
+    <dimen name="shop_share_card_landing_margin_vertical">24dp</dimen>
+</resources>

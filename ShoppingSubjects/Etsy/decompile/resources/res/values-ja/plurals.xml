@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="bulk_edit_activate_success">
+        <item quantity="other">%s 個の商品を有効にしました</item>
+    </plurals>
+    <plurals name="bulk_edit_activate_text_no_fee">
+        <item quantity="other">これらの商品を出品休止から公開に切り替え、ショップで購入可能にします。</item>
+    </plurals>
+    <plurals name="bulk_edit_activate_text_partial_fee">
+        <item quantity="other">%d 個の商品を更新します。出品休止中に期限切れとなった商品は、再出品する前に更新する必要があります。</item>
+    </plurals>
+    <plurals name="bulk_edit_activate_title">
+        <item quantity="other">%s 個の商品を有効にする</item>
+    </plurals>
+    <plurals name="bulk_edit_deactivate_success">
+        <item quantity="other">%s 個の商品を無効にしました</item>
+    </plurals>
+    <plurals name="bulk_edit_deactivate_title">
+        <item quantity="other">%s 個の商品を無効にする</item>
+    </plurals>
+    <plurals name="bulk_edit_delete_success">
+        <item quantity="other">%s 個の商品の削除に成功しました</item>
+    </plurals>
+    <plurals name="bulk_edit_delete_title">
+        <item quantity="other">%s 個の商品を削除する</item>
+    </plurals>
+    <plurals name="bulk_edit_publish_title">
+        <item quantity="other">%s 個の商品を公開する</item>
+    </plurals>
+    <plurals name="bulk_edit_renew_success">
+        <item quantity="other">%s 個の商品の更新に成功しました</item>
+    </plurals>
+    <plurals name="bulk_edit_renew_title">
+        <item quantity="other">%s 個の商品を更新する</item>
+    </plurals>
+    <plurals name="bulk_edit_title">
+        <item quantity="other">%s 個の商品を編集</item>
+    </plurals>
+    <plurals name="convo_messages_show_collapsed">
+        <item quantity="other">あと %d 通のメッセージを表示</item>
+    </plurals>
+    <plurals name="days_count">
+        <item quantity="other">%s 日</item>
+    </plurals>
+    <plurals name="etsy_shops_attending">
+        <item quantity="other">%s 人の Etsy セラーが参加予定</item>
+    </plurals>
+    <plurals name="etsy_shops_have_attended">
+        <item quantity="other">%s 人の Etsy セラーが参加済</item>
+    </plurals>
+    <plurals name="favorite_counts">
+        <item quantity="other">お気に入り %d 件</item>
+    </plurals>
+    <plurals name="follower_counts">
+        <item quantity="other">%s 人のフォロワー</item>
+    </plurals>
+    <plurals name="followers">
+        <item quantity="other">フォロワー：</item>
+    </plurals>
+    <plurals name="ipp_processing_in_person_sales">
+        <item quantity="other">%d 件の対面販売を処理中</item>
+    </plurals>
+    <plurals name="item_lowercase_quantity">
+        <item quantity="other">%s 個の商品が見つかりました</item>
+    </plurals>
+    <plurals name="item_titlecase_quantity">
+        <item quantity="other">%s 個の商品</item>
+    </plurals>
+    <plurals name="local_browse_results_summary">
+        <item quantity="other">このエリアには %s 件のイベントおよびストアがあります</item>
+    </plurals>
+    <plurals name="local_favorite_shops_attending">
+        <item quantity="other">%s 件のお気に入りの Etsy ショップが参加予定です</item>
+    </plurals>
+    <plurals name="local_favorite_shops_banner">
+        <item quantity="other">あなたの %s 件のお気に入りのショップがこちらで販売中です。</item>
+    </plurals>
+    <plurals name="local_other_shops_attending">
+        <item quantity="other">%s 件の他の Etsy ショップが参加予定です</item>
+    </plurals>
+    <plurals name="meet_the_owners_of">
+        <item quantity="other">%s のオーナーです</item>
+    </plurals>
+    <plurals name="n_items_available">
+        <item quantity="other">%d avaiilable</item>
+    </plurals>
+    <plurals name="num_stars">
+        <item quantity="other">星 %s 個</item>
+    </plurals>
+    <plurals name="orders_count">
+        <item quantity="other">%s 件の注文</item>
+    </plurals>
+    <plurals name="recently_featured_etsy_sellers">
+        <item quantity="other">%s 人の Etsy セラーが最近参加</item>
+    </plurals>
+    <plurals name="refavorite_counts">
+        <item quantity="other">再お気に入り %d 件</item>
+    </plurals>
+    <plurals name="review_counts">
+        <item quantity="other">%d 件のレビュー</item>
+    </plurals>
+    <plurals name="shipping_delivery_notification_big_title">
+        <item quantity="other">%s 個の商品の配達を完了しました</item>
+    </plurals>
+    <plurals name="shipping_processing_days">
+        <item quantity="other">%s 営業日</item>
+    </plurals>
+    <plurals name="sold_order_subject_item_different_plural">
+        <item quantity="other">%d 個の商品をあなたから購入</item>
+    </plurals>
+    <plurals name="structured_refunds_day_options">
+        <item quantity="other">%s 日間（購入後）</item>
+    </plurals>
+    <plurals name="structured_refunds_days">
+        <item quantity="other">%s 日間（配達後）</item>
+    </plurals>
+    <plurals name="structured_refunds_days_of_purchase">
+        <item quantity="other">%s 日間（購入後）</item>
+    </plurals>
+    <plurals name="structured_refunds_hour_options">
+        <item quantity="other">%s 時間（購入後）</item>
+    </plurals>
+    <plurals name="structured_refunds_hours_of_purchase">
+        <item quantity="other">%s 時間（購入後）</item>
+    </plurals>
+    <plurals name="variation_summary">
+        <item quantity="other">%1$s (%2$d オプション)</item>
+    </plurals>
+    <plurals name="weeks_count">
+        <item quantity="other">%s 週</item>
+    </plurals>
+</resources>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="match_parent" android:layout_height="wrap_content" style="@style/EtsyFindsCardViewStyle">
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <com.etsy.android.uikit.view.FullImageView android:id="@+id/banner_image" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/neg_finds_margin" android:layout_marginRight="@dimen/neg_finds_margin" app:imageAspect="0.28"/>
+        <TextView android:gravity="center_horizontal" android:layout_gravity="center_horizontal" android:id="@+id/title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/margin_large" android:layout_marginTop="@dimen/margin_large" android:layout_marginRight="@dimen/margin_large" android:layout_marginBottom="@dimen/margin_medium" style="@style/sk_text_body"/>
+        <TextView android:gravity="center_horizontal" android:layout_gravity="center_horizontal" android:id="@+id/subtitle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/margin_large" android:layout_marginRight="@dimen/margin_large" android:layout_marginBottom="@dimen/margin_large" style="@style/TextGrey.Large"/>
+        <TextView android:gravity="center_horizontal" android:layout_gravity="center_horizontal" android:id="@+id/cta" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/margin_large" style="@style/TextBlue.Large.Bold"/>
+    </LinearLayout>
+</android.support.v7.widget.CardView>

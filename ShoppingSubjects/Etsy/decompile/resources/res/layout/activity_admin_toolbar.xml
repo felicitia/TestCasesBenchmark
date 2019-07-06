@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="vertical" android:padding="@dimen/padding_medium_large" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/admin_toolbar_fragment_title" style="@style/TextGrey"/>
+        <TextView android:id="@+id/fragment" android:layout_width="match_parent" android:layout_height="wrap_content" android:textIsSelectable="true" style="@style/TextBlack.Large"/>
+        <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_medium" android:text="@string/admin_toolbar_activity_title" style="@style/TextGrey"/>
+        <TextView android:id="@+id/activity" android:layout_width="match_parent" android:layout_height="wrap_content" android:textIsSelectable="true" style="@style/TextBlack.Large"/>
+        <TextView android:id="@+id/web_url" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_medium" style="@style/TextGrey"/>
+        <TextView android:id="@+id/analytics_title" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_medium" style="@style/TextGrey"/>
+        <TextView android:id="@+id/analytics" android:layout_width="match_parent" android:layout_height="wrap_content" android:textIsSelectable="true" style="@style/TextBlack.Large"/>
+        <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/admin_toolbar_ab_tests_title" style="@style/TextGrey"/>
+        <TextView android:id="@+id/ab_tests" android:layout_width="match_parent" android:layout_height="wrap_content" android:textIsSelectable="true" style="@style/TextBlack.Large"/>
+        <TextView android:id="@+id/responses_title" android:layout_width="match_parent" android:layout_height="wrap_content" style="@style/TextGrey"/>
+        <LinearLayout android:orientation="vertical" android:id="@+id/responses_layout" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/margin_xlarge"/>
+        <TextView android:id="@+id/requests_title" android:layout_width="match_parent" android:layout_height="wrap_content" style="@style/TextGrey"/>
+        <TextView android:id="@+id/requests" android:layout_width="match_parent" android:layout_height="wrap_content" style="@style/TextBlack.Large"/>
+    </LinearLayout>
+</ScrollView>

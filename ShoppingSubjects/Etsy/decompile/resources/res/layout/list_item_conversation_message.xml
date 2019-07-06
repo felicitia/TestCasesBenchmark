@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="match_parent" android:layout_height="wrap_content" style="@style/ConvoCard">
+    <FrameLayout android:gravity="top|center_vertical|center_horizontal|center" android:id="@+id/convo_user_img_frame" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_marginRight="@dimen/padding_medium" android:layout_alignParentLeft="true">
+        <com.etsy.android.uikit.view.ClickableImageView android:id="@+id/convo_user_img" style="@style/Avatar.Convos"/>
+    </FrameLayout>
+    <TextView android:id="@+id/convo_time_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentTop="true" android:layout_alignParentRight="true" style="@style/convo_text_time"/>
+    <TextView android:id="@+id/convo_user_name_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toLeftOf="@+id/convo_time_text" android:layout_toRightOf="@+id/convo_user_img_frame" android:layout_alignTop="@+id/convo_user_img_frame" android:textIsSelectable="true" style="@style/convo_text_sender"/>
+    <LinearLayout android:orientation="vertical" android:id="@+id/convo_user_msg_text_layout" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_toRightOf="@+id/convo_user_img_frame" android:layout_below="@+id/convo_user_name_text">
+        <TextView android:id="@+id/convo_user_msg_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:lineSpacingExtra="@dimen/padding_tiny" android:textIsSelectable="true" style="@style/TextDarkGrey"/>
+        <com.etsy.android.uikit.view.MachineTranslationOneClickView android:id="@+id/machine_translation_one_click" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_tiny" app:textSize="@dimen/text_medium"/>
+    </LinearLayout>
+    <com.etsy.android.uikit.view.AttachmentThumbnailsView android:orientation="horizontal" android:id="@+id/linear_convo_images" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_medium" android:layout_toRightOf="@+id/convo_user_img_frame" android:layout_below="@+id/convo_user_msg_text_layout"/>
+</RelativeLayout>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="horizontal" android:paddingTop="@dimen/sk_space_4" android:paddingBottom="@dimen/sk_space_4" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <FrameLayout android:background="@drawable/bg_qualtrics_circle" android:layout_width="@dimen/qualtrics_prompt_note_ic_bg_size" android:layout_height="@dimen/qualtrics_prompt_note_ic_bg_size" android:layout_marginLeft="@dimen/sk_space_4" android:layout_weight="0" android:layout_marginStart="@dimen/sk_space_4">
+        <ImageView android:layout_gravity="center" android:layout_width="@dimen/sk_size_icon" android:layout_height="@dimen/sk_size_icon" android:tint="@color/sk_orange_30" android:foregroundGravity="center" app:srcCompat="@drawable/sk_ic_notification"/>
+    </FrameLayout>
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/sk_space_4" android:layout_marginRight="@dimen/sk_space_4" android:layout_weight="1">
+        <TextView android:id="@+id/prompt_title" android:paddingTop="@dimen/sk_space_2" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/qualtrics_survey_prompt_title" style="@style/sk_text_body"/>
+        <com.etsy.android.stylekit.EtsyButton android:id="@+id/prompt_action" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="@dimen/sk_space_4" android:text="@string/qualtrics_survey_prompt_action" app:theme="@style/QualtricsTheme" style="@style/sk_btn_primary_alt"/>
+    </LinearLayout>
+    <FrameLayout android:layout_gravity="top|right|center_vertical|center_horizontal|center|end" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/sk_space_4" android:layout_marginEnd="@dimen/sk_space_4">
+        <ImageButton android:id="@+id/close_button" android:background="@drawable/sk_unbounded_selector" android:layout_width="@dimen/sk_size_icon" android:layout_height="@dimen/sk_size_icon" android:tint="@color/sk_gray_50" app:srcCompat="@drawable/sk_ic_close"/>
+    </FrameLayout>
+</merge>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="horizontal" android:paddingLeft="@dimen/local_market_details_card_internal_side_padding" android:paddingTop="@dimen/padding_large" android:paddingRight="@dimen/local_market_details_card_internal_side_padding" android:paddingBottom="@dimen/padding_large" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="vertical" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1">
+        <TextView android:id="@+id/title" android:layout_width="match_parent" android:layout_height="wrap_content" android:lineSpacingMultiplier="1.3" style="@style/sk_text_headline_smaller"/>
+        <TextView android:id="@+id/type_time_text" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_medium" style="@style/sk_text_title"/>
+    </LinearLayout>
+    <Button android:id="@+id/calendar_button" android:paddingLeft="@dimen/padding_large" android:paddingRight="@dimen/padding_large" android:layout_width="wrap_content" android:layout_height="@dimen/button_height_small" android:text="@string/add_to_calendar" style="@style/ButtonBlueV2"/>
+</LinearLayout>

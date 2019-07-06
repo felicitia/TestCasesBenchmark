@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:id="@+id/share_layout" android:layout_width="match_parent" android:layout_height="match_parent">
+    <include layout="@layout/partial_loading"/>
+    <android.support.v7.widget.RecyclerView android:id="@+id/recycler_view" android:background="@color/sk_bg_transparency" android:scrollbars="vertical" android:clipToPadding="false" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1"/>
+    <FrameLayout android:id="@+id/valid_border" android:background="@drawable/list_divider_dark" android:layout_width="match_parent" android:layout_height="1dp"/>
+    <Button android:id="@+id/button_cancel" android:background="@drawable/bg_unbounded_selector" android:layout_width="match_parent" android:layout_height="48dp" android:text="@string/cancel" style="@style/TextDarkGrey.Bold"/>
+</LinearLayout>

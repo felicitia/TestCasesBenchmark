@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="ap_landing_page_photo_height">320dp</dimen>
+    <dimen name="convo_card_padding">@dimen/padding_large</dimen>
+    <dimen name="shop_share_caption_padding_vertical">16dp</dimen>
+</resources>

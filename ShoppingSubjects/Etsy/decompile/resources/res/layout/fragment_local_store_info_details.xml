@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="?attr/actionBarSize">
+        <ImageView android:id="@+id/close_button" android:layout_width="?attr/actionBarSize" android:layout_height="@dimen/sk_size_icon" android:tint="@color/sk_gray_70" app:srcCompat="@drawable/sk_ic_close" style="@style/LocalCloseIcon"/>
+        <TextView android:textAppearance="@style/sk_text_headline" android:ellipsize="end" android:id="@+id/store_name" android:layout_width="match_parent" android:layout_height="wrap_content" android:maxLines="1"/>
+    </LinearLayout>
+    <ScrollView android:layout_width="match_parent" android:layout_height="match_parent" android:fillViewport="true">
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <TableLayout android:background="@color/sk_bg_white" android:paddingRight="@dimen/padding_large" android:layout_width="match_parent" android:layout_height="wrap_content" android:divider="@drawable/local_padded_icon_list_divider" android:shrinkColumns="2" android:showDividers="middle">
+                <TableRow android:id="@+id/location_row" android:background="@drawable/bg_ten_percent_black_selector" android:paddingTop="@dimen/padding_medium_large" android:paddingBottom="@dimen/padding_medium_large" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <ImageView android:layout_width="?attr/actionBarSize" android:layout_height="@dimen/sk_size_icon" android:tint="@color/sk_gray_50" android:layout_column="1" app:srcCompat="@drawable/sk_ic_location"/>
+                    <TextView android:id="@+id/location" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_column="2" style="@style/LocalMarketStoreInfoDetailsTableRowValue"/>
+                </TableRow>
+                <TableRow android:id="@+id/phone_row" android:background="@drawable/bg_ten_percent_black_selector" android:paddingTop="@dimen/padding_medium_large" android:paddingBottom="@dimen/padding_medium_large" android:layout_width="?attr/actionBarSize" android:layout_height="wrap_content">
+                    <com.etsy.android.iconsy.views.IconView android:layout_width="@dimen/local_header_icon_col_width" android:layout_height="@dimen/sk_size_icon" android:layout_column="1" app:gravity="center" app:iconChar="@+id/ic_standard_cell" app:iconColor="@color/sk_gray_50"/>
+                    <TextView android:id="@+id/phone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_column="2" style="@style/LocalMarketStoreInfoDetailsTableRowValue"/>
+                </TableRow>
+                <TableRow android:orientation="vertical" android:id="@+id/website_row" android:background="@drawable/bg_ten_percent_black_selector" android:paddingTop="@dimen/padding_medium_large" android:paddingBottom="@dimen/padding_medium_large" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <ImageView android:layout_width="?attr/actionBarSize" android:layout_height="@dimen/sk_size_icon" android:tint="@color/sk_gray_50" android:layout_column="1" app:srcCompat="@drawable/sk_ic_link"/>
+                    <TextView android:id="@+id/website" android:layout_width="match_parent" android:layout_height="wrap_content" style="@style/LocalMarketStoreInfoDetailsTableRowValue"/>
+                </TableRow>
+            </TableLayout>
+            <TableLayout android:orientation="vertical" android:id="@+id/hours_layout" android:background="@color/sk_bg_white" android:paddingRight="@dimen/padding_large" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_xlarge" android:divider="@drawable/local_padded_icon_list_divider" android:stretchColumns="2" android:shrinkColumns="3" android:showDividers="middle">
+                <TableRow android:paddingTop="@dimen/padding_large_xlarge" android:paddingBottom="@dimen/padding_large_xlarge">
+                    <ImageView android:layout_width="?attr/actionBarSize" android:layout_height="@dimen/sk_size_icon" android:tint="@color/sk_gray_50" android:layout_column="1" app:srcCompat="@drawable/sk_ic_clock"/>
+                    <TextView android:layout_column="2" android:text="@string/hours_title" android:textAllCaps="true" style="@style/LocalMarketStoreInfoDetailsTableRowValue"/>
+                </TableRow>
+            </TableLayout>
+            <LinearLayout android:orientation="horizontal" android:id="@+id/description_row" android:background="@color/sk_bg_white" android:paddingTop="@dimen/padding_large" android:paddingRight="@dimen/padding_large" android:paddingBottom="@dimen/padding_large" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_xlarge">
+                <ImageView android:layout_width="?attr/actionBarSize" android:layout_height="@dimen/sk_size_icon" android:tint="@color/sk_gray_50" app:srcCompat="@drawable/sk_ic_info"/>
+                <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/margin_large" android:text="@string/about" android:textAllCaps="true" style="@style/sk_text_category_label"/>
+                    <TextView android:id="@+id/description" android:layout_width="wrap_content" android:layout_height="wrap_content" android:lineSpacingMultiplier="@dimen/line_spacing_multiplier_tight" style="@style/LocalMarketStoreInfoDetailsTableRowValue"/>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

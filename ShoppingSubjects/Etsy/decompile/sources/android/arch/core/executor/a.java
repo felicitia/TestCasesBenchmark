@@ -1,0 +1,23 @@
+package android.arch.core.executor;
+
+import android.support.annotation.NonNull;
+import android.support.annotation.RestrictTo;
+import android.support.annotation.RestrictTo.Scope;
+
+@RestrictTo({Scope.LIBRARY_GROUP})
+/* compiled from: TaskExecutor */
+public abstract class a {
+    public abstract void executeOnDiskIO(@NonNull Runnable runnable);
+
+    public abstract boolean isMainThread();
+
+    public abstract void postToMainThread(@NonNull Runnable runnable);
+
+    public void executeOnMainThread(@NonNull Runnable runnable) {
+        if (isMainThread()) {
+            runnable.run();
+        } else {
+            postToMainThread(runnable);
+        }
+    }
+}

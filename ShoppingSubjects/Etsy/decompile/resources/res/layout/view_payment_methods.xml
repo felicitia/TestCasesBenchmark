@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt">
+    <LinearLayout android:orientation="horizontal" android:id="@+id/icons_credit_cards" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <ImageView android:id="@+id/icon_visa" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/fixed_small" android:src="@drawable/cc_visa" android:scaleType="center" android:contentDescription="@string/credit_card_name_visa"/>
+        <ImageView android:id="@+id/icon_mastercard" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/fixed_small" android:src="@drawable/cc_mastercard" android:scaleType="center" android:contentDescription="@string/credit_card_name_mastercard"/>
+        <ImageView android:id="@+id/icon_amex" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/fixed_small" android:src="@drawable/cc_amex" android:scaleType="center" android:contentDescription="@string/credit_card_name_amex"/>
+        <ImageView android:id="@+id/icon_discover" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/cc_discover" android:scaleType="center" android:contentDescription="@string/credit_card_name_discover"/>
+    </LinearLayout>
+    <ImageView android:id="@+id/icon_paypal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/cc_paypal" android:scaleType="center" android:contentDescription="@string/payment_method_label_paypal"/>
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@+id/section_giftcards" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <ImageView android:id="@+id/icon_giftcard" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/fixed_small" android:src="@drawable/cc_gift_card" android:scaleType="center" android:contentDescription="@string/payment_method_label_gift_card"/>
+        <TextView android:id="@+id/label_giftcards" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/etsy_gift_cards" style="@style/TextLightGrey.XSmall"/>
+    </LinearLayout>
+</merge>

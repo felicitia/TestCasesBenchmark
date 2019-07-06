@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:divider="@drawable/list_divider" android:showDividers="middle">
+    <include layout="@layout/local_market_header_tablet_title"/>
+    <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="vertical" android:padding="@dimen/margin_large" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1">
+            <TextView android:id="@+id/about_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="false" style="@style/CardSectionTitle"/>
+            <FrameLayout android:id="@+id/team_row" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <TextView android:id="@+id/team" android:layout_width="match_parent" android:layout_height="wrap_content" style="@style/TextMidGrey"/>
+            </FrameLayout>
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:paddingBottom="@dimen/padding_medium" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="@integer/local_market_attendee_columns_minus_one">
+            <include layout="@layout/local_market_header_tablet_details"/>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

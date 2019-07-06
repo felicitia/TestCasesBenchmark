@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" style="@style/Convo2.Card">
+    <ImageView android:layout_gravity="top" android:id="@+id/sender_avatar" android:layout_width="@dimen/conversation_avatar" android:layout_height="@dimen/conversation_avatar" android:layout_marginRight="@dimen/margin_medium" android:contentDescription="@string/user_avatar_content_description" android:layout_marginEnd="@dimen/margin_medium"/>
+    <LinearLayout android:layout_gravity="top" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <TextView android:id="@+id/sender_name" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/convo_text_sender"/>
+            <TextView android:gravity="end" android:id="@+id/message_create_date" android:layout_width="match_parent" android:layout_height="wrap_content" style="@style/convo_text_date"/>
+        </LinearLayout>
+        <TextView android:id="@+id/sender_message" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_small" style="@style/convo_text_snippet"/>
+        <com.etsy.android.uikit.view.AttachmentThumbnailsView android:orientation="horizontal" android:id="@+id/linear_convo_images" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_medium"/>
+    </LinearLayout>
+</LinearLayout>

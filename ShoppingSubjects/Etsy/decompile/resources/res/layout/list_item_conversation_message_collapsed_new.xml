@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" style="@style/ConvoCard.ClickState.New">
+    <TextView android:gravity="center_horizontal" android:id="@+id/convo_msg_count" android:layout_width="match_parent" android:layout_height="wrap_content" style="@style/TextBlue.Bold"/>
+</LinearLayout>

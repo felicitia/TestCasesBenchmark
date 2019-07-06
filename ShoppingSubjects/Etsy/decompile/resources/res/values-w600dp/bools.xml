@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <bool name="cart_show_totals_border">true</bool>
+    <bool name="width_600">true</bool>
+</resources>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt">
+    <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <TextView android:id="@+id/search_filters_header_text" android:padding="@dimen/fixed_large" android:layout_width="0dp" android:layout_height="wrap_content" android:text="@string/new_search_filter_filters" android:layout_weight="1" style="@style/sk_text_title"/>
+        <TextView android:id="@+id/search_filters_clear_all" android:background="@drawable/bg_ten_percent_black_selector" android:padding="@dimen/fixed_large" android:visibility="invisible" android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/fixed_medium" android:text="@string/new_search_filter_clear_all" style="@style/TextDarkGrey"/>
+        <TextView android:id="@+id/search_filters_done" android:background="@drawable/bg_ten_percent_black_selector" android:padding="@dimen/fixed_large" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/fixed_medium" android:text="@string/new_search_filter_done" style="@style/TextBlue"/>
+    </LinearLayout>
+    <View android:background="@drawable/list_divider_light" android:layout_width="match_parent" android:layout_height="@dimen/divider_height"/>
+    <FrameLayout android:id="@+id/search_filters_content" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <LinearLayout android:gravity="center" android:id="@+id/search_filters_select_view_loading_view" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent">
+            <com.etsy.android.uikit.view.LoadingIndicatorView android:background="@android:color/transparent" android:padding="@dimen/padding_large" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/progress_spinner_etsy" android:scaleType="center"/>
+        </LinearLayout>
+        <ScrollView android:id="@+id/search_filters_main" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <include layout="@layout/new_search_filters_main"/>
+        </ScrollView>
+    </FrameLayout>
+</merge>

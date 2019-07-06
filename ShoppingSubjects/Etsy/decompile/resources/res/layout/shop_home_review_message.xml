@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:background="@color/sk_bg_white" android:paddingTop="@dimen/fixed_medium_large" android:paddingRight="@dimen/padding_large" android:paddingBottom="@dimen/fixed_medium_large" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <TextView android:id="@+id/review_message" android:layout_width="match_parent" android:layout_height="wrap_content" android:lineSpacingMultiplier="@dimen/shop_home_text_line_spacing_mult" style="@style/TextGrey"/>
+    <com.etsy.android.uikit.view.MachineTranslationOneClickView android:id="@+id/machine_translation_one_click" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+</LinearLayout>

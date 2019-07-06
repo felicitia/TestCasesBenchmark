@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="MultiShopCartGroup">
+        <item name="android:background">@color/cardview_light_background</item>
+        <item name="android:layout_marginLeft">@dimen/msco_cart_group_spacing</item>
+        <item name="android:layout_marginRight">@dimen/msco_cart_group_spacing</item>
+        <item name="android:layout_marginBottom">@dimen/msco_cart_group_spacing</item>
+        <item name="android:elevation">@dimen/elevation_level_1</item>
+    </style>
+    <style name="MultiShopCartItem">
+        <item name="android:paddingLeft">@dimen/padding_medium</item>
+        <item name="android:paddingTop">0dp</item>
+        <item name="android:paddingRight">@dimen/padding_medium</item>
+        <item name="android:paddingBottom">0dp</item>
+        <item name="android:layout_marginLeft">@dimen/msco_cart_group_spacing</item>
+        <item name="android:layout_marginRight">@dimen/msco_cart_group_spacing</item>
+        <item name="android:elevation">@dimen/elevation_level_1</item>
+    </style>
+    <style name="SavedForLaterItem">
+        <item name="android:background">@color/cardview_light_background</item>
+        <item name="android:paddingTop">@dimen/padding_small</item>
+        <item name="android:paddingBottom">0dp</item>
+        <item name="android:layout_marginLeft">@dimen/margin_medium</item>
+        <item name="android:layout_marginRight">@dimen/margin_medium</item>
+        <item name="android:elevation">@dimen/elevation_level_1</item>
+    </style>
+</resources>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.etsy.android.ui.feedback.FeedbackView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:id="@+id/screen_feedback" android:padding="@dimen/sk_space_2" android:layout_width="match_parent" android:layout_height="match_parent" android:animateLayoutChanges="true">
+    <LinearLayout android:orientation="vertical" android:padding="@dimen/sk_space_2" android:layout_width="match_parent" android:layout_height="wrap_content" android:animateLayoutChanges="true">
+        <LinearLayout android:orientation="vertical" android:id="@+id/feedback_border_box" android:layout_width="match_parent" android:layout_height="wrap_content" style="@style/GenericSingleInputTextBorder">
+            <TextView android:textSize="@dimen/sk_text_body_smaller" android:paddingLeft="@dimen/sk_space_1" android:paddingRight="@dimen/sk_space_1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/message"/>
+            <EditText android:id="@+id/edittext_feedback" android:layout_width="match_parent" android:layout_height="wrap_content" android:minEms="@integer/edit_number_default_min_chars" android:inputType="textMultiLine" android:imeOptions="actionDone" android:textCursorDrawable="@drawable/cursor_grey_60" style="@style/GenericSingleInputTextView"/>
+        </LinearLayout>
+        <TextView android:gravity="center_horizontal" android:id="@+id/error_label" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/sk_space_2" style="@style/TextRed"/>
+        <TextView android:gravity="center_horizontal" android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/sk_space_2" android:text="@string/feedback_appreciated"/>
+    </LinearLayout>
+</com.etsy.android.ui.feedback.FeedbackView>

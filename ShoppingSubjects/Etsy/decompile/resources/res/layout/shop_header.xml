@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:gravity="center_vertical" android:orientation="horizontal" android:id="@+id/panel_shop_header" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <com.etsy.android.uikit.view.ClickableImageView android:id="@+id/shop_header_avatar" android:layout_width="44dp" android:layout_height="44dp" android:layout_marginLeft="@dimen/margin_large_xlarge" android:layout_marginRight="@dimen/margin_medium_large" android:scaleType="centerCrop" android:contentDescription="@string/shop_avatar_content_description" style="@style/ShopAvatarSmall"/>
+    <FrameLayout android:layout_width="0dp" android:layout_height="@dimen/actionbar_portrait_height" android:layout_weight="1">
+        <include layout="@layout/header_shop_overlap_info_details"/>
+    </FrameLayout>
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="@dimen/actionbar_portrait_height">
+        <Button android:id="@+id/header_follow_button" android:visibility="gone" android:layout_width="wrap_content" android:layout_marginRight="@dimen/margin_medium" android:text="@string/follow" style="@style/ButtonWhiteV2.Header"/>
+        <FrameLayout android:id="@+id/header_favorite_button" android:visibility="gone" android:layout_marginRight="@dimen/margin_medium" style="?attr/buttonWhiteV2Image">
+            <ImageView android:id="@+id/heart_image" android:layout_width="match_parent" android:layout_height="match_parent" android:src="@drawable/ic_favorited_selector" android:scaleType="center"/>
+        </FrameLayout>
+        <ImageButton android:id="@+id/header_contact_button" android:visibility="gone" android:layout_marginRight="@dimen/margin_large" android:src="@drawable/ic_blue_contact_selector" style="?attr/buttonWhiteV2Image"/>
+    </LinearLayout>
+</LinearLayout>

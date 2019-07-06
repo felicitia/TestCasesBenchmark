@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="match_parent" android:layout_height="wrap_content" style="@style/SavedForLaterItem">
+    <LinearLayout android:orientation="vertical" android:background="@drawable/bg_ten_percent_black_selector" android:paddingTop="@dimen/cart_inner_padding" android:paddingBottom="@dimen/cart_inner_padding" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <com.etsy.android.ui.cart.view.CartMessageBubbleView android:id="@+id/unavailable_msg_bubble" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/cart_inner_padding" android:layout_marginRight="@dimen/cart_inner_padding" app:messageText="@string/items_unavailable" app:showPointer="true" app:type="radial"/>
+        <RelativeLayout android:paddingLeft="@dimen/cart_inner_padding" android:paddingRight="@dimen/cart_inner_padding" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <com.etsy.android.uikit.view.ListingFullImageView android:id="@+id/image_cartlisting" android:layout_width="@dimen/cart_listing_image_width" android:layout_height="@dimen/cart_listing_image_width" android:scaleType="centerCrop" android:layout_alignParentLeft="true" android:layout_alignParentTop="true" android:contentDescription="@string/cartlisting_image_content_description" app:imageAspect="1"/>
+            <LinearLayout android:orientation="vertical" android:id="@+id/cartlisting_title_and_variations" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_toRightOf="@+id/image_cartlisting" android:layout_alignParentTop="true">
+                <TextView android:ellipsize="end" android:id="@+id/text_cartlisting_title" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/margin_medium_large" android:maxLines="2" style="@style/TextDarkGrey.Large"/>
+                <TextView android:id="@+id/text_from_shop_name" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/margin_medium_large" style="@style/TextLightGrey"/>
+                <LinearLayout android:orientation="vertical" android:id="@+id/variations_and_quantity" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/margin_medium_large">
+                    <TextView android:ellipsize="marquee" android:id="@+id/variation1_name" android:paddingRight="@dimen/padding_small" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/TextLightGrey"/>
+                    <TextView android:ellipsize="end" android:id="@+id/variation2_name" android:paddingRight="@dimen/padding_small" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/TextLightGrey"/>
+                    <TextView android:ellipsize="end" android:id="@+id/cartlisting_quantity" android:paddingRight="@dimen/padding_small" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/quantity_sub" android:maxLines="1" style="@style/TextLightGrey"/>
+                </LinearLayout>
+                <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/margin_medium_large" android:layout_marginTop="@dimen/margin_small">
+                    <TextView android:textAppearance="@style/Price.Large.Bold" android:ellipsize="marquee" android:id="@+id/text_individual_price" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true"/>
+                    <TextView android:ellipsize="end" android:id="@+id/text_plus_shipping" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/fixed_small" android:text="@string/plus_shipping" android:maxLines="1" style="@style/TextLightGrey"/>
+                </LinearLayout>
+                <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/margin_small" android:layout_marginTop="@dimen/margin_small">
+                    <com.etsy.android.uikit.view.FlowLayout android:layout_width="wrap_content" android:layout_height="wrap_content">
+                        <com.etsy.android.stylekit.EtsyButton android:id="@+id/btn_move_to_favorites" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/move_item_to_favorites" style="@style/sk_btn_secondary_text_link"/>
+                        <com.etsy.android.stylekit.EtsyButton android:id="@+id/btn_remove" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/remove" style="@style/sk_btn_secondary_text_link"/>
+                    </com.etsy.android.uikit.view.FlowLayout>
+                    <Space android:layout_width="0dp" android:layout_height="0dp" android:layout_weight="1"/>
+                    <com.etsy.android.stylekit.EtsyButton android:layout_gravity="right" android:id="@+id/btn_move_to_cart_tablet" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minWidth="@dimen/button_medium_small_width" android:text="@string/btn_move_to_cart" style="@style/sk_btn_primary"/>
+                </LinearLayout>
+            </LinearLayout>
+        </RelativeLayout>
+        <com.etsy.android.stylekit.EtsyButton android:layout_gravity="center_horizontal" android:id="@+id/btn_move_to_cart_phone" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/cart_inner_padding" android:layout_marginTop="@dimen/cart_inner_padding" android:layout_marginRight="@dimen/cart_inner_padding" android:text="@string/btn_move_to_cart" style="@style/sk_btn_primary"/>
+    </LinearLayout>
+    <include android:id="@+id/cart_view_loading" layout="@layout/partial_loading"/>
+</FrameLayout>

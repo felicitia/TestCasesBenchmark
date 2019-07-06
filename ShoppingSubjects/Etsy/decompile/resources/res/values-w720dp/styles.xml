@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Avatar.Convos.SOE.List">
+    </style>
+    <style name="Divider.Horizontal.ConvoList">
+        <item name="android:layout_marginLeft">@dimen/padding_medium</item>
+        <item name="android:layout_marginRight">@dimen/padding_medium</item>
+    </style>
+</resources>

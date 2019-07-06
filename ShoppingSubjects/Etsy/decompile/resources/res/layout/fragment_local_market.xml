@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.etsy.android.ui.view.ImageBatchSwitcher android:id="@+id/wholesale_store_hero" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+    <include android:id="@+id/hero_row_1" layout="@layout/local_image_row"/>
+    <include android:id="@+id/hero_row_2" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_below="@+id/hero_row_1" layout="@layout/local_image_row"/>
+    <android.support.v4.widget.SwipeRefreshLayout android:id="@+id/swipe_refresh_layout" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <android.support.v7.widget.RecyclerView android:id="@+id/recycler_view" android:paddingLeft="@dimen/local_market_details_card_padding" android:paddingTop="@dimen/local_market_details_side_padding" android:paddingRight="@dimen/local_market_details_card_padding" android:scrollbars="vertical" android:clipToPadding="false" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    </android.support.v4.widget.SwipeRefreshLayout>
+    <include layout="@layout/partial_empty_result"/>
+    <include layout="@layout/partial_loading"/>
+    <include layout="@layout/partial_no_internet"/>
+</RelativeLayout>

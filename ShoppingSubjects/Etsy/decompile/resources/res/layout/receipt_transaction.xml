@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <View android:background="@color/divider_medium" android:layout_width="match_parent" android:layout_height="@dimen/divider_height"/>
+    <LinearLayout android:orientation="horizontal" android:padding="@dimen/padding_medium" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <ImageView android:id="@+id/item_image" android:layout_width="@dimen/receipt_image_width" android:layout_height="@dimen/receipt_image_height" android:layout_marginRight="@dimen/margin_medium" android:scaleType="centerCrop" android:contentDescription="@string/listing_image_content_description"/>
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <TextView android:ellipsize="end" android:id="@+id/listing_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="2" android:singleLine="false" style="@style/TextDarkGrey.Large"/>
+            <TextView android:id="@+id/price" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_tiny" style="@style/TextMidGrey"/>
+            <TextView android:id="@+id/text_transparent_pricing" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_tiny" style="@style/TextMidGrey"/>
+            <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_tiny">
+                <com.etsy.android.uikit.view.RatingIconView android:layout_gravity="center_vertical" android:id="@+id/rating" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/margin_medium" android:contentDescription="@null" app:starSize="@dimen/review_star_size_small"/>
+                <TextView android:id="@+id/quantity" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" style="@style/TextMidGrey"/>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+    <TextView android:gravity="center_horizontal" android:id="@+id/review_callout" android:background="@color/etsy_light_blue" android:padding="@dimen/padding_medium" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_small" android:text="@string/leave_a_review" style="@style/TextBlue.Bold"/>
+</LinearLayout>

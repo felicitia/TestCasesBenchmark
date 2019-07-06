@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:background="@drawable/bg_card" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/shop_share_card_landing_margin_horizontal" android:layout_marginTop="@dimen/shop_share_card_landing_margin_vertical" android:layout_marginRight="@dimen/shop_share_card_landing_margin_horizontal" android:layout_marginBottom="@dimen/shop_share_card_landing_margin_vertical">
+    <include layout="@layout/partial_card_view_shop_share"/>
+</LinearLayout>

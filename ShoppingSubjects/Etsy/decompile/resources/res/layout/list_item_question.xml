@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" style="@style/MultiShopCartGroup">
+    <TextView android:layout_gravity="center_vertical" android:id="@+id/txt_title" android:layout_width="match_parent" android:layout_height="0dp" android:layout_marginLeft="@dimen/margin_xlarge_large" android:layout_marginRight="@dimen/margin_xlarge_large" android:layout_weight="1" style="@style/TextGrey.Bold"/>
+    <Button android:layout_gravity="right" android:id="@+id/btn_positive" android:layout_margin="@dimen/margin_medium" style="@style/TextButton"/>
+    <Button android:layout_gravity="right" android:id="@+id/btn_negative" android:layout_margin="@dimen/margin_medium" style="@style/TextButton"/>
+</LinearLayout>

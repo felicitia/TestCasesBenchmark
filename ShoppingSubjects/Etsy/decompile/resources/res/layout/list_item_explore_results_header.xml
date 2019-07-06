@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:gravity="center_vertical" android:orientation="horizontal" android:paddingLeft="@dimen/sk_space_2" android:paddingTop="@dimen/sk_space_4" android:paddingRight="@dimen/sk_space_2" android:paddingBottom="@dimen/sk_space_4" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <TextView android:id="@+id/txt_title" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" style="@style/sk_text_title_larger"/>
+    <com.etsy.android.stylekit.CompoundVectorTextView android:id="@+id/btn_filter" android:padding="@dimen/sk_space_3" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/sk_space_4" android:text="@string/search_filter" app:sk_drawableLeft="@drawable/sk_ic_filter" app:sk_drawablePadding="@dimen/sk_space_1" style="@style/sk_btn_secondary"/>
+</LinearLayout>

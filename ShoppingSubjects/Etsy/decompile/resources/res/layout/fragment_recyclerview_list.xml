@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:id="@+id/root_view" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.etsy.android.uikit.view.SwipeRefreshObeyRequestDisallowInterceptTouchEventLayout android:id="@+id/swipe_refresh_layout" android:focusable="false" android:focusableInTouchMode="false" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <android.support.v7.widget.RecyclerView android:scrollbarStyle="outsideOverlay" android:id="@+id/recycler_view" android:paddingLeft="@dimen/card_view_margin" android:paddingRight="@dimen/card_view_margin" android:paddingBottom="@dimen/margin_medium" android:focusable="true" android:focusableInTouchMode="true" android:scrollbars="vertical" android:clipToPadding="false" android:descendantFocusability="beforeDescendants" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    </com.etsy.android.uikit.view.SwipeRefreshObeyRequestDisallowInterceptTouchEventLayout>
+    <include layout="@layout/partial_loading"/>
+    <include layout="@layout/partial_no_internet"/>
+    <include layout="@layout/partial_empty_result"/>
+</FrameLayout>

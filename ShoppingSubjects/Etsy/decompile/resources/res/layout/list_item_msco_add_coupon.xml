@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:id="@+id/add_coupon_code" android:paddingBottom="@dimen/padding_large" android:layout_width="match_parent" android:layout_height="wrap_content" style="@style/MultiShopCartGroupItem.WithDivider">
+    <View android:background="@color/divider_dark" android:layout_width="match_parent" android:layout_height="@dimen/divider_height"/>
+    <LinearLayout android:orientation="horizontal" android:clipToPadding="false" android:layout_width="match_parent" android:layout_height="@dimen/button_height" style="@style/MultiShopCartGroupItemContentPadded">
+        <Button android:id="@+id/btn_add_coupon_code" android:layout_marginLeft="@dimen/neg_margin_medium" android:text="@string/coupon_code_hint" style="@style/TextButton"/>
+        <TextView android:layout_gravity="center_vertical" android:id="@+id/label_coupon_code" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/margin_medium" android:text="@string/coupon_code_title" style="@style/TextGrey"/>
+        <EditText android:id="@+id/txt_coupon_code" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:inputType="textCapCharacters" android:imeOptions="actionDone" android:textAllCaps="true" style="@style/TextGrey"/>
+    </LinearLayout>
+    <TextView android:textSize="@dimen/text_medium" android:textColor="@color/red" android:id="@+id/txt_coupon_error" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/padding_large" style="@style/MultiShopCartGroupItemContentPadded"/>
+    <View android:background="@color/divider_dark" android:layout_width="match_parent" android:layout_height="@dimen/divider_height"/>
+</LinearLayout>

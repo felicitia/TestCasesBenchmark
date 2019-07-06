@@ -1,0 +1,44 @@
+package com.bumptech.glide.load.resource.bitmap;
+
+import android.graphics.Bitmap;
+import com.bumptech.glide.g.h;
+import com.bumptech.glide.load.engine.i;
+
+/* compiled from: BitmapResource */
+public class c implements i<Bitmap> {
+    private final Bitmap a;
+    private final com.bumptech.glide.load.engine.bitmap_recycle.c b;
+
+    public static c a(Bitmap bitmap, com.bumptech.glide.load.engine.bitmap_recycle.c cVar) {
+        if (bitmap == null) {
+            return null;
+        }
+        return new c(bitmap, cVar);
+    }
+
+    public c(Bitmap bitmap, com.bumptech.glide.load.engine.bitmap_recycle.c cVar) {
+        if (bitmap == null) {
+            throw new NullPointerException("Bitmap must not be null");
+        } else if (cVar == null) {
+            throw new NullPointerException("BitmapPool must not be null");
+        } else {
+            this.a = bitmap;
+            this.b = cVar;
+        }
+    }
+
+    /* renamed from: a */
+    public Bitmap b() {
+        return this.a;
+    }
+
+    public int c() {
+        return h.a(this.a);
+    }
+
+    public void d() {
+        if (!this.b.a(this.a)) {
+            this.a.recycle();
+        }
+    }
+}

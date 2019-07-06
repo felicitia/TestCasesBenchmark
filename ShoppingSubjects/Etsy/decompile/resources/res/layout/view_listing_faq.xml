@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <RelativeLayout android:id="@+id/faq_header" android:background="@drawable/bg_ten_percent_black_selector" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="@dimen/actionbar_height">
+        <View android:id="@+id/faq_divider" android:background="@color/divider_header" android:layout_width="match_parent" android:layout_height="@dimen/divider_height" android:layout_alignParentTop="true"/>
+        <include android:id="@+id/img_faq_open" layout="@layout/expand_arrow_view"/>
+        <TextView android:gravity="center_vertical" android:id="@+id/txt_faq_question" android:paddingLeft="@dimen/padding_large" android:paddingTop="@dimen/padding_large" android:paddingBottom="@dimen/padding_large" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_toLeftOf="@+id/img_faq_open" style="@style/TextDarkGrey.Large.Bold"/>
+    </RelativeLayout>
+    <TextView android:id="@+id/txt_faq_answer" android:paddingLeft="@dimen/padding_large" android:paddingTop="@dimen/padding_small" android:paddingRight="@dimen/padding_large" android:paddingBottom="@dimen/padding_large" android:layout_width="match_parent" android:layout_height="wrap_content" style="@style/TextGrey.Large"/>
+</LinearLayout>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <RelativeLayout android:layout_gravity="top" android:background="@drawable/bg_alert_icon" android:layout_width="34dp" android:layout_height="34dp" android:layout_marginLeft="12dp" android:layout_marginTop="16dp" android:layout_marginBottom="16dp">
+        <ImageView android:id="@+id/alert_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true"/>
+    </RelativeLayout>
+    <LinearLayout android:orientation="vertical" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1">
+        <TextView android:id="@+id/alert_text" android:paddingLeft="12dp" android:layout_width="match_parent" android:layout_height="wrap_content" style="@style/sk_text_body"/>
+        <FrameLayout android:id="@+id/alert_content" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+    </LinearLayout>
+    <ImageView android:layout_gravity="top" android:id="@+id/alert_dismiss" android:background="@drawable/sk_unbounded_selector" android:visibility="gone" android:layout_width="16dp" android:layout_height="16dp" android:layout_marginLeft="12dp" android:layout_marginTop="12dp" android:layout_marginRight="12dp"/>
+</merge>

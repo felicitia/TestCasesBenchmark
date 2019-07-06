@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/margin_large">
+    <TextView android:ellipsize="end" android:id="@+id/shop_info_header" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" android:textAllCaps="true" style="@style/TextLightGrey"/>
+    <com.etsy.android.uikit.view.ClickableImageView android:id="@+id/shop_icon" android:layout_width="@dimen/shop_home_main_avatar" android:layout_height="@dimen/shop_home_main_avatar" android:layout_marginTop="@dimen/margin_medium" style="@style/ShopAvatarLarge"/>
+    <TextView android:id="@+id/shop_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_small" style="@style/sk_text_title"/>
+    <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/fixed_small_medium" android:divider="@drawable/divider_grey_vertical" android:showDividers="middle" android:dividerPadding="@dimen/padding_small">
+        <TextView android:id="@+id/shop_num_transactions" android:padding="@dimen/padding_small" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/TextLightGrey"/>
+        <TextView android:id="@+id/shop_open_date" android:padding="@dimen/padding_small" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/TextLightGrey"/>
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:id="@+id/rating_layout" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <com.etsy.android.uikit.view.RatingIconView android:id="@+id/shop_rating" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/margin_small" android:layout_marginRight="@dimen/margin_small" android:contentDescription="@null" app:starSize="@dimen/review_star_size_medium"/>
+        <TextView android:id="@+id/rating_count" android:layout_width="wrap_content" android:layout_height="match_parent" style="@style/TextLightGrey.Large"/>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.AppBarLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:theme="@style/EtsyToolbarStyleThemeOverlay" android:id="@+id/app_bar_layout" android:background="@color/actionbar_elevation_shadow" android:paddingBottom="@dimen/nav_divider_height" android:layout_width="match_parent" android:layout_height="wrap_content" app:layout_behavior="@string/etsy_app_bar_behavior">
+    <android.support.v7.widget.Toolbar android:id="@+id/app_bar_toolbar" android:background="?attr/colorPrimary" android:layout_width="match_parent" android:layout_height="?attr/actionBarSize" app:layout_scrollFlags="5" app:popupTheme="@style/ThemeOverlay.AppCompat" app:subtitleTextAppearance="@style/sk_text_title_smallest"/>
+</android.support.design.widget.AppBarLayout>

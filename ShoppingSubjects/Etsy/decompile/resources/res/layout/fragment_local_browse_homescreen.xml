@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.google.android.gms.maps.MapView android:id="@+id/map" android:layout_width="match_parent" android:layout_height="@dimen/local_browse_map_height" app:liteMode="true" app:uiMapToolbar="false"/>
+    <ImageView android:id="@+id/placeholder" android:background="@color/local_store_image_bg" android:visibility="gone" android:layout_width="match_parent" android:layout_height="@dimen/local_browse_map_height" android:src="@drawable/bg_store" android:scaleType="centerCrop"/>
+    <FrameLayout android:id="@+id/list_bg_for_header_overlap" android:background="@color/background_main_v2" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="@dimen/local_browse_map_height"/>
+    <include layout="@layout/fragment_local_browse_baserecyclerview"/>
+    <include layout="@layout/partial_local_fix_location"/>
+</FrameLayout>

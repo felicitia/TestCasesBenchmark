@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:id="@+id/similar_items_container" android:background="@color/background_main_v2" android:paddingBottom="@dimen/listing_card_padding" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <TextView android:id="@+id/similar_items_text_description" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/listing_card_padding" android:layout_marginBottom="@dimen/fixed_tiny" android:text="@string/listing_similar_items" style="@style/ListingSectionTitle"/>
+    <com.etsy.android.ui.core.SimilarItemsLayout android:id="@+id/similar_items_scrollview" android:paddingLeft="@dimen/listing_card_padding" android:paddingRight="@dimen/list_horizontal_padding" android:clipToPadding="false" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_small">
+        <com.etsy.android.uikit.view.LoadingIndicatorView android:background="@android:color/transparent" android:padding="@dimen/padding_large" android:layout_width="@dimen/horizontal_listing_card_section_item_width" android:layout_height="@dimen/horizontal_listing_card_section_height" android:src="@drawable/progress_spinner_etsy" android:scaleType="center"/>
+    </com.etsy.android.ui.core.SimilarItemsLayout>
+</LinearLayout>

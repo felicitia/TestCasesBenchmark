@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="listing_photo_add_photo">@string/listing_photo_add_photo_sw600dp</string>
+    <string name="listing_photo_add_photo_desc">@string/listing_photo_add_photo_desc_sw600dp</string>
+    <string name="shop_clear_results">@string/shop_clear_results_normal</string>
+</resources>

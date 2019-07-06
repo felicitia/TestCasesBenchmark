@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt">
+    <FrameLayout android:id="@+id/map_container" android:layout_width="match_parent" android:layout_height="@dimen/local_market_info_map_height" android:layout_marginTop="@dimen/margin_large" android:layout_marginRight="@dimen/local_market_details_card_internal_side_padding"/>
+    <FrameLayout android:id="@+id/description_row" android:paddingTop="@dimen/padding_large" android:paddingRight="@dimen/local_market_details_card_internal_side_padding" android:paddingBottom="@dimen/padding_large" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <TextView android:id="@+id/description" android:layout_width="match_parent" android:layout_height="wrap_content" android:lineSpacingMultiplier="@dimen/line_spacing_multiplier_tight" style="@style/TextGrey"/>
+    </FrameLayout>
+    <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_medium">
+        <FrameLayout android:id="@+id/hours_row" android:paddingTop="@dimen/padding_large" android:paddingRight="@dimen/padding_medium_large" android:paddingBottom="@dimen/padding_medium_large" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1">
+            <LinearLayout android:orientation="vertical" android:id="@+id/hours" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+        </FrameLayout>
+        <LinearLayout android:orientation="vertical" android:id="@+id/location_row" android:background="@drawable/bg_ten_percent_black_selector" android:paddingLeft="@dimen/padding_medium_large" android:paddingTop="@dimen/padding_large" android:paddingRight="@dimen/local_market_details_card_internal_side_padding" android:paddingBottom="@dimen/padding_medium_large" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1">
+            <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/location" style="@style/TextBlack"/>
+            <TextView android:id="@+id/location" android:layout_width="match_parent" android:layout_height="wrap_content" style="@style/TextBlue"/>
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="vertical" android:id="@+id/website_row" android:background="@drawable/bg_ten_percent_black_selector" android:paddingTop="@dimen/padding_medium_large" android:paddingRight="@dimen/padding_medium_large" android:paddingBottom="@dimen/padding_large" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1">
+            <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/related_links" style="@style/TextBlack"/>
+            <TextView android:ellipsize="end" android:id="@+id/website" android:layout_width="match_parent" android:layout_height="wrap_content" android:maxLines="1" style="@style/TextBlue"/>
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:id="@+id/phone_row" android:background="@drawable/bg_ten_percent_black_selector" android:paddingLeft="@dimen/padding_medium_large" android:paddingTop="@dimen/padding_medium_large" android:paddingRight="@dimen/local_market_details_card_internal_side_padding" android:paddingBottom="@dimen/padding_large" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1">
+            <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/contact" style="@style/TextBlack"/>
+            <TextView android:id="@+id/phone" android:layout_width="match_parent" android:layout_height="wrap_content" style="@style/TextBlue"/>
+        </LinearLayout>
+    </LinearLayout>
+    <Space android:id="@+id/more_details_row" android:layout_width="0dp" android:layout_height="0dp"/>
+</merge>

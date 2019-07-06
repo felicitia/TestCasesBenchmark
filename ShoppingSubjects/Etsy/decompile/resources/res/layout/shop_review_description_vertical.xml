@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.etsy.android.uikit.view.FlowLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_gravity="center" android:background="@color/sk_bg_white" android:paddingLeft="@dimen/fixed_large" android:paddingTop="@dimen/fixed_large_xlarge" android:paddingRight="@dimen/fixed_large" android:paddingBottom="@dimen/fixed_large_xlarge" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/reviews" style="@style/TextDarkGrey.XLarge.Bold"/>
+    <TextView android:id="@+id/no_reviews_message" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/no_reviews_in_last_year" android:singleLine="false" style="@style/TextDarkGrey"/>
+    <TextView android:id="@+id/shop_avg_item_reviews" android:paddingTop="@dimen/fixed_one" android:paddingRight="@dimen/fixed_small" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/average_item_review" style="@style/TextLightGrey"/>
+    <com.etsy.android.uikit.view.RatingIconView android:id="@+id/rating" android:layout_width="wrap_content" android:layout_height="wrap_content" android:contentDescription="@null" app:starSize="@dimen/shop2_home_review_star_size"/>
+    <TextView android:id="@+id/shop_num_reviews" android:paddingLeft="@dimen/fixed_small" android:paddingTop="@dimen/fixed_one" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/TextLightGrey"/>
+</com.etsy.android.uikit.view.FlowLayout>

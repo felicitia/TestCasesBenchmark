@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:background="@drawable/bg_ten_percent_black_selector" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <FrameLayout android:id="@+id/collection_icon_wrapper" android:paddingLeft="@dimen/collection_row_padding" android:paddingTop="@dimen/collection_row_padding" android:paddingRight="@dimen/margin_medium" android:paddingBottom="@dimen/collection_row_padding" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true">
+        <ImageView android:id="@+id/collection_icon" android:background="@drawable/bg_empty_image" android:layout_width="@dimen/listingcollection_thumbnail" android:layout_height="@dimen/listingcollection_thumbnail" android:scaleType="centerCrop"/>
+    </FrameLayout>
+    <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toLeftOf="@+id/collection_selected" android:layout_toRightOf="@+id/collection_icon_wrapper" android:layout_centerVertical="true">
+        <TextView android:ellipsize="end" android:layout_gravity="bottom" android:id="@+id/collection_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" style="@style/TextBlack.Large"/>
+        <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <TextView android:id="@+id/collection_num_items" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/TextLightGrey.Small"/>
+            <ImageView android:gravity="bottom|left|center_vertical|center_horizontal|center" android:layout_gravity="bottom|left|center_vertical|center_horizontal|center" android:id="@+id/collection_privacy_icon" android:visibility="gone" android:layout_width="@dimen/sk_size_icon_smaller" android:layout_height="@dimen/sk_size_icon_smaller" android:layout_marginLeft="@dimen/margin_small" android:tint="@color/sk_gray_50" app:srcCompat="@drawable/sk_ic_lock"/>
+        </LinearLayout>
+    </LinearLayout>
+    <CheckBox android:id="@+id/collection_selected" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/fixed_medium" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+    <View android:layout_alignParentBottom="true" style="@style/Divider.Horizontal"/>
+</RelativeLayout>

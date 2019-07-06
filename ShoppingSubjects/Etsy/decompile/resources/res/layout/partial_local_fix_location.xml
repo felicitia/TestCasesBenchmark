@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:id="@+id/partial_local_fix_location" android:background="@color/sk_orange_30" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" android:fillViewport="true">
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:clickable="true" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:padding="@dimen/padding_xxlarge" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/empty_local"/>
+            <TextView android:textColor="@color/sk_white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/etsy_local" style="@style/sk_text_title"/>
+            <TextView android:textColor="@color/sk_white" android:gravity="center_horizontal" android:id="@+id/enable_location_message" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_medium" android:text="@string/enable_location_description" android:lineSpacingMultiplier="@dimen/line_spacing_multiplier_tight" style="@style/sk_text_body_larger"/>
+            <Button android:textColor="@color/sk_orange_30" android:id="@+id/enable_location_button" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_large" android:text="@string/enable_location" style="@style/ButtonWhiteV2"/>
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

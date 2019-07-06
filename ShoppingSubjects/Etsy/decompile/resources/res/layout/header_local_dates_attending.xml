@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:id="@+id/view_shop_button" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/margin_xlarge" android:foreground="@drawable/standard_selector">
+    <LinearLayout android:orientation="horizontal" android:background="@color/sk_bg_white" android:padding="@dimen/padding_large" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <ImageView android:id="@+id/avatar" android:layout_width="@dimen/local_avatar_size" android:layout_height="@dimen/local_avatar_size"/>
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/margin_large">
+            <TextView android:id="@+id/shop_name" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/LocalDatesAttendingHeaderTitle"/>
+            <TextView android:id="@+id/comment" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_small" android:lineSpacingMultiplier="1.1" style="@style/TextGrey"/>
+        </LinearLayout>
+    </LinearLayout>
+</FrameLayout>

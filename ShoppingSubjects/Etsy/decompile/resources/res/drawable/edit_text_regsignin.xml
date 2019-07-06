@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<inset xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:insetLeft="@dimen/abc_control_inset_material" android:insetRight="@dimen/abc_control_inset_material" android:insetTop="@dimen/abc_control_inset_material" android:insetBottom="@dimen/abc_control_inset_material">
+    <selector>
+        <item android:state_focused="true" android:state_enabled="true" android:drawable="@drawable/textfield_activated_regsignin"/>
+        <item android:state_enabled="true" android:drawable="@drawable/textfield_activated_regsignin" android:state_activated="true"/>
+        <item android:state_enabled="true" android:drawable="@drawable/textfield_default_regsignin"/>
+        <item android:drawable="@drawable/textfield_default_regsignin"/>
+    </selector>
+</inset>

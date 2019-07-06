@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:padding="@dimen/fixed_small" android:layout_width="wrap_content" android:layout_height="wrap_content" android:foreground="@drawable/fg_card_selector">
+    <com.etsy.android.uikit.view.SelectableImageView android:id="@+id/img_thumbnail" android:layout_width="@dimen/listing_thumbnail_width" android:layout_height="@dimen/listing_thumbnail_height" android:scaleType="centerCrop" android:adjustViewBounds="false"/>
+</FrameLayout>

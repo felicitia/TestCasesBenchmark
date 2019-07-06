@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.etsy.android.ui.cart.view.CartMessageBubbleView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:id="@+id/unavailable_msg_bubble" android:layout_width="match_parent" android:layout_height="wrap_content" app:messageText="@string/items_unavailable" app:showPointer="true" app:type="radial" style="@style/MultiShopCartGroupItem.Inset"/>

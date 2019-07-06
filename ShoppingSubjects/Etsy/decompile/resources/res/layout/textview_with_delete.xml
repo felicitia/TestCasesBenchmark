@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="horizontal" android:paddingTop="@dimen/fixed_medium" android:paddingBottom="@dimen/fixed_medium" android:layout_width="match_parent" android:layout_height="match_parent">
+    <TextView android:layout_gravity="center_vertical" android:id="@+id/text" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" style="@style/TextBlue.Large"/>
+    <com.etsy.android.iconsy.views.IconView android:layout_gravity="center_vertical" android:id="@+id/delete_button" android:paddingLeft="@dimen/fixed_medium" android:paddingTop="@dimen/fixed_medium" android:paddingBottom="@dimen/fixed_medium" android:layout_width="@dimen/fixed_xlarge" android:layout_height="@dimen/fixed_xlarge" app:hasSelector="true" app:iconChar="@+id/ic_standard_delete" app:iconColor="@color/light_grey"/>
+</LinearLayout>

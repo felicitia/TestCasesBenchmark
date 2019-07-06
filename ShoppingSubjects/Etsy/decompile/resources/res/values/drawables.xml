@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <drawable name="notification_template_icon_bg">#3333b5e5</drawable>
+    <drawable name="notification_template_icon_low_bg">#0cffffff</drawable>
+    <drawable name="shop_home_filter_card">@drawable/bg_card_bottom</drawable>
+    <drawable name="shop_home_search_card">@drawable/bg_card_top</drawable>
+</resources>

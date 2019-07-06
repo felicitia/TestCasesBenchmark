@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:gravity="center_vertical" android:orientation="horizontal" android:padding="@dimen/padding_medium_large" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <ImageView android:id="@+id/bughunt_leaderboard_avatar" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+    <TextView android:gravity="center_vertical" android:id="@+id/bughunt_leaderboard_primary" android:paddingLeft="@dimen/padding_medium" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1" style="@style/TextDarkGrey.Large"/>
+    <TextView android:textColor="@color/text_dark_grey" android:gravity="center_vertical" android:id="@+id/bughunt_leaderboard_secondary" android:layout_width="wrap_content" android:layout_height="match_parent" style="@style/TextDarkGrey.XXLarge"/>
+</LinearLayout>

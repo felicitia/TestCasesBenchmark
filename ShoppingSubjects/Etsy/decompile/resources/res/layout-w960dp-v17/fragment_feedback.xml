@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@+id/shop_header" android:padding="@dimen/padding_large" android:visibility="gone" android:layout_width="@dimen/user_tablet_sidebar_width" android:layout_height="match_parent">
+        <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@+id/shop_header_click" android:background="@drawable/bg_ten_percent_black_selector" android:padding="@dimen/padding_small" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <include layout="@layout/shop_home_info_header"/>
+        </LinearLayout>
+        <TextView android:id="@+id/average_review_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_medium" android:text="@string/average_item_review_no_colon" style="@style/TextGrey.Small.Bold"/>
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_tiny">
+            <com.etsy.android.uikit.view.RatingIconView android:id="@+id/shop_rating" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/margin_small" android:contentDescription="@null" android:layout_marginStart="@dimen/margin_small" app:starSize="@dimen/review_star_size_medium"/>
+            <TextView android:id="@+id/rating_count" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/margin_small" android:layout_marginStart="@dimen/margin_small" style="@style/TextGrey"/>
+        </LinearLayout>
+    </LinearLayout>
+    <View android:background="@color/sk_gray_30" android:layout_width="@dimen/divider_width" android:layout_height="match_parent"/>
+    <include layout="@layout/fragment_baserecyclerview"/>
+</LinearLayout>

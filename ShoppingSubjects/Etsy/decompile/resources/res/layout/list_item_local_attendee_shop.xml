@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="wrap_content" android:layout_height="wrap_content">
+    <LinearLayout android:orientation="vertical" android:background="@drawable/bg_outline" android:padding="@dimen/divider_width" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <FrameLayout android:id="@+id/shop_select_layout" android:layout_width="match_parent" android:layout_height="wrap_content" android:foreground="@drawable/standard_selector">
+            <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <include android:id="@+id/images1" layout="@layout/local_image_row"/>
+                <include android:id="@+id/images2" layout="@layout/local_image_row"/>
+                <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:padding="@dimen/fixed_medium_large" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <ImageView android:layout_gravity="center_vertical" android:id="@+id/object_avatar" android:layout_width="@dimen/local_market_details_avatar" android:layout_height="@dimen/local_market_details_avatar" android:scaleType="fitXY"/>
+                    <TextView android:ellipsize="end" android:id="@+id/shop_name" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/fixed_medium_large" android:maxLines="1" style="@style/sk_text_title_smaller"/>
+                </LinearLayout>
+            </LinearLayout>
+        </FrameLayout>
+        <FrameLayout android:id="@+id/view_hours_button" android:layout_width="match_parent" android:layout_height="wrap_content" android:foreground="@drawable/standard_selector">
+            <LinearLayout android:gravity="center" android:orientation="horizontal" android:background="@color/card_footer_background" android:padding="@dimen/fixed_medium_large" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <TextView android:ellipsize="end" android:id="@+id/selling_time" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_marginRight="@dimen/fixed_medium_large" android:maxLines="1" android:layout_weight="1" style="@style/TextGrey"/>
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/more_info_sentence_case" style="@style/sk_text_body"/>
+            </LinearLayout>
+            <View android:background="@color/divider_dialog" android:layout_width="match_parent" android:layout_height="@dimen/divider_height"/>
+        </FrameLayout>
+    </LinearLayout>
+</FrameLayout>

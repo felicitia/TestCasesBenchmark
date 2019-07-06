@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="match_parent">
+    <TextView android:id="@+id/shipping_status" android:layout_width="wrap_content" style="?attr/receiptTitleText"/>
+    <TextView android:gravity="center_horizontal" android:id="@+id/track_package" android:padding="@dimen/padding_medium" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/margin_medium_large" android:text="@string/track_package" style="@style/ButtonBlueV2"/>
+    <TextView android:id="@+id/shipping_service" android:layout_marginTop="@dimen/margin_small" android:textIsSelectable="true" style="?attr/receiptSubTitleText"/>
+    <TextView android:id="@+id/shipping_details" android:textIsSelectable="true" style="@style/ReceiptText"/>
+</LinearLayout>

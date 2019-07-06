@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:shape="rectangle">
+    <padding android:left="@dimen/shop2_home_icon_border_width" android:top="@dimen/shop2_home_icon_border_width" android:right="@dimen/shop2_home_icon_border_width" android:bottom="@dimen/shop2_home_icon_border_width"/>
+    <stroke android:width="@dimen/shop2_home_icon_border_width" android:color="@color/sk_white"/>
+    <corners android:radius="@dimen/shop2_home_icon_corner_radius"/>
+</shape>

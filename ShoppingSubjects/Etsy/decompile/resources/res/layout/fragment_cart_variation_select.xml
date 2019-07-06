@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_gravity="center" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/margin_xxxlarge">
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <TextView android:id="@+id/prompt" android:padding="@dimen/padding_medium" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/choose_variation_type" style="@style/sk_text_title"/>
+        <android.support.v7.widget.RecyclerView android:scrollbarStyle="outsideOverlay" android:id="@+id/recycler_view" android:scrollbars="vertical" android:clipToPadding="false" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+    </LinearLayout>
+    <com.etsy.android.uikit.view.LoadingIndicatorView android:layout_gravity="center" android:id="@+id/loading_view" android:background="@android:color/transparent" android:padding="@dimen/padding_large" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="@dimen/margin_xlarge" android:src="@drawable/progress_spinner_etsy" android:scaleType="center"/>
+</android.support.v7.widget.CardView>

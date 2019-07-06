@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/margin_large" android:layout_marginTop="@dimen/margin_large" android:layout_marginRight="@dimen/margin_large">
+    <ImageView android:layout_gravity="center" android:id="@+id/shop_icon" android:layout_width="@dimen/social_share_shop_icon_size" android:layout_height="@dimen/social_share_shop_icon_size" android:scaleType="fitXY" android:adjustViewBounds="false"/>
+    <TextView android:layout_gravity="center_horizontal" android:id="@+id/shop_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_medium_large" style="@style/sk_text_title_larger"/>
+    <TextView android:ellipsize="end" android:layout_gravity="center_horizontal" android:id="@+id/headline" android:paddingLeft="@dimen/social_share_text_padding" android:paddingRight="@dimen/social_share_text_padding" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/fixed_small" android:maxLines="2" style="@style/TextDarkGrey"/>
+</LinearLayout>

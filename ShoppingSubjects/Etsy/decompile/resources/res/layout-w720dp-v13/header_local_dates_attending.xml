@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="horizontal" android:paddingBottom="@dimen/padding_large" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <ImageView android:id="@+id/avatar" android:layout_width="@dimen/local_avatar_size" android:layout_height="@dimen/local_avatar_size" android:layout_margin="@dimen/margin_large"/>
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:baselineAligned="false">
+            <TextView android:ellipsize="end" android:id="@+id/shop_name" android:paddingTop="@dimen/padding_large" android:layout_width="0dp" android:layout_height="wrap_content" android:maxLines="1" android:layout_weight="1" style="@style/LocalDatesAttendingHeaderTitle"/>
+            <TextView android:id="@+id/view_shop_button" android:background="@drawable/bg_ten_percent_black_selector" android:padding="@dimen/padding_large" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/view_shop" android:textAllCaps="true" style="@style/TextBlue.Bold"/>
+        </LinearLayout>
+        <TextView android:id="@+id/comment" android:paddingRight="@dimen/padding_large" android:layout_width="wrap_content" android:layout_height="wrap_content" android:lineSpacingMultiplier="1.1" style="@style/TextGrey"/>
+    </LinearLayout>
+</LinearLayout>

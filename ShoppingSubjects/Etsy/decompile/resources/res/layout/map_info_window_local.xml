@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+    <LinearLayout android:orientation="vertical" android:background="@drawable/bg_map_card_outline" android:paddingLeft="@dimen/local_map_info_window_border" android:paddingTop="@dimen/local_map_info_window_border" android:paddingRight="@dimen/local_map_info_window_border" android:paddingBottom="@dimen/fixed_large" android:layout_width="@dimen/local_map_info_window_width" android:layout_height="wrap_content">
+        <TextView android:ellipsize="end" android:id="@+id/market_date" android:paddingLeft="@dimen/fixed_large" android:paddingTop="@dimen/fixed_medium_large" android:paddingRight="@dimen/fixed_large" android:paddingBottom="@dimen/fixed_medium_large" android:layout_width="match_parent" android:layout_height="wrap_content" android:maxLines="1" style="@style/TextGrey.Large"/>
+        <include android:id="@+id/image_layout_1" layout="@layout/local_image_row"/>
+        <include android:id="@+id/image_layout_2" layout="@layout/local_image_row"/>
+        <TextView android:id="@+id/market_type" android:paddingLeft="@dimen/fixed_large" android:paddingTop="@dimen/fixed_large" android:paddingRight="@dimen/fixed_large" android:layout_width="match_parent" android:layout_height="wrap_content" android:textAllCaps="true" style="@style/TextGrey.Small"/>
+        <TextView android:ellipsize="end" android:id="@+id/market_title" android:paddingLeft="@dimen/fixed_large" android:paddingTop="@dimen/fixed_small" android:paddingRight="@dimen/fixed_large" android:layout_width="match_parent" android:layout_height="wrap_content" android:maxLines="1" style="@style/TextDarkGrey.Large"/>
+        <TextView android:ellipsize="end" android:id="@+id/market_attendance" android:paddingLeft="@dimen/fixed_large" android:paddingTop="@dimen/fixed_small" android:paddingRight="@dimen/fixed_large" android:layout_width="match_parent" android:layout_height="wrap_content" android:maxLines="1" style="@style/TextGrey"/>
+    </LinearLayout>
+    <ImageView android:layout_gravity="center_horizontal" android:layout_width="@dimen/local_map_arrow_width" android:layout_height="@dimen/local_map_arrow_height" android:layout_marginTop="@dimen/local_map_arrow_negative_offset" android:src="@drawable/ic_map_arrow"/>
+</LinearLayout>

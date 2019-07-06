@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="@dimen/margin_large" android:text="DiagonalStrikeImageView"/>
+        <com.etsy.android.uikit.view.DiagonalStrikeImageView android:padding="@dimen/padding_small" android:layout_width="100dp" android:layout_height="100dp" android:layout_margin="@dimen/margin_large" android:src="@drawable/error_sorry_girl" app:diagonalLineColor="@color/red" app:diagonalLineWidth="1dp"/>
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="@dimen/margin_large" android:text="TextView"/>
+        <TextView android:ellipsize="end" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="@dimen/margin_large" android:text="@string/etsy" android:maxLines="1" style="@style/sk_text_title"/>
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="@dimen/margin_large" android:text="IconButton"/>
+        <com.etsy.android.uikit.view.IconButton android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/margin_large" android:text="@string/etsy" app:iconAltSrc="@drawable/sk_ic_favorited" app:iconAltTint="@color/sk_secondary_autumn" app:iconSrc="@drawable/sk_ic_favorite" app:iconTint="@color/sk_gray_70" style="@style/ButtonWhiteSquare"/>
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="@dimen/margin_large" android:text="ImageViewAspectRatio"/>
+        <com.etsy.android.uikit.view.ImageViewWithAspectRatio android:layout_width="100dp" android:layout_height="wrap_content" android:layout_margin="@dimen/margin_large" android:src="@drawable/error_sorry_girl" android:scaleType="centerCrop" android:adjustViewBounds="false" app:heightRatio="0.5"/>
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="@dimen/margin_large" android:text="InstantAutoCompleteTextView"/>
+        <com.etsy.android.uikit.view.InstantAutoCompleteTextView android:ellipsize="end" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/margin_large" android:hint="@string/etsy" android:maxLines="1" android:completionThreshold="1" android:inputType="text" style="@style/EditText.AutoComplete"/>
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="@dimen/margin_large" android:text="RoundedStrokedCheckBox"/>
+        <com.etsy.android.uikit.view.RoundStrokedCheckBox android:layout_width="15dp" android:layout_height="15dp" android:layout_margin="@dimen/margin_large"/>
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="@dimen/margin_large" android:text="TouchImageView"/>
+        <com.etsy.android.uikit.view.TouchImageView android:layout_width="100dp" android:layout_height="100dp" android:layout_margin="@dimen/margin_large" android:src="@drawable/error_sorry_girl"/>
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="@dimen/margin_large" android:text="ZeroSpinner"/>
+        <com.etsy.android.uikit.view.ZeroSpinner android:entries="@array/us_state_codes" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/margin_large"/>
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="@dimen/margin_large" android:text="SelectableImageView"/>
+        <com.etsy.android.uikit.view.SelectableImageView android:layout_width="100dp" android:layout_height="100dp" android:layout_margin="@dimen/margin_large" android:src="@drawable/error_sorry_girl" android:scaleType="centerCrop" android:adjustViewBounds="false"/>
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="@dimen/margin_large" android:text="RangedProgressBar"/>
+        <com.etsy.android.uikit.view.RangedProgressBar android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/margin_large"/>
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="@dimen/margin_large" android:text="ManagedSelectionEditText"/>
+        <com.etsy.android.uikit.view.ManagedSelectionEditText android:textSize="@dimen/text_larger" android:textColor="@color/green" android:gravity="top" android:layout_width="100dp" android:layout_height="wrap_content" android:layout_margin="@dimen/margin_large" android:hint="@string/etsy" android:maxLines="1" android:imeOptions="actionDone"/>
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="@dimen/margin_large" android:text="LoadingIndicatorView"/>
+        <com.etsy.android.uikit.view.LoadingIndicatorView android:id="@+id/loading_indicator" android:layout_width="20dp" android:layout_height="20dp" android:layout_margin="@dimen/margin_large"/>
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="@dimen/margin_large" android:text="LazyNativeAssetImageView"/>
+        <com.etsy.android.uikit.view.LazyNativeAssetImageView android:id="@+id/empty_image" android:layout_width="100dp" android:layout_height="100dp" android:layout_margin="@dimen/margin_large" app:img="@drawable/error_sorry_girl"/>
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="@dimen/margin_large" android:text="ExpandToFitImageView"/>
+        <com.etsy.android.uikit.view.ExpandToFitImageView android:layout_width="100dp" android:layout_height="wrap_content" android:layout_margin="@dimen/margin_large" android:src="@drawable/error_sorry_girl" android:adjustViewBounds="true"/>
+    </LinearLayout>
+</ScrollView>

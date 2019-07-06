@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <View android:id="@+id/conversation_divider" style="@style/Divider.Horizontal.ConvoList"/>
+    <LinearLayout android:orientation="vertical" android:id="@+id/convo_header" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <TextView android:id="@+id/convo_header_text" android:padding="@dimen/padding_medium" android:layout_width="match_parent" android:layout_height="wrap_content" style="@style/TextBlack"/>
+        <View style="@style/Divider.Horizontal.Dark"/>
+    </LinearLayout>
+    <com.etsy.android.uikit.view.ReadStateRelativeLayout android:id="@+id/convo_layout" android:background="@drawable/list_selector_read_state" android:padding="@dimen/padding_medium" android:layout_width="match_parent" android:layout_height="match_parent">
+        <FrameLayout android:gravity="top|center_vertical|center_horizontal|center" android:id="@+id/convo_user_img_frame" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_marginRight="@dimen/padding_medium" android:layout_alignParentLeft="true" android:layout_alignParentTop="true">
+            <com.etsy.android.uikit.view.ClickableImageView android:id="@+id/convo_user_img" android:contentDescription="@null" style="@style/Avatar.Convos"/>
+        </FrameLayout>
+        <TextView android:id="@+id/convo_time" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignTop="@+id/convo_user_img_frame" android:layout_alignParentTop="true" android:layout_alignParentRight="true" style="@style/convo_text_time"/>
+        <TextView android:id="@+id/convo_username" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toLeftOf="@+id/convo_time" android:layout_toRightOf="@+id/convo_user_img_frame" android:layout_alignTop="@+id/convo_user_img_frame" style="@style/convo_text_sender"/>
+        <TextView android:gravity="right|center_vertical|center_horizontal|center" android:id="@+id/convo_msg_count" android:paddingLeft="@dimen/fixed_medium" android:paddingRight="@dimen/fixed_medium" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/fixed_small" android:layout_alignParentRight="true" android:layout_alignParentBottom="true" style="@style/ConvoMessageCount"/>
+        <ImageView android:gravity="bottom|left|center_vertical|center_horizontal|center" android:id="@+id/convo_has_attachment" android:layout_width="@dimen/convo_attachment_icon" android:layout_height="@dimen/convo_attachment_icon" android:layout_marginLeft="@dimen/margin_small" android:tint="@color/sk_gray_50" android:layout_toLeftOf="@+id/convo_msg_count" android:layout_alignParentBottom="true" app:srcCompat="@drawable/sk_ic_attachment"/>
+        <TextView android:ellipsize="end" android:id="@+id/convo_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/margin_tiny" android:maxLines="1" android:layout_toLeftOf="@+id/convo_msg_count" android:layout_toRightOf="@+id/convo_user_img_frame" android:layout_below="@+id/convo_username" style="@style/convo_text_subject"/>
+        <TextView android:ellipsize="end" android:id="@+id/convo_message_preview" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="2" android:singleLine="false" android:layout_toLeftOf="@+id/convo_has_attachment" android:layout_toRightOf="@+id/convo_user_img_frame" android:layout_below="@+id/convo_title" style="@style/convo_text_snippet"/>
+    </com.etsy.android.uikit.view.ReadStateRelativeLayout>
+    <View android:id="@+id/conversation_divider_bottom" android:visibility="gone" style="@style/Divider.Horizontal.ConvoList"/>
+</LinearLayout>

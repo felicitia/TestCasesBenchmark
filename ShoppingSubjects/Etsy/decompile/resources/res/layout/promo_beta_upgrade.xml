@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:gravity="center" android:orientation="vertical" android:background="@drawable/bg_navbar" android:padding="@dimen/padding_xlarge" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <TextView android:gravity="center" android:id="@+id/promo_title" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/upgrade_beta_promo_title" style="@style/TextWhite.XLarge"/>
+    <TextView android:textColor="@color/sk_white" android:gravity="center" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_medium_large" android:text="@string/upgrade_beta_promo_body" style="@style/TextLightGrey.Large"/>
+    <Button android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_medium_large" android:text="@string/upgrade_beta_promo_button" style="@style/PromoButton"/>
+</LinearLayout>

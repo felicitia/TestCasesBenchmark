@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" style="@style/ConvoCard.Reply">
+    <LinearLayout android:orientation="horizontal" android:padding="@dimen/padding_medium_large" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <FrameLayout android:gravity="top|center_vertical|center_horizontal|center" android:id="@+id/convo_user_img_frame" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/padding_medium">
+            <ImageView android:id="@+id/convo_user_img" style="@style/Avatar.Convos"/>
+        </FrameLayout>
+        <EditText android:layout_gravity="center_vertical" android:id="@+id/reply_edittext" android:layout_width="0dp" android:layout_height="wrap_content" android:minWidth="200dp" android:hint="@string/convo_add_reply" android:maxLength="@integer/cart_item_message_limit" android:layout_weight="1" android:imeOptions="actionDone" style="@style/EditText.MultiLine"/>
+    </LinearLayout>
+    <com.etsy.android.uikit.view.ImageAttachmentLayout android:orientation="horizontal" android:id="@+id/linear_reply_convo_images" android:paddingLeft="@dimen/padding_medium_large" android:paddingRight="@dimen/padding_medium_large" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/padding_large" app:attachmentPadding="@dimen/padding_large"/>
+    <View style="@style/Divider.Horizontal"/>
+    <com.etsy.android.stylekit.CompoundVectorTextView android:gravity="center_vertical" android:id="@+id/reply_attach_image" android:background="@drawable/list_selector" android:padding="@dimen/margin_medium" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/convos_add_photo" android:textAllCaps="true" app:sk_drawableLeft="@drawable/sk_ic_camera" app:sk_drawablePadding="@dimen/margin_medium" app:sk_drawableTint="@color/sk_orange_30" style="@style/TextBlue"/>
+</LinearLayout>

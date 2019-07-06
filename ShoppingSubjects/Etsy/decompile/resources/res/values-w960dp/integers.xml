@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <integer name="local_browse_list_columns">3</integer>
+    <integer name="local_market_attendee_columns">4</integer>
+    <integer name="local_market_attendee_columns_minus_one">3</integer>
+    <integer name="search_card_item_list_count">6</integer>
+    <integer name="shop_featured_listing_columns_count">2</integer>
+</resources>

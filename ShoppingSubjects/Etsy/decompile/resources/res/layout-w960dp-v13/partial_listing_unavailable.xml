@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:id="@+id/listing_unavailable" android:layout_width="match_parent" android:layout_height="match_parent">
+    <ScrollView android:layout_width="match_parent" android:layout_height="match_parent">
+        <LinearLayout android:orientation="horizontal" android:padding="@dimen/listing_card_padding" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <LinearLayout android:layout_gravity="center_horizontal" android:orientation="vertical" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_marginRight="@dimen/listing_card_middle_padding" android:layout_weight="@integer/listing_image_weight">
+                <ImageView android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/fixed_large" android:src="@drawable/error_sorry_girl"/>
+                <TextView android:gravity="center" android:layout_gravity="center_horizontal" android:paddingLeft="@dimen/padding_xlarge" android:paddingRight="@dimen/padding_xlarge" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_large" android:text="@string/listing_unavailable" style="@style/sk_text_title"/>
+                <TextView android:gravity="center" android:layout_gravity="center_horizontal" android:id="@+id/subtitle" android:paddingLeft="@dimen/padding_xlarge" android:paddingRight="@dimen/padding_xlarge" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/fixed_large" style="@style/TextGrey.Larger"/>
+            </LinearLayout>
+            <FrameLayout android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="@integer/listing_info_weight">
+                <include layout="@layout/listing_panel_shop"/>
+            </FrameLayout>
+        </LinearLayout>
+    </ScrollView>
+</FrameLayout>

@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt">
+    <TextView android:textSize="@dimen/sk_text_body_smaller" android:textColor="@color/sk_white" android:gravity="center" android:layout_gravity="center_horizontal" android:id="@+id/bottom_nav_badge" android:background="@drawable/sk_btn_primary_background_selector" android:paddingLeft="6dp" android:paddingRight="6dp" android:paddingBottom="2dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="14dp" android:layout_marginTop="4dp"/>
+</merge>

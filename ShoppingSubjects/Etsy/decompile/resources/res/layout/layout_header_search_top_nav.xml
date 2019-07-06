@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="horizontal" android:background="@drawable/list_selector_white" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <ImageView android:id="@+id/nav_item_image" android:layout_width="wrap_content" android:layout_height="wrap_content" android:scaleType="centerInside"/>
+    <LinearLayout android:layout_gravity="center_vertical" android:orientation="vertical" android:paddingLeft="@dimen/fixed_medium" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <TextView android:ellipsize="end" android:id="@+id/nav_item_text" android:layout_width="match_parent" android:layout_height="wrap_content" android:maxLines="1" style="@style/SearchLandingScreenTitleCellText"/>
+        <TextView android:ellipsize="end" android:id="@+id/nav_item_subtext" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/fixed_small" android:maxLines="1" style="@style/TextLightGrey.Small"/>
+    </LinearLayout>
+</LinearLayout>

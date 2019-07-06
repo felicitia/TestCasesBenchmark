@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:gravity="center" android:layout_gravity="center" android:orientation="vertical" android:padding="@dimen/padding_large" android:layout_width="@dimen/signin_nag_width" android:layout_height="wrap_content">
+    <TextView android:gravity="center_horizontal" android:id="@+id/text_sign_in_dialog_desc" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/sign_in_dialog_text" style="@style/sk_text_title_smaller"/>
+    <TextView android:id="@+id/txt_error" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_large" style="@style/SignInErrorBoxText"/>
+    <FrameLayout android:paddingTop="@dimen/fixed_large" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="vertical" android:id="@+id/login_form" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <Button android:id="@+id/button_google_signin" android:layout_width="match_parent" android:layout_height="wrap_content" style="?attr/buttonExternalAccountGoogle"/>
+            <Button android:id="@+id/button_facebook_signin" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/fixed_medium" style="?attr/buttonExternalAccountFacebook"/>
+            <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/fixed_medium">
+                <Button android:id="@+id/btn_register_dialog" android:paddingLeft="@dimen/fixed_large" android:paddingTop="@dimen/fixed_tiny" android:paddingRight="@dimen/fixed_large" android:paddingBottom="@dimen/fixed_tiny" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_marginRight="@dimen/fixed_small" android:text="@string/register" android:layout_weight="1" style="@style/ButtonWhiteV2"/>
+                <Button android:id="@+id/btn_sign_in_dialog" android:paddingLeft="@dimen/fixed_large" android:paddingTop="@dimen/fixed_tiny" android:paddingRight="@dimen/fixed_large" android:paddingBottom="@dimen/fixed_tiny" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/fixed_small" android:text="@string/sign_in" android:layout_weight="1" style="@style/ButtonWhiteV2"/>
+            </LinearLayout>
+        </LinearLayout>
+        <com.etsy.android.uikit.view.LoadingIndicatorView android:gravity="center" android:id="@+id/login_progress" android:background="@android:color/transparent" android:padding="@dimen/padding_xlarge" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:src="@drawable/progress_spinner_etsy" android:scaleType="center"/>
+    </FrameLayout>
+</LinearLayout>

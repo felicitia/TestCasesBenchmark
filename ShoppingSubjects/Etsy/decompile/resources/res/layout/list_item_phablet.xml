@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="match_parent" android:layout_height="wrap_content" style="@style/CardViewElementStyle">
+    <LinearLayout android:orientation="vertical" android:padding="@dimen/fixed_large" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <com.etsy.android.uikit.view.FullImageView android:layout_gravity="center_horizontal" android:id="@+id/phablet_avatar" android:layout_width="match_parent" android:layout_height="0dp" android:layout_marginBottom="@dimen/fixed_medium" app:imageAspect="1"/>
+        <TextView android:layout_gravity="center_horizontal" android:id="@+id/phablet_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/fixed_small_medium" style="@style/TextOrange.Large.Bold"/>
+        <TextView android:layout_gravity="center_horizontal" android:id="@+id/phablet_etsy_username" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/TextGrey.Large"/>
+    </LinearLayout>
+</android.support.v7.widget.CardView>

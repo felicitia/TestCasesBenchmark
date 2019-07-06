@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="wrap_content" android:layout_height="wrap_content" android:foreground="@drawable/standard_selector">
+    <RelativeLayout android:padding="@dimen/padding_large" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="?android:attr/listPreferredItemHeight">
+        <TextView android:id="@+id/title" android:layout_width="match_parent" android:layout_height="wrap_content" android:textAllCaps="true" style="@style/TextBlack.Bold"/>
+        <TextView android:id="@+id/subtitle" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_below="@+id/title" android:layout_alignLeft="@+id/title" style="@style/TextGrey"/>
+    </RelativeLayout>
+</FrameLayout>

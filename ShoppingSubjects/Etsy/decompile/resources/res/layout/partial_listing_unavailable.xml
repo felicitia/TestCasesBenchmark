@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:id="@+id/listing_unavailable" android:layout_width="match_parent" android:layout_height="match_parent">
+    <include layout="@layout/shop_overlap_header_background"/>
+    <ScrollView android:layout_width="match_parent" android:layout_height="match_parent" android:layout_below="@+id/shop_header_background">
+        <LinearLayout android:layout_gravity="center_horizontal" android:orientation="vertical" android:paddingBottom="@dimen/padding_large" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <ImageView android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/fixed_large" android:src="@drawable/error_sorry_girl"/>
+            <TextView android:gravity="center" android:layout_gravity="center_horizontal" android:paddingLeft="@dimen/padding_xlarge" android:paddingRight="@dimen/padding_xlarge" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_large" android:text="@string/listing_unavailable" style="@style/sk_text_title"/>
+            <TextView android:gravity="center" android:layout_gravity="center_horizontal" android:id="@+id/subtitle" android:paddingLeft="@dimen/padding_xlarge" android:paddingRight="@dimen/padding_xlarge" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/fixed_large" style="@style/TextGrey.Larger"/>
+            <FrameLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/listing_card_padding" android:layout_marginTop="@dimen/listing_card_padding" android:layout_marginRight="@dimen/listing_card_padding">
+                <include layout="@layout/listing_panel_shop"/>
+            </FrameLayout>
+        </LinearLayout>
+    </ScrollView>
+    <include layout="@layout/shop_overlap_header"/>
+</RelativeLayout>

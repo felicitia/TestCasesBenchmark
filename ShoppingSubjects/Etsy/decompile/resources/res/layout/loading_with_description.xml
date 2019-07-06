@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:gravity="center" android:padding="@dimen/padding_large" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <com.etsy.android.uikit.view.LoadingIndicatorView android:id="@+id/activity_indicator" android:padding="@dimen/padding_large" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/progress_spinner_etsy" android:scaleType="center"/>
+    <TextView android:id="@+id/loading_description" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="false" style="@style/TextGrey.Large"/>
+</LinearLayout>

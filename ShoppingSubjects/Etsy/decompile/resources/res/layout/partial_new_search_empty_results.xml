@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:id="@+id/empty_view" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <ImageView android:layout_gravity="center_horizontal" android:id="@+id/empty_image" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/error_sorry_girl"/>
+        <TextView android:gravity="center" android:id="@+id/new_search_empty_title" android:paddingLeft="@dimen/fixed_medium" android:paddingTop="@dimen/fixed_large" android:paddingRight="@dimen/fixed_medium" android:paddingBottom="@dimen/fixed_large" android:layout_width="match_parent" android:layout_height="wrap_content" style="@style/sk_text_title"/>
+        <TextView android:gravity="center" android:id="@+id/new_search_empty_filter_title" android:padding="@dimen/fixed_medium" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/new_search_empty_view_filters_title" android:textAllCaps="true" style="@style/TextMidGrey.Small"/>
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@+id/new_search_empty_filter_list" android:paddingBottom="@dimen/fixed_large" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+        <TextView android:gravity="center" android:id="@+id/new_search_empty_query_title" android:padding="@dimen/fixed_medium" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/new_search_empty_view_query_title" android:textAllCaps="true" style="@style/TextMidGrey.Small"/>
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@+id/new_search_empty_query_list" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="match_parent" android:layout_height="wrap_content" style="@style/CardViewElementStyle">
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="horizontal" android:id="@+id/images" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+        <View android:background="@color/list_divider" android:layout_width="match_parent" android:layout_height="@dimen/divider_height"/>
+        <TextView android:ellipsize="end" android:id="@+id/title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/padding_small_medium" android:layout_marginTop="@dimen/padding_small_medium" android:layout_marginRight="@dimen/padding_small_medium" android:maxLines="1" android:includeFontPadding="false" style="@style/TextDarkGrey"/>
+        <TextView android:ellipsize="end" android:id="@+id/subtitle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/padding_small_medium" android:layout_marginRight="@dimen/padding_small_medium" android:layout_marginBottom="@dimen/padding_small_medium" android:maxLines="1" android:includeFontPadding="false" style="@style/TextLightGrey.Small"/>
+    </LinearLayout>
+</android.support.v7.widget.CardView>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:gravity="center" android:layout_width="match_parent" android:layout_height="match_parent" android:foreground="@drawable/bg_ten_percent_black_selector">
+    <ImageView android:id="@+id/image" android:layout_width="match_parent" android:layout_height="match_parent" android:scaleType="centerCrop"/>
+    <View android:id="@+id/alpha_screen" android:background="@color/white_transparent" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    <LinearLayout android:layout_gravity="center" android:orientation="vertical" android:id="@+id/upload_failed" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <TextView android:layout_gravity="center" android:paddingBottom="@dimen/padding_medium" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/image_failed_to_upload" style="@style/sk_text_title"/>
+        <TextView android:layout_gravity="center" android:id="@+id/retry_button" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/image_retry_upload" style="@style/ButtonWhiteV2"/>
+    </LinearLayout>
+    <LinearLayout android:layout_gravity="center" android:orientation="vertical" android:id="@+id/activity_indicator" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <TextView android:id="@+id/uploading_message" android:paddingBottom="@dimen/padding_medium" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/giftcard_message_uploading_file" style="@style/sk_text_body_larger"/>
+        <com.etsy.android.uikit.view.LoadingIndicatorView android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/spinner_white" android:scaleType="center"/>
+    </LinearLayout>
+</FrameLayout>

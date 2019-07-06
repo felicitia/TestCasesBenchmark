@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:divider="@drawable/list_divider" android:showDividers="middle">
+    <include layout="@layout/local_market_header_tablet_title"/>
+    <LinearLayout android:orientation="vertical" android:paddingLeft="@dimen/local_market_details_card_internal_side_padding" android:paddingBottom="@dimen/padding_medium" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <TextView android:id="@+id/about_text" android:paddingTop="@dimen/padding_large" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginRight="@dimen/local_market_details_card_internal_side_padding" style="@style/CardSectionTitle"/>
+        <FrameLayout android:id="@+id/team_row" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/local_market_details_card_internal_side_padding">
+            <TextView android:id="@+id/team" android:layout_width="match_parent" android:layout_height="wrap_content" style="@style/TextMidGrey"/>
+        </FrameLayout>
+        <include layout="@layout/local_market_header_tablet_details"/>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" style="@style/Convo2.Card">
+    <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <ImageView android:layout_gravity="top" android:id="@+id/convo_reply_user_avatar" android:layout_width="@dimen/conversation_avatar" android:layout_height="@dimen/conversation_avatar" android:layout_marginRight="@dimen/margin_medium" android:contentDescription="@string/user_avatar_content_description" android:layout_marginEnd="@dimen/margin_medium"/>
+        <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+            <EditText android:id="@+id/convo_reply_edittext" android:paddingBottom="@dimen/convo_reply_icon_clearance" android:layout_width="match_parent" android:layout_height="wrap_content" android:scrollHorizontally="false" android:inputType="textMultiLine" style="@style/Convo2.ReplyEditText"/>
+            <com.etsy.android.iconsy.views.IconView android:id="@+id/convo_reply_add_snippet" android:layout_alignRight="@+id/convo_reply_edittext" android:layout_alignBottom="@+id/convo_reply_edittext" android:layout_alignEnd="@+id/convo_reply_edittext" app:iconChar="@+id/ic_etsy_snippets" style="@style/Convo2.ReplyIcon"/>
+            <com.etsy.android.iconsy.views.IconView android:id="@+id/convo_reply_add_image" android:layout_marginRight="@dimen/margin_large" android:layout_toLeftOf="@+id/convo_reply_add_snippet" android:layout_alignBottom="@+id/convo_reply_edittext" android:layout_marginEnd="@dimen/margin_large" android:layout_toStartOf="@+id/convo_reply_add_snippet" app:iconChar="@+id/ic_standard_camera" style="@style/Convo2.ReplyIcon"/>
+            <com.etsy.android.uikit.view.ImageAttachmentLayout android:orientation="horizontal" android:id="@+id/linear_reply_convo_images" android:paddingTop="@dimen/padding_medium" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_below="@+id/convo_reply_edittext" android:layout_alignLeft="@+id/convo_reply_edittext" app:attachmentPadding="@dimen/padding_large"/>
+        </RelativeLayout>
+    </LinearLayout>
+    <Button android:gravity="center" android:id="@+id/convo_reply_send" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/convo_send_label" style="@style/ButtonBlueV2"/>
+</LinearLayout>
