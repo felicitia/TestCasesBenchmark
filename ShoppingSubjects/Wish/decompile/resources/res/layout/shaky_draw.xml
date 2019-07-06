@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.wish.android.shaky.Paper android:layout_gravity="center" android:id="@+id/shaky_paper" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+    <FrameLayout android:layout_width="match_parent" android:layout_height="match_parent" android:layout_margin="@dimen/frame_width">
+        <Button android:layout_gravity="top|left|center_vertical|center_horizontal|center|start" android:id="@+id/shaky_button_undo" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/shaky_draw_undo"/>
+        <Button android:layout_gravity="top|right|center_vertical|center_horizontal|center|end" android:id="@+id/shaky_button_brush" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/shaky_draw_brush"/>
+        <Button android:layout_gravity="bottom|left|center_vertical|center_horizontal|center|start" android:id="@+id/shaky_button_clear" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/shaky_draw_clear"/>
+        <Button android:layout_gravity="bottom|right|center_vertical|center_horizontal|center|end" android:id="@+id/shaky_button_save" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/shaky_draw_save"/>
+    </FrameLayout>
+</FrameLayout>

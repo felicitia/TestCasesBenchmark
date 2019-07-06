@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="cart_item">
+        <item quantity="one">Vagn: %1$s vara</item>
+        <item quantity="other">Vagn: %1$s varor</item>
+    </plurals>
+    <plurals name="daily_raffle_entries_text">
+        <item quantity="one">%1$d Deltagande</item>
+        <item quantity="other">%1$d Deltaganden</item>
+    </plurals>
+    <plurals name="daily_raffle_free_items_and_coupons_text">
+        <item quantity="one">%1$d Gratis produkt</item>
+        <item quantity="other">%1$d Gratis produkter</item>
+    </plurals>
+    <plurals name="detail_table_color">
+        <item quantity="one">Färg</item>
+        <item quantity="other">Färger</item>
+    </plurals>
+    <plurals name="detail_table_size">
+        <item quantity="one">Storlek</item>
+        <item quantity="other">Storlekar</item>
+    </plurals>
+    <plurals name="follower_plural">
+        <item quantity="one">%1$d följare</item>
+        <item quantity="other">%1$d följare</item>
+    </plurals>
+    <plurals name="following_plural">
+        <item quantity="one">%1$d följer</item>
+        <item quantity="other">%1$d följer</item>
+    </plurals>
+    <plurals name="item">
+        <item quantity="one">%1$s vara</item>
+        <item quantity="other">%1$s varor</item>
+    </plurals>
+    <plurals name="item_added_to_cart">
+        <item quantity="one">Varan har lagts till i kundvagnen</item>
+        <item quantity="other">Varorna har lagts till i kundvagnen</item>
+    </plurals>
+    <plurals name="number_available">
+        <item quantity="one">%1$d tillgänglig</item>
+        <item quantity="other">%1$d tillgängliga</item>
+    </plurals>
+    <plurals name="number_of_followers">
+        <item quantity="one">Följare</item>
+        <item quantity="other">Följare</item>
+    </plurals>
+    <plurals name="number_of_saves">
+        <item quantity="one">Sparad</item>
+        <item quantity="other">Sparade</item>
+    </plurals>
+    <plurals name="number_said_thanks">
+        <item quantity="one">%1$d sa tack</item>
+        <item quantity="other">%1$d sa tack</item>
+    </plurals>
+    <plurals name="people">
+        <item quantity="one">%1$s person</item>
+        <item quantity="other">%1$s personer</item>
+    </plurals>
+    <plurals name="rating">
+        <item quantity="one">(%1$s betyg)</item>
+        <item quantity="other">(%1$s betyg)</item>
+    </plurals>
+    <plurals name="ratings_capitalized_no_bracket">
+        <item quantity="one">%1$s betyg</item>
+        <item quantity="other">%1$s betyg</item>
+    </plurals>
+    <plurals name="redeem_for_points_question">
+        <item quantity="one">Lös in för %1$d poäng?</item>
+        <item quantity="other">Lös in för %1$d poäng?</item>
+    </plurals>
+    <plurals name="reward_points_number">
+        <item quantity="one">%1$s Poäng</item>
+        <item quantity="other">%1$s Poäng</item>
+    </plurals>
+    <plurals name="selling_product">
+        <item quantity="one">Säljer %1$s produkt</item>
+        <item quantity="other">Säljer %1$s produkter</item>
+    </plurals>
+    <plurals name="store_ratings_with_bracket">
+        <item quantity="one">(%1$s Butiksbetyg)</item>
+        <item quantity="other">(%1$s Butiksbetyg)</item>
+    </plurals>
+    <plurals name="user_rating">
+        <item quantity="one">Användaromdöme</item>
+        <item quantity="other">Användaromdömen</item>
+    </plurals>
+    <plurals name="user_review">
+        <item quantity="one">%1$s Användarrecension</item>
+        <item quantity="other">%1$s Användarrecensioner</item>
+    </plurals>
+    <plurals name="wishlist_new_count">
+        <item quantity="one">%1$d ny</item>
+        <item quantity="other">%1$d nya</item>
+    </plurals>
+    <plurals name="wishlist_view_count">
+        <item quantity="one">%1$d visning</item>
+        <item quantity="other">%1$d visningar</item>
+    </plurals>
+</resources>

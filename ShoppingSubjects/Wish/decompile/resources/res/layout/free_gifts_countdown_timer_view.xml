@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="vertical" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/twenty_four_padding" android:layout_marginRight="@dimen/twenty_four_padding" android:layout_weight="1">
+        <com.contextlogic.wish.ui.text.ThemedTextView android:textSize="@dimen/free_gift_timer_font_size" android:textStyle="bold" android:textColor="@color/cool_gray1" android:gravity="center" android:id="@+id/free_gifts_countdown_timer_view_days" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+        <com.contextlogic.wish.ui.text.ThemedTextView android:textSize="@dimen/free_gift_timer_unit_font_size" android:textColor="@color/cool_gray1" android:gravity="center" android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/days" android:textAllCaps="true"/>
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_marginRight="@dimen/twenty_four_padding" android:layout_weight="1">
+        <com.contextlogic.wish.ui.text.ThemedTextView android:textSize="@dimen/free_gift_timer_font_size" android:textStyle="bold" android:textColor="@color/cool_gray1" android:gravity="center" android:id="@+id/free_gifts_countdown_timer_view_hrs" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+        <com.contextlogic.wish.ui.text.ThemedTextView android:textSize="@dimen/free_gift_timer_unit_font_size" android:textColor="@color/cool_gray1" android:gravity="center" android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/hrs" android:textAllCaps="true"/>
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_marginRight="@dimen/twenty_four_padding" android:layout_weight="1">
+        <com.contextlogic.wish.ui.text.ThemedTextView android:textSize="@dimen/free_gift_timer_font_size" android:textStyle="bold" android:textColor="@color/cool_gray1" android:gravity="center" android:id="@+id/free_gifts_countdown_timer_view_min" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+        <com.contextlogic.wish.ui.text.ThemedTextView android:textSize="@dimen/free_gift_timer_unit_font_size" android:textColor="@color/cool_gray1" android:gravity="center" android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/min" android:textAllCaps="true"/>
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_marginRight="@dimen/twenty_four_padding" android:layout_weight="1">
+        <com.contextlogic.wish.ui.text.ThemedTextView android:textSize="@dimen/free_gift_timer_font_size" android:textStyle="bold" android:textColor="@color/orange" android:gravity="center" android:id="@+id/free_gifts_countdown_timer_view_sec" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+        <com.contextlogic.wish.ui.text.ThemedTextView android:textSize="@dimen/free_gift_timer_unit_font_size" android:textColor="@color/orange" android:gravity="center" android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/sec" android:textAllCaps="true"/>
+    </LinearLayout>
+</LinearLayout>

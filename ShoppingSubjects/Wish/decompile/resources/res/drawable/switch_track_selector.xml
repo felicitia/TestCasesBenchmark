@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt">
+    <item android:state_enabled="false" android:state_checked="true">
+        <inset android:insetLeft="@dimen/switch_track_inset" android:insetRight="@dimen/switch_track_inset" android:insetTop="@dimen/switch_track_inset" android:insetBottom="@dimen/switch_track_inset">
+            <shape android:shape="rectangle">
+                <solid android:color="@color/switch_track_disabled_checked"/>
+                <size android:height="@dimen/switch_track_height" android:width="@dimen/switch_track_width"/>
+                <corners android:radius="@dimen/switch_track_radius"/>
+            </shape>
+        </inset>
+    </item>
+    <item android:state_enabled="false" android:state_checked="false">
+        <inset android:insetLeft="@dimen/switch_track_inset" android:insetRight="@dimen/switch_track_inset" android:insetTop="@dimen/switch_track_inset" android:insetBottom="@dimen/switch_track_inset">
+            <shape android:shape="rectangle">
+                <solid android:color="@color/switch_track_disabled_unchecked"/>
+                <size android:height="@dimen/switch_track_height" android:width="@dimen/switch_track_width"/>
+                <corners android:radius="@dimen/switch_track_radius"/>
+            </shape>
+        </inset>
+    </item>
+    <item android:state_checked="true">
+        <inset android:insetLeft="@dimen/switch_track_inset" android:insetRight="@dimen/switch_track_inset" android:insetTop="@dimen/switch_track_inset" android:insetBottom="@dimen/switch_track_inset">
+            <shape android:shape="rectangle">
+                <solid android:color="@color/switch_track_enabled_checked"/>
+                <size android:height="@dimen/switch_track_height" android:width="@dimen/switch_track_width"/>
+                <corners android:radius="@dimen/switch_track_radius"/>
+            </shape>
+        </inset>
+    </item>
+    <item>
+        <inset android:insetLeft="@dimen/switch_track_inset" android:insetRight="@dimen/switch_track_inset" android:insetTop="@dimen/switch_track_inset" android:insetBottom="@dimen/switch_track_inset">
+            <shape android:shape="rectangle">
+                <solid android:color="@color/switch_track_enabled_unchecked"/>
+                <size android:height="@dimen/switch_track_height" android:width="@dimen/switch_track_width"/>
+                <corners android:radius="@dimen/switch_track_radius"/>
+            </shape>
+        </inset>
+    </item>
+</selector>

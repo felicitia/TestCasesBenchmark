@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt">
+    <com.contextlogic.wish.ui.text.ThemedTextView android:textSize="@dimen/text_size_body" android:textStyle="bold" android:textColor="@color/text_primary" android:gravity="left" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/paypal"/>
+    <com.contextlogic.wish.ui.text.ThemedTextView android:textSize="@dimen/text_size_body" android:textColor="@color/text_primary" android:gravity="left" android:paddingTop="@dimen/double_screen_padding" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/pay_using_paypals_worldwide_secure_system"/>
+</merge>

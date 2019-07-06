@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.onfido.android.sdk.capture.ui.widget.RecyclerView android:id="@+id/countriesList" android:paddingBottom="@dimen/onfido_country_selection_list_margin_bottom" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    <View android:background="@drawable/onfido_shadow_bottom_top" android:layout_width="match_parent" android:layout_height="12dp" app:layout_anchor="@+id/bottomSheet"/>
+    <RelativeLayout android:id="@+id/bottomSheet" android:background="@color/onfido_white" android:clipToPadding="false" android:layout_width="match_parent" android:layout_height="wrap_content" app:behavior_hideable="true" app:elevation="4dp" app:layout_behavior="com.onfido.android.sdk.capture.ui.country_selection.CountrySelectionBottomSheetBehavior">
+        <include layout="@layout/onfido_unsupported_document_bottom_sheet"/>
+    </RelativeLayout>
+</android.support.design.widget.CoordinatorLayout>

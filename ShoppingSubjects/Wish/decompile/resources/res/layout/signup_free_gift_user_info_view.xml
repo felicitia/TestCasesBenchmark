@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <FrameLayout android:layout_width="match_parent" android:layout_height="match_parent">
+        <com.contextlogic.wish.ui.image.AutoReleasableImageView android:layout_width="match_parent" android:layout_height="@dimen/login_fragment_top_banner_height"/>
+        <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+            <com.contextlogic.wish.ui.text.ThemedTextView android:textSize="@dimen/text_size_title" android:textStyle="bold" android:textColor="@color/white" android:id="@+id/signup_free_gift_info_view_header_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/login_fragment_free_gift_info_page_top_padding" android:layout_marginBottom="@dimen/sixteen_padding" android:text="@string/create_an_account_to_track_your_gift"/>
+            <com.contextlogic.wish.ui.image.NetworkImageView android:id="@+id/signup_free_gift_info_view_header_image" android:layout_width="@dimen/login_fragment_free_gift_info_product_image_size" android:layout_height="@dimen/login_fragment_free_gift_info_product_image_size"/>
+        </LinearLayout>
+    </FrameLayout>
+</merge>

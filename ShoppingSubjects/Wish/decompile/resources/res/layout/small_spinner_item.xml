@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.contextlogic.wish.ui.text.ThemedTextView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:textSize="@dimen/text_size_caption" android:textColor="@color/black" android:id="@android:id/text1" android:layout_width="match_parent" android:layout_height="wrap_content" android:singleLine="true"/>

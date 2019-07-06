@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:background="@color/gray7" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="vertical" android:background="@color/white" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="vertical" android:padding="@dimen/sixteen_padding" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <com.contextlogic.wish.ui.text.ThemedTextView android:textSize="@dimen/text_size_body_sp" android:textStyle="bold" android:textColor="@color/gray1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/current_phone_number_title" android:lineSpacingExtra="@dimen/six_padding"/>
+            <com.contextlogic.wish.ui.text.ThemedTextView android:textSize="@dimen/text_size_body_sp" android:textColor="@color/gray1" android:id="@+id/change_phone_number_current_phone_number" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/six_padding" android:lineSpacingExtra="@dimen/four_padding"/>
+        </LinearLayout>
+        <View android:background="@color/gray6" android:layout_width="match_parent" android:layout_height="@dimen/divider" android:layout_marginLeft="@dimen/sixteen_padding" android:layout_marginRight="@dimen/sixteen_padding"/>
+        <LinearLayout android:orientation="vertical" android:paddingLeft="@dimen/sixteen_padding" android:paddingTop="@dimen/sixteen_padding" android:paddingRight="@dimen/sixteen_padding" android:paddingBottom="@dimen/twenty_four_padding" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <com.contextlogic.wish.ui.text.ThemedTextView android:textSize="@dimen/text_size_body_sp" android:textStyle="bold" android:textColor="@color/gray1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/change_your_phone_number_title" android:lineSpacingExtra="@dimen/six_padding"/>
+            <com.contextlogic.wish.ui.text.ThemedTextView android:textSize="@dimen/text_size_body_sp" android:textColor="@color/gray1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/six_padding" android:text="@string/change_your_phone_number_message" android:lineSpacingExtra="@dimen/four_padding"/>
+            <com.contextlogic.wish.activity.settings.changephonenumber.GetResetKeyButton android:id="@+id/change_phone_number_get_reset_key_button" android:layout_width="match_parent" android:layout_height="@dimen/fourty_padding" android:layout_marginTop="@dimen/twenty_four_padding" style="@style/Widget.Wish.Button"/>
+        </LinearLayout>
+        <View android:background="@color/gray5" android:layout_width="match_parent" android:layout_height="@dimen/default_border_stroke"/>
+    </LinearLayout>
+</ScrollView>

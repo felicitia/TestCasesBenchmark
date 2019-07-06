@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+        <View android:background="@color/black" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1"/>
+        <FrameLayout android:id="@+id/video_player_fragment_container" android:background="@color/transparent" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="18">
+            <com.contextlogic.wish.ui.image.AutoReleasableImageView android:layout_gravity="top|left|center_vertical|center_horizontal|center" android:id="@+id/video_player_fragment_x_button" android:visibility="gone" android:layout_width="@dimen/double_screen_padding" android:layout_height="@dimen/double_screen_padding" android:layout_marginLeft="@dimen/sixteen_padding" android:layout_marginTop="@dimen/sixteen_padding" app:drawable="@drawable/close_x_24"/>
+            <com.contextlogic.wish.ui.button.ThemedButton android:textSize="@dimen/text_size_body" android:textStyle="bold" android:textColor="@color/white" android:gravity="center" android:layout_gravity="bottom|right|center_vertical|center_horizontal|center" android:id="@+id/video_player_fragment_finish_button" android:background="@drawable/camera_capsule_button_selector" android:visibility="gone" android:layout_width="@dimen/camera_finish_button_width" android:layout_height="@dimen/default_button_height" android:layout_marginRight="@dimen/sixteen_padding" android:layout_marginBottom="@dimen/sixteen_padding" android:text="@string/finish" android:textAllCaps="false"/>
+        </FrameLayout>
+        <View android:background="@color/black" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1"/>
+    </LinearLayout>
+    <RelativeLayout android:gravity="center" android:id="@+id/video_fragment_video_uploading_view" android:background="@color/translucent_black" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent">
+        <com.contextlogic.wish.ui.image.AutoReleasableImageView android:id="@+id/camera_image" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" app:drawable="@drawable/camera_disabled_62x51"/>
+        <TextView android:textSize="@dimen/text_size_body" android:textColor="@color/white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/twenty_four_padding" android:text="@string/video_uploading_ellipsis" android:layout_below="@+id/camera_image" android:layout_centerHorizontal="true"/>
+    </RelativeLayout>
+</FrameLayout>

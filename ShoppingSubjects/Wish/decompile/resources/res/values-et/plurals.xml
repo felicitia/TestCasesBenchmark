@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="cart_item">
+        <item quantity="one">Kaart: %1$s toode</item>
+        <item quantity="other">Kaart: %1$s toodet</item>
+    </plurals>
+    <plurals name="daily_raffle_entries_text">
+        <item quantity="one">%1$d Sissekannet</item>
+        <item quantity="other">%1$d Sissekannet</item>
+    </plurals>
+    <plurals name="daily_raffle_free_items_and_coupons_text">
+        <item quantity="one">%1$d Tasuta esemed</item>
+        <item quantity="other">%1$d Tasuta esemed</item>
+    </plurals>
+    <plurals name="detail_table_color">
+        <item quantity="one">Värv</item>
+        <item quantity="other">Värvid</item>
+    </plurals>
+    <plurals name="detail_table_size">
+        <item quantity="one">Suurus</item>
+        <item quantity="other">Suurused</item>
+    </plurals>
+    <plurals name="follower_plural">
+        <item quantity="one">%1$d jälgija</item>
+        <item quantity="other">%1$d jälgijat</item>
+    </plurals>
+    <plurals name="following_plural">
+        <item quantity="one">%1$d jälgib</item>
+        <item quantity="other">%1$d jälgivad</item>
+    </plurals>
+    <plurals name="item">
+        <item quantity="one">%1$s ese</item>
+        <item quantity="other">%1$s eset</item>
+    </plurals>
+    <plurals name="item_added_to_cart">
+        <item quantity="one">Ostukorvi lisatud toode</item>
+        <item quantity="other">Ostukorvi lisatud tooted</item>
+    </plurals>
+    <plurals name="number_available">
+        <item quantity="one">%1$d saadaval</item>
+        <item quantity="other">%1$d saadaval</item>
+    </plurals>
+    <plurals name="number_of_followers">
+        <item quantity="one">jälgija</item>
+        <item quantity="other">jälgijad</item>
+    </plurals>
+    <plurals name="number_of_saves">
+        <item quantity="one">Sääst</item>
+        <item quantity="other">Säästud</item>
+    </plurals>
+    <plurals name="number_said_thanks">
+        <item quantity="one">%1$d tänas</item>
+        <item quantity="other">%1$d tänasid</item>
+    </plurals>
+    <plurals name="people">
+        <item quantity="one">%1$s inimene</item>
+        <item quantity="other">%1$s inimest</item>
+    </plurals>
+    <plurals name="rating">
+        <item quantity="one">(%1$s hinnang)</item>
+        <item quantity="other">(%1$s hinnangut)</item>
+    </plurals>
+    <plurals name="ratings_capitalized_no_bracket">
+        <item quantity="one">{0} hinnang</item>
+        <item quantity="other">%1$s hinnangut</item>
+    </plurals>
+    <plurals name="redeem_for_points_question">
+        <item quantity="one">Lunastad %1$d punkti eest?</item>
+        <item quantity="other">Lunastad %1$d punkti eest?</item>
+    </plurals>
+    <plurals name="reward_points_number">
+        <item quantity="one">%1$s punkti</item>
+        <item quantity="other">%1$s punkti</item>
+    </plurals>
+    <plurals name="selling_product">
+        <item quantity="one">Müüb %1$s toodet</item>
+        <item quantity="other">Müüb %1$s toodet</item>
+    </plurals>
+    <plurals name="store_ratings_with_bracket">
+        <item quantity="one">(%1$s kaupluse hinnang)</item>
+        <item quantity="other">(%1$s kaupluse hinnangut)</item>
+    </plurals>
+    <plurals name="user_rating">
+        <item quantity="one">Kasutaja hinnang</item>
+        <item quantity="other">Kasutajate hinnangud</item>
+    </plurals>
+    <plurals name="user_review">
+        <item quantity="one">%1$s kasutaja ülevaade</item>
+        <item quantity="other">%1$s kasutaja ülevaated</item>
+    </plurals>
+    <plurals name="wishlist_new_count">
+        <item quantity="one">%1$d uus</item>
+        <item quantity="other">%1$d uut</item>
+    </plurals>
+    <plurals name="wishlist_view_count">
+        <item quantity="one">%1$d vaatamine</item>
+        <item quantity="other">%1$d vaatamist</item>
+    </plurals>
+</resources>

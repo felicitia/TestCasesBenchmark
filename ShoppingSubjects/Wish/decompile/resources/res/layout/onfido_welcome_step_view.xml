@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <View android:id="@+id/topSeparator" android:background="@color/onfido_light_400" android:layout_width="2dp" android:layout_height="20dp" android:layout_marginLeft="11dp" android:layout_marginBottom="8dp"/>
+    <RelativeLayout android:id="@+id/stepNumberContainer" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_below="@+id/topSeparator">
+        <View android:background="@drawable/onfido_circle" android:layout_width="@dimen/onfido_welcome_icon_container_dimen" android:layout_height="@dimen/onfido_welcome_icon_container_dimen"/>
+        <TextView android:textSize="@dimen/onfido_fs_small" android:textColor="@color/onfido_white" android:gravity="center" android:layout_gravity="center" android:id="@+id/stepNumber" android:layout_width="wrap_content" android:layout_height="wrap_content" android:includeFontPadding="false" android:layout_centerInParent="true" style="@style/OnfidoTextStyle"/>
+    </RelativeLayout>
+    <ImageView android:layout_gravity="center" android:id="@+id/stepIcon" android:visibility="gone" android:layout_width="@dimen/onfido_welcome_icon_dimen" android:layout_height="@dimen/onfido_welcome_icon_dimen" android:layout_margin="4dp" android:layout_below="@+id/topSeparator"/>
+    <View android:id="@+id/bottomSeparator" android:background="@color/onfido_light_400" android:layout_width="2dp" android:layout_height="20dp" android:layout_marginLeft="11dp" android:layout_marginTop="8dp" android:layout_below="@+id/stepNumberContainer"/>
+    <TextView android:textSize="@dimen/onfido_welcome_title_size" android:id="@+id/stepTitle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8dp" android:lines="2" android:includeFontPadding="false" android:layout_toRightOf="@+id/stepNumberContainer" android:layout_below="@+id/topSeparator" style="@style/OnfidoTextStyle"/>
+</RelativeLayout>

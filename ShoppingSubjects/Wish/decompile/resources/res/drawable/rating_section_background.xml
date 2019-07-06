@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt">
+    <item android:left="@dimen/hidden_stroke" android:right="@dimen/hidden_stroke">
+        <shape android:shape="rectangle">
+            <solid android:color="@color/white"/>
+            <stroke android:width="@dimen/review_spacer_border" android:color="@color/gray5"/>
+        </shape>
+    </item>
+</layer-list>

@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.contextlogic.wish.ui.text.ThemedTextView android:textSize="@dimen/text_size_body" android:textColor="@color/text_primary" android:gravity="left" android:id="@+id/text_viewer_fragment_content_text" android:padding="@dimen/screen_padding" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+</ScrollView>

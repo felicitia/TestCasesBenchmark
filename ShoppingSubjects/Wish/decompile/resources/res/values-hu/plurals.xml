@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="cart_item">
+        <item quantity="one">Kosár: %1$s árucikk</item>
+        <item quantity="other">Kosár: %1$s árucikk</item>
+    </plurals>
+    <plurals name="daily_raffle_entries_text">
+        <item quantity="one">%1$d bejegyzés</item>
+        <item quantity="other">%1$d bejegyzés</item>
+    </plurals>
+    <plurals name="daily_raffle_free_items_and_coupons_text">
+        <item quantity="one">%1$d ingyenes termék</item>
+        <item quantity="other">%1$d ingyenes termék</item>
+    </plurals>
+    <plurals name="detail_table_color">
+        <item quantity="one">Szín</item>
+        <item quantity="other">Szín</item>
+    </plurals>
+    <plurals name="detail_table_size">
+        <item quantity="one">Méret</item>
+        <item quantity="other">Méret</item>
+    </plurals>
+    <plurals name="follower_plural">
+        <item quantity="one">%1$d követő%1$d</item>
+        <item quantity="other">%1$d követő</item>
+    </plurals>
+    <plurals name="following_plural">
+        <item quantity="one">%1$d követő</item>
+        <item quantity="other">%1$d követő</item>
+    </plurals>
+    <plurals name="item">
+        <item quantity="one">%1$s termék</item>
+        <item quantity="other">%1$s termék</item>
+    </plurals>
+    <plurals name="item_added_to_cart">
+        <item quantity="one">Termék hozzáadva a kosárhoz</item>
+        <item quantity="other">Termék hozzáadva a kosárhoz</item>
+    </plurals>
+    <plurals name="number_available">
+        <item quantity="one">%1$d elérhető</item>
+        <item quantity="other">%1$d elérhető</item>
+    </plurals>
+    <plurals name="number_of_followers">
+        <item quantity="one">követő</item>
+        <item quantity="other">követő</item>
+    </plurals>
+    <plurals name="number_of_saves">
+        <item quantity="one">mentés</item>
+        <item quantity="other">mentés</item>
+    </plurals>
+    <plurals name="number_said_thanks">
+        <item quantity="one">%1$d ember köszönte meg</item>
+        <item quantity="other">%1$d ember köszönte meg</item>
+    </plurals>
+    <plurals name="people">
+        <item quantity="one">%1$s fő</item>
+        <item quantity="other">%1$s fő</item>
+    </plurals>
+    <plurals name="rating">
+        <item quantity="one">(%1$s értékelés)</item>
+        <item quantity="other">(%1$s értékelés)</item>
+    </plurals>
+    <plurals name="ratings_capitalized_no_bracket">
+        <item quantity="one">%1$s értékelés</item>
+        <item quantity="other">%1$s értékelés</item>
+    </plurals>
+    <plurals name="redeem_for_points_question">
+        <item quantity="one">Beváltod %1$d pontért?</item>
+        <item quantity="other">Beváltod %1$d pontért?</item>
+    </plurals>
+    <plurals name="reward_points_number">
+        <item quantity="one">%1$s pont</item>
+        <item quantity="other">%1$s pont</item>
+    </plurals>
+    <plurals name="selling_product">
+        <item quantity="one">%1$s terméket árul</item>
+        <item quantity="other">%1$s terméket árul</item>
+    </plurals>
+    <plurals name="store_ratings_with_bracket">
+        <item quantity="one">(%1$s bolt értékelése)</item>
+        <item quantity="other">(%1$s bolt értékelése)</item>
+    </plurals>
+    <plurals name="user_rating">
+        <item quantity="one">Felhasználói értékelés</item>
+        <item quantity="other">Felhasználói értékelés</item>
+    </plurals>
+    <plurals name="user_review">
+        <item quantity="one">%1$s felhasználói vélemény</item>
+        <item quantity="other">%1$s felhasználói vélemény</item>
+    </plurals>
+    <plurals name="wishlist_new_count">
+        <item quantity="one">%1$d új</item>
+        <item quantity="other">%1$d új</item>
+    </plurals>
+    <plurals name="wishlist_view_count">
+        <item quantity="one">%1$d megtekintés</item>
+        <item quantity="other">%1$d megtekintés</item>
+    </plurals>
+</resources>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <RelativeLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <com.contextlogic.wish.ui.image.AutoReleasableImageView android:id="@+id/wish_express_banner_view_background" android:background="@drawable/wish_express_banner_background" android:layout_width="match_parent" android:layout_height="@dimen/wish_express_tab_banner_height" android:scaleType="centerCrop"/>
+        <LinearLayout android:gravity="center_vertical" android:layout_gravity="center" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginLeft="@dimen/wish_express_tab_banner_text_padding" android:layout_marginRight="@dimen/four_padding" android:layout_alignTop="@+id/wish_express_banner_view_background" android:layout_alignBottom="@+id/wish_express_banner_view_background">
+            <com.contextlogic.wish.ui.text.ThemedTextView android:textSize="@dimen/wish_express_tab_banner_title_text_size" android:textStyle="bold" android:textColor="@color/bordered_orange_button" android:id="@+id/wish_express_banner_view_title" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+            <com.contextlogic.wish.ui.text.ThemedTextView android:textSize="@dimen/wish_express_tab_banner_subtitle_text_size" android:textColor="@color/cool_gray3" android:id="@+id/wish_express_banner_view_subtitle" android:paddingTop="@dimen/four_padding" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+        </LinearLayout>
+    </RelativeLayout>
+</merge>

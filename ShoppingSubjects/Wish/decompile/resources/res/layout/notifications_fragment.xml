@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.contextlogic.wish.ui.viewpager.PagerSlidingTabStrip android:id="@+id/notifications_fragment_viewpager_tabs" android:background="@color/main_primary" android:layout_width="match_parent" android:layout_height="@dimen/notifications_fragment_tab_strip_height"/>
+    <com.contextlogic.wish.ui.viewpager.SafeViewPager android:id="@+id/notifications_fragment_view_page" android:background="@drawable/white_background" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_below="@+id/notifications_fragment_viewpager_tabs"/>
+</RelativeLayout>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt">
+    <item>
+        <shape android:shape="rectangle">
+            <solid android:color="@color/group_buy_faded_row_bg_color"/>
+            <corners android:topLeftRadius="@dimen/small_corner_radius" android:topRightRadius="@dimen/small_corner_radius"/>
+        </shape>
+    </item>
+    <item android:left="@dimen/thin_separator" android:top="@dimen/thin_separator" android:right="@dimen/thin_separator" android:bottom="@dimen/thin_separator">
+        <shape android:shape="rectangle">
+            <solid android:color="@color/white"/>
+        </shape>
+    </item>
+</layer-list>

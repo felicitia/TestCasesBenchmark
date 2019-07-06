@@ -1,0 +1,331 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" android:versionCode="778" android:versionName="4.22.6" android:installLocation="auto" package="com.contextlogic.wish">
+    <uses-sdk android:minSdkVersion="16" android:targetSdkVersion="27"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.WAKE_LOCK"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.VIBRATE"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE"/>
+    <uses-permission android:name="android.permission.CAMERA"/>
+    <uses-permission android:name="android.permission.GET_ACCOUNTS"/>
+    <uses-permission android:name="android.permission.READ_CONTACTS"/>
+    <uses-permission-sdk-23 android:name="android.permission.NFC"/>
+    <uses-feature android:name="android.hardware.camera" android:required="true"/>
+    <uses-feature android:name="android.hardware.camera.autofocus" android:required="true"/>
+    <uses-feature android:name="android.hardware.camera.flash" android:required="false"/>
+    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES"/>
+    <uses-feature android:glEsVersion="20000" android:required="true"/>
+    <uses-permission android:name="com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE"/>
+    <permission android:name="com.contextlogic.wish.permission.C2D_MESSAGE" android:protectionLevel="signature"/>
+    <uses-permission android:name="com.contextlogic.wish.permission.C2D_MESSAGE"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-feature android:name="android.hardware.camera.front" android:required="false"/>
+    <uses-feature android:name="android.hardware.microphone" android:required="false"/>
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"/>
+    <application android:theme="@style/AppTheme" android:label="@string/app_name" android:icon="@mipmap/app_icon" android:name="com.contextlogic.wish.application.WishApplication" android:allowBackup="true" android:hardwareAccelerated="true" android:largeHeap="true" android:supportsRtl="true" android:resizeableActivity="false" android:networkSecurityConfig="@xml/network_security_config" android:roundIcon="@mipmap/app_icon_round">
+        <meta-data android:name="com.google.firebase.messaging.default_notification_icon" android:resource="@drawable/notification_status_bar"/>
+        <meta-data android:name="com.google.firebase.messaging.default_notification_color" android:resource="@color/main_primary"/>
+        <meta-data android:name="com.google.firebase.messaging.default_notification_channel_id" android:value="@string/default_notification_channel"/>
+        <activity android:theme="@style/Theme.Wish" android:name="com.contextlogic.wish.activity.profile.ProfileActivity" android:configChanges="keyboard|keyboardHidden"/>
+        <activity android:theme="@style/Theme.Wish" android:name="com.contextlogic.wish.activity.browse.BrowseActivity" android:configChanges="keyboard|keyboardHidden">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.nfc.action.NDEF_DISCOVERED"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <data android:scheme="http" android:host="wish.com" android:pathPrefix="/bump"/>
+            </intent-filter>
+        </activity>
+        <activity android:theme="@style/Theme.Wish" android:name="com.contextlogic.wish.activity.profile.wishlist.WishlistActivity" android:configChanges="keyboard|keyboardHidden"/>
+        <activity android:theme="@style/Theme.Wish" android:name="com.contextlogic.wish.activity.profile.follow.UserListActivity" android:configChanges="keyboard|keyboardHidden"/>
+        <activity android:theme="@style/Theme.Wish" android:name="com.contextlogic.wish.activity.feed.search.SearchFeedActivity" android:configChanges="keyboard|keyboardHidden"/>
+        <activity android:theme="@style/Theme.Wish" android:name="com.contextlogic.wish.activity.merchantprofile.MerchantProfileActivity" android:configChanges="keyboard|keyboardHidden"/>
+        <activity android:theme="@style/Theme.Wish" android:name="com.contextlogic.wish.activity.merchantprofile.merchanttopcategory.MerchantTopCategoryActivity" android:configChanges="keyboard|keyboardHidden"/>
+        <activity android:theme="@style/Theme.Wish" android:name="com.contextlogic.wish.activity.feed.merchant.MerchantFeedActivity" android:configChanges="keyboard|keyboardHidden"/>
+        <activity android:theme="@style/Theme.Wish" android:name="com.contextlogic.wish.activity.feed.brand.BrandFeedActivity" android:configChanges="keyboard|keyboardHidden"/>
+        <activity android:theme="@style/Theme.Wish.Login" android:name="com.contextlogic.wish.activity.login.landing.LandingActivity" android:configChanges="keyboard|keyboardHidden"/>
+        <activity android:theme="@style/Theme.Wish" android:name="com.contextlogic.wish.activity.login.signin.SignInActivity" android:configChanges="keyboard|keyboardHidden"/>
+        <activity android:theme="@style/Theme.Wish" android:name="com.contextlogic.wish.activity.login.createaccount.CreateAccountActivity" android:configChanges="keyboard|keyboardHidden"/>
+        <activity android:theme="@style/Theme.Wish" android:name="com.contextlogic.wish.activity.login.forgotpassword.ForgotPasswordActivity" android:configChanges="keyboard|keyboardHidden"/>
+        <activity android:theme="@style/Theme.Wish" android:name="com.contextlogic.wish.activity.notifications.NotificationsActivity" android:configChanges="keyboard|keyboardHidden"/>
+        <activity android:theme="@style/Theme.Wish" android:name="com.contextlogic.wish.activity.webview.WebViewActivity" android:configChanges="keyboard|keyboardHidden"/>
+        <activity android:theme="@style/Theme.Wish" android:name="com.contextlogic.wish.activity.webview.KlarnaWebViewActivity" android:launchMode="singleTask" android:configChanges="keyboard|keyboardHidden">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:scheme="wish-klarna"/>
+                <data android:host="klarna-checkout"/>
+            </intent-filter>
+        </activity>
+        <activity android:theme="@style/Theme.Wish" android:name="com.contextlogic.wish.activity.rewards.RewardsActivity" android:configChanges="keyboard|keyboardHidden"/>
+        <activity android:theme="@style/Theme.Wish" android:name="com.contextlogic.wish.activity.feed.tag.TagFeedActivity" android:configChanges="keyboard|keyboardHidden"/>
+        <activity android:theme="@style/Theme.Wish" android:name="com.contextlogic.wish.activity.crosspromo.CrossPromoActivity" android:configChanges="keyboard|keyboardHidden"/>
+        <activity android:theme="@style/Theme.Wish.ModalWhenTablet" android:name="com.contextlogic.wish.activity.signup.SignupProfileUpdateActivity" android:configChanges="keyboard|keyboardHidden"/>
+        <activity android:theme="@style/Theme.Wish" android:name="com.contextlogic.wish.activity.signup.redesign.SignupFlowActivity" android:configChanges="keyboard|keyboardHidden" android:windowSoftInputMode="adjustUnspecified|stateVisible|adjustResize"/>
+        <activity android:theme="@style/Theme.Wish.ModalWhenTablet" android:name="com.contextlogic.wish.activity.signup.SignupCategory.SignupCategoryActivity" android:configChanges="keyboard|keyboardHidden"/>
+        <activity android:theme="@style/Theme.Wish.ModalWhenTablet" android:name="com.contextlogic.wish.activity.signup.SignupFreeGift.SignupFreeGiftActivity" android:configChanges="keyboard|keyboardHidden"/>
+        <activity android:theme="@style/Theme.Wish" android:name="com.contextlogic.wish.activity.developer.DeveloperSettingsActivity" android:configChanges="keyboard|keyboardHidden"/>
+        <activity android:theme="@style/Theme.Wish" android:name="com.contextlogic.wish.activity.developer.DeveloperSettingsExperimentsActivity" android:configChanges="keyboard|keyboardHidden"/>
+        <activity android:theme="@style/Theme.Wish" android:name="com.contextlogic.wish.activity.settings.accountsettings.AccountSettingsActivity" android:configChanges="keyboard|keyboardHidden"/>
+        <activity android:theme="@style/Theme.Wish" android:name="com.contextlogic.wish.activity.settings.accountsettings.countrysettings.CountrySettingsActivity" android:configChanges="keyboard|keyboardHidden"/>
+        <activity android:theme="@style/Theme.Wish" android:name="com.contextlogic.wish.activity.settings.SettingsActivity" android:configChanges="keyboard|keyboardHidden"/>
+        <activity android:theme="@style/Theme.Wish" android:name="com.contextlogic.wish.activity.settings.push.PushNotificationSettingsActivity" android:configChanges="keyboard|keyboardHidden"/>
+        <activity android:theme="@style/Theme.Wish" android:name="com.contextlogic.wish.activity.settings.notifications.NotificationSettingsActivity" android:configChanges="keyboard|keyboardHidden"/>
+        <activity android:theme="@style/Theme.Wish" android:name="com.contextlogic.wish.activity.settings.notifications.EmailSettingsActivity" android:configChanges="keyboard|keyboardHidden"/>
+        <activity android:theme="@style/Theme.Wish" android:name="com.contextlogic.wish.activity.settings.datacontrol.DataControlSettingsActivity" android:configChanges="keyboard|keyboardHidden"/>
+        <activity android:theme="@style/Theme.Wish" android:name="com.contextlogic.wish.activity.settings.changepassword.ChangePasswordActivity" android:configChanges="keyboard|keyboardHidden"/>
+        <activity android:theme="@style/Theme.Wish" android:name="com.contextlogic.wish.activity.settings.changeemail.ChangeEmailActivity" android:configChanges="keyboard|keyboardHidden"/>
+        <activity android:theme="@style/Theme.Wish" android:name="com.contextlogic.wish.activity.settings.changecurrency.ChangeCurrencyActivity" android:configChanges="keyboard|keyboardHidden"/>
+        <activity android:theme="@style/Theme.Wish" android:name="com.contextlogic.wish.activity.settings.changephonenumber.ChangePhoneNumberActivity" android:configChanges="keyboard|keyboardHidden"/>
+        <activity android:theme="@style/Theme.Wish.Translucent.NoTitle.NoAnimation" android:name="com.contextlogic.wish.activity.share.ShareActivity" android:configChanges="keyboard|keyboardHidden"/>
+        <activity android:theme="@style/Theme.Wish" android:name="com.contextlogic.wish.activity.search.SearchActivity" android:configChanges="keyboard|keyboardHidden"/>
+        <activity android:theme="@style/Theme.Wish" android:name="com.contextlogic.wish.activity.cart.CartActivity" android:configChanges="keyboard|keyboardHidden"/>
+        <activity android:theme="@style/Theme.Wish.Translucent.NoTitle" android:name="com.contextlogic.wish.activity.cart.commerceloan.CommerceLoanCartActivity" android:configChanges="keyboard|keyboardHidden"/>
+        <activity android:theme="@style/Theme.Wish.Translucent.NoTitle" android:name="com.contextlogic.wish.activity.cart.commercecash.CommerceCashCartActivity" android:configChanges="keyboard|keyboardHidden"/>
+        <activity android:theme="@style/Theme.Wish.ModalWhenTablet" android:name="com.contextlogic.wish.activity.profile.update.UpdateProfileActivity" android:configChanges="keyboard|keyboardHidden"/>
+        <activity android:theme="@style/Theme.Wish.ModalWhenTablet" android:name="com.contextlogic.wish.activity.buyerguarantee.BuyerGuaranteeActivity" android:configChanges="keyboard|keyboardHidden"/>
+        <activity android:theme="@style/Theme.Wish" android:name="com.contextlogic.wish.activity.more.MoreActivity" android:configChanges="keyboard|keyboardHidden"/>
+        <activity android:theme="@style/Theme.Wish" android:name="com.contextlogic.wish.activity.link.DeepLinkActivity" android:configChanges="keyboard|keyboardHidden">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:scheme="@string/deep_link_protocol"/>
+            </intent-filter>
+            <intent-filter android:autoVerify="true">
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:scheme="http"/>
+                <data android:scheme="https"/>
+                <data android:host="@string/server_host"/>
+                <data android:host="@string/server_host_short"/>
+                <data android:path="/profile"/>
+                <data android:path="/profile/"/>
+                <data android:path="/m/profile"/>
+                <data android:path="/m/profile/"/>
+                <data android:path="/settings"/>
+                <data android:path="/settings/"/>
+                <data android:path="/m/settings"/>
+                <data android:path="/m/settings/"/>
+                <data android:path="/notifications"/>
+                <data android:path="/notifications/"/>
+                <data android:path="/m/notifications"/>
+                <data android:path="/m/notifications/"/>
+                <data android:path="/"/>
+                <data android:path="/m"/>
+                <data android:path="/m/"/>
+                <data android:path="/home"/>
+                <data android:path="/home/"/>
+                <data android:path="/m/home"/>
+                <data android:path="/m/home/"/>
+                <data android:path="/shopping"/>
+                <data android:path="/shopping/"/>
+                <data android:path="/m/shopping"/>
+                <data android:path="/m/shopping/"/>
+                <data android:path="/search"/>
+                <data android:pathPrefix="/search/"/>
+                <data android:path="/m/search"/>
+                <data android:pathPrefix="/m/search/"/>
+                <data android:path="/cart"/>
+                <data android:path="/cart/"/>
+                <data android:path="/m/cart"/>
+                <data android:path="/m/cart/"/>
+                <data android:pathPrefix="/merchant/"/>
+                <data android:pathPrefix="/m/merchant/"/>
+                <data android:pathPrefix="/brand/"/>
+                <data android:pathPrefix="/m/brand/"/>
+                <data android:path="/wallet"/>
+                <data android:path="/wallet/"/>
+                <data android:path="/m/wallet"/>
+                <data android:path="/m/wallet/"/>
+                <data android:pathPrefix="/product/"/>
+                <data android:pathPrefix="/m/product/"/>
+                <data android:pathPrefix="/feed/"/>
+                <data android:pathPrefix="/m/feed/"/>
+                <data android:pathPrefix="/chop/"/>
+                <data android:pathPrefix="/m/chop/"/>
+                <data android:pathPrefix="/wishlist/"/>
+                <data android:pathPrefix="/c/"/>
+                <data android:pathPrefix="/m/c/"/>
+                <data android:pathPrefix="/contest/"/>
+                <data android:pathPrefix="/m/contest/"/>
+            </intent-filter>
+        </activity>
+        <activity android:theme="@style/Theme.Wish" android:name="com.contextlogic.wish.activity.facebook.WishFacebookDeepLinkActivity" android:configChanges="keyboard|keyboardHidden">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+            </intent-filter>
+        </activity>
+        <activity android:theme="@style/Theme.Wish.ModalWhenTablet" android:name="com.contextlogic.wish.activity.textviewer.TextViewerActivity" android:configChanges="keyboard|keyboardHidden"/>
+        <activity android:theme="@style/Theme.Wish.Fullscreen" android:name="com.contextlogic.wish.activity.imageviewer.ImageViewerActivity" android:configChanges="keyboard|keyboardHidden"/>
+        <activity android:theme="@style/Theme.Wish.Fullscreen" android:name="com.contextlogic.wish.activity.imageviewer.photovideoviewer.PhotoVideoViewerActivity" android:configChanges="keyboard|keyboardHidden"/>
+        <activity android:theme="@style/Theme.Wish" android:name="com.contextlogic.wish.activity.productdetails.ProductDetailsActivity" android:configChanges="keyboard|keyboardHidden"/>
+        <activity android:theme="@style/Theme.Wish" android:name="com.contextlogic.wish.activity.orderconfirmed.OrderConfirmedActivity" android:configChanges="keyboard|keyboardHidden"/>
+        <activity android:theme="@style/Theme.Wish" android:name="com.contextlogic.wish.activity.feed.outlet.BrandedCategoryListActivity" android:configChanges="keyboard|keyboardHidden"/>
+        <activity android:theme="@style/Theme.Wish" android:name="com.contextlogic.wish.activity.feed.outlet.BrandedFeedActivity" android:configChanges="keyboard|keyboardHidden"/>
+        <activity android:theme="@style/Theme.Wish" android:name="com.contextlogic.wish.activity.invite.InviteCouponActivity" android:configChanges="keyboard|keyboardHidden"/>
+        <activity android:theme="@style/Theme.Wish" android:name="com.contextlogic.wish.activity.commercecash.CommerceCashActivity" android:configChanges="keyboard|keyboardHidden"/>
+        <activity android:theme="@style/Theme.Wish" android:name="com.contextlogic.wish.activity.commercecash.CommerceCashTermsActivity" android:configChanges="keyboard|keyboardHidden"/>
+        <activity android:theme="@style/Theme.Wish" android:name="com.contextlogic.wish.activity.commerceloan.CommerceLoanLearnMoreActivity" android:configChanges="keyboard|keyboardHidden"/>
+        <activity android:theme="@style/Theme.Wish" android:name="com.contextlogic.wish.activity.groupbuylearnmore.GroupBuyLearnMoreActivity" android:configChanges="keyboard|keyboardHidden"/>
+        <activity android:theme="@style/Theme.Wish" android:name="com.contextlogic.wish.activity.returnpolicy.ReturnPolicyActivity" android:configChanges="keyboard|keyboardHidden"/>
+        <activity android:theme="@style/Theme.Wish" android:name="com.contextlogic.wish.activity.productdetails.ProductDetailsRelatedItemsActivity" android:configChanges="keyboard|keyboardHidden"/>
+        <activity android:theme="@style/Theme.Wish" android:name="com.contextlogic.wish.activity.dailybonus.DailyLoginBonusActivity" android:configChanges="keyboard|keyboardHidden"/>
+        <activity android:theme="@style/Theme.Wish" android:name="com.contextlogic.wish.activity.feed.dailyraffle.DailyRaffleWinnersListActivity" android:configChanges="keyboard|keyboardHidden"/>
+        <activity android:theme="@style/Theme.Wish" android:name="com.contextlogic.wish.activity.productreview.ProductReviewActivity" android:configChanges="keyboard|keyboardHidden"/>
+        <activity android:theme="@style/Theme.Wish" android:name="com.contextlogic.wish.activity.camera.camerapreview.CameraActivity" android:configChanges="keyboard|keyboardHidden"/>
+        <activity android:theme="@style/Theme.Wish" android:name="com.contextlogic.wish.activity.camera.camerapermission.CameraPermissionsActivity" android:configChanges="keyboard|keyboardHidden"/>
+        <activity android:theme="@style/Theme.Wish" android:name="com.contextlogic.wish.activity.camera.videoplayer.VideoPlayerActivity" android:configChanges="keyboard|keyboardHidden"/>
+        <activity android:theme="@style/Theme.Wish" android:name="com.contextlogic.wish.activity.exampleugc.ExampleUgcItemsActivity" android:configChanges="keyboard|keyboardHidden"/>
+        <activity android:theme="@style/Theme.Wish" android:name="com.contextlogic.wish.activity.exampleugc.exampleugcintro.ExampleUgcIntroActivity" android:configChanges="keyboard|keyboardHidden"/>
+        <activity android:theme="@style/Theme.Wish" android:name="com.contextlogic.wish.activity.recentwishlistproducts.RecentWishlistProductsActivity" android:configChanges="keyboard|keyboardHidden"/>
+        <activity android:theme="@style/Theme.Wish" android:name="com.contextlogic.wish.activity.referralprogram.ReferralProgramActivity" android:configChanges="keyboard|keyboardHidden"/>
+        <activity android:theme="@style/Theme.Wish" android:name="com.contextlogic.wish.activity.pricewatch.PriceWatchActivity" android:configChanges="keyboard|keyboardHidden"/>
+        <activity android:theme="@style/Theme.Wish" android:name="com.contextlogic.wish.activity.cart.shipping.StandaloneShippingInfoActivity" android:configChanges="keyboard|keyboardHidden"/>
+        <activity android:theme="@style/Theme.Wish" android:name="com.contextlogic.wish.activity.managepayments.AddEditPaymentsActivity" android:configChanges="keyboard|keyboardHidden"/>
+        <activity android:theme="@style/Theme.Wish" android:name="com.contextlogic.wish.activity.managepayments.ManagePaymentsActivity" android:configChanges="keyboard|keyboardHidden"/>
+        <activity android:theme="@style/Theme.Wish" android:name="com.contextlogic.wish.activity.cart.shipping.StandaloneManageAddressesActivity" android:configChanges="keyboard|keyboardHidden"/>
+        <activity android:theme="@style/Theme.Wish.Facebook" android:label="@string/app_name" android:name="com.facebook.FacebookActivity" android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|screenSize"/>
+        <activity android:name="com.braintreepayments.api.BraintreeBrowserSwitchActivity" android:launchMode="singleTask">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:scheme="com.contextlogic.wish.braintree"/>
+            </intent-filter>
+        </activity>
+        <activity android:theme="@style/Theme.Wish" android:name="com.paytm.pgsdk.PaytmPGActivity" android:configChanges="keyboard|keyboardHidden|orientation"/>
+        <activity android:theme="@style/Theme.Wish" android:name="com.contextlogic.wish.activity.commerceloan.CommerceLoanPayHalfLearnMoreActivity" android:configChanges="keyboard|keyboardHidden"/>
+        <activity android:theme="@style/Theme.Wish" android:name="com.contextlogic.wish.activity.wishpartner.dashboard.WishPartnerDashboardActivity" android:configChanges="keyboard|keyboardHidden"/>
+        <activity android:theme="@style/Theme.Wish.Transparent.NoTitle.NoAnimation" android:name="com.contextlogic.wish.activity.identityverification.IdentityVerificationActivity" android:configChanges="keyboard|keyboardHidden"/>
+        <activity android:theme="@style/Theme.Wish" android:name="com.contextlogic.wish.activity.promocode.PromoCodeActivity" android:configChanges="keyboard|keyboardHidden"/>
+        <activity android:theme="@style/Theme.Wish" android:name="com.contextlogic.wish.activity.wishpartner.info.WishPartnerInfoActivity" android:configChanges="keyboard|keyboardHidden"/>
+        <activity android:theme="@style/Theme.Wish" android:name="com.contextlogic.wish.activity.wishpartner.cashout.WishPartnerCashOutActivity" android:configChanges="keyboard|keyboardHidden"/>
+        <activity android:theme="@style/Theme.Wish" android:name="com.contextlogic.wish.activity.wishpartner.learnmore.WishPartnerLearnMoreActivity" android:configChanges="keyboard|keyboardHidden"/>
+        <provider android:name="android.support.v4.content.FileProvider" android:exported="false" android:authorities="com.contextlogic.wish.fileprovider" android:grantUriPermissions="true">
+            <meta-data android:name="android.support.FILE_PROVIDER_PATHS" android:resource="@xml/filepaths"/>
+        </provider>
+        <service android:name="com.contextlogic.wish.notifications.push.PushInstanceIDService">
+            <intent-filter>
+                <action android:name="com.google.firebase.INSTANCE_ID_EVENT"/>
+            </intent-filter>
+        </service>
+        <service android:name="com.contextlogic.wish.notifications.push.PushMessagingService">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT"/>
+            </intent-filter>
+        </service>
+        <service android:name="com.contextlogic.wish.api.service.AppIndexingUpdateService" android:permission="android.permission.BIND_JOB_SERVICE"/>
+        <receiver android:name="com.contextlogic.wish.receiver.InstallReceiver" android:exported="true">
+            <intent-filter>
+                <action android:name="com.android.vending.INSTALL_REFERRER"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:name="com.contextlogic.wish.receiver.AppIndexingUpdateReceiver" android:permission="com.google.android.gms.permission.APPINDEXING" android:exported="true">
+            <intent-filter>
+                <action android:name="com.google.firebase.appindexing.UPDATE_INDEX"/>
+            </intent-filter>
+        </receiver>
+        <meta-data android:name="com.crashlytics.ApiKey" android:value="d1658013a24ddc094d2e5c94019656ca19b09b3c"/>
+        <meta-data android:name="com.google.android.gms.version" android:value="@integer/google_play_services_version"/>
+        <meta-data android:name="com.google.android.gms.wallet.api.enabled" android:value="true"/>
+        <meta-data android:name="shape_aid" android:value="ODQ4MTk4MDExMTk0MjgzNTkxNDs5"/>
+        <meta-data android:name="asset_statements" android:resource="@string/asset_statements"/>
+        <meta-data android:name="android.max_aspect" android:value="2.1"/>
+        <activity android:theme="@style/ShakyTheme" android:name="com.wish.android.shaky.FeedbackActivity"/>
+        <activity android:theme="@style/OnfidoCaptureActivityStyle" android:label="" android:name="com.onfido.android.sdk.capture.ui.camera.CaptureActivity" android:screenOrientation="sensorPortrait"/>
+        <activity android:theme="@style/OnfidoActivityTheme" android:label="" android:name="com.onfido.android.sdk.capture.ui.OnfidoActivity" android:screenOrientation="sensorPortrait"/>
+        <activity android:name="com.facebook.CustomTabActivity" android:exported="true"/>
+        <activity android:name="com.facebook.CustomTabMainActivity"/>
+        <activity android:theme="@style/Theme.Translucent.NoTitleBar" android:name="com.google.android.gms.auth.api.signin.internal.SignInHubActivity" android:exported="false" android:excludeFromRecents="true"/>
+        <service android:name="com.google.android.gms.auth.api.signin.RevocationBoundService" android:permission="com.google.android.gms.auth.api.signin.permission.REVOCATION_NOTIFICATION" android:exported="true"/>
+        <receiver android:name="com.google.android.gms.analytics.AnalyticsReceiver" android:enabled="true" android:exported="false"/>
+        <service android:name="com.google.android.gms.analytics.AnalyticsService" android:enabled="true" android:exported="false"/>
+        <service android:name="com.google.android.gms.analytics.AnalyticsJobService" android:permission="android.permission.BIND_JOB_SERVICE" android:enabled="true" android:exported="false"/>
+        <provider android:name="com.google.firebase.perf.provider.FirebasePerfProvider" android:exported="false" android:authorities="com.contextlogic.wish.firebaseperfprovider" android:initOrder="101"/>
+        <service android:name="com.google.firebase.components.ComponentDiscoveryService">
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.perf.component.FirebasePerfRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.analytics.connector.internal.AnalyticsConnectorRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.iid.Registrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+        </service>
+        <service android:name="com.google.firebase.messaging.FirebaseMessagingService" android:exported="true">
+            <intent-filter android:priority="-500">
+                <action android:name="com.google.firebase.MESSAGING_EVENT"/>
+            </intent-filter>
+        </service>
+        <receiver android:name="com.google.android.gms.measurement.AppMeasurementReceiver" android:enabled="true" android:exported="false"/>
+        <receiver android:name="com.google.android.gms.measurement.AppMeasurementInstallReferrerReceiver" android:permission="android.permission.INSTALL_PACKAGES" android:enabled="true" android:exported="true">
+            <intent-filter>
+                <action android:name="com.android.vending.INSTALL_REFERRER"/>
+            </intent-filter>
+        </receiver>
+        <service android:name="com.google.android.gms.measurement.AppMeasurementService" android:enabled="true" android:exported="false"/>
+        <service android:name="com.google.android.gms.measurement.AppMeasurementJobService" android:permission="android.permission.BIND_JOB_SERVICE" android:enabled="true" android:exported="false"/>
+        <receiver android:name="com.google.firebase.iid.FirebaseInstanceIdReceiver" android:permission="com.google.android.c2dm.permission.SEND" android:exported="true">
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.RECEIVE"/>
+                <category android:name="com.contextlogic.wish"/>
+            </intent-filter>
+        </receiver>
+        <service android:name="com.google.firebase.iid.FirebaseInstanceIdService" android:exported="true">
+            <intent-filter android:priority="-500">
+                <action android:name="com.google.firebase.INSTANCE_ID_EVENT"/>
+            </intent-filter>
+        </service>
+        <activity android:theme="@style/Theme.Translucent.NoTitleBar" android:name="com.google.android.gms.common.api.GoogleApiActivity" android:exported="false"/>
+        <provider android:name="com.google.firebase.provider.FirebaseInitProvider" android:exported="false" android:authorities="com.contextlogic.wish.firebaseinitprovider" android:initOrder="100"/>
+        <activity android:theme="@style/bt_transparent_activity" android:name="com.braintreepayments.api.AndroidPayActivity"/>
+        <activity android:theme="@style/bt_transparent_activity" android:name="com.braintreepayments.api.GooglePaymentActivity"/>
+        <activity android:name="com.braintreepayments.api.threedsecure.ThreeDSecureWebViewActivity"/>
+        <service android:name="com.braintreepayments.api.internal.AnalyticsIntentService"/>
+        <activity android:name="com.klarna.checkout.browser.BrowserActivity" android:configChanges="orientation|screenSize"/>
+        <service android:name="com.paytm.pgsdk.IntentServicePostNotification" android:exported="false"/>
+        <service android:name="com.paytm.pgsdk.IntentServicePreNotification" android:exported="false"/>
+        <provider android:name="androidx.work.impl.WorkManagerInitializer" android:exported="false" android:multiprocess="true" android:authorities="com.contextlogic.wish.workmanager-init"/>
+        <service android:name="androidx.work.impl.background.systemalarm.SystemAlarmService" android:enabled="@bool/enable_system_alarm_service_default" android:exported="false"/>
+        <service android:name="androidx.work.impl.background.systemjob.SystemJobService" android:permission="android.permission.BIND_JOB_SERVICE" android:enabled="@bool/enable_system_job_service_default" android:exported="true"/>
+        <receiver android:name="androidx.work.impl.utils.ForceStopRunnable$BroadcastReceiver" android:enabled="true" android:exported="false"/>
+        <receiver android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryChargingProxy" android:enabled="false">
+            <intent-filter>
+                <action android:name="android.intent.action.ACTION_POWER_CONNECTED"/>
+                <action android:name="android.intent.action.ACTION_POWER_DISCONNECTED"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryNotLowProxy" android:enabled="false">
+            <intent-filter>
+                <action android:name="android.intent.action.BATTERY_OKAY"/>
+                <action android:name="android.intent.action.BATTERY_LOW"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$StorageNotLowProxy" android:enabled="false">
+            <intent-filter>
+                <action android:name="android.intent.action.DEVICE_STORAGE_LOW"/>
+                <action android:name="android.intent.action.DEVICE_STORAGE_OK"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$NetworkStateProxy" android:enabled="false">
+            <intent-filter>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:name="androidx.work.impl.background.systemalarm.RescheduleReceiver" android:enabled="@bool/enable_system_alarm_service_default">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED"/>
+                <action android:name="android.intent.action.TIME_SET"/>
+                <action android:name="android.intent.action.TIMEZONE_CHANGED"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:name="androidx.work.impl.background.systemalarm.ConstraintProxyUpdateReceiver" android:enabled="@bool/enable_system_alarm_service_default" android:exported="false">
+            <intent-filter>
+                <action android:name="androidx.work.impl.background.systemalarm.UpdateProxies"/>
+            </intent-filter>
+        </receiver>
+        <provider android:name="android.arch.lifecycle.ProcessLifecycleOwnerInitializer" android:exported="false" android:multiprocess="true" android:authorities="com.contextlogic.wish.lifecycle-trojan"/>
+        <meta-data android:name="android.support.VERSION" android:value="26.1.0"/>
+    </application>
+</manifest>

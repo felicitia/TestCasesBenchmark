@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="match_parent" android:layout_height="match_parent">
+    <android.support.design.widget.AppBarLayout android:id="@+id/product_review_fragment_image_container" android:background="@color/cool_gray7" android:layout_width="match_parent" android:layout_height="wrap_content" app:elevation="0dp" app:layout_behavior="@string/custom_fling_behaviour">
+        <LinearLayout android:gravity="center" android:paddingTop="@dimen/sixteen_padding" android:paddingBottom="@dimen/sixteen_padding" android:layout_width="match_parent" android:layout_height="wrap_content" app:layout_scrollFlags="1">
+            <FrameLayout android:layout_gravity="center" android:layout_width="@dimen/product_review_upload_media_image_size" android:layout_height="@dimen/product_review_upload_media_image_size">
+                <com.contextlogic.wish.ui.image.AutoReleasableImageView android:id="@+id/product_review_fragment_thumbnail_image" android:layout_width="match_parent" android:layout_height="match_parent"/>
+                <com.contextlogic.wish.ui.image.AutoReleasableImageView android:layout_gravity="bottom|right|center_vertical|center_horizontal|center" android:id="@+id/video_indicator" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/four_padding" android:layout_marginBottom="@dimen/four_padding" app:drawable="@drawable/video_icon_small"/>
+            </FrameLayout>
+        </LinearLayout>
+    </android.support.design.widget.AppBarLayout>
+    <com.contextlogic.wish.ui.viewpager.SafeViewPager android:id="@+id/product_review_fragment_viewpager" android:layout_width="match_parent" android:layout_height="match_parent" app:layout_behavior="@string/appbar_scrolling_view_behavior"/>
+    <LinearLayout android:layout_gravity="bottom" android:orientation="vertical" android:id="@+id/product_review_fragment_next_button_container" android:background="@color/white" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <View android:background="@color/cool_gray6" android:layout_width="match_parent" android:layout_height="@dimen/thin_separator"/>
+        <com.contextlogic.wish.ui.button.ThemedButton android:id="@+id/product_review_fragment_next_button" android:layout_width="match_parent" android:layout_height="@dimen/default_button_height" android:layout_margin="@dimen/sixteen_padding" android:text="@string/next" style="@style/Widget.Wish.Button"/>
+    </LinearLayout>
+</android.support.design.widget.CoordinatorLayout>

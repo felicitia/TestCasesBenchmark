@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt">
+    <item android:bottom="@dimen/free_gift_header_blue_top_height">
+        <shape android:shape="rectangle">
+            <size android:height="@dimen/free_gift_header_blue_top_height"/>
+            <solid android:color="@color/main_primary"/>
+        </shape>
+    </item>
+    <item android:top="@dimen/free_gift_header_blue_bottom_height">
+        <shape android:shape="rectangle">
+            <size android:height="@dimen/free_gift_header_blue_bottom_height"/>
+            <solid android:color="@color/white"/>
+        </shape>
+    </item>
+</layer-list>

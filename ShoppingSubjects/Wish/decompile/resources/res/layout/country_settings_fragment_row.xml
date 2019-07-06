@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:background="@drawable/row_selector_default" android:padding="@dimen/settings_padding" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <com.contextlogic.wish.ui.text.ThemedTextView android:textSize="@dimen/text_size_settings" android:textColor="@color/cool_gray1" android:id="@+id/country_settings_fragment_row_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toLeftOf="@+id/country_settings_fragment_row_radio_button" android:layout_alignParentLeft="true" android:layout_centerVertical="true"/>
+    <android.support.v7.widget.AppCompatRadioButton android:state_checked="false" android:id="@+id/country_settings_fragment_row_radio_button" android:layout_width="wrap_content" android:layout_height="wrap_content" android:checked="false" android:layout_alignParentRight="true" android:layout_centerVertical="true" style="@style/Widget.Wish.RadioButton.NoText"/>
+</RelativeLayout>

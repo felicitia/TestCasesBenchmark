@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="@dimen/bottom_dialog_fragment_height">
+    <com.contextlogic.wish.ui.text.ThemedTextView android:textSize="@dimen/text_size_fourteen" android:textStyle="bold" android:textColor="@color/text_primary" android:gravity="center" android:background="@color/gray7" android:paddingTop="@dimen/sixteen_padding" android:paddingBottom="@dimen/sixteen_padding" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/select_quantity"/>
+    <View android:background="@color/gray5" android:layout_width="match_parent" android:layout_height="@dimen/default_border_stroke"/>
+    <LinearLayout android:id="@+id/quantity_dropdown_select_amount_list_container" android:layout_width="match_parent" android:layout_height="@dimen/bottom_dialog_fragment_height">
+        <ListView android:id="@+id/quantity_dropdown_dialog_fragment_list_view" android:layout_width="match_parent" android:layout_height="wrap_content" android:divider="@null" android:dividerHeight="@dimen/zero_padding"/>
+    </LinearLayout>
+</LinearLayout>

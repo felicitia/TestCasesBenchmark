@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:background="@color/gray7" android:paddingTop="@dimen/twelve_padding" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <com.contextlogic.wish.ui.text.ThemedTextView android:layout_gravity="center_horizontal" android:id="@+id/gift_pack_details_banner_title" android:paddingBottom="@dimen/eight_padding" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+    <com.contextlogic.wish.ui.viewpager.SafeViewPager android:id="@+id/gift_pack_details_banner_pager" android:layout_width="match_parent" android:layout_height="@dimen/new_user_gift_pack_header_pager_height"/>
+    <com.contextlogic.wish.ui.viewpager.ViewPagerIndicator android:layout_gravity="center_horizontal" android:id="@+id/gift_pack_details_banner_pager_indicator" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/eight_padding"/>
+    <View android:background="@color/gray5" android:layout_width="match_parent" android:layout_height="@dimen/divide_small" android:layout_marginTop="@dimen/sixteen_padding"/>
+</LinearLayout>

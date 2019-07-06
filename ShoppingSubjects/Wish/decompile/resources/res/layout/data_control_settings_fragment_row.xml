@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:padding="@dimen/settings_padding" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <com.contextlogic.wish.ui.text.ThemedTextView android:textSize="@dimen/text_size_settings" android:textColor="@color/text_primary" android:id="@+id/data_control_settings_fragment_row_big_text" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+    <com.contextlogic.wish.ui.text.ThemedTextView android:textSize="@dimen/text_size_settings_captions" android:textColor="@color/cool_gray2" android:id="@+id/data_control_settings_fragment_row_small_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_below="@+id/data_control_settings_fragment_row_big_text"/>
+    <android.support.v7.widget.SwitchCompat android:theme="@style/Theme.Wish.Settings" android:id="@+id/data_control_settings_fragment_row_switch" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" style="@style/Widget.Wish.Switch"/>
+</RelativeLayout>

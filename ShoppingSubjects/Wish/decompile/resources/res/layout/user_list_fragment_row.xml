@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:paddingLeft="@dimen/sixteen_padding" android:paddingRight="@dimen/sixteen_padding" android:layout_width="wrap_content" android:layout_height="@dimen/user_list_fragment_cell_height">
+    <View android:background="@color/cool_gray5" android:layout_width="match_parent" android:layout_height="@dimen/divider"/>
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="match_parent">
+        <com.contextlogic.wish.ui.view.ProfileImageView android:layout_gravity="center_vertical" android:id="@+id/user_list_fragment_row_profile_image_view" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/screen_padding" app:imageSize="@dimen/user_list_fragment_image_size" app:profileTextSize="@dimen/text_size_title"/>
+        <LinearLayout android:gravity="left|center_vertical|center_horizontal|center|start" android:orientation="horizontal" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1">
+            <com.contextlogic.wish.ui.text.ThemedTextView android:textSize="@dimen/text_size_body" android:textStyle="bold" android:textColor="@color/text_primary" android:ellipsize="end" android:layout_gravity="center_vertical" android:id="@+id/user_list_fragment_row_text" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_marginLeft="@dimen/sixteen_padding" android:maxWidth="@dimen/max_name_width" android:maxLines="1" android:lines="1" android:singleLine="true"/>
+        </LinearLayout>
+        <com.contextlogic.wish.ui.button.FollowButton android:layout_gravity="right|center_vertical|center_horizontal|center" android:id="@+id/user_list_fragment_row_follow_button" android:layout_width="@dimen/user_list_fragment_follow_button_width" android:layout_height="@dimen/user_list_fragment_follow_button_height"/>
+    </LinearLayout>
+</LinearLayout>

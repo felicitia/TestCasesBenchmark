@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="cart_item">
+        <item quantity="one">कार्ट: %1$s आइटम</item>
+        <item quantity="other">कार्ट: %1$s आइटम</item>
+    </plurals>
+    <plurals name="daily_raffle_entries_text">
+        <item quantity="one">%1$d प्रविष्टियां</item>
+        <item quantity="other">%1$d प्रविष्टियां</item>
+    </plurals>
+    <plurals name="daily_raffle_free_items_and_coupons_text">
+        <item quantity="one">%1$d मुफ्त आइटम</item>
+        <item quantity="other">%1$d मुफ्त आइटम</item>
+    </plurals>
+    <plurals name="detail_table_color">
+        <item quantity="one">कलर</item>
+        <item quantity="other">कलर</item>
+    </plurals>
+    <plurals name="detail_table_size">
+        <item quantity="one">साइज</item>
+        <item quantity="other">साइज</item>
+    </plurals>
+    <plurals name="follower_plural">
+        <item quantity="one">%1$d फॉलोअर</item>
+        <item quantity="other">%1$d फॉलोअर</item>
+    </plurals>
+    <plurals name="following_plural">
+        <item quantity="one">%1$d फॉलोइंग</item>
+        <item quantity="other">%1$d फॉलोइंग</item>
+    </plurals>
+    <plurals name="item">
+        <item quantity="one">%1$s आइटम</item>
+        <item quantity="other">%1$s आइटम</item>
+    </plurals>
+    <plurals name="item_added_to_cart">
+        <item quantity="one">आइटम कार्ट में जोड़े</item>
+        <item quantity="other">आइटम कार्ट में जोड़े</item>
+    </plurals>
+    <plurals name="number_available">
+        <item quantity="one">%1$d उपलब्ध</item>
+        <item quantity="other">%1$d उपलब्ध</item>
+    </plurals>
+    <plurals name="number_of_followers">
+        <item quantity="one">फॉलोअर</item>
+        <item quantity="other">फॉलोअर</item>
+    </plurals>
+    <plurals name="number_of_saves">
+        <item quantity="one">सेव सामान</item>
+        <item quantity="other">सेव सामान</item>
+    </plurals>
+    <plurals name="number_said_thanks">
+        <item quantity="one">%1$d ने आभार प्रकट किया</item>
+        <item quantity="other">%1$d ने आभार प्रकट किया</item>
+    </plurals>
+    <plurals name="people">
+        <item quantity="one">%1$s लोग</item>
+        <item quantity="other">%1$s लोग</item>
+    </plurals>
+    <plurals name="rating">
+        <item quantity="one">(%1$s रेटिंग)</item>
+        <item quantity="other">(%1$s रेटिंग)</item>
+    </plurals>
+    <plurals name="ratings_capitalized_no_bracket">
+        <item quantity="one">%1$s रेटिंग</item>
+        <item quantity="other">%1$s रेटिंग</item>
+    </plurals>
+    <plurals name="redeem_for_points_question">
+        <item quantity="one">%1$d पॉइन्ट्स के लिए रिडीम करें?</item>
+        <item quantity="other">%1$d पॉइन्ट्स के लिए रिडीम करें?</item>
+    </plurals>
+    <plurals name="reward_points_number">
+        <item quantity="one">%1$s पॉइन्ट्स</item>
+        <item quantity="other">%1$s पॉइन्ट्स</item>
+    </plurals>
+    <plurals name="selling_product">
+        <item quantity="one">%1$s प्रोडक्ट्स बेचे जा रहे हैं</item>
+        <item quantity="other">%1$s प्रोडक्ट्स बेचे जा रहे हैं</item>
+    </plurals>
+    <plurals name="store_ratings_with_bracket">
+        <item quantity="one">(%1$s स्टोर रेटिंग)</item>
+        <item quantity="other">(%1$s स्टोर रेटिंग)</item>
+    </plurals>
+    <plurals name="user_rating">
+        <item quantity="one">यूजर रेटिंग</item>
+        <item quantity="other">यूजर रेटिंग</item>
+    </plurals>
+    <plurals name="user_review">
+        <item quantity="one">%1$s यूजर रिव्यू</item>
+        <item quantity="other">%1$s यूजर रिव्यू</item>
+    </plurals>
+    <plurals name="wishlist_new_count">
+        <item quantity="one">%1$d नए</item>
+        <item quantity="other">%1$d नया</item>
+    </plurals>
+    <plurals name="wishlist_view_count">
+        <item quantity="one">%1$d व्यू</item>
+        <item quantity="other">%1$d व्यू</item>
+    </plurals>
+</resources>

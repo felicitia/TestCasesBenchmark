@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt">
+    <solid android:color="@color/white"/>
+    <stroke android:width="@dimen/default_border_stroke" android:color="@color/gray5"/>
+    <corners android:topLeftRadius="@dimen/wish_star_pill_radius" android:topRightRadius="@dimen/wish_star_pill_radius" android:bottomLeftRadius="@dimen/wish_star_pill_radius" android:bottomRightRadius="@dimen/wish_star_pill_radius"/>
+</shape>

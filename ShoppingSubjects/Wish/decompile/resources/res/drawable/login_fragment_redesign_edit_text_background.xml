@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt">
+    <item android:state_focused="true" android:state_enabled="true">
+        <shape android:shape="rectangle">
+            <solid android:color="@color/login_redesign_edit_text_background"/>
+            <padding android:left="@dimen/form_field_padding" android:top="@dimen/form_field_padding" android:right="@dimen/form_field_padding" android:bottom="@dimen/form_field_padding"/>
+            <corners android:radius="@dimen/login_form_field_radius"/>
+            <stroke android:width="@dimen/thin_separator" android:color="@color/main_primary"/>
+        </shape>
+    </item>
+    <item android:state_enabled="true">
+        <shape android:shape="rectangle">
+            <solid android:color="@color/login_redesign_edit_text_background"/>
+            <padding android:left="@dimen/form_field_padding" android:top="@dimen/form_field_padding" android:right="@dimen/form_field_padding" android:bottom="@dimen/form_field_padding"/>
+            <corners android:radius="@dimen/login_form_field_radius"/>
+            <stroke android:width="@dimen/thin_separator" android:color="@color/login_redesign_edit_text_border"/>
+        </shape>
+    </item>
+</selector>

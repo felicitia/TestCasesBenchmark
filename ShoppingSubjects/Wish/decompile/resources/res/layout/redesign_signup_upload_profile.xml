@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent" android:weightSum="3.5">
+    <RelativeLayout android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="0dp" android:layout_weight="2.5">
+        <RelativeLayout android:gravity="center" android:id="@+id/relative_layout_holder" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <com.contextlogic.wish.ui.image.AutoReleasableImageView android:id="@+id/signup_upload_photo_background" android:background="@drawable/photo_upload_image" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true"/>
+            <FrameLayout android:id="@+id/frameLayout" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true">
+                <com.contextlogic.wish.ui.view.ProfileImageView android:id="@+id/signup_upload_photo_profile" android:layout_width="wrap_content" android:layout_height="wrap_content" app:imageSize="@dimen/signup_flow_upload_photo_size"/>
+                <com.contextlogic.wish.ui.image.AutoReleasableImageView android:id="@+id/signup_upload_photo_highlight" android:background="@drawable/upload_photo_highlight" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+            </FrameLayout>
+            <com.contextlogic.wish.ui.text.ThemedTextView android:textColor="@color/cool_gray3" android:id="@+id/signup_flow_upload_profile_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/signup_flow_upload_photo_title_margin" android:text="@string/upload_photo" android:layout_below="@+id/frameLayout" android:layout_centerHorizontal="true"/>
+        </RelativeLayout>
+    </RelativeLayout>
+    <com.contextlogic.wish.activity.signup.redesign.SignupFlowFooterView android:layout_gravity="top" android:id="@+id/signup_footer_view" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1" android:layout_alignTop="@+id/frameLayout" android:layout_centerHorizontal="true"/>
+</LinearLayout>

@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt">
+    <com.contextlogic.wish.ui.text.ThemedTextView android:textSize="@dimen/text_size_button" android:textStyle="bold" android:textColor="@color/white" android:gravity="center" android:layout_gravity="center" android:id="@+id/toggle_loading_button_text" android:padding="@dimen/user_list_fragment_follow_button_padding" android:layout_width="match_parent" android:layout_height="wrap_content" android:maxLines="1" android:resizeable="true"/>
+    <com.contextlogic.wish.ui.loading.PrimaryProgressBar android:layout_gravity="center" android:id="@+id/toggle_loading_button_progress_bar" android:layout_width="@dimen/user_list_fragment_follow_progress_width" android:layout_height="@dimen/user_list_fragment_follow_progress_height"/>
+</merge>

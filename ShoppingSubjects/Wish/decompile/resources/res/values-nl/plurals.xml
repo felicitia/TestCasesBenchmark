@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="cart_item">
+        <item quantity="one">Winkelwagen: %1$s artikel</item>
+        <item quantity="other">Winkelwagen: %1$s artikelen</item>
+    </plurals>
+    <plurals name="daily_raffle_entries_text">
+        <item quantity="one">%1$d inschrijvingen</item>
+        <item quantity="other">%1$d inschrijving</item>
+    </plurals>
+    <plurals name="daily_raffle_free_items_and_coupons_text">
+        <item quantity="one">%1$d Gratis Item</item>
+        <item quantity="other">%1$d Gratis Items</item>
+    </plurals>
+    <plurals name="detail_table_color">
+        <item quantity="one">Kleur</item>
+        <item quantity="other">Kleuren</item>
+    </plurals>
+    <plurals name="detail_table_size">
+        <item quantity="one">Maat</item>
+        <item quantity="other">Maten</item>
+    </plurals>
+    <plurals name="follower_plural">
+        <item quantity="one">%1$d Volger</item>
+        <item quantity="other">%1$d Volgers</item>
+    </plurals>
+    <plurals name="following_plural">
+        <item quantity="one">%1$d volgend</item>
+        <item quantity="other">%1$d volgend</item>
+    </plurals>
+    <plurals name="item">
+        <item quantity="one">%1$s artikel</item>
+        <item quantity="other">%1$s artikelen</item>
+    </plurals>
+    <plurals name="item_added_to_cart">
+        <item quantity="one">Artikel toegevoegd aan winkelwagen</item>
+        <item quantity="other">Artikelen toegevoegd aan winkelwagen</item>
+    </plurals>
+    <plurals name="number_available">
+        <item quantity="one">%1$d beschikbaar</item>
+        <item quantity="other">%1$d beschikbaar</item>
+    </plurals>
+    <plurals name="number_of_followers">
+        <item quantity="one">Volger</item>
+        <item quantity="other">Volgers</item>
+    </plurals>
+    <plurals name="number_of_saves">
+        <item quantity="one">Bewaard</item>
+        <item quantity="other">Bewaard</item>
+    </plurals>
+    <plurals name="number_said_thanks">
+        <item quantity="one">%1$d gebruiker bedankt je</item>
+        <item quantity="other">%1$d gebruikers bedanken je</item>
+    </plurals>
+    <plurals name="people">
+        <item quantity="one">1 persoon</item>
+        <item quantity="other">%1$s mensen</item>
+    </plurals>
+    <plurals name="rating">
+        <item quantity="one">( %1$s beoordeling)</item>
+        <item quantity="other">(%1$s beoordelingen)</item>
+    </plurals>
+    <plurals name="ratings_capitalized_no_bracket">
+        <item quantity="one">%1$s beoordeling</item>
+        <item quantity="other">%1$s beoordelingen</item>
+    </plurals>
+    <plurals name="redeem_for_points_question">
+        <item quantity="one">Inwisselen voor %1$d punt?</item>
+        <item quantity="other">Inwisselen voor %1$d punten?</item>
+    </plurals>
+    <plurals name="reward_points_number">
+        <item quantity="one">%1$s Punt</item>
+        <item quantity="other">%1$s Punten</item>
+    </plurals>
+    <plurals name="selling_product">
+        <item quantity="one">%1$s product aan het verkopen</item>
+        <item quantity="other">%1$s producten aan het verkopen</item>
+    </plurals>
+    <plurals name="store_ratings_with_bracket">
+        <item quantity="one">(%1$s winkelbeoordeling)</item>
+        <item quantity="other">(%1$s winkelbeoordelingen)</item>
+    </plurals>
+    <plurals name="user_rating">
+        <item quantity="one">Gebruikersbeoordeling</item>
+        <item quantity="other">Gebruikersbeoordelingen</item>
+    </plurals>
+    <plurals name="user_review">
+        <item quantity="one">%1$s Gebruikersbeoordeling</item>
+        <item quantity="other">%1$s Gebruikersbeoordelingen</item>
+    </plurals>
+    <plurals name="wishlist_new_count">
+        <item quantity="one">%1$d nieuw</item>
+        <item quantity="other">%1$d nieuwe</item>
+    </plurals>
+    <plurals name="wishlist_view_count">
+        <item quantity="one">%1$d keer bekeken</item>
+        <item quantity="other">%1$d keer bekeken</item>
+    </plurals>
+</resources>

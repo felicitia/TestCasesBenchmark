@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_gravity="top" android:orientation="vertical" android:padding="@dimen/sixteen_padding" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <TextView android:textSize="@dimen/text_size_subtitle" android:textStyle="bold" android:textColor="@color/text_primary" android:id="@+id/fragment_categories_item_title" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+    <TextView android:textSize="@dimen/text_size_caption" android:textColor="@color/text_light_hint" android:id="@+id/fragment_categories_item_count" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/four_padding" android:layout_marginBottom="@dimen/sixteen_padding"/>
+    <LinearLayout android:orientation="horizontal" android:id="@+id/fragment_categories_items_row_one" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+    <LinearLayout android:orientation="horizontal" android:id="@+id/fragment_categories_items_row_two" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+</LinearLayout>

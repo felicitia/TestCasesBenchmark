@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.contextlogic.wish.ui.view.ProfileImageView android:id="@+id/saved_user_image" android:layout_width="wrap_content" android:layout_height="wrap_content" app:imageSize="@dimen/saved_user_image_size" app:profileTextSize="@dimen/text_size_subtitle"/>
+    <com.contextlogic.wish.ui.text.ThemedTextView android:textSize="@dimen/text_size_body" android:textColor="@color/text_primary" android:gravity="center_vertical" android:layout_gravity="center_vertical" android:id="@+id/saved_user_name" android:paddingLeft="@dimen/twelve_padding" android:layout_width="match_parent" android:layout_height="wrap_content" android:maxLines="1" android:paddingStart="@dimen/twelve_padding"/>
+</merge>

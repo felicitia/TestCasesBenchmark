@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:gravity="center" android:layout_gravity="center" android:layout_width="@dimen/photo_video_viewer_thumbnail_size" android:layout_height="@dimen/photo_video_viewer_thumbnail_size" android:layout_centerInParent="true">
+    <com.contextlogic.wish.ui.image.NetworkImageView android:id="@+id/photo_video_viewer_grid_item_photo" android:layout_width="@dimen/photo_video_viewer_thumbnail_size" android:layout_height="@dimen/photo_video_viewer_thumbnail_size" android:scaleType="centerCrop" android:layout_centerInParent="true"/>
+    <com.contextlogic.wish.ui.image.AutoReleasableImageView android:id="@+id/photo_video_viewer_grid_item_video" android:layout_width="match_parent" android:layout_height="match_parent" android:scaleType="centerCrop" android:layout_centerInParent="true"/>
+    <com.contextlogic.wish.ui.image.AutoReleasableImageView android:id="@+id/photo_video_viewer_grid_item_video_icon" android:visibility="gone" android:layout_width="@dimen/photo_video_viewer_thumbnail_video_icon_size" android:layout_height="@dimen/photo_video_viewer_thumbnail_video_icon_size" android:src="@drawable/play" android:layout_centerInParent="true"/>
+</RelativeLayout>

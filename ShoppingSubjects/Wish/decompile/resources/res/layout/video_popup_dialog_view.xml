@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="match_parent" android:layout_height="match_parent">
+    <FrameLayout android:id="@+id/video_popup_video_player_container" android:background="@color/black" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    <com.contextlogic.wish.ui.image.AutoReleasableImageView android:layout_gravity="top|right|center_vertical|center_horizontal|center" android:id="@+id/video_popup_dialog_fragment_x" android:padding="@dimen/sixteen_padding" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/sixteen_padding" android:layout_marginRight="@dimen/sixteen_padding" app:drawable="@drawable/actionbar_close_x"/>
+</FrameLayout>

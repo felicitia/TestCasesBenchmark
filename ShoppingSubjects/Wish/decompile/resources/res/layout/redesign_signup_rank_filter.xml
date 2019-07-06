@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent" android:weightSum="4">
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="3" android:layout_above="@+id/signup_footer_view">
+        <LinearLayout android:layout_gravity="center_horizontal" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/sixteen_padding">
+            <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/sixteen_padding">
+                <FrameLayout android:layout_width="wrap_content" android:layout_height="wrap_content">
+                    <com.contextlogic.wish.ui.image.AutoReleasableImageView android:id="@+id/rank_price_image" android:background="@drawable/signup_price" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+                    <com.contextlogic.wish.ui.image.AutoReleasableImageView android:id="@+id/rank_price_ring" android:background="@drawable/signup_ring_rank" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+                    <com.contextlogic.wish.ui.text.ThemedTextView android:textColor="@color/white" android:gravity="center" android:id="@+id/rank_price_number" android:background="@drawable/rank_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/signup_flow_rank_filter_icon_offset" android:layout_marginTop="@dimen/signup_flow_rank_filter_icon_offset"/>
+                </FrameLayout>
+                <com.contextlogic.wish.ui.text.ThemedTextView android:textSize="@dimen/text_size_body" android:textColor="@color/cool_gray3" android:gravity="center" android:id="@+id/rank_price_text" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/eight_padding" android:text="@string/price"/>
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/sixteen_padding">
+                <FrameLayout android:layout_width="wrap_content" android:layout_height="wrap_content">
+                    <com.contextlogic.wish.ui.image.AutoReleasableImageView android:id="@+id/rank_quality_image" android:background="@drawable/signup_quality" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+                    <com.contextlogic.wish.ui.image.AutoReleasableImageView android:id="@+id/rank_quality_ring" android:background="@drawable/signup_ring_rank" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+                    <com.contextlogic.wish.ui.text.ThemedTextView android:textColor="@color/white" android:gravity="center" android:id="@+id/rank_quality_number" android:background="@drawable/rank_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/signup_flow_rank_filter_icon_offset" android:layout_marginTop="@dimen/signup_flow_rank_filter_icon_offset"/>
+                </FrameLayout>
+                <com.contextlogic.wish.ui.text.ThemedTextView android:textSize="@dimen/text_size_body" android:textColor="@color/cool_gray3" android:gravity="center" android:id="@+id/rank_quality_text" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/eight_padding" android:text="@string/quality"/>
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout android:layout_gravity="center_horizontal" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/sixteen_padding">
+            <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/sixteen_padding">
+                <FrameLayout android:layout_width="wrap_content" android:layout_height="wrap_content">
+                    <com.contextlogic.wish.ui.image.AutoReleasableImageView android:id="@+id/rank_rated_image" android:background="@drawable/signup_hight_rated" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+                    <com.contextlogic.wish.ui.image.AutoReleasableImageView android:id="@+id/rank_rated_ring" android:background="@drawable/signup_ring_rank" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+                    <com.contextlogic.wish.ui.text.ThemedTextView android:textColor="@color/white" android:gravity="center" android:id="@+id/rank_rated_number" android:background="@drawable/rank_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/signup_flow_rank_filter_icon_offset" android:layout_marginTop="@dimen/signup_flow_rank_filter_icon_offset"/>
+                </FrameLayout>
+                <com.contextlogic.wish.ui.text.ThemedTextView android:textSize="@dimen/text_size_body" android:textColor="@color/cool_gray3" android:gravity="center" android:id="@+id/rank_rated_text" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/eight_padding" android:text="@string/highly_rated"/>
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/sixteen_padding">
+                <FrameLayout android:layout_width="wrap_content" android:layout_height="wrap_content">
+                    <com.contextlogic.wish.ui.image.AutoReleasableImageView android:id="@+id/rank_shipping_image" android:background="@drawable/signup_fast_shipping" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+                    <com.contextlogic.wish.ui.image.AutoReleasableImageView android:id="@+id/rank_shipping_ring" android:background="@drawable/signup_ring_rank" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+                    <com.contextlogic.wish.ui.text.ThemedTextView android:textColor="@color/white" android:gravity="center" android:id="@+id/rank_shipping_number" android:background="@drawable/rank_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/signup_flow_rank_filter_icon_offset" android:layout_marginTop="@dimen/signup_flow_rank_filter_icon_offset"/>
+                </FrameLayout>
+                <com.contextlogic.wish.ui.text.ThemedTextView android:textSize="@dimen/text_size_body" android:textColor="@color/cool_gray3" android:gravity="center" android:id="@+id/rank_shipping_text" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/eight_padding" android:text="@string/shipping_time"/>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+    <com.contextlogic.wish.activity.signup.redesign.SignupFlowFooterView android:layout_gravity="top" android:id="@+id/signup_footer_view" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1"/>
+</LinearLayout>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent" android:foregroundGravity="center">
+    <com.contextlogic.wish.ui.grid.StaggeredGridView android:layout_gravity="top" android:id="@+id/login_fragment_product_grid" android:animationCache="false" android:layout_width="match_parent" android:layout_height="match_parent" android:scrollingCache="false" android:cacheColorHint="@color/transparent"/>
+    <View android:id="@+id/login_fragment_redesign_background" android:background="@color/main_primary" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    <LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="vertical" android:id="@+id/login_fragment_redesign_logo" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <com.contextlogic.wish.ui.image.AutoReleasableImageView android:layout_width="wrap_content" android:layout_height="wrap_content" app:drawable="@drawable/login_logo_white"/>
+        <com.contextlogic.wish.ui.text.ThemedTextView android:textSize="@dimen/text_size_body" android:textColor="@color/white" android:id="@+id/login_fragment_tagline_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/eight_padding" android:text="@string/tagline_wish"/>
+    </LinearLayout>
+</FrameLayout>

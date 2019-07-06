@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:id="@+id/daily_giveaway_info_rule" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <com.contextlogic.wish.ui.text.ThemedTextView android:textSize="@dimen/daily_giveaway_info_bullet_text_size" android:textColor="@color/cool_gray1" android:id="@+id/daily_giveaway_info_rule_bullet" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/four_padding" android:text="•"/>
+    <com.contextlogic.wish.ui.text.ThemedTextView android:textSize="@dimen/daily_giveaway_info_bullet_text_size" android:textColor="@color/cool_gray1" android:layout_gravity="top" android:id="@+id/daily_giveaway_info_description" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+</LinearLayout>

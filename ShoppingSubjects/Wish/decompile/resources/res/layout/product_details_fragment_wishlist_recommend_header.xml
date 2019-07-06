@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <com.contextlogic.wish.ui.text.ThemedTextView android:textSize="@dimen/text_size_subtitle" android:textStyle="bold" android:textColor="@color/text_primary" android:ellipsize="end" android:layout_gravity="center" android:id="@+id/fragment_wishlist_title" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/sixteen_padding" android:maxLines="1"/>
+    <com.contextlogic.wish.ui.listview.HorizontalListView android:id="@+id/fragment_recommended_wishlists_list" android:layout_width="match_parent" android:layout_height="@dimen/discover_wishlist_total_tile_height"/>
+</merge>

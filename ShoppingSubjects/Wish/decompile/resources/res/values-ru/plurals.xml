@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="cart_item">
+        <item quantity="one">Корзина: %1$s товар</item>
+        <item quantity="few">Корзина: %1$s товара</item>
+        <item quantity="other">Корзина: %1$s товаров</item>
+    </plurals>
+    <plurals name="daily_raffle_entries_text">
+        <item quantity="one">%1$d заявка</item>
+        <item quantity="few">%1$d заявки</item>
+        <item quantity="other">%1$d заявок</item>
+    </plurals>
+    <plurals name="detail_table_color">
+        <item quantity="one">Цвета</item>
+        <item quantity="few">Цвета</item>
+        <item quantity="other">Цвета</item>
+    </plurals>
+    <plurals name="detail_table_size">
+        <item quantity="one">Размеры</item>
+        <item quantity="few">Размеры</item>
+        <item quantity="other">Размеры</item>
+    </plurals>
+    <plurals name="follower_plural">
+        <item quantity="one">%1$d подписчик</item>
+        <item quantity="few">%1$d подписчика</item>
+        <item quantity="other">%1$d подписчиков</item>
+    </plurals>
+    <plurals name="following_plural">
+        <item quantity="one">%1$d подписка</item>
+        <item quantity="few">%1$d подписки</item>
+        <item quantity="other">%1$d подписок</item>
+    </plurals>
+    <plurals name="item">
+        <item quantity="one">%1$s товар</item>
+        <item quantity="few">%1$s товара</item>
+        <item quantity="other">%1$s товаров</item>
+    </plurals>
+    <plurals name="item_added_to_cart">
+        <item quantity="one">товар добавлен в корзину</item>
+        <item quantity="few">товара добавлено в корзину</item>
+        <item quantity="other">товаров добавлено в корзину</item>
+    </plurals>
+    <plurals name="number_available">
+        <item quantity="one">%1$d доступен</item>
+        <item quantity="few">%1$d доступно</item>
+        <item quantity="other">%1$d доступно</item>
+    </plurals>
+    <plurals name="number_of_followers">
+        <item quantity="one">подписчик</item>
+        <item quantity="few">подписчика</item>
+        <item quantity="other">подписчиков</item>
+    </plurals>
+    <plurals name="number_of_saves">
+        <item quantity="one">желание</item>
+        <item quantity="few">желания</item>
+        <item quantity="other">желаний</item>
+    </plurals>
+    <plurals name="number_said_thanks">
+        <item quantity="one">Поблагодарили: %1$d человек</item>
+        <item quantity="few">Поблагодарили: %1$d человека</item>
+        <item quantity="other">Поблагодарили: %1$d человек</item>
+    </plurals>
+    <plurals name="people">
+        <item quantity="one">%1$s человек</item>
+        <item quantity="few">%1$s человека</item>
+        <item quantity="other">%1$s человек</item>
+    </plurals>
+    <plurals name="rating">
+        <item quantity="one">(%1$s оценка)</item>
+        <item quantity="few">(%1$s оценки)</item>
+        <item quantity="other">(%1$s оценок)</item>
+    </plurals>
+    <plurals name="ratings_capitalized_no_bracket">
+        <item quantity="one">%1$s оценка</item>
+        <item quantity="few">%1$s оценки</item>
+        <item quantity="other">%1$s оценок</item>
+    </plurals>
+    <plurals name="reward_points_number">
+        <item quantity="one">%1$s балл</item>
+        <item quantity="few">%1$s балла</item>
+        <item quantity="other">%1$s баллов</item>
+    </plurals>
+    <plurals name="selling_product">
+        <item quantity="one">В продаже %1$s товар</item>
+        <item quantity="few">В продаже %1$s товара</item>
+        <item quantity="other">В продаже %1$s товаров</item>
+    </plurals>
+    <plurals name="store_ratings_with_bracket">
+        <item quantity="one">(%1$s оценка)</item>
+        <item quantity="few">(%1$s оценки)</item>
+        <item quantity="other">(%1$s оценок)</item>
+    </plurals>
+    <plurals name="user_rating">
+        <item quantity="one">оценка</item>
+        <item quantity="few">оценки</item>
+        <item quantity="other">оценок</item>
+    </plurals>
+    <plurals name="user_review">
+        <item quantity="one">%1$s отзыв</item>
+        <item quantity="few">%1$s отзыва</item>
+        <item quantity="other">%1$s отзывов</item>
+    </plurals>
+    <plurals name="wishlist_new_count">
+        <item quantity="one">%1$d новый</item>
+        <item quantity="few">%1$d новых</item>
+        <item quantity="other">%1$d новых</item>
+    </plurals>
+    <plurals name="wishlist_view_count">
+        <item quantity="one">%1$d просмотр</item>
+        <item quantity="few">%1$d просмотра</item>
+        <item quantity="other">%1$d просмотров</item>
+    </plurals>
+</resources>

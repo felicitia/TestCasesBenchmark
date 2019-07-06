@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent" android:weightSum="4">
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="3">
+        <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/sixteen_padding">
+            <FrameLayout android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <com.contextlogic.wish.ui.image.AutoReleasableImageView android:id="@+id/select_gender_female" android:background="@drawable/signup_flow_female" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+                <com.contextlogic.wish.ui.image.AutoReleasableImageView android:id="@+id/select_gender_female_highlight" android:background="@drawable/gender_highlight" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+            </FrameLayout>
+            <com.contextlogic.wish.ui.text.ThemedTextView android:textSize="@dimen/sixteen_padding" android:textColor="@color/main_primary" android:gravity="center" android:id="@+id/select_gender_female_text" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/sixteen_padding" android:text="@string/women_s"/>
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/sixteen_padding">
+            <FrameLayout android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <com.contextlogic.wish.ui.image.AutoReleasableImageView android:id="@+id/select_gender_male" android:background="@drawable/signup_flow_male" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+                <com.contextlogic.wish.ui.image.AutoReleasableImageView android:id="@+id/select_gender_male_highlight" android:background="@drawable/gender_highlight" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+            </FrameLayout>
+            <com.contextlogic.wish.ui.text.ThemedTextView android:textSize="@dimen/sixteen_padding" android:textColor="@color/main_primary" android:gravity="center" android:id="@+id/select_gender_male_text" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/sixteen_padding" android:text="@string/men_s"/>
+        </LinearLayout>
+    </LinearLayout>
+    <com.contextlogic.wish.activity.signup.redesign.SignupFlowFooterView android:layout_gravity="top" android:id="@+id/select_gender_footer_view" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1"/>
+</LinearLayout>

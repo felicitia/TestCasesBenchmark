@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="cart_item">
+        <item quantity="one">Krepšelis: %1$s prekė</item>
+        <item quantity="few">Krepšelis: %1$s prekės</item>
+        <item quantity="other">Krepšelis: %1$s prekių</item>
+    </plurals>
+    <plurals name="daily_raffle_entries_text">
+        <item quantity="one">%1$d įtraukimas</item>
+        <item quantity="few">%1$d įtraukimai</item>
+        <item quantity="other">%1$d įtraukimų</item>
+    </plurals>
+    <plurals name="detail_table_color">
+        <item quantity="one">Spalva</item>
+        <item quantity="few">Spalvos</item>
+        <item quantity="other">Spalvų</item>
+    </plurals>
+    <plurals name="detail_table_size">
+        <item quantity="one">Dydis</item>
+        <item quantity="few">Dydis</item>
+        <item quantity="other">Dydis</item>
+    </plurals>
+    <plurals name="follower_plural">
+        <item quantity="one">%1$d sekėjas</item>
+        <item quantity="few">%1$d sekėjai</item>
+        <item quantity="other">%1$d sekėjų</item>
+    </plurals>
+    <plurals name="following_plural">
+        <item quantity="one">Sekama %1$d</item>
+        <item quantity="few">Sekama %1$d</item>
+        <item quantity="other">Sekama %1$d</item>
+    </plurals>
+    <plurals name="item">
+        <item quantity="one">%1$s prekė</item>
+        <item quantity="few">%1$s prekės</item>
+        <item quantity="other">%1$s prekių</item>
+    </plurals>
+    <plurals name="item_added_to_cart">
+        <item quantity="one">Prekė įdėta į krepšelį</item>
+        <item quantity="few">Prekės įdėtos į krepšelį</item>
+        <item quantity="other">Prekių įdėta į krepšelį</item>
+    </plurals>
+    <plurals name="number_available">
+        <item quantity="one">%1$d prieinama</item>
+        <item quantity="few">%1$d prieinama</item>
+        <item quantity="other">%1$d prieinama</item>
+    </plurals>
+    <plurals name="number_of_followers">
+        <item quantity="one">sekėjas</item>
+        <item quantity="few">sekėjai</item>
+        <item quantity="other">sekėjų</item>
+    </plurals>
+    <plurals name="number_of_saves">
+        <item quantity="one">Išsaugojimas</item>
+        <item quantity="few">Išsaugojimai</item>
+        <item quantity="other">Išsaugojimų</item>
+    </plurals>
+    <plurals name="number_said_thanks">
+        <item quantity="one">%1$d padėkojo</item>
+        <item quantity="few">%1$d padėkojo</item>
+        <item quantity="other">%1$d padėkojo</item>
+    </plurals>
+    <plurals name="people">
+        <item quantity="one">%1$s žmogus</item>
+        <item quantity="few">%1$s žmonės</item>
+        <item quantity="other">%1$s žmonių</item>
+    </plurals>
+    <plurals name="rating">
+        <item quantity="one">(%1$s įvertinimas)</item>
+        <item quantity="few">(%1$s įvertinimai)</item>
+        <item quantity="other">(%1$s įvertinimų)</item>
+    </plurals>
+    <plurals name="ratings_capitalized_no_bracket">
+        <item quantity="one">%1$s vertinimas</item>
+        <item quantity="few">%1$s vertinimai</item>
+        <item quantity="other">%1$s vertinimų</item>
+    </plurals>
+    <plurals name="reward_points_number">
+        <item quantity="one">%1$s taškų</item>
+        <item quantity="few">%1$s taškų</item>
+        <item quantity="other">%1$s taškų</item>
+    </plurals>
+    <plurals name="selling_product">
+        <item quantity="one">Parduodamas %1$s gaminys</item>
+        <item quantity="few">Parduodami %1$s gaminiai</item>
+        <item quantity="other">Parduodama %1$s gaminių</item>
+    </plurals>
+    <plurals name="store_ratings_with_bracket">
+        <item quantity="one">(%1$s parduotuvės reitingai)</item>
+        <item quantity="few">(%1$s parduotuvės reitingų)</item>
+        <item quantity="other">(%1$s parduotuvės reitingų)</item>
+    </plurals>
+    <plurals name="user_rating">
+        <item quantity="one">Naudotojo įvertinimas</item>
+        <item quantity="few">Naudotojo įvertinimai</item>
+        <item quantity="other">Naudotojo įvertinimų</item>
+    </plurals>
+    <plurals name="user_review">
+        <item quantity="one">%1$s naudotojo atsiliepimas</item>
+        <item quantity="few">%1$s naudotojo atsiliepimai</item>
+        <item quantity="other">%1$s naudotojo atsiliepimų</item>
+    </plurals>
+    <plurals name="wishlist_new_count">
+        <item quantity="one">%1$d naujas</item>
+        <item quantity="few">%1$d nauji</item>
+        <item quantity="other">%1$d naujų</item>
+    </plurals>
+    <plurals name="wishlist_view_count">
+        <item quantity="one">%1$d peržiūra</item>
+        <item quantity="few">%1$d peržiūros</item>
+        <item quantity="other">%1$d peržiūrų</item>
+    </plurals>
+</resources>

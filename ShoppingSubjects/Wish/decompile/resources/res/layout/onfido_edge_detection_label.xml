@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:background="@drawable/onfido_rounded_grey_shape" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/onfido_capture_label_margin_horizontal" android:layout_marginRight="@dimen/onfido_capture_label_margin_horizontal">
+    <TextView android:textSize="@dimen/onfido_fs_18" android:textColor="@color/onfido_white" android:gravity="center" android:layout_gravity="center" android:id="@+id/labelText" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="16dp" android:layout_marginTop="9dp" android:layout_marginRight="16dp" android:layout_marginBottom="9dp" android:text="@string/onfido_message_passport_capture_subtitle"/>
+</FrameLayout>

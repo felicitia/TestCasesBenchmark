@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:gravity="center" android:layout_gravity="center" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+    <com.contextlogic.wish.ui.text.ThemedTextView android:textSize="@dimen/ugc_feedback_counter_text_size" android:textStyle="bold" android:gravity="center" android:id="@+id/ugc_feedback_counter_element_text" android:background="@drawable/ugc_counter_background" android:layout_width="@dimen/ugc_feedback_counter_element_width" android:layout_height="@dimen/ugc_feedback_counter_element_height" android:layout_marginBottom="@dimen/ugc_feedback_counter_element_shadow_offset" android:fontFamily="roboto"/>
+</LinearLayout>

@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="cart_item">
+        <item quantity="zero">العربة: %1$s سلعة</item>
+        <item quantity="one">العربة: %1$s سلعة فقط</item>
+        <item quantity="two">العربة: %1$s من السلع</item>
+        <item quantity="few">العربة: %1$s سلع</item>
+        <item quantity="many">العربة: %1$s سلعة</item>
+        <item quantity="other">العربة: %1$s سلعة</item>
+    </plurals>
+    <plurals name="daily_raffle_entries_text">
+        <item quantity="zero">%1$d إدخال</item>
+        <item quantity="one">%1$d إدخال</item>
+        <item quantity="two">%1$d إدخال</item>
+        <item quantity="few">%1$d إدخالات</item>
+        <item quantity="many">%1$d إدخالاً</item>
+        <item quantity="other">%1$d إدخال</item>
+    </plurals>
+    <plurals name="daily_raffle_free_items_and_coupons_text">
+        <item quantity="zero">%1$d سلعة مجانية</item>
+        <item quantity="one">%1$d سلعة مجانية</item>
+        <item quantity="two">%1$d سلعتان مجانيتان</item>
+        <item quantity="few">%1$d سلع مجانية</item>
+        <item quantity="many">%1$d سلعة مجانية</item>
+        <item quantity="other">%1$d سلعة مجانية</item>
+    </plurals>
+    <plurals name="detail_table_color">
+        <item quantity="zero">لون</item>
+        <item quantity="one">لون</item>
+        <item quantity="two">لونان</item>
+        <item quantity="few">ألوان</item>
+        <item quantity="many">لونًا</item>
+        <item quantity="other">لون</item>
+    </plurals>
+    <plurals name="detail_table_size">
+        <item quantity="zero">المقاس</item>
+        <item quantity="one">المقاس</item>
+        <item quantity="two">المقاسان</item>
+        <item quantity="few">المقاسات</item>
+        <item quantity="many">مقاسًا</item>
+        <item quantity="other">المقاس</item>
+    </plurals>
+    <plurals name="follower_plural">
+        <item quantity="zero">%1$d من المتابعين</item>
+        <item quantity="one">%1$d من المتابعين</item>
+        <item quantity="two">%1$d من المتابعين</item>
+        <item quantity="few">%1$d من المتابعين</item>
+        <item quantity="many">%1$d من المتابعين</item>
+        <item quantity="other">%1$d متابع</item>
+    </plurals>
+    <plurals name="following_plural">
+        <item quantity="zero">%1$d من المتابعين</item>
+        <item quantity="one">%1$d من المتابعين</item>
+        <item quantity="two">%1$d من المتابعين</item>
+        <item quantity="few">%1$d من المتابعين</item>
+        <item quantity="many">%1$d من المتابعين</item>
+        <item quantity="other">%1$d متابع</item>
+    </plurals>
+    <plurals name="item">
+        <item quantity="zero">%1$s من العناصر</item>
+        <item quantity="one">%1$s من العناصر</item>
+        <item quantity="two">%1$s من العناصر</item>
+        <item quantity="few">%1$s من العناصر</item>
+        <item quantity="many">%1$s من العناصر</item>
+        <item quantity="other">%1$s عنصر</item>
+    </plurals>
+    <plurals name="item_added_to_cart">
+        <item quantity="zero">سلعة أضيفت إلى العربة</item>
+        <item quantity="one">سلعة أضيفت إلى العربة</item>
+        <item quantity="two">سلعة أضيفتا إلى العربة</item>
+        <item quantity="few">سلع أضيفت إلى العربة</item>
+        <item quantity="many">سلعة أضيفت إلى العربة</item>
+        <item quantity="other">سلعة أضيفت إلى العربة</item>
+    </plurals>
+    <plurals name="number_available">
+        <item quantity="zero">%1$d متوفر</item>
+        <item quantity="one">%1$d متوفر</item>
+        <item quantity="two">%1$d متوفر</item>
+        <item quantity="few">%1$d متوفر</item>
+        <item quantity="many">%1$d متوفر</item>
+        <item quantity="other">%1$d متوفر</item>
+    </plurals>
+    <plurals name="number_of_followers">
+        <item quantity="zero">متابع</item>
+        <item quantity="one">متابع</item>
+        <item quantity="two">متابعان</item>
+        <item quantity="few">متابعون</item>
+        <item quantity="many">متابعًا</item>
+        <item quantity="other">متابع</item>
+    </plurals>
+    <plurals name="number_of_saves">
+        <item quantity="zero">عنصر محفوظ</item>
+        <item quantity="one">عنصر محفوظ</item>
+        <item quantity="two">عنصر محفوظ</item>
+        <item quantity="few">عناصر محفوظة</item>
+        <item quantity="many">عنصر محفوظ</item>
+        <item quantity="other">عنصر محفوظ</item>
+    </plurals>
+    <plurals name="number_said_thanks">
+        <item quantity="zero">%1$d قال شكرًا</item>
+        <item quantity="one">%1$d قال شكرًا</item>
+        <item quantity="two">%1$d قال شكرًا</item>
+        <item quantity="few">%1$d قالوا شكرًا</item>
+        <item quantity="many">%1$d قال شكرًا</item>
+        <item quantity="other">%1$d قال شكرًا</item>
+    </plurals>
+    <plurals name="people">
+        <item quantity="zero">%1$s   شخص</item>
+        <item quantity="one">%1$s   شخص</item>
+        <item quantity="two">%1$s   شخصان</item>
+        <item quantity="few">%1$s   أشخاص</item>
+        <item quantity="many">%1$s   شخصًا</item>
+        <item quantity="other">%1$s شخص</item>
+    </plurals>
+    <plurals name="rating">
+        <item quantity="zero">(%1$s  تقييم)</item>
+        <item quantity="one">(%1$s  تقييم)</item>
+        <item quantity="two">(%1$s  تقييمان)</item>
+        <item quantity="few">(%1$s  تقييمات)</item>
+        <item quantity="many">(%1$s  تقييمًا)</item>
+        <item quantity="other">(%1$s  تقييم)</item>
+    </plurals>
+    <plurals name="ratings_capitalized_no_bracket">
+        <item quantity="zero">%1$s تقييم</item>
+        <item quantity="one">%1$s تقييم</item>
+        <item quantity="two">%1$s تقييم</item>
+        <item quantity="few">%1$s تقييمات</item>
+        <item quantity="many">%1$s تقييم</item>
+        <item quantity="other">%1$s تقييم</item>
+    </plurals>
+    <plurals name="redeem_for_points_question">
+        <item quantity="zero">هل تريد التحصيل مقابل %1$d نقاط؟</item>
+        <item quantity="one">هل تريد التحصيل مقابل %1$d نقاط؟</item>
+        <item quantity="two">هل تريد التحصيل مقابل %1$d نقاط؟</item>
+        <item quantity="few">هل تريد التحصيل مقابل %1$d نقاط؟</item>
+        <item quantity="many">هل تريد التحصيل مقابل %1$d نقاط؟</item>
+        <item quantity="other">هل تريد التحصيل مقابل %1$d نقاط؟</item>
+    </plurals>
+    <plurals name="reward_points_number">
+        <item quantity="zero">%1$s نقاط</item>
+        <item quantity="one">%1$s نقاط</item>
+        <item quantity="two">%1$s نقاط</item>
+        <item quantity="few">%1$s نقاط</item>
+        <item quantity="many">%1$s نقاط</item>
+        <item quantity="other">%1$s نقاط</item>
+    </plurals>
+    <plurals name="selling_product">
+        <item quantity="zero">بيع  %1$s  منتج</item>
+        <item quantity="one">بيع  %1$s  منتج</item>
+        <item quantity="two">بيع  %1$s   منتجان</item>
+        <item quantity="few">بيع  %1$s  منتجات</item>
+        <item quantity="many">بيع  %1$s   منتجًا</item>
+        <item quantity="other">بيع  %1$s  منتج</item>
+    </plurals>
+    <plurals name="store_ratings_with_bracket">
+        <item quantity="zero">(%1$s تصنيف متجر)</item>
+        <item quantity="one">(%1$s تصنيف متجر)</item>
+        <item quantity="two">(%1$s تصنيف متجر)</item>
+        <item quantity="few">(%1$s تصنيفات متجر)</item>
+        <item quantity="many">(%1$s تصنيف متجر)</item>
+        <item quantity="other">(%1$s تصنيف متجر)</item>
+    </plurals>
+    <plurals name="user_rating">
+        <item quantity="zero">تقييم المستخدم</item>
+        <item quantity="one">تقييم المستخدم</item>
+        <item quantity="two">تقييم المستخدم</item>
+        <item quantity="few">تقييمات المستخدم</item>
+        <item quantity="many">تقييم المستخدم</item>
+        <item quantity="other">تقييم المستخدم</item>
+    </plurals>
+    <plurals name="user_review">
+        <item quantity="zero">%1$s مراجعة مستخدم</item>
+        <item quantity="one">%1$s مراجعة مستخدم</item>
+        <item quantity="two">%1$s مراجعة مستخدم</item>
+        <item quantity="few">%1$s مراجعات مستخدم</item>
+        <item quantity="many">%1$s مراجعة مستخدم</item>
+        <item quantity="other">%1$s مراجعة مستخدم</item>
+    </plurals>
+    <plurals name="wishlist_new_count">
+        <item quantity="zero">%1$d جديد</item>
+        <item quantity="one">%1$d جديد</item>
+        <item quantity="two">%1$d جديد</item>
+        <item quantity="few">%1$d جديد</item>
+        <item quantity="many">%1$d جديد</item>
+        <item quantity="other">%1$d جديد</item>
+    </plurals>
+    <plurals name="wishlist_view_count">
+        <item quantity="zero">%1$d مشاهدات</item>
+        <item quantity="one">%1$d مشاهدة</item>
+        <item quantity="two">%1$d مشاهدات</item>
+        <item quantity="few">%1$d مشاهدات</item>
+        <item quantity="many">%1$d مشاهدة</item>
+        <item quantity="other">%1$d مشاهدة</item>
+    </plurals>
+</resources>

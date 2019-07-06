@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="match_parent" android:layout_height="match_parent">
+    <android.support.v4.widget.Space android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1"/>
+    <com.contextlogic.wish.ui.text.ThemedTextView android:textColor="@color/gray1" android:gravity="center" android:id="@+id/ugp_splash_header_text" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+    <com.contextlogic.wish.ui.text.ThemedTextView android:textColor="@color/gray1" android:ellipsize="marquee" android:gravity="center" android:id="@+id/ugp_splash_header_subtext" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+    <android.support.v4.widget.Space android:layout_width="match_parent" android:layout_height="@dimen/thirty_two_padding"/>
+    <com.contextlogic.wish.activity.feed.newusergiftpack.GiftPackHeaderCardView android:id="@+id/ugp_splash_card1" android:layout_width="match_parent" android:layout_height="@dimen/new_user_gift_pack_header_pager_height"/>
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@+id/ugp_splash_divider_layout" android:paddingTop="@dimen/eight_padding" android:paddingBottom="@dimen/eight_padding" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <View android:background="@color/gray4" android:layout_width="0dp" android:layout_height="@dimen/default_border_stroke" android:layout_weight="1"/>
+        <com.contextlogic.wish.ui.text.ThemedTextView android:textColor="@color/gray4" android:id="@+id/ugp_splash_divider_text" android:padding="@dimen/eight_padding" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+        <View android:background="@color/gray4" android:layout_width="0dp" android:layout_height="@dimen/default_border_stroke" android:layout_weight="1"/>
+    </LinearLayout>
+    <com.contextlogic.wish.activity.feed.newusergiftpack.GiftPackHeaderCardView android:id="@+id/ugp_splash_card2" android:layout_width="match_parent" android:layout_height="@dimen/new_user_gift_pack_header_pager_height"/>
+    <android.support.v4.widget.Space android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1"/>
+    <com.contextlogic.wish.ui.button.ThemedButton android:textSize="@dimen/text_size_twenty" android:gravity="center_horizontal" android:id="@+id/ugp_splash_button" android:background="@drawable/white_button_selector" android:paddingLeft="@dimen/fourty_padding" android:paddingTop="@dimen/twelve_padding" android:paddingRight="@dimen/fourty_padding" android:paddingBottom="@dimen/twelve_padding" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/twenty_four_padding" android:layout_marginRight="@dimen/twenty_four_padding" android:minWidth="@dimen/promotion_splash_button_min_width" android:textAllCaps="false"/>
+</merge>

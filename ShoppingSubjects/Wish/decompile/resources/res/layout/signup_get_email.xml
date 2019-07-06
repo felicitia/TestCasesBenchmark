@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="match_parent" android:layout_height="match_parent" android:fillViewport="true">
+    <LinearLayout android:layout_gravity="center_vertical" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:weightSum="4">
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_weight="3">
+            <com.contextlogic.wish.ui.image.AutoReleasableImageView android:layout_gravity="center" android:id="@+id/sign_up_get_email_icon" android:layout_width="@dimen/get_email_security_icon" android:layout_height="@dimen/get_email_security_icon"/>
+            <FrameLayout android:id="@+id/get_email_edit_text_container" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/get_email_edit_text_side_margin" android:layout_marginTop="@dimen/fourty_padding" android:layout_marginRight="@dimen/get_email_edit_text_side_margin">
+                <com.contextlogic.wish.activity.login.signin.LoginFormDropdownEditText android:textColorHint="@color/gray4" android:gravity="center_vertical" android:id="@+id/sign_up_get_email_edit_text" android:background="@drawable/login_fragment_redesign_edit_text_background" android:paddingLeft="@dimen/twelve_padding" android:paddingRight="@dimen/thirty_two_padding" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="@string/enter_your_email_address" android:inputType="textEmailAddress" android:imeOptions="actionDone" style="@style/Widget.Wish.EditText"/>
+                <ImageView android:layout_gravity="right|center_vertical|center_horizontal|center|end" android:layout_width="@dimen/twenty_four_padding" android:layout_height="@dimen/twenty_four_padding" android:layout_marginRight="@dimen/eight_padding" android:src="@drawable/ic_email_gray_24" android:contentDescription="@string/email_address"/>
+            </FrameLayout>
+            <com.contextlogic.wish.ui.text.ThemedTextView android:textStyle="bold" android:textColor="@color/new_red" android:layout_gravity="center_horizontal" android:id="@+id/get_email_error_message" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/eight_padding"/>
+        </LinearLayout>
+        <com.contextlogic.wish.activity.signup.redesign.SignupFlowFooterView android:id="@+id/get_email_footer_view" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_weight="1"/>
+    </LinearLayout>
+</ScrollView>

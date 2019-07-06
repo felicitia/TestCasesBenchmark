@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt">
+    <CheckBox android:layout_gravity="top" android:id="@+id/bundles_product_info_row_view_checkbox" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="@dimen/eight_padding" android:checked="true" style="@style/Widget.Wish.Checkbox.Orange"/>
+    <LinearLayout android:orientation="vertical" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1">
+        <com.contextlogic.wish.ui.text.ThemedTextView android:textSize="@dimen/text_size_body" android:textColor="@color/dark_gray_2" android:id="@+id/bundles_product_info_row_view_product_name" android:paddingBottom="@dimen/half_screen_padding" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="2"/>
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+            <com.contextlogic.wish.ui.text.ThemedTextView android:textSize="@dimen/text_size_subtitle" android:textColor="@color/dark_gray_2" android:id="@+id/bundles_product_info_row_view_product_your_price" android:paddingRight="@dimen/half_screen_padding" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+            <com.contextlogic.wish.ui.text.ThemedTextView android:textSize="@dimen/text_size_body" android:textColor="@color/text_hint" android:id="@+id/bundles_product_info_row_view_product_retail_price" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+            <com.contextlogic.wish.ui.text.ThemedTextView android:textSize="@dimen/text_size_body" android:textColor="@color/text_hint" android:id="@+id/bundles_product_info_row_view_product_retail_price_swapped" android:paddingLeft="0dp" android:paddingRight="@dimen/half_screen_padding" android:layout_width="wrap_content" android:layout_height="wrap_content" android:paddingStart="0dp" android:paddingEnd="@dimen/half_screen_padding"/>
+            <com.contextlogic.wish.ui.text.ThemedTextView android:textSize="@dimen/text_size_subtitle" android:textColor="@color/dark_gray_2" android:id="@+id/bundles_product_info_row_view_product_your_price_swapped" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+        </LinearLayout>
+    </LinearLayout>
+    <com.contextlogic.wish.ui.image.AutoReleasableImageView android:layout_gravity="center_vertical" android:id="@+id/bundles_product_info_row_view_right_arrow" android:paddingLeft="@dimen/screen_padding" android:layout_width="@dimen/bundles_right_arrow_height" android:layout_height="@dimen/bundles_right_arrow_height" app:drawable="@drawable/right_arrow"/>
+</merge>

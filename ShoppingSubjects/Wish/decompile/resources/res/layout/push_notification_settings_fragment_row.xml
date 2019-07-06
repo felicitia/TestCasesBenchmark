@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="horizontal" android:padding="@dimen/screen_padding" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <com.contextlogic.wish.ui.text.ThemedTextView android:textSize="@dimen/text_size_menu" android:textColor="@color/text_primary" android:gravity="left|center_vertical|center_horizontal|center" android:layout_gravity="left|center_vertical|center_horizontal|center" android:id="@+id/push_notification_settings_fragment_row_text" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1"/>
+    <CheckBox android:layout_gravity="center" android:id="@+id/push_notification_settings_fragment_row_checkbox" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/screen_padding"/>
+</LinearLayout>

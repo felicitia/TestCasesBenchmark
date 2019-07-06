@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.contextlogic.wish.ui.image.AutoReleasableImageView android:id="@+id/rewards_dashboard_header_view_badge" android:layout_width="@dimen/rewards_dashboard_header_view_badge_size" android:layout_height="@dimen/rewards_dashboard_header_view_badge_size" android:layout_marginTop="@dimen/sixteen_padding" app:drawable="@drawable/badge_gold"/>
+    <com.contextlogic.wish.ui.text.ThemedTextView android:textSize="@dimen/text_size_twenty_four" android:textStyle="bold" android:textColor="@color/text_primary" android:id="@+id/rewards_dashboard_header_view_total_points" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/sixteen_padding"/>
+    <com.contextlogic.wish.ui.text.ThemedTextView android:textSize="@dimen/text_size_fourteen" android:textColor="@color/gray4" android:id="@+id/rewards_dashboard_header_view_join_date" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/two_padding" android:text="@string/collected_since_you_joined"/>
+</merge>

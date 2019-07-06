@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="cart_item">
+        <item quantity="other">Giỏ hàng: %1$s mặt hàng</item>
+    </plurals>
+    <plurals name="daily_raffle_entries_text">
+        <item quantity="other">%1$d Các mục nhập</item>
+    </plurals>
+    <plurals name="daily_raffle_free_items_and_coupons_text">
+        <item quantity="other">%1$d Mặt hàng miễn phí</item>
+    </plurals>
+    <plurals name="detail_table_color">
+        <item quantity="other">Màu</item>
+    </plurals>
+    <plurals name="detail_table_size">
+        <item quantity="other">Kích cỡ</item>
+    </plurals>
+    <plurals name="follower_plural">
+        <item quantity="other">%1$d Người theo dõi</item>
+    </plurals>
+    <plurals name="following_plural">
+        <item quantity="other">%1$d Đang theo dõi</item>
+    </plurals>
+    <plurals name="item">
+        <item quantity="other">%1$s mặt hàng</item>
+    </plurals>
+    <plurals name="item_added_to_cart">
+        <item quantity="other">Hàng đã được thêm vào giỏ hàng</item>
+    </plurals>
+    <plurals name="number_available">
+        <item quantity="other">%1$d {1} giờ đã có sẵn!</item>
+    </plurals>
+    <plurals name="number_of_followers">
+        <item quantity="other">người theo dõi</item>
+    </plurals>
+    <plurals name="number_of_saves">
+        <item quantity="other">Lưu</item>
+    </plurals>
+    <plurals name="number_said_thanks">
+        <item quantity="other">%1$d nói cảm ơn</item>
+    </plurals>
+    <plurals name="people">
+        <item quantity="other">%1$s người</item>
+    </plurals>
+    <plurals name="rating">
+        <item quantity="other">(%1$s người xếp hạng)</item>
+    </plurals>
+    <plurals name="ratings_capitalized_no_bracket">
+        <item quantity="other">%1$s đánh giá</item>
+    </plurals>
+    <plurals name="redeem_for_points_question">
+        <item quantity="other">Đổi quà lấy %1$d điểm?</item>
+    </plurals>
+    <plurals name="reward_points_number">
+        <item quantity="other">%1$s điểm</item>
+    </plurals>
+    <plurals name="selling_product">
+        <item quantity="other">Bán %1$s sản phẩm</item>
+    </plurals>
+    <plurals name="store_ratings_with_bracket">
+        <item quantity="other">(%1$s đánh giá cửa hàng)</item>
+    </plurals>
+    <plurals name="user_rating">
+        <item quantity="other">Đánh giá của người dùng</item>
+    </plurals>
+    <plurals name="user_review">
+        <item quantity="other">%1$s đánh giá từ người dùng</item>
+    </plurals>
+    <plurals name="wishlist_new_count">
+        <item quantity="other">%1$d mới</item>
+    </plurals>
+    <plurals name="wishlist_view_count">
+        <item quantity="other">%1$dlượt xem</item>
+    </plurals>
+</resources>

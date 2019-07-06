@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <ScrollView android:layout_width="match_parent" android:layout_height="match_parent" android:fillViewport="true" android:layout_above="@+id/cart_fragment_cart_billing_floating_bottom_next_layout">
+        <LinearLayout android:gravity="top|center_vertical|center_horizontal|center" android:layout_gravity="top|center_vertical|center_horizontal|center" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <FrameLayout android:id="@+id/cart_fragment_cart_billing_header_placeholder" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/negative_ten_padding"/>
+            <com.contextlogic.wish.activity.cart.billing.paymentform.CreditCardPaymentFormView android:id="@+id/cart_fragment_cart_billing_credit_card" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+            <com.contextlogic.wish.activity.managepayments.ManagePaymentsView android:id="@+id/cart_fragment_cart_billing_manage_payments" android:layout_width="match_parent" android:layout_height="match_parent"/>
+            <com.contextlogic.wish.activity.cart.billing.paymentform.PayPalPaymentFormView android:id="@+id/cart_fragment_cart_billing_paypal" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+            <com.contextlogic.wish.activity.cart.billing.paymentform.GooglePayPaymentFormView android:orientation="vertical" android:id="@+id/cart_fragment_cart_billing_google_pay" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+            <com.contextlogic.wish.activity.cart.billing.paymentform.KlarnaPaymentFormView android:id="@+id/cart_fragment_cart_billing_klarna" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+            <com.contextlogic.wish.activity.cart.billing.paymentform.BoletoPaymentFormView android:id="@+id/cart_fragment_cart_billing_boleto" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+            <com.contextlogic.wish.activity.cart.billing.paymentform.OxxoPaymentFormView android:id="@+id/cart_fragment_cart_billing_oxxo" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+            <com.contextlogic.wish.activity.cart.billing.paymentform.IdealPaymentFormView android:id="@+id/cart_fragment_cart_billing_ideal" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+            <com.contextlogic.wish.activity.cart.billing.paymentform.CommerceLoanPaymentFormView android:id="@+id/cart_fragment_cart_billing_commerce_loan" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+            <com.contextlogic.wish.activity.cart.billing.paymentform.PaytmPaymentFormView android:id="@+id/cart_fragment_cart_billing_paytm" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+            <com.contextlogic.wish.ui.text.ThemedTextView android:textSize="@dimen/text_size_button" android:textStyle="bold" android:textColor="@color/white" android:gravity="center" android:layout_gravity="center" android:id="@+id/cart_fragment_cart_billing_inline_bottom_next_button" android:background="@drawable/main_button_selector" android:layout_width="match_parent" android:layout_height="@dimen/default_button_height" android:layout_margin="@dimen/screen_padding"/>
+        </LinearLayout>
+    </ScrollView>
+    <LinearLayout android:id="@+id/cart_fragment_cart_billing_floating_bottom_next_layout" android:padding="@dimen/screen_padding" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+        <com.contextlogic.wish.ui.text.ThemedTextView android:textSize="@dimen/text_size_button" android:textStyle="bold" android:textColor="@color/white" android:gravity="center" android:layout_gravity="center" android:id="@+id/cart_fragment_cart_billing_floating_bottom_next_button" android:background="@drawable/main_button_selector" android:layout_width="match_parent" android:layout_height="@dimen/default_button_height"/>
+    </LinearLayout>
+</RelativeLayout>

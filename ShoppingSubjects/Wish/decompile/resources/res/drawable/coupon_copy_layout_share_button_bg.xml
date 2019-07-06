@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt">
+    <item android:state_pressed="true">
+        <shape android:shape="rectangle">
+            <solid android:color="@color/main_primary_35"/>
+            <padding android:left="@dimen/form_field_padding" android:top="@dimen/form_field_padding" android:right="@dimen/form_field_padding" android:bottom="@dimen/form_field_padding"/>
+            <corners android:topRightRadius="@dimen/corner_radius" android:bottomRightRadius="@dimen/corner_radius"/>
+        </shape>
+    </item>
+    <item>
+        <shape android:shape="rectangle">
+            <solid android:color="@color/main_primary"/>
+            <padding android:left="@dimen/form_field_padding" android:top="@dimen/form_field_padding" android:right="@dimen/form_field_padding" android:bottom="@dimen/form_field_padding"/>
+            <corners android:topRightRadius="@dimen/corner_radius" android:bottomRightRadius="@dimen/corner_radius"/>
+        </shape>
+    </item>
+</selector>

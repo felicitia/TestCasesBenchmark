@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt">
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+        <com.contextlogic.wish.ui.text.ThemedTextView android:textSize="@dimen/text_size_subtitle" android:textStyle="bold" android:textColor="@color/text_primary" android:id="@+id/commerce_loan_learn_more_fragment_info_title" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+        <com.contextlogic.wish.ui.text.ThemedTextView android:textSize="@dimen/text_size_body" android:textColor="@color/text_primary" android:id="@+id/commerce_loan_learn_more_fragment_info_description" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/eight_padding"/>
+    </LinearLayout>
+</merge>

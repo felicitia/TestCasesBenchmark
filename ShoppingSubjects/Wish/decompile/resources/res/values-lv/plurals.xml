@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="cart_item">
+        <item quantity="zero">Grozs: %1$s prece</item>
+        <item quantity="one">Grozs: %1$s preces</item>
+        <item quantity="other">Grozs: %1$s preces</item>
+    </plurals>
+    <plurals name="daily_raffle_entries_text">
+        <item quantity="zero">%1$d ieeja</item>
+        <item quantity="one">%1$d ieejas</item>
+        <item quantity="other">%1$d ieejas</item>
+    </plurals>
+    <plurals name="daily_raffle_free_items_and_coupons_text">
+        <item quantity="zero">%1$d bezmaksas prece</item>
+        <item quantity="one">%1$d bezmaksas preces</item>
+        <item quantity="other">%1$d bezmaksas preces</item>
+    </plurals>
+    <plurals name="detail_table_color">
+        <item quantity="zero">Krāsa</item>
+        <item quantity="one">Krāsas</item>
+        <item quantity="other">Krāsas</item>
+    </plurals>
+    <plurals name="detail_table_size">
+        <item quantity="zero">Izmērs</item>
+        <item quantity="one">Izmēri</item>
+        <item quantity="other">Izmēri</item>
+    </plurals>
+    <plurals name="follower_plural">
+        <item quantity="zero">%1$d sekotājs</item>
+        <item quantity="one">%1$d sekotāji</item>
+        <item quantity="other">%1$d sekotāji</item>
+    </plurals>
+    <plurals name="following_plural">
+        <item quantity="zero">%1$dsekošana</item>
+        <item quantity="one">%1$dsekošanas</item>
+        <item quantity="other">%1$dsekošanas</item>
+    </plurals>
+    <plurals name="item">
+        <item quantity="zero">%1$s prece</item>
+        <item quantity="one">%1$s preces</item>
+        <item quantity="other">%1$s preces</item>
+    </plurals>
+    <plurals name="item_added_to_cart">
+        <item quantity="zero">Prece pievienota grozam</item>
+        <item quantity="one">Preces pievienotas grozam</item>
+        <item quantity="other">Preces pievienotas grozam</item>
+    </plurals>
+    <plurals name="number_available">
+        <item quantity="zero">%1$d pieejams</item>
+        <item quantity="one">%1$d pieejami</item>
+        <item quantity="other">%1$d pieejami</item>
+    </plurals>
+    <plurals name="number_of_followers">
+        <item quantity="zero">sekotājs</item>
+        <item quantity="one">sekotāji</item>
+        <item quantity="other">sekotāji</item>
+    </plurals>
+    <plurals name="number_of_saves">
+        <item quantity="zero">Vēlme</item>
+        <item quantity="one">Vēlmes</item>
+        <item quantity="other">Vēlmes</item>
+    </plurals>
+    <plurals name="number_said_thanks">
+        <item quantity="zero">%1$d teica paldies</item>
+        <item quantity="one">%1$d teica paldies</item>
+        <item quantity="other">%1$d teica paldies</item>
+    </plurals>
+    <plurals name="people">
+        <item quantity="zero">%1$s cilvēks</item>
+        <item quantity="one">%1$s cilvēki</item>
+        <item quantity="other">%1$s cilvēki</item>
+    </plurals>
+    <plurals name="rating">
+        <item quantity="zero">(%1$s novērtējums)</item>
+        <item quantity="one">(%1$s novērtējumi)</item>
+        <item quantity="other">(%1$s novērtējumi)</item>
+    </plurals>
+    <plurals name="ratings_capitalized_no_bracket">
+        <item quantity="zero">%1$s vērtējums</item>
+        <item quantity="one">%1$s vērtējumi</item>
+        <item quantity="other">%1$s vērtējumi</item>
+    </plurals>
+    <plurals name="reward_points_number">
+        <item quantity="zero">%1$s punkts</item>
+        <item quantity="one">%1$s punkti</item>
+        <item quantity="other">%1$s punkti</item>
+    </plurals>
+    <plurals name="selling_product">
+        <item quantity="zero">Pārdod %1$s produktu</item>
+        <item quantity="one">Pārdod %1$s produktus</item>
+        <item quantity="other">Pārdod %1$s produktus</item>
+    </plurals>
+    <plurals name="store_ratings_with_bracket">
+        <item quantity="zero">(%1$s veikala novērtējums)</item>
+        <item quantity="one">(%1$s veikala novērtējumi)</item>
+        <item quantity="other">(%1$s veikala novērtējumi)</item>
+    </plurals>
+    <plurals name="user_rating">
+        <item quantity="zero">Lietotāju vērtējums</item>
+        <item quantity="one">Lietotāju vērtējumi</item>
+        <item quantity="other">Lietotāju vērtējumi</item>
+    </plurals>
+    <plurals name="user_review">
+        <item quantity="zero">%1$s lietotāju atsauksme</item>
+        <item quantity="one">%1$s lietotāju atsauksmes</item>
+        <item quantity="other">%1$s lietotāju atsauksmes</item>
+    </plurals>
+    <plurals name="wishlist_new_count">
+        <item quantity="zero">%1$d jauni</item>
+        <item quantity="one">%1$d jauni</item>
+        <item quantity="other">%1$d jauni</item>
+    </plurals>
+    <plurals name="wishlist_view_count">
+        <item quantity="zero">%1$d skatījums</item>
+        <item quantity="one">%1$d skatījumi</item>
+        <item quantity="other">%1$d skatījumi</item>
+    </plurals>
+</resources>

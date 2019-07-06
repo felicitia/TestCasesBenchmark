@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="vertical" android:background="@color/main_primary" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <com.contextlogic.wish.ui.text.ThemedTextView android:textSize="@dimen/text_size_title" android:textStyle="bold" android:textColor="@color/white" android:gravity="center" android:paddingLeft="@dimen/half_screen_padding" android:paddingTop="@dimen/screen_padding" android:paddingRight="@dimen/half_screen_padding" android:paddingBottom="@dimen/half_screen_padding" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/what_do_you_like_to_shop_for"/>
+            <com.contextlogic.wish.ui.text.ThemedTextView android:textSize="@dimen/text_size_body" android:textColor="@color/white" android:gravity="center" android:paddingLeft="@dimen/half_screen_padding" android:paddingRight="@dimen/half_screen_padding" android:paddingBottom="@dimen/screen_padding" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/pick_at_least_one_category"/>
+        </LinearLayout>
+        <com.contextlogic.wish.ui.grid.StaggeredGridView android:id="@+id/signup_category_fragment_gridview" android:animationCache="false" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginLeft="@dimen/screen_padding" android:layout_marginRight="@dimen/screen_padding" android:scrollingCache="false" android:cacheColorHint="@color/transparent"/>
+    </LinearLayout>
+    <LinearLayout android:layout_gravity="bottom" android:orientation="vertical" android:id="@+id/signup_category_fragment_next_button_container" android:background="@color/dark_translucent_window_background" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <com.contextlogic.wish.ui.button.ThemedButton android:textSize="@dimen/text_size_button" android:textStyle="bold" android:textColor="@color/white" android:gravity="center" android:layout_gravity="center" android:id="@+id/signup_category_fragment_next_button" android:background="@drawable/main_dark_button_selector" android:layout_width="match_parent" android:layout_height="@dimen/default_button_height" android:layout_margin="@dimen/screen_padding" android:text="@string/next"/>
+    </LinearLayout>
+</FrameLayout>

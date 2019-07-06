@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt">
+    <item android:gravity="fill">
+        <color android:color="@color/gray7"/>
+    </item>
+    <item android:gravity="top" android:drawable="@drawable/ugp_v3_splash_confetti"/>
+</layer-list>

@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:background="@drawable/row_selector_default" android:padding="@dimen/settings_padding" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <com.contextlogic.wish.ui.text.ThemedTextView android:textSize="@dimen/text_size_settings" android:textColor="@color/cool_gray1" android:gravity="left|center_vertical|center_horizontal|center" android:id="@+id/settings_fragment_row_text" android:duplicateParentState="true" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+    <com.contextlogic.wish.ui.image.AutoReleasableImageView android:layout_gravity="end" android:id="@+id/settings_fragment_row_image" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="@dimen/country_flag_height" android:adjustViewBounds="true"/>
+</FrameLayout>

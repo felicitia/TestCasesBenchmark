@@ -1,0 +1,247 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt">
+    <string name="onfido_locale">$onfido_locale$
+    </string>
+    <string name="onfido_thank_you">$onfido_thank_you$
+    </string>
+    <string name="onfido_next">$onfido_next$
+    </string>
+    <string name="onfido_continue">$onfido_continue$
+    </string>
+    <string name="onfido_message_loading">$onfido_message_loading$
+    </string>
+    <string name="onfido_label_doc_type_passport">$onfido_label_doc_type_passport$
+    </string>
+    <string name="onfido_label_doc_type_passport_up">$onfido_label_doc_type_passport_up$
+    </string>
+    <string name="onfido_label_doc_type_driving_license">$onfido_label_doc_type_driving_license$
+    </string>
+    <string name="onfido_label_doc_type_driving_license_up">$onfido_label_doc_type_driving_license_up$
+    </string>
+    <string name="onfido_label_doc_type_driving_license_short">$onfido_label_doc_type_driving_license_short$
+    </string>
+    <string name="onfido_label_doc_type_id_card">$onfido_label_doc_type_id_card$
+    </string>
+    <string name="onfido_label_doc_type_id_card_up">$onfido_label_doc_type_id_card_up$
+    </string>
+    <string name="onfido_label_doc_type_residence_permit_up">$onfido_label_doc_type_residence_permit_up$
+    </string>
+    <string name="onfido_label_doc_type_residence_permit_short">$onfido_label_doc_type_residence_permit_short$
+    </string>
+    <string name="onfido_welcome_view_toolbar_title">$onfido_welcome_view_toolbar_title$
+    </string>
+    <string name="onfido_welcome_view_title">$onfido_welcome_view_title$
+    </string>
+    <string name="onfido_welcome_view_time">$onfido_welcome_view_time$
+    </string>
+    <string name="onfido_welcome_view_document_capture_title">$onfido_welcome_view_document_capture_title$
+    </string>
+    <string name="onfido_welcome_view_face_capture_title">$onfido_welcome_view_face_capture_title$
+    </string>
+    <string name="onfido_welcome_view_liveness_capture_title">$onfido_welcome_view_liveness_capture_title$
+    </string>
+    <string name="onfido_document_selection_title">$onfido_document_selection_title$
+    </string>
+    <string name="onfido_document_selection_subtitle">$onfido_document_selection_subtitle$
+    </string>
+    <string name="onfido_country_selection_toolbar_title">$onfido_country_selection_toolbar_title$
+    </string>
+    <string name="onfido_unsupported_document_title">$onfido_unsupported_document_title$
+    </string>
+    <string name="onfido_unsupported_document_description">$onfido_unsupported_document_description$
+    </string>
+    <string name="onfido_close">$onfido_close$
+    </string>
+    <string name="onfido_select_another_document">$onfido_select_another_document$
+    </string>
+    <string name="onfido_capture_face_subtitle">$onfido_capture_face_subtitle$
+    </string>
+    <string name="onfido_capture_face_step_1">$onfido_capture_face_step_1$
+    </string>
+    <string name="onfido_capture_face_step_2">$onfido_capture_face_step_2$
+    </string>
+    <string name="onfido_message_capture_face">$onfido_message_capture_face$
+    </string>
+    <string name="onfido_retry">$onfido_retry$
+    </string>
+    <string name="onfido_message_capture_camera_unavailable">$onfido_message_capture_camera_unavailable$
+    </string>
+    <string name="onfido_message_capture_camera_unavailable_runtime">$onfido_message_capture_camera_unavailable_runtime$
+    </string>
+    <string name="onfido_message_confirm_face_subtitle">$onfido_message_confirm_face_subtitle$
+    </string>
+    <string name="onfido_message_passport_capture_subtitle">$onfido_message_passport_capture_subtitle$
+    </string>
+    <string name="onfido_message_side_document_front_driving_license">$onfido_message_side_document_front_driving_license$
+    </string>
+    <string name="onfido_message_side_document_back_driving_license">$onfido_message_side_document_back_driving_license$
+    </string>
+    <string name="onfido_message_side_document_front_residence_permit">$onfido_message_side_document_front_residence_permit$
+    </string>
+    <string name="onfido_message_side_document_back_residence_permit">$onfido_message_side_document_back_residence_permit$
+    </string>
+    <string name="onfido_message_side_document_front_national_id">$onfido_message_side_document_front_national_id$
+    </string>
+    <string name="onfido_message_side_document_back_national_id">$onfido_message_side_document_back_national_id$
+    </string>
+    <string name="onfido_no_document">$onfido_no_document$
+    </string>
+    <string name="onfido_no_face">$onfido_no_face$
+    </string>
+    <string name="onfido_multiple_faces">$onfido_multiple_faces$
+    </string>
+    <string name="onfido_message_validation_error_multiple_faces">$onfido_message_validation_error_multiple_faces$
+    </string>
+    <string name="onfido_message_validation_error_face">$onfido_message_validation_error_face$
+    </string>
+    <string name="onfido_message_validation_error_document">$onfido_message_validation_error_document$
+    </string>
+    <string name="onfido_message_capture_error_face">$onfido_message_capture_error_face$
+    </string>
+    <string name="onfido_message_capture_error_document">$onfido_message_capture_error_document$
+    </string>
+    <string name="onfido_message_capture_error_video">$onfido_message_capture_error_video$
+    </string>
+    <string name="onfido_message_check_readability_subtitle_passport">$onfido_message_check_readability_subtitle_passport$
+    </string>
+    <string name="onfido_message_check_readability_subtitle_residence_permit">$onfido_message_check_readability_subtitle_residence_permit$
+    </string>
+    <string name="onfido_message_check_readability_subtitle_driving_license">$onfido_message_check_readability_subtitle_driving_license$
+    </string>
+    <string name="onfido_message_check_readability_subtitle_national_id">$onfido_message_check_readability_subtitle_national_id$
+    </string>
+    <string name="onfido_message_document_capture_info_front_residence_permit">$onfido_message_document_capture_info_front_residence_permit$
+    </string>
+    <string name="onfido_message_document_capture_info_back_residence_permit">$onfido_message_document_capture_info_back_residence_permit$
+    </string>
+    <string name="onfido_message_document_capture_info_front_driving_license">$onfido_message_document_capture_info_front_driving_license$
+    </string>
+    <string name="onfido_message_document_capture_info_back_driving_license">$onfido_message_document_capture_info_back_driving_license$
+    </string>
+    <string name="onfido_message_document_capture_info_front_national_id">$onfido_message_document_capture_info_front_national_id$
+    </string>
+    <string name="onfido_message_document_capture_info_back_national_id">$onfido_message_document_capture_info_back_national_id$
+    </string>
+    <string name="onfido_glare_detected_title">$onfido_glare_detected_title$
+    </string>
+    <string name="onfido_glare_detected_subtitle">$onfido_glare_detected_subtitle$
+    </string>
+    <string name="onfido_final_screen_subtitle">$onfido_final_screen_subtitle$
+    </string>
+    <string name="onfido_error_dialog_title">$onfido_error_dialog_title$
+    </string>
+    <string name="onfido_error_connection_message">$onfido_error_connection_message$
+    </string>
+    <string name="onfido_confirm_passport">$onfido_confirm_passport$
+    </string>
+    <string name="onfido_confirm_residence_permit">$onfido_confirm_residence_permit$
+    </string>
+    <string name="onfido_confirm_driving_license">$onfido_confirm_driving_license$
+    </string>
+    <string name="onfido_confirm_national_id">$onfido_confirm_national_id$
+    </string>
+    <string name="onfido_confirm_face_long">$onfido_confirm_face_long$
+    </string>
+    <string name="onfido_confirm_face_short">$onfido_confirm_face_short$
+    </string>
+    <string name="onfido_discard">$onfido_discard$
+    </string>
+    <string name="onfido_discard_face_long">$onfido_discard_face_long$
+    </string>
+    <string name="onfido_discard_face_short">$onfido_discard_face_short$
+    </string>
+    <string name="onfido_liveness_preparation_subtitle">$onfido_liveness_preparation_subtitle$
+    </string>
+    <string name="onfido_liveness_intro_title">$onfido_liveness_intro_title$
+    </string>
+    <string name="onfido_liveness_intro_subtitle_1_action">$onfido_liveness_intro_subtitle_1_action$
+    </string>
+    <string name="onfido_liveness_intro_subtitle_2_actions">$onfido_liveness_intro_subtitle_2_actions$
+    </string>
+    <string name="onfido_liveness_intro_subtitle_some_actions">$onfido_liveness_intro_subtitle_some_actions$
+    </string>
+    <string name="onfido_liveness_intro_third_subtitle_1_action">$onfido_liveness_intro_third_subtitle_1_action$
+    </string>
+    <string name="onfido_liveness_intro_third_subtitle_2_actions">$onfido_liveness_intro_third_subtitle_2_actions$
+    </string>
+    <string name="onfido_liveness_intro_third_subtitle_some_actions">$onfido_liveness_intro_third_subtitle_some_actions$
+    </string>
+    <string name="onfido_start">$onfido_start$
+    </string>
+    <string name="onfido_liveness_challenge_digits_title">$onfido_liveness_challenge_digits_title$
+    </string>
+    <string name="onfido_liveness_challenge_turn_left_title">$onfido_liveness_challenge_turn_left_title$
+    </string>
+    <string name="onfido_liveness_challenge_turn_right_title">$onfido_liveness_challenge_turn_right_title$
+    </string>
+    <string name="onfido_liveness_challenge_open_mouth_title">$onfido_liveness_challenge_open_mouth_title$
+    </string>
+    <string name="onfido_liveness_challenge_next">$onfido_liveness_challenge_next$
+    </string>
+    <string name="onfido_liveness_challenge_stop">$onfido_liveness_challenge_stop$
+    </string>
+    <string name="onfido_stop">$onfido_stop$
+    </string>
+    <string name="onfido_liveness_challenge_recording">$onfido_liveness_challenge_recording$
+    </string>
+    <string name="onfido_liveness_timeout_exceeded_title">$onfido_liveness_timeout_exceeded_title$
+    </string>
+    <string name="onfido_liveness_timeout_exceeded_description">$onfido_liveness_timeout_exceeded_description$
+    </string>
+    <string name="onfido_retake_video">$onfido_retake_video$
+    </string>
+    <string name="onfido_video_recorded">$onfido_video_recorded$
+    </string>
+    <string name="onfido_submit_video">$onfido_submit_video$
+    </string>
+    <string name="onfido_liveness_video_not_found">$onfido_liveness_video_not_found$
+    </string>
+    <string name="onfido_liveness_storage_threshold_title">$onfido_liveness_storage_threshold_title$
+    </string>
+    <string name="onfido_liveness_storage_threshold_message">$onfido_liveness_storage_threshold_message$
+    </string>
+    <string name="onfido_suggested_country">$onfido_suggested_country$
+    </string>
+    <string name="onfido_all_countries">$onfido_all_countries$
+    </string>
+    <string name="onfido_search">$onfido_search$
+    </string>
+    <string name="onfido_country_selection_empty_state_title">$onfido_country_selection_empty_state_title$
+    </string>
+    <string name="onfido_country_selection_empty_state_message">$onfido_country_selection_empty_state_message$
+    </string>
+    <string name="onfido_autocapture_info">$onfido_autocapture_info$
+    </string>
+    <string name="onfido_press_button_capture">$onfido_press_button_capture$
+    </string>
+    <string name="onfido_blur_detection_title">$onfido_blur_detection_title$
+    </string>
+    <string name="onfido_blur_detection_subtitle">$onfido_blur_detection_subtitle$
+    </string>
+    <string name="onfido_privacy_policy_title">$onfido_privacy_policy_title$
+    </string>
+    <string name="onfido_privacy_policy_position_doc">$onfido_privacy_policy_position_doc$
+    </string>
+    <string name="onfido_privacy_policy_avoid_light">$onfido_privacy_policy_avoid_light$
+    </string>
+    <string name="onfido_privacy_policy_auto_capture">$onfido_privacy_policy_auto_capture$
+    </string>
+    <string name="onfido_privacy_policy_terms_extended">$onfido_privacy_policy_terms_extended{onfido_terms_of_use:%1$s, onfido_privacy_policy:%2$s}$
+    </string>
+    <string name="onfido_terms_of_use">$onfido_terms_of_use$
+    </string>
+    <string name="onfido_privacy_policy">$onfido_privacy_policy$
+    </string>
+    <string name="onfido_decline">$onfido_decline$
+    </string>
+    <string name="onfido_barcode_error_title">$onfido_barcode_error_title$
+    </string>
+    <string name="onfido_barcode_error_subtitle">$onfido_barcode_error_subtitle$
+    </string>
+    <string name="onfido_barcode_error_third_title">$onfido_barcode_error_third_title$
+    </string>
+    <string name="onfido_submit_my_picture">$onfido_submit_my_picture$
+    </string>
+    <string name="onfido_message_document_passport">$onfido_message_document_passport$
+    </string>
+</resources>

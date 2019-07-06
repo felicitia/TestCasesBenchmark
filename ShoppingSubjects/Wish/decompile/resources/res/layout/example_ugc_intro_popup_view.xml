@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.contextlogic.wish.ui.text.ThemedTextView android:textSize="@dimen/text_size_body" android:textStyle="bold" android:textColor="@color/text_primary" android:gravity="center_vertical" android:id="@+id/ugc_intro_popup_view_title" android:background="@color/cool_gray7" android:paddingLeft="@dimen/twenty_four_padding" android:paddingTop="@dimen/sixteen_padding" android:paddingRight="@dimen/twenty_four_padding" android:paddingBottom="@dimen/sixteen_padding" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+    <View android:background="@color/cool_gray5" android:layout_width="match_parent" android:layout_height="@dimen/thin_separator"/>
+    <LinearLayout android:orientation="vertical" android:id="@+id/ugc_intro_popup_view_description" android:paddingLeft="@dimen/twenty_four_padding" android:paddingTop="@dimen/sixteen_padding" android:paddingRight="@dimen/twenty_four_padding" android:paddingBottom="@dimen/sixteen_padding" android:layout_width="match_parent" android:layout_height="match_parent"/>
+</LinearLayout>

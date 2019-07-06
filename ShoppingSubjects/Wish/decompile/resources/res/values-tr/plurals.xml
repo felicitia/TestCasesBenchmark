@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="cart_item">
+        <item quantity="one">Alışveriş Sepeti: %1$s ürün</item>
+        <item quantity="other">Alışveriş Sepeti: %1$s ürün</item>
+    </plurals>
+    <plurals name="daily_raffle_entries_text">
+        <item quantity="one">%1$d Giriş</item>
+        <item quantity="other">%1$d Giriş</item>
+    </plurals>
+    <plurals name="daily_raffle_free_items_and_coupons_text">
+        <item quantity="one">%1$d Ücretsiz Ürün</item>
+        <item quantity="other">%1$d Ücretsiz Ürün</item>
+    </plurals>
+    <plurals name="detail_table_color">
+        <item quantity="one">Renk</item>
+        <item quantity="other">Renk</item>
+    </plurals>
+    <plurals name="detail_table_size">
+        <item quantity="one">Beden</item>
+        <item quantity="other">Beden</item>
+    </plurals>
+    <plurals name="follower_plural">
+        <item quantity="one">%1$d Takipçi</item>
+        <item quantity="other">%1$d Takipçi</item>
+    </plurals>
+    <plurals name="following_plural">
+        <item quantity="one">%1$d Takip Ediyor</item>
+        <item quantity="other">%1$d Takip ediyor</item>
+    </plurals>
+    <plurals name="item">
+        <item quantity="one">%1$s ürün</item>
+        <item quantity="other">%1$s ürün</item>
+    </plurals>
+    <plurals name="item_added_to_cart">
+        <item quantity="one">Ürün Sepete Eklendi</item>
+        <item quantity="other">Ürün Sepete Eklendi</item>
+    </plurals>
+    <plurals name="number_available">
+        <item quantity="one">%1$d mevcut</item>
+        <item quantity="other">%1$d mevcut</item>
+    </plurals>
+    <plurals name="number_of_followers">
+        <item quantity="one">takipçi</item>
+        <item quantity="other">takipçi</item>
+    </plurals>
+    <plurals name="number_of_saves">
+        <item quantity="one">Kayıt</item>
+        <item quantity="other">Kayıt</item>
+    </plurals>
+    <plurals name="number_said_thanks">
+        <item quantity="one">%1$d kişi teşekkür etti</item>
+        <item quantity="other">%1$d kişi teşekkür etti</item>
+    </plurals>
+    <plurals name="people">
+        <item quantity="one">%1$s kişi</item>
+        <item quantity="other">%1$s kişi</item>
+    </plurals>
+    <plurals name="rating">
+        <item quantity="one">(%1$s derece)</item>
+        <item quantity="other">(%1$s derece)</item>
+    </plurals>
+    <plurals name="ratings_capitalized_no_bracket">
+        <item quantity="one">%1$s not</item>
+        <item quantity="other">%1$s not</item>
+    </plurals>
+    <plurals name="reward_points_number">
+        <item quantity="one">%1$s Puan</item>
+        <item quantity="other">%1$s Puan</item>
+    </plurals>
+    <plurals name="selling_product">
+        <item quantity="one">%1$s ürün satılıyor</item>
+        <item quantity="other">%1$s ürün satılıyor</item>
+    </plurals>
+    <plurals name="store_ratings_with_bracket">
+        <item quantity="one">(%1$s mağaza notu)</item>
+        <item quantity="other">(%1$s mağaza notu)</item>
+    </plurals>
+    <plurals name="user_rating">
+        <item quantity="one">Kullanıcı Notu</item>
+        <item quantity="other">Kullanıcı Notu</item>
+    </plurals>
+    <plurals name="user_review">
+        <item quantity="one">%1$s Kullanıcı Yorumu</item>
+        <item quantity="other">%1$s Kullanıcı Yorumu</item>
+    </plurals>
+    <plurals name="wishlist_new_count">
+        <item quantity="one">%1$d yeni</item>
+        <item quantity="other">%1$d yeni</item>
+    </plurals>
+    <plurals name="wishlist_view_count">
+        <item quantity="one">%1$d görüntüleme</item>
+        <item quantity="other">%1$d görüntüleme</item>
+    </plurals>
+</resources>

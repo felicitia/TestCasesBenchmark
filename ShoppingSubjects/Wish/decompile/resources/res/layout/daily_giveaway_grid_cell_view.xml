@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:id="@+id/daily_giveaway_tile_product_image_container" android:paddingLeft="@dimen/sixteen_padding" android:paddingRight="@dimen/sixteen_padding" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <View android:layout_width="match_parent" android:layout_height="@dimen/sixteen_padding"/>
+    <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <View android:layout_width="@dimen/sixteen_padding" android:layout_height="match_parent"/>
+        <FrameLayout android:background="@color/cool_gray5" android:padding="@dimen/daily_giveaway_product_tile_image_border" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1">
+            <com.contextlogic.wish.ui.image.NetworkImageView android:id="@+id/daily_giveaway_tile_product_image_left" android:layout_width="match_parent" android:layout_height="match_parent"/>
+        </FrameLayout>
+        <View android:layout_width="@dimen/sixteen_padding" android:layout_height="match_parent"/>
+        <FrameLayout android:id="@+id/daily_giveaway_tile_product_image_right_outline" android:padding="@dimen/daily_giveaway_product_tile_image_border" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1">
+            <com.contextlogic.wish.ui.image.NetworkImageView android:id="@+id/daily_giveaway_tile_product_image_right" android:layout_width="match_parent" android:layout_height="match_parent"/>
+        </FrameLayout>
+        <View android:layout_width="@dimen/sixteen_padding" android:layout_height="match_parent"/>
+    </LinearLayout>
+</LinearLayout>

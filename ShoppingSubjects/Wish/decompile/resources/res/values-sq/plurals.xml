@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="cart_item">
+        <item quantity="one">Karroca: %1$s artikull</item>
+        <item quantity="other">Karroca: %1$s artikuj</item>
+    </plurals>
+    <plurals name="daily_raffle_entries_text">
+        <item quantity="one">%1$d hyrje</item>
+        <item quantity="other">%1$d hyrje</item>
+    </plurals>
+    <plurals name="daily_raffle_free_items_and_coupons_text">
+        <item quantity="one">%1$d artikull falas</item>
+        <item quantity="other">%1$d artikuj falas</item>
+    </plurals>
+    <plurals name="detail_table_color">
+        <item quantity="one">Ngjyra</item>
+        <item quantity="other">Ngjyra</item>
+    </plurals>
+    <plurals name="detail_table_size">
+        <item quantity="one">Masat</item>
+        <item quantity="other">Masat</item>
+    </plurals>
+    <plurals name="follower_plural">
+        <item quantity="one">%1$d ndjekës</item>
+        <item quantity="other">%1$d ndjekës</item>
+    </plurals>
+    <plurals name="following_plural">
+        <item quantity="one">%1$d ndjekt</item>
+        <item quantity="other">%1$d ndjekt</item>
+    </plurals>
+    <plurals name="item">
+        <item quantity="one">%1$s artikuj</item>
+        <item quantity="other">%1$s artikuj</item>
+    </plurals>
+    <plurals name="item_added_to_cart">
+        <item quantity="one">U shtua artikull në karrocë</item>
+        <item quantity="other">U shtuan artikuj në karrocë</item>
+    </plurals>
+    <plurals name="number_available">
+        <item quantity="one">%1$d në dispozicion</item>
+        <item quantity="other">%1$d në dispozicion</item>
+    </plurals>
+    <plurals name="number_of_followers">
+        <item quantity="one">ndjekës</item>
+        <item quantity="other">ndjekës</item>
+    </plurals>
+    <plurals name="number_of_saves">
+        <item quantity="one">Ruajtje</item>
+        <item quantity="other">Ruajtje</item>
+    </plurals>
+    <plurals name="number_said_thanks">
+        <item quantity="one">%1$d falënderoi</item>
+        <item quantity="other">%1$d falënderuan</item>
+    </plurals>
+    <plurals name="people">
+        <item quantity="one">%1$s veta</item>
+        <item quantity="other">%1$s veta</item>
+    </plurals>
+    <plurals name="rating">
+        <item quantity="one">(%1$s vlerësime)</item>
+        <item quantity="other">(%1$s vlerësime)</item>
+    </plurals>
+    <plurals name="ratings_capitalized_no_bracket">
+        <item quantity="one">%1$s vlerësim</item>
+        <item quantity="other">%1$s vlerësime</item>
+    </plurals>
+    <plurals name="redeem_for_points_question">
+        <item quantity="one">Tërhiq për %1$d pikë?</item>
+        <item quantity="other">Tërhiq për %1$d pikë?</item>
+    </plurals>
+    <plurals name="reward_points_number">
+        <item quantity="one">%1$s pikë</item>
+        <item quantity="other">%1$s pikë</item>
+    </plurals>
+    <plurals name="selling_product">
+        <item quantity="one">Shet %1$s produkte</item>
+        <item quantity="other">Shet %1$s produkte</item>
+    </plurals>
+    <plurals name="store_ratings_with_bracket">
+        <item quantity="one">(%1$s vlerësim dyqani)</item>
+        <item quantity="other">(%1$s vlerësime dyqani)</item>
+    </plurals>
+    <plurals name="user_rating">
+        <item quantity="one">Vlerësimet e përdoruesit</item>
+        <item quantity="other">Vlerësimet e përdoruesve</item>
+    </plurals>
+    <plurals name="user_review">
+        <item quantity="one">%1$s rishikime të përdoruesit</item>
+        <item quantity="other">%1$s rishikime të përdoruesve</item>
+    </plurals>
+    <plurals name="wishlist_new_count">
+        <item quantity="one">%1$d new</item>
+        <item quantity="other">%1$d new</item>
+    </plurals>
+    <plurals name="wishlist_view_count">
+        <item quantity="one">%1$d pamje</item>
+        <item quantity="other">%1$d pamje</item>
+    </plurals>
+</resources>

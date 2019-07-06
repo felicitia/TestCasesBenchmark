@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="match_parent" android:layout_height="match_parent">
+    <android.support.design.widget.AppBarLayout android:id="@+id/appbar_layout" android:background="@color/white" android:layout_width="match_parent" android:layout_height="wrap_content" app:elevation="0dp" app:layout_behavior="com.contextlogic.wish.ui.recyclerview.FlingBehavior">
+        <com.contextlogic.wish.ui.viewpager.CollapsibleTabStripLayout android:id="@+id/collapsible_tab_strip_layout" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/filter_feed_fragment_tab_strip_height" app:layout_scrollFlags="7">
+            <com.contextlogic.wish.ui.viewpager.WishTabLayout android:id="@+id/tab_bar" android:layout_width="match_parent" android:layout_height="@dimen/sub_tab_bar_height" style="@style/Widget.Wish.TabLayoutSecondary"/>
+            <View android:background="@color/gray5" android:layout_width="match_parent" android:layout_height="@dimen/divide_small"/>
+        </com.contextlogic.wish.ui.viewpager.CollapsibleTabStripLayout>
+    </android.support.design.widget.AppBarLayout>
+    <com.contextlogic.wish.ui.viewpager.SafeViewPager android:id="@+id/view_pager" android:layout_width="match_parent" android:layout_height="match_parent" app:layout_behavior="@string/appbar_scrolling_view_behavior"/>
+</android.support.design.widget.CoordinatorLayout>

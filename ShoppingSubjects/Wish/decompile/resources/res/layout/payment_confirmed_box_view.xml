@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt">
+    <com.contextlogic.wish.ui.text.ThemedTextView android:textSize="@dimen/text_size_title" android:textStyle="bold" android:textColor="@color/main_primary" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/payment_confirmed"/>
+    <com.contextlogic.wish.ui.text.ThemedTextView android:textSize="@dimen/text_size_body" android:textStyle="bold" android:textColor="@color/text_primary" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/confirmation_email_sent_to_colon"/>
+    <com.contextlogic.wish.ui.text.ThemedTextView android:textSize="@dimen/text_size_body" android:textColor="@color/text_primary" android:id="@+id/payment_confirmed_confirmed_box_view_email" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+    <com.contextlogic.wish.ui.text.ThemedTextView android:textSize="@dimen/text_size_body" android:textStyle="bold" android:textColor="@color/text_primary" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/payment_processed_on"/>
+    <com.contextlogic.wish.ui.text.ThemedTextView android:textSize="@dimen/text_size_body" android:textColor="@color/text_primary" android:id="@+id/payment_confirmed_box_view_payment_confirmed" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+    <com.contextlogic.wish.ui.text.ThemedTextView android:textSize="@dimen/text_size_body" android:textStyle="bold" android:textColor="@color/main_primary" android:id="@+id/payment_confirmed_confirmed_box_order_details_button" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/eight_padding" android:text="@string/view_order_details"/>
+</merge>

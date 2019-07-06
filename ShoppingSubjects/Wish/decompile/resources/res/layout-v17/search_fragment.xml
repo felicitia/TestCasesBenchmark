@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:divider="@drawable/gray_six_one_dp_divider" android:showDividers="middle">
+        <com.contextlogic.wish.ui.view.FocusConsumingView android:layout_width="0dp" android:layout_height="0dp"/>
+        <LinearLayout android:orientation="vertical" android:id="@+id/fragment_search_history_section" android:padding="@dimen/sixteen_padding" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <LinearLayout android:orientation="horizontal" android:background="@color/white" android:paddingBottom="@dimen/twelve_padding" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <com.contextlogic.wish.ui.text.ThemedTextView android:textSize="@dimen/text_size_subtitle" android:textStyle="bold" android:textColor="@color/text_primary" android:ellipsize="end" android:layout_gravity="center" android:paddingRight="@dimen/double_screen_padding" android:layout_width="0dp" android:layout_height="wrap_content" android:text="@string/recent_searches" android:maxLines="1" android:layout_weight="1"/>
+                <com.contextlogic.wish.ui.text.ThemedTextView android:textSize="@dimen/text_size_body" android:textColor="@color/main_primary" android:layout_gravity="center" android:id="@+id/fragment_search_history_view_all" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/view_all"/>
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:id="@+id/fragment_search_history_main_container" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+            <LinearLayout android:orientation="vertical" android:id="@+id/fragment_search_history_secondary_container" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:id="@+id/fragment_search_recently_viewed_section" android:paddingLeft="@dimen/sixteen_padding" android:paddingTop="@dimen/sixteen_padding" android:paddingBottom="@dimen/twenty_four_padding" android:layout_width="match_parent" android:layout_height="wrap_content" android:paddingStart="@dimen/sixteen_padding">
+            <LinearLayout android:orientation="horizontal" android:background="@color/white" android:paddingBottom="@dimen/twelve_padding" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <com.contextlogic.wish.ui.text.ThemedTextView android:textSize="@dimen/text_size_subtitle" android:textStyle="bold" android:textColor="@color/text_primary" android:ellipsize="end" android:layout_gravity="center" android:layout_width="0dp" android:layout_height="wrap_content" android:text="@string/recently_viewed" android:maxLines="1" android:layout_weight="1"/>
+                <com.contextlogic.wish.ui.text.ThemedTextView android:textSize="@dimen/text_size_body" android:textColor="@color/main_primary" android:layout_gravity="center" android:id="@+id/fragment_search_recently_viewed_view_all" android:paddingLeft="@dimen/sixteen_padding" android:paddingRight="@dimen/sixteen_padding" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/view_all"/>
+            </LinearLayout>
+            <com.contextlogic.wish.ui.listview.HorizontalListView android:id="@+id/fragment_search_recently_viewed_list" android:layout_width="match_parent" android:layout_height="@dimen/search_list_view_height"/>
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:id="@+id/fragment_search_wishlist_products_section" android:paddingLeft="@dimen/sixteen_padding" android:paddingTop="@dimen/sixteen_padding" android:paddingBottom="@dimen/twenty_four_padding" android:layout_width="match_parent" android:layout_height="wrap_content" android:paddingStart="@dimen/sixteen_padding">
+            <LinearLayout android:orientation="horizontal" android:background="@color/white" android:paddingBottom="@dimen/twelve_padding" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <com.contextlogic.wish.ui.text.ThemedTextView android:textSize="@dimen/text_size_subtitle" android:textStyle="bold" android:textColor="@color/text_primary" android:ellipsize="end" android:layout_gravity="center" android:layout_width="0dp" android:layout_height="wrap_content" android:text="@string/recent_wishlist_items" android:maxLines="1" android:layout_weight="1"/>
+                <com.contextlogic.wish.ui.text.ThemedTextView android:textSize="@dimen/text_size_body" android:textColor="@color/main_primary" android:layout_gravity="center" android:id="@+id/fragment_search_wishlist_products_view_all" android:paddingLeft="@dimen/sixteen_padding" android:paddingRight="@dimen/sixteen_padding" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/view_all"/>
+            </LinearLayout>
+            <com.contextlogic.wish.ui.listview.HorizontalListView android:id="@+id/fragment_search_wishlist_products_list" android:layout_width="match_parent" android:layout_height="@dimen/search_list_view_height"/>
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

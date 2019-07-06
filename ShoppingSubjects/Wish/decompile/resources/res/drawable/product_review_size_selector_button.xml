@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt">
+    <item android:state_selected="true">
+        <shape android:shape="rectangle">
+            <corners android:topLeftRadius="@dimen/product_review_size_selector_button_radius" android:topRightRadius="@dimen/product_review_size_selector_button_radius" android:bottomLeftRadius="@dimen/product_review_size_selector_button_radius" android:bottomRightRadius="@dimen/product_review_size_selector_button_radius"/>
+            <stroke android:width="@dimen/product_review_size_selector_button_stroke" android:color="@color/main_primary"/>
+        </shape>
+    </item>
+    <item>
+        <shape android:shape="rectangle">
+            <corners android:topLeftRadius="@dimen/product_review_size_selector_button_radius" android:topRightRadius="@dimen/product_review_size_selector_button_radius" android:bottomLeftRadius="@dimen/product_review_size_selector_button_radius" android:bottomRightRadius="@dimen/product_review_size_selector_button_radius"/>
+            <stroke android:width="@dimen/product_review_size_selector_button_stroke" android:color="@color/cool_gray5"/>
+        </shape>
+    </item>
+</selector>

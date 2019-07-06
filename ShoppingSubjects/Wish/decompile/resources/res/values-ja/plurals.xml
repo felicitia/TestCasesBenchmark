@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="cart_item">
+        <item quantity="other">カート：%1$s点の商品</item>
+    </plurals>
+    <plurals name="daily_raffle_entries_text">
+        <item quantity="other">%1$d人が参加</item>
+    </plurals>
+    <plurals name="daily_raffle_free_items_and_coupons_text">
+        <item quantity="other">%1$d点の無料のアイテム</item>
+    </plurals>
+    <plurals name="detail_table_color">
+        <item quantity="other">色</item>
+    </plurals>
+    <plurals name="detail_table_size">
+        <item quantity="other">サイズ</item>
+    </plurals>
+    <plurals name="follower_plural">
+        <item quantity="other">%1$dフォロワー</item>
+    </plurals>
+    <plurals name="following_plural">
+        <item quantity="other">%1$d フォロー中</item>
+    </plurals>
+    <plurals name="item">
+        <item quantity="other">%1$s 品</item>
+    </plurals>
+    <plurals name="item_added_to_cart">
+        <item quantity="other">カートに商品を追加しました</item>
+    </plurals>
+    <plurals name="number_available">
+        <item quantity="other">%1$d 品は購入可能</item>
+    </plurals>
+    <plurals name="number_of_followers">
+        <item quantity="other">フォロワー</item>
+    </plurals>
+    <plurals name="number_of_saves">
+        <item quantity="other">保存</item>
+    </plurals>
+    <plurals name="number_said_thanks">
+        <item quantity="other">%1$d 人が感謝しています</item>
+    </plurals>
+    <plurals name="people">
+        <item quantity="other">%1$s人</item>
+    </plurals>
+    <plurals name="rating">
+        <item quantity="other">(%1$s 件)</item>
+    </plurals>
+    <plurals name="ratings_capitalized_no_bracket">
+        <item quantity="other">%1$s 評価</item>
+    </plurals>
+    <plurals name="redeem_for_points_question">
+        <item quantity="other">%1$dポイントを引き換えますか？</item>
+    </plurals>
+    <plurals name="reward_points_number">
+        <item quantity="other">%1$s ポイント</item>
+    </plurals>
+    <plurals name="selling_product">
+        <item quantity="other">%1$s商品を販売</item>
+    </plurals>
+    <plurals name="store_ratings_with_bracket">
+        <item quantity="other">（%1$s件のストアレビュー）</item>
+    </plurals>
+    <plurals name="user_rating">
+        <item quantity="other">ユーザーの評価</item>
+    </plurals>
+    <plurals name="user_review">
+        <item quantity="other">%1$s件のユーザーレビュー</item>
+    </plurals>
+    <plurals name="wishlist_new_count">
+        <item quantity="other">%1$d 件の新着Wishリスト</item>
+    </plurals>
+    <plurals name="wishlist_view_count">
+        <item quantity="other">%1$d回再生</item>
+    </plurals>
+</resources>

@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+    <com.contextlogic.wish.ui.image.NetworkImageView android:layout_gravity="top" android:id="@+id/cart_fragment_cart_items_row_warning_image" android:background="@color/cool_gray3" android:visibility="gone" android:layout_width="24dp" android:layout_height="24dp" android:adjustViewBounds="true"/>
+    <com.contextlogic.wish.ui.text.ThemedTextView android:textSize="@dimen/text_size_caption" android:textColor="@color/main_primary" android:layout_gravity="top" android:id="@+id/cart_fragment_cart_items_row_warning_message" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+</LinearLayout>

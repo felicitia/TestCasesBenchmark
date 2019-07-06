@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt">
+    <include layout="@layout/thin_grey_divider"/>
+    <LinearLayout android:orientation="vertical" android:paddingLeft="@dimen/sixteen_padding" android:paddingTop="@dimen/twenty_four_padding" android:paddingRight="@dimen/sixteen_padding" android:paddingBottom="@dimen/twenty_four_padding" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <FrameLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+            <com.contextlogic.wish.ui.text.ThemedTextView android:textSize="@dimen/product_details_fragment_overview_section_title_text_size" android:textStyle="bold" android:textColor="@color/text_primary" android:layout_gravity="left" android:id="@+id/buyer_guarantee_title_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/collapsable_section_buyer_guarantee"/>
+            <com.contextlogic.wish.ui.text.ThemedTextView android:textColor="@color/text_selector_main_primary" android:layout_gravity="right" android:id="@+id/product_details_buyer_guarantee_more" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/learn_more"/>
+        </FrameLayout>
+        <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/sixteen_padding">
+            <com.contextlogic.wish.ui.image.AutoReleasableImageView android:layout_width="wrap_content" android:layout_height="wrap_content" app:drawable="@drawable/buyer_guarantee_shield"/>
+            <LinearLayout android:orientation="vertical" android:id="@+id/buyer_guarantee_text_container" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/buyer_guarantee_icon_margin_right">
+                <com.contextlogic.wish.ui.text.ThemedTextView android:textSize="@dimen/text_size_body" android:textStyle="bold" android:textColor="@color/cool_gray1" android:id="@+id/product_details_buyer_guarantee_subtitle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/four_padding"/>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</merge>

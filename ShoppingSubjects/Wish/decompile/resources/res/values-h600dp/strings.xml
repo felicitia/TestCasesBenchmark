@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="onfido_confirm_face">@string/onfido_confirm_face_long</string>
+    <string name="onfido_discard_face">@string/onfido_discard_face_long</string>
+</resources>

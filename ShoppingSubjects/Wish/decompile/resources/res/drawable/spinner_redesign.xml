@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt">
+    <item>
+        <shape>
+            <solid android:color="@color/gray7"/>
+            <stroke android:width="@dimen/default_border_stroke" android:color="@color/gray5"/>
+            <padding android:left="@dimen/two_padding"/>
+            <corners android:radius="@dimen/corner_radius"/>
+        </shape>
+    </item>
+    <item android:right="@dimen/sixteen_padding">
+        <bitmap android:gravity="right|center_vertical|center_horizontal|center" android:src="@drawable/dropdown_downarrow" android:alpha="1"/>
+    </item>
+</layer-list>

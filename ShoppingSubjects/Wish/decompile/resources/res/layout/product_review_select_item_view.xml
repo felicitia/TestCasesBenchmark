@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt">
+    <com.contextlogic.wish.ui.grid.StaggeredGridView android:layout_gravity="top" android:id="@+id/product_review_select_item_gridview" android:clipToPadding="false" android:animationCache="false" android:layout_width="match_parent" android:layout_height="match_parent" android:scrollingCache="false" android:cacheColorHint="@color/transparent"/>
+</merge>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:gravity="center_vertical" android:orientation="horizontal" android:padding="@dimen/four_padding" android:layout_width="match_parent" android:layout_height="wrap_content" android:weightSum="1">
+    <View android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="0.3"/>
+    <android.support.v7.widget.AppCompatCheckBox android:id="@+id/promo_rotating_dialog_category_checkbox" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/eight_padding"/>
+    <com.contextlogic.wish.ui.text.ThemedTextView android:textSize="@dimen/text_size_button" android:textColor="@color/cool_gray1" android:id="@+id/promo_rotating_dialog_category_text" android:paddingLeft="@dimen/eight_padding" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="0.7"/>
+</LinearLayout>

@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="cart_item">
+        <item quantity="other">รถเข็น: สินค้า %1$s รายการ</item>
+    </plurals>
+    <plurals name="daily_raffle_entries_text">
+        <item quantity="other">%1$d รายการ</item>
+    </plurals>
+    <plurals name="daily_raffle_free_items_and_coupons_text">
+        <item quantity="other">สินค้าฟรี %1$d รายการ</item>
+    </plurals>
+    <plurals name="detail_table_color">
+        <item quantity="other">สี</item>
+    </plurals>
+    <plurals name="detail_table_size">
+        <item quantity="other">ขนาด</item>
+    </plurals>
+    <plurals name="follower_plural">
+        <item quantity="other">%1$d ผู้ติดตาม</item>
+    </plurals>
+    <plurals name="following_plural">
+        <item quantity="other">%1$dกำลังติดตาม</item>
+    </plurals>
+    <plurals name="item">
+        <item quantity="other">%1$s สินค้า</item>
+    </plurals>
+    <plurals name="item_added_to_cart">
+        <item quantity="other">สินค้าเพิ่มเข้ามาในรถเข็นแล้ว</item>
+    </plurals>
+    <plurals name="number_available">
+        <item quantity="other">มีอยู่ %1$d</item>
+    </plurals>
+    <plurals name="number_of_followers">
+        <item quantity="other">ผู้ติดตาม</item>
+    </plurals>
+    <plurals name="number_of_saves">
+        <item quantity="other">ประหยัด</item>
+    </plurals>
+    <plurals name="number_said_thanks">
+        <item quantity="other">%1$d กล่าวขอบคุณ</item>
+    </plurals>
+    <plurals name="people">
+        <item quantity="other">%1$s คน</item>
+    </plurals>
+    <plurals name="rating">
+        <item quantity="other">(%1$s คะแนน)</item>
+    </plurals>
+    <plurals name="ratings_capitalized_no_bracket">
+        <item quantity="other">%1$s การให้คะแนน</item>
+    </plurals>
+    <plurals name="redeem_for_points_question">
+        <item quantity="other">แลก %1$d คะแนนไหม</item>
+    </plurals>
+    <plurals name="reward_points_number">
+        <item quantity="other">%1$s คะแนน</item>
+    </plurals>
+    <plurals name="selling_product">
+        <item quantity="other">กำลังขายสินค้า %1$s รายการ</item>
+    </plurals>
+    <plurals name="store_ratings_with_bracket">
+        <item quantity="other">(คะแนนร้านค้า %1$s)</item>
+    </plurals>
+    <plurals name="user_rating">
+        <item quantity="other">คะแนนจากผู้ใช้</item>
+    </plurals>
+    <plurals name="user_review">
+        <item quantity="other">%1$s รีวิวจากผู้ใช้</item>
+    </plurals>
+    <plurals name="wishlist_new_count">
+        <item quantity="other">มาใหม่ %1$d รายการ</item>
+    </plurals>
+    <plurals name="wishlist_view_count">
+        <item quantity="other">ยอดดู %1$d ครั้ง</item>
+    </plurals>
+</resources>

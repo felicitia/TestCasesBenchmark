@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:shape="rectangle">
+    <solid android:color="@color/information_message_background"/>
+    <corners android:radius="@dimen/corner_radius"/>
+    <stroke android:width="@dimen/information_message_border_width" android:color="@color/information_message_border" android:dashWidth="@dimen/information_message_border_dash_gap" android:dashGap="@dimen/information_message_border_dash_gap"/>
+</shape>

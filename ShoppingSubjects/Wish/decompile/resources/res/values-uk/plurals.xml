@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="cart_item">
+        <item quantity="one">Кошик: %1$s товар</item>
+        <item quantity="few">Кошик: %1$s товару</item>
+        <item quantity="many">Кошик: %1$s товарів</item>
+    </plurals>
+    <plurals name="daily_raffle_entries_text">
+        <item quantity="one">%1$d квиток</item>
+        <item quantity="few">%1$d квитка</item>
+        <item quantity="many">%1$d квитків</item>
+    </plurals>
+    <plurals name="daily_raffle_free_items_and_coupons_text">
+        <item quantity="one">%1$d безкоштовний товар</item>
+        <item quantity="few">%1$d безкоштовних товари</item>
+        <item quantity="many">%1$d безкоштовних товарів</item>
+    </plurals>
+    <plurals name="detail_table_color">
+        <item quantity="one">Колір</item>
+        <item quantity="few">Кольори</item>
+        <item quantity="many">Кольорів</item>
+    </plurals>
+    <plurals name="detail_table_size">
+        <item quantity="one">Розмір</item>
+        <item quantity="few">Розміри</item>
+        <item quantity="many">Розмірів</item>
+    </plurals>
+    <plurals name="follower_plural">
+        <item quantity="one">%1$d підписник</item>
+        <item quantity="few">%1$d підписника</item>
+        <item quantity="many">%1$d підписників</item>
+    </plurals>
+    <plurals name="following_plural">
+        <item quantity="one">%1$d послідовник</item>
+        <item quantity="few">%1$d послідовника</item>
+        <item quantity="many">%1$d послідовників</item>
+    </plurals>
+    <plurals name="item">
+        <item quantity="one">%1$s товар</item>
+        <item quantity="few">%1$s товари</item>
+        <item quantity="many">%1$s товарів</item>
+    </plurals>
+    <plurals name="item_added_to_cart">
+        <item quantity="one">Товар додано в кошик!</item>
+        <item quantity="few">Товари додано в кошик!</item>
+        <item quantity="many">Товарів додано в кошик!</item>
+    </plurals>
+    <plurals name="number_available">
+        <item quantity="one">%1$d доступний</item>
+        <item quantity="few">%1$d доступно</item>
+        <item quantity="many">%1$d доступних</item>
+    </plurals>
+    <plurals name="number_of_followers">
+        <item quantity="one">Підписник</item>
+        <item quantity="few">Підписника</item>
+        <item quantity="many">Підписників</item>
+    </plurals>
+    <plurals name="number_of_saves">
+        <item quantity="one">Збережено</item>
+        <item quantity="few">Збережено</item>
+        <item quantity="many">Збережено</item>
+    </plurals>
+    <plurals name="number_said_thanks">
+        <item quantity="one">%1$d подякував</item>
+        <item quantity="few">%1$d подякували</item>
+        <item quantity="many">%1$d подякували</item>
+    </plurals>
+    <plurals name="people">
+        <item quantity="one">%1$s людина</item>
+        <item quantity="few">%1$s людини</item>
+        <item quantity="many">%1$s людей</item>
+    </plurals>
+    <plurals name="rating">
+        <item quantity="one">(%1$s рейтинг)</item>
+        <item quantity="few">(%1$s рейтинги)</item>
+        <item quantity="many">(%1$s рейтингів)</item>
+    </plurals>
+    <plurals name="ratings_capitalized_no_bracket">
+        <item quantity="one">%1$s рейтинг</item>
+        <item quantity="few">%1$s рейтинги</item>
+        <item quantity="many">%1$s рейтингів</item>
+    </plurals>
+    <plurals name="redeem_for_points_question">
+        <item quantity="one">Отримати за %1$d бал?</item>
+        <item quantity="few">Отримати за %1$d бали?</item>
+        <item quantity="many">Отримати за %1$d балів?</item>
+    </plurals>
+    <plurals name="reward_points_number">
+        <item quantity="one">%1$s бал</item>
+        <item quantity="few">%1$s бала</item>
+        <item quantity="many">%1$s балів</item>
+    </plurals>
+    <plurals name="selling_product">
+        <item quantity="one">Продається %1$s товар</item>
+        <item quantity="few">Продається %1$s товари</item>
+        <item quantity="many">Продається %1$s товарів</item>
+    </plurals>
+    <plurals name="store_ratings_with_bracket">
+        <item quantity="one">(%1$s рейтинг магазину)</item>
+        <item quantity="few">(%1$s рейтинги магазину)</item>
+        <item quantity="many">(%1$s рейтингів магазину)</item>
+    </plurals>
+    <plurals name="user_rating">
+        <item quantity="one">Рейтинг користувачів</item>
+        <item quantity="few">Рейтинги користувачів</item>
+        <item quantity="many">Рейтингів користувачів</item>
+    </plurals>
+    <plurals name="user_review">
+        <item quantity="one">%1$s огляд користувачів</item>
+        <item quantity="few">%1$s огляди користувачів</item>
+        <item quantity="many">%1$s оглядів користувачів</item>
+    </plurals>
+    <plurals name="wishlist_new_count">
+        <item quantity="one">%1$d новий</item>
+        <item quantity="few">%1$d нових</item>
+        <item quantity="many">%1$d нових</item>
+    </plurals>
+    <plurals name="wishlist_view_count">
+        <item quantity="one">%1$d перегляд</item>
+        <item quantity="few">%1$d перегляди</item>
+        <item quantity="many">%1$d переглядів</item>
+    </plurals>
+</resources>

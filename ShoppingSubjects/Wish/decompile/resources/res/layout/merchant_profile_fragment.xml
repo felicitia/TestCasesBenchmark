@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:id="@+id/merchant_profile_fragment_store_view" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.contextlogic.wish.ui.viewpager.SafeViewPager android:id="@+id/merchant_profile_fragment_viewpager" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_alignParentTop="true"/>
+    <View android:layout_gravity="top" android:id="@+id/merchant_profile_fragment_viewpager_shadow" android:background="@drawable/shadow" android:layout_width="match_parent" android:layout_height="@dimen/four_padding" android:layout_below="@+id/merchant_profile_fragment_viewpager_tab_container"/>
+    <LinearLayout android:orientation="vertical" android:id="@+id/merchant_profile_fragment_viewpager_tab_container" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentTop="true">
+        <com.contextlogic.wish.activity.merchantprofile.MerchantProfileBannerView android:id="@+id/merchant_profile_fragment_banner" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+        <com.contextlogic.wish.ui.viewpager.PagerSlidingTabStrip android:id="@+id/merchant_profile_fragment_viewpager_tabs" android:background="@color/main_primary" android:layout_width="match_parent" android:layout_height="@dimen/merchant_profile_tab_height"/>
+    </LinearLayout>
+</RelativeLayout>

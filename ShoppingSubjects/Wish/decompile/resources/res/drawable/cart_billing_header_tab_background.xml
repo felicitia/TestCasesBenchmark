@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt">
+    <item android:state_selected="true">
+        <layer-list>
+            <item android:left="0dp" android:top="0dp" android:right="0dp" android:bottom="10dp">
+                <shape android:shape="rectangle">
+                    <solid android:color="@color/cart_billing_selected_tab"/>
+                </shape>
+            </item>
+            <item>
+                <bitmap android:gravity="bottom|center_vertical|center_horizontal|center" android:src="@drawable/cart_billing_tab_arrow"/>
+            </item>
+        </layer-list>
+    </item>
+    <item android:state_selected="false">
+        <layer-list>
+            <item android:left="0dp" android:top="0dp" android:right="0dp" android:bottom="10dp">
+                <shape android:shape="rectangle">
+                    <solid android:color="@color/cart_billing_selected_tab"/>
+                </shape>
+            </item>
+            <item android:left="0dp" android:top="1dp" android:right="0dp" android:bottom="11dp">
+                <shape android:shape="rectangle">
+                    <solid android:color="@color/white"/>
+                </shape>
+            </item>
+        </layer-list>
+    </item>
+</selector>

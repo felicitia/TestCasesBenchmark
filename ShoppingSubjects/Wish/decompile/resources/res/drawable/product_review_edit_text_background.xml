@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:shape="rectangle">
+    <solid android:color="@color/cool_gray7"/>
+    <padding android:left="@dimen/form_field_padding" android:top="@dimen/form_field_padding" android:right="@dimen/form_field_padding" android:bottom="@dimen/form_field_padding"/>
+    <stroke android:width="@dimen/thin_separator" android:color="@color/cool_gray5"/>
+</shape>

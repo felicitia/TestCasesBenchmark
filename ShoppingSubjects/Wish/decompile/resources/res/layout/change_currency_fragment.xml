@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <LinearLayout android:orientation="vertical" android:id="@+id/change_currency_header" android:background="@color/gray6" android:padding="@dimen/sixteen_padding" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <com.contextlogic.wish.ui.text.ThemedTextView android:textSize="@dimen/text_size_body_sp" android:textStyle="bold" android:textColor="@color/gray1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/change_currency_header_title"/>
+        <android.support.v4.widget.Space android:layout_width="wrap_content" android:layout_height="@dimen/two_padding"/>
+        <com.contextlogic.wish.ui.text.ThemedTextView android:textSize="@dimen/text_size_body_sp" android:textColor="@color/gray1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/change_currency_header_subtitle"/>
+    </LinearLayout>
+    <View android:background="@color/gray5" android:layout_width="match_parent" android:layout_height="@dimen/default_border_stroke"/>
+    <com.contextlogic.wish.ui.view.FormTextInputLayout android:id="@+id/change_currency_selected_currency_fti_layout" android:nextFocusDown="@+id/settings_form_save_button" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/sixteen_padding" android:layout_marginTop="@dimen/sixteen_padding" android:layout_marginRight="@dimen/sixteen_padding" android:hint="@string/change_currency_input_label" android:maxLines="1" app:label="@string/change_currency_input_label"/>
+</LinearLayout>

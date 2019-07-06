@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt">
+    <item>
+        <shape android:shape="rectangle">
+            <corners android:bottomLeftRadius="@dimen/corner_radius" android:bottomRightRadius="@dimen/corner_radius"/>
+            <stroke android:width="@dimen/outlined_cell_border_thickness" android:color="@color/gray_divider"/>
+        </shape>
+    </item>
+    <item android:left="@dimen/outlined_cell_border_thickness" android:right="@dimen/outlined_cell_border_thickness" android:bottom="@dimen/half_screen_padding">
+        <shape android:shape="rectangle">
+            <solid android:color="@color/white"/>
+        </shape>
+    </item>
+</layer-list>

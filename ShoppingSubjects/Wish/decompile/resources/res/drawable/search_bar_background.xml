@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt">
+    <item android:top="@dimen/eight_padding" android:right="@dimen/eight_padding" android:bottom="@dimen/eight_padding">
+        <shape android:shape="rectangle">
+            <corners android:radius="@dimen/normal_corner_radius"/>
+            <solid android:color="@color/dark_translucent_actionbar"/>
+        </shape>
+    </item>
+</layer-list>

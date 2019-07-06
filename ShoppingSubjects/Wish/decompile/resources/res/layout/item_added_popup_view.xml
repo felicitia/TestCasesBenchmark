@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt">
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:padding="@dimen/twenty_four_padding" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <com.contextlogic.wish.ui.image.NetworkImageView android:id="@+id/product_image" android:layout_width="@dimen/item_added_dialog_popup_image_max_dim" android:layout_height="@dimen/item_added_dialog_popup_image_max_dim" android:layout_marginTop="0dp" android:layout_marginBottom="@dimen/item_added_dialog_popup_image_margins" android:scaleType="centerInside"/>
+        <com.contextlogic.wish.ui.text.ThemedTextView android:textSize="@dimen/item_added_dialog_popup_item_added_text_size" android:textStyle="bold" android:textColor="@color/text_primary" android:id="@+id/item_added_message" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/item_added_dialog_popup_vertical_text_gap"/>
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@+id/promotion_message_container" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/eight_padding">
+            <com.contextlogic.wish.ui.image.AutoReleasableImageView android:id="@+id/offer_tag" android:layout_width="@dimen/promotion_tag_size" android:layout_height="@dimen/promotion_tag_size" app:drawable="@drawable/offer_tag"/>
+            <com.contextlogic.wish.ui.text.ThemedTextView android:textSize="@dimen/text_size_body" android:textStyle="bold" android:textColor="@color/cool_gray1" android:id="@+id/promotion_message" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/two_padding"/>
+        </LinearLayout>
+        <com.contextlogic.wish.ui.text.ThemedTextView android:textSize="@dimen/text_size_body" android:textColor="@color/text_primary" android:id="@+id/you_saved_message" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/eight_padding"/>
+    </LinearLayout>
+</merge>

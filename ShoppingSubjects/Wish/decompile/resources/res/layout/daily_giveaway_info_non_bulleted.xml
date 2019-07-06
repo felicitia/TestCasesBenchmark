@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.contextlogic.wish.ui.text.ThemedTextView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:textSize="@dimen/daily_giveaway_subtitle_text_size" android:textColor="@color/cool_gray1" android:id="@+id/daily_giveaway_info_description" android:layout_width="match_parent" android:layout_height="wrap_content"/>

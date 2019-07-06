@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@+id/wishlist_follow_row_container" android:background="@color/gray7" android:padding="@dimen/sixteen_padding" android:layout_width="match_parent" android:layout_height="match_parent">
+        <com.contextlogic.wish.ui.view.ProfileImageView android:layout_gravity="center_vertical" android:id="@+id/fragment_ratings_item_profile_image_view" android:paddingRight="@dimen/half_screen_padding" android:layout_width="wrap_content" android:layout_height="wrap_content" app:imageSize="@dimen/merchant_profile_ratings_profile_image_size" app:profileTextSize="@dimen/text_size_title"/>
+        <LinearLayout android:orientation="vertical" android:padding="@dimen/half_screen_padding" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1">
+            <com.contextlogic.wish.ui.text.ThemedTextView android:textSize="@dimen/text_size_body" android:textStyle="bold" android:textColor="@color/gray1" android:id="@+id/wishlist_user_follow_view_list_name" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+            <com.contextlogic.wish.ui.text.ThemedTextView android:textSize="@dimen/text_size_caption" android:textColor="@color/gray3" android:id="@+id/wishlist_user_follow_view_user" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+        </LinearLayout>
+        <com.contextlogic.wish.ui.button.FollowButton android:id="@+id/wishlist_follow_button" android:layout_width="@dimen/wishlist_follow_button_width" android:layout_height="@dimen/wishlist_follow_button_height" android:layout_margin="@dimen/half_screen_padding"/>
+    </LinearLayout>
+    <View android:background="@color/gray6" android:layout_width="match_parent" android:layout_height="@dimen/thin_separator"/>
+</LinearLayout>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:id="@+id/topBar" android:background="@color/bar_bkg" android:layout_width="match_parent" android:layout_height="@dimen/browser_bar_height">
+    <include layout="@layout/browser_address_field"/>
+    <ImageView android:id="@+id/closeIcon" android:background="@color/bar_bkg" android:padding="0dp" android:layout_width="@dimen/browser_bar_height" android:layout_height="@dimen/browser_bar_height" android:layout_margin="0dp" android:src="@drawable/close" android:scaleType="fitXY" android:adjustViewBounds="true" android:tint="@color/close_button_tint" android:layout_alignParentRight="true"/>
+    <View android:background="@color/bar_separator" android:layout_width="match_parent" android:layout_height="1dp" android:layout_alignParentBottom="true"/>
+    <ProgressBar android:id="@+id/progressBar" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="0dp" android:layout_marginBottom="-7dp" android:progress="100" android:layout_alignParentBottom="true" style="?android:attr/progressBarStyleHorizontal"/>
+</RelativeLayout>

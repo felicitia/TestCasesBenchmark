@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt">
+    <item>
+        <shape android:shape="rectangle">
+            <corners android:radius="@dimen/screen_padding"/>
+            <solid android:color="@color/reward_expired_card_background"/>
+        </shape>
+    </item>
+    <item android:left="@dimen/rewards_fragment_card_padding" android:top="@dimen/rewards_fragment_card_padding" android:right="@dimen/rewards_fragment_card_padding" android:bottom="@dimen/rewards_fragment_card_padding">
+        <shape android:shape="rectangle">
+            <corners android:radius="@dimen/rewards_fragment_card_radius"/>
+            <stroke android:width="@dimen/rewards_fragment_card_dash_width" android:color="@color/white" android:dashWidth="@dimen/rewards_fragment_card_dash_length" android:dashGap="@dimen/screen_padding"/>
+        </shape>
+    </item>
+</layer-list>

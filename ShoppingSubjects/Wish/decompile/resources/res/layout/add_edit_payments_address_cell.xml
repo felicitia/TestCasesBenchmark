@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:tag="layout/add_edit_payments_address_cell_0" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@+id/payment_billing_address_layout" android:background="@color/white" android:paddingLeft="@dimen/sixteen_padding" android:paddingTop="@dimen/sixteen_padding" android:paddingRight="@dimen/sixteen_padding" android:paddingBottom="@dimen/sixteen_padding" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <android.support.v7.widget.AppCompatRadioButton android:id="@+id/payment_billing_address_radio_button" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/Widget.Wish.RadioButton"/>
+        <com.contextlogic.wish.ui.image.AutoReleasableImageView android:id="@+id/payment_billing_address_pin" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/sixteen_padding" app:drawable="@drawable/address_24"/>
+        <com.contextlogic.wish.ui.text.ThemedTextView android:textSize="@dimen/text_size_fourteen" android:textColor="@color/gray1" android:id="@+id/payment_billing_address_text" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+    </LinearLayout>
+    <View android:id="@+id/payment_billing_address_bottom_divider" android:layout_width="match_parent" android:layout_height="@dimen/divide_small"/>
+</LinearLayout>

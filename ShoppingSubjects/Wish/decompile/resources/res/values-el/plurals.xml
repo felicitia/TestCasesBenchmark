@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="cart_item">
+        <item quantity="one">Καλάθι: %1$s είδος</item>
+        <item quantity="other">Καλάθι: %1$s είδη</item>
+    </plurals>
+    <plurals name="daily_raffle_entries_text">
+        <item quantity="one">%1$d Συμμετοχή</item>
+        <item quantity="other">%1$d Συμμετοχές</item>
+    </plurals>
+    <plurals name="detail_table_color">
+        <item quantity="one">Χρώμα</item>
+        <item quantity="other">Χρώματα</item>
+    </plurals>
+    <plurals name="detail_table_size">
+        <item quantity="one">Μέγεθος</item>
+        <item quantity="other">Μεγέθη</item>
+    </plurals>
+    <plurals name="follower_plural">
+        <item quantity="one">%1$d ακόλουθος</item>
+        <item quantity="other">%1$d ακόλουθοι</item>
+    </plurals>
+    <plurals name="following_plural">
+        <item quantity="one">%1$d ακολουθεί</item>
+        <item quantity="other">%1$d ακολουθούν</item>
+    </plurals>
+    <plurals name="item">
+        <item quantity="one">%1$s είδος</item>
+        <item quantity="other">%1$s είδη</item>
+    </plurals>
+    <plurals name="item_added_to_cart">
+        <item quantity="one">Το είδος προστέθηκε στο καλάθι</item>
+        <item quantity="other">Τα είδη προστέθηκαν στο καλάθι</item>
+    </plurals>
+    <plurals name="number_available">
+        <item quantity="one">%1$d διαθέσιμο</item>
+        <item quantity="other">%1$d διαθέσιμα</item>
+    </plurals>
+    <plurals name="number_of_followers">
+        <item quantity="one">ακόλουθος</item>
+        <item quantity="other">ακόλουθοι</item>
+    </plurals>
+    <plurals name="number_of_saves">
+        <item quantity="one">Δήλωση επιθυμίας</item>
+        <item quantity="other">Δηλώσεις επιθυμίας</item>
+    </plurals>
+    <plurals name="number_said_thanks">
+        <item quantity="one">%1$d χρήστης σε ευχαρίστησε</item>
+        <item quantity="other">%1$d χρήστες σε ευχαρίστησαν</item>
+    </plurals>
+    <plurals name="people">
+        <item quantity="one">%1$s άτομο</item>
+        <item quantity="other">%1$s άτομα</item>
+    </plurals>
+    <plurals name="rating">
+        <item quantity="one">(%1$s αξιολόγηση)</item>
+        <item quantity="other">(%1$s αξιολογήσεις)</item>
+    </plurals>
+    <plurals name="ratings_capitalized_no_bracket">
+        <item quantity="one">%1$s αξιολόγηση</item>
+        <item quantity="other">%1$s αξιολογήσεις</item>
+    </plurals>
+    <plurals name="reward_points_number">
+        <item quantity="one">%1$s πόντος</item>
+        <item quantity="other">%1$s πόντοι</item>
+    </plurals>
+    <plurals name="selling_product">
+        <item quantity="one">Πώληση %1$s προϊόντος</item>
+        <item quantity="other">Πώληση %1$s προϊόντων</item>
+    </plurals>
+    <plurals name="store_ratings_with_bracket">
+        <item quantity="one">(%1$s αξιολόγηση καταστήματος)</item>
+        <item quantity="other">(%1$s αξιολογήσεις καταστήματος)</item>
+    </plurals>
+    <plurals name="user_rating">
+        <item quantity="one">Αξιολόγηση χρήστη</item>
+        <item quantity="other">Αξιολογήσεις χρήστη</item>
+    </plurals>
+    <plurals name="user_review">
+        <item quantity="one">%1$s αξιολόγηση χρήστη</item>
+        <item quantity="other">%1$s αξιολογήσεις χρηστών</item>
+    </plurals>
+    <plurals name="wishlist_new_count">
+        <item quantity="one">%1$d νέο</item>
+        <item quantity="other">%1$d νέο</item>
+    </plurals>
+    <plurals name="wishlist_view_count">
+        <item quantity="one">%1$d προβολή</item>
+        <item quantity="other">%1$d προβολές</item>
+    </plurals>
+</resources>

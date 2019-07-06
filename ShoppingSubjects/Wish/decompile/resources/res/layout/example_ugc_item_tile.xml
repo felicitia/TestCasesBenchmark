@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.contextlogic.wish.ui.image.NetworkImageView android:layout_gravity="center" android:id="@+id/rating_image" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_above="@+id/rating_author_section"/>
+    <LinearLayout android:orientation="horizontal" android:id="@+id/rating_author_section" android:layout_width="match_parent" android:layout_height="@dimen/example_ugc_item_feed_tile_bottom_area_height" android:layout_marginTop="@dimen/eight_padding" android:layout_alignParentBottom="true">
+        <com.contextlogic.wish.ui.view.ProfileImageView android:id="@+id/rating_author_image" android:layout_width="wrap_content" android:layout_height="wrap_content" app:imageSize="@dimen/example_rating_author_image_size" app:profileTextSize="@dimen/text_size_caption"/>
+        <com.contextlogic.wish.ui.text.ThemedTextView android:textSize="@dimen/text_size_body" android:textColor="@color/cool_gray3" android:layout_gravity="center_vertical" android:id="@+id/rating_author_name" android:paddingLeft="@dimen/eight_padding" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+    </LinearLayout>
+</RelativeLayout>

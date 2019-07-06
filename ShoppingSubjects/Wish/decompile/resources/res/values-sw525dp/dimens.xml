@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="action_bar_badge_left_offset">34dp</dimen>
+    <dimen name="action_bar_badge_top_offset">18dp</dimen>
+    <dimen name="login_fragment_android_pay_banner_padding_right">15dp</dimen>
+    <dimen name="login_fragment_android_pay_banner_width">350dp</dimen>
+    <dimen name="login_fragment_android_pay_image_height">65dp</dimen>
+    <dimen name="login_fragment_android_pay_image_width">75dp</dimen>
+    <dimen name="login_fragment_button_height">55dp</dimen>
+    <dimen name="login_fragment_logo_height">65dp</dimen>
+    <dimen name="login_fragment_logo_width">168dp</dimen>
+    <dimen name="login_fragment_relogin_name_margin_bottom">55dp</dimen>
+    <dimen name="login_fragment_relogin_user_image_size">100dp</dimen>
+    <dimen name="login_fragment_tagline_width">100dp</dimen>
+    <dimen name="login_fragment_tray_width">360dp</dimen>
+</resources>

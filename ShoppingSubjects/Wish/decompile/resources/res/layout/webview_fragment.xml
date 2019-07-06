@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:id="@+id/webview_fragment_webview_placeholder" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.contextlogic.wish.ui.view.TouchConsumingView android:id="@+id/webview_fragment_loading_view" android:background="@color/translucent_white" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent">
+        <com.contextlogic.wish.ui.loading.PrimaryProgressBar android:layout_gravity="center" android:id="@+id/webview_fragment_primary_progress_bar" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/Widget.Wish.ProgressBar.Medium"/>
+        <com.contextlogic.wish.ui.loading.ThreeDotProgressBar android:layout_gravity="center" android:id="@+id/webview_fragment_three_dot_progress_bar" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+    </com.contextlogic.wish.ui.view.TouchConsumingView>
+</FrameLayout>

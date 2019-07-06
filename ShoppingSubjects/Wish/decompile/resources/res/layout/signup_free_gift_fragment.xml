@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.contextlogic.wish.ui.loading.LoadingPageView android:layout_gravity="top" android:id="@+id/signup_free_gift_fragment_loading_view" android:background="@drawable/white_background" android:clickable="true" android:layout_width="match_parent" android:layout_height="match_parent" android:maxWidth="@dimen/cart_fragment_max_cart_width"/>
+</FrameLayout>

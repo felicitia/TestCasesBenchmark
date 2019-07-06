@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <com.contextlogic.wish.ui.text.ThemedTextView android:textSize="@dimen/text_size_subtitle" android:textStyle="bold" android:textColor="@color/text_primary" android:ellipsize="end" android:layout_gravity="center_vertical" android:id="@+id/product_details_fragment_related_items_row_title" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_margin="@dimen/sixteen_padding" android:maxLines="2" android:layout_weight="1" android:lineSpacingExtra="@dimen/two_padding"/>
+        <com.contextlogic.wish.ui.text.ThemedTextView android:textSize="@dimen/text_size_body" android:textColor="@color/main_primary" android:layout_gravity="end" android:id="@+id/product_details_fragment_related_items_view_all_button" android:padding="@dimen/sixteen_padding" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/view_all" android:maxLines="1"/>
+    </LinearLayout>
+    <com.contextlogic.wish.ui.listview.HorizontalListView android:id="@+id/product_details_fragment_related_items_list" android:layout_width="match_parent" android:layout_height="@dimen/product_details_express_shipping_item_height" android:layout_marginLeft="@dimen/sixteen_padding" android:layout_marginRight="@dimen/sixteen_padding"/>
+</merge>

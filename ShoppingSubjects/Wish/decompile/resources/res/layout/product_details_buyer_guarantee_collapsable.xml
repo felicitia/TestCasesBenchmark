@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:id="@+id/buyer_guarantee_text_container" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.contextlogic.wish.ui.text.ThemedTextView android:textSize="@dimen/text_size_body" android:textStyle="bold" android:textColor="@color/cool_gray1" android:id="@+id/product_details_buyer_guarantee_subtitle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/four_padding"/>
+    <com.contextlogic.wish.ui.text.ThemedTextView android:textColor="@color/text_selector_main_primary" android:layout_gravity="bottom|right|center_vertical|center_horizontal|center" android:id="@+id/product_details_buyer_guarantee_more" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/learn_more"/>
+</LinearLayout>

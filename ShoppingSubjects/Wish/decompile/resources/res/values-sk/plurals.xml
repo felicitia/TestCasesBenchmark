@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="cart_item">
+        <item quantity="one">Košík: %1$s položka</item>
+        <item quantity="few">Košík: %1$s položky</item>
+        <item quantity="other">Košík: %1$s položiek</item>
+    </plurals>
+    <plurals name="daily_raffle_entries_text">
+        <item quantity="one">%1$d lístok</item>
+        <item quantity="few">%1$d lístky</item>
+        <item quantity="other">%1$d lístkov</item>
+    </plurals>
+    <plurals name="daily_raffle_free_items_and_coupons_text">
+        <item quantity="one">%1$d položiek zdarma</item>
+        <item quantity="few">%1$d položiek zdarma</item>
+        <item quantity="other">%1$d položiek zdarma</item>
+    </plurals>
+    <plurals name="detail_table_color">
+        <item quantity="one">farba</item>
+        <item quantity="few">farby</item>
+        <item quantity="other">farieb</item>
+    </plurals>
+    <plurals name="detail_table_size">
+        <item quantity="one">veľkosť</item>
+        <item quantity="few">veľkosti</item>
+        <item quantity="other">veľkostí</item>
+    </plurals>
+    <plurals name="follower_plural">
+        <item quantity="one">%1$d prívrženec</item>
+        <item quantity="few">%1$d prívrženci</item>
+        <item quantity="other">%1$d prívržencov</item>
+    </plurals>
+    <plurals name="following_plural">
+        <item quantity="one">%1$d sledovaný</item>
+        <item quantity="few">%1$d sledovaní</item>
+        <item quantity="other">%1$d sledovaní</item>
+    </plurals>
+    <plurals name="item">
+        <item quantity="one">%1$s položka</item>
+        <item quantity="few">%1$s položky</item>
+        <item quantity="other">%1$s položiek</item>
+    </plurals>
+    <plurals name="item_added_to_cart">
+        <item quantity="one">položka pridaná do košíka</item>
+        <item quantity="few">položky pridané do košíka</item>
+        <item quantity="other">položiek pridaných do košíka</item>
+    </plurals>
+    <plurals name="number_available">
+        <item quantity="one">K dispozícii %1$d</item>
+        <item quantity="few">K dispozícii %1$d</item>
+        <item quantity="other">K dispozícii %1$d</item>
+    </plurals>
+    <plurals name="number_of_followers">
+        <item quantity="one">prívrženec</item>
+        <item quantity="few">prívrženci</item>
+        <item quantity="other">prívržencov</item>
+    </plurals>
+    <plurals name="number_of_saves">
+        <item quantity="one">Počet uložených</item>
+        <item quantity="few">Počet uložených</item>
+        <item quantity="other">Počet uložených</item>
+    </plurals>
+    <plurals name="number_said_thanks">
+        <item quantity="one">%1$d ďakuje</item>
+        <item quantity="few">%1$d ďakujú</item>
+        <item quantity="other">%1$d ďakujú</item>
+    </plurals>
+    <plurals name="people">
+        <item quantity="one">%1$s osoba</item>
+        <item quantity="few">%1$s osoby</item>
+        <item quantity="other">%1$s osôb</item>
+    </plurals>
+    <plurals name="rating">
+        <item quantity="one">(%1$s hodnotenie)</item>
+        <item quantity="few">(%1$s hodnotenia)</item>
+        <item quantity="other">(%1$s hodnotení)</item>
+    </plurals>
+    <plurals name="ratings_capitalized_no_bracket">
+        <item quantity="one">%1$s hodnotenie</item>
+        <item quantity="few">%1$s hodnotenia</item>
+        <item quantity="other">%1$s hodnotení</item>
+    </plurals>
+    <plurals name="redeem_for_points_question">
+        <item quantity="one">Uplatniť za %1$d bodov?</item>
+        <item quantity="few">Uplatniť za %1$d bodov?</item>
+        <item quantity="other">Uplatniť za %1$d bodov?</item>
+    </plurals>
+    <plurals name="reward_points_number">
+        <item quantity="one">%1$s bod</item>
+        <item quantity="few">%1$s body</item>
+        <item quantity="other">%1$s bodov</item>
+    </plurals>
+    <plurals name="selling_product">
+        <item quantity="one">Predáva %1$s produkt</item>
+        <item quantity="few">Predáva %1$s produkty</item>
+        <item quantity="other">Predáva %1$s produktov</item>
+    </plurals>
+    <plurals name="store_ratings_with_bracket">
+        <item quantity="one">(%1$s hodnotenie obchodu)</item>
+        <item quantity="few">(%1$s hodnotenia obchodu)</item>
+        <item quantity="other">(%1$s hodnotení obchodu)</item>
+    </plurals>
+    <plurals name="user_rating">
+        <item quantity="one">Hodnotenie používateľov</item>
+        <item quantity="few">Hodnotení používateľov</item>
+        <item quantity="other">Hodnotenia používateľov</item>
+    </plurals>
+    <plurals name="user_review">
+        <item quantity="one">%1$s recenzia používateľov</item>
+        <item quantity="few">%1$s recenzie používateľov</item>
+        <item quantity="other">%1$s recenzií používateľov</item>
+    </plurals>
+    <plurals name="wishlist_new_count">
+        <item quantity="one">%1$d nové</item>
+        <item quantity="few">%1$d nové</item>
+        <item quantity="other">%1$d nové</item>
+    </plurals>
+    <plurals name="wishlist_view_count">
+        <item quantity="one">%1$d zobrazenie</item>
+        <item quantity="few">%1$d zobrazenia</item>
+        <item quantity="other">%1$d zobrazení</item>
+    </plurals>
+</resources>

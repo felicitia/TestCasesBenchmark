@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.contextlogic.wish.ui.listview.ListeningListView android:id="@+id/rewards_fragment_dashboard_coupons" android:background="@color/rewards_background" android:visibility="gone" android:animationCache="false" android:layout_width="match_parent" android:layout_height="match_parent" android:listSelector="@color/transparent" android:scrollingCache="false" android:cacheColorHint="@color/transparent" android:divider="@color/transparent" android:dividerHeight="@dimen/sixteen_padding"/>
+</merge>

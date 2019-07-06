@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt">
+    <LinearLayout android:orientation="horizontal" android:id="@+id/signup_billing_header_buttons_container" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <FrameLayout android:gravity="center" android:id="@+id/signup_billing_header_credit_card_button" android:background="@drawable/cart_billing_header_tab_background" android:paddingBottom="@dimen/cart_fragment_cart_billing_header_payment_tab_arrow_height" android:layout_width="@dimen/zero_padding" android:layout_height="@dimen/cart_fragment_cart_billing_header_payment_tab_height" android:layout_weight="1">
+            <com.contextlogic.wish.ui.image.AutoReleasableImageView android:layout_gravity="center" android:layout_width="@dimen/cart_fragment_cart_billing_header_payment_image_width" android:layout_height="@dimen/cart_fragment_cart_billing_header_payment_image_height" app:drawable="@drawable/payment_tab_credit_card"/>
+        </FrameLayout>
+        <FrameLayout android:gravity="center" android:id="@+id/signup_billing_header_paypal_button" android:background="@drawable/cart_billing_header_tab_background" android:paddingBottom="@dimen/cart_fragment_cart_billing_header_payment_tab_arrow_height" android:layout_width="@dimen/zero_padding" android:layout_height="@dimen/cart_fragment_cart_billing_header_payment_tab_height" android:layout_weight="1">
+            <com.contextlogic.wish.ui.image.AutoReleasableImageView android:layout_gravity="center" android:layout_width="@dimen/cart_fragment_cart_billing_header_payment_image_width" android:layout_height="@dimen/cart_fragment_cart_billing_header_payment_image_height" app:drawable="@drawable/payment_tab_paypal"/>
+        </FrameLayout>
+    </LinearLayout>
+</merge>

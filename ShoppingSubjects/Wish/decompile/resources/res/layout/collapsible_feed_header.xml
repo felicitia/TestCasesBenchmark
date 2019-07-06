@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <FrameLayout android:id="@+id/collapsible_header_expanded_layout_holder" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+    <FrameLayout android:id="@+id/collapsible_header_collapsed_layout_holder" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignBottom="@+id/collapsible_header_expanded_layout_holder" android:alpha="0"/>
+    <View android:id="@+id/collapsible_header_bottom_border" android:background="@color/cool_gray4" android:layout_width="match_parent" android:layout_height="@dimen/divider" android:layout_alignBottom="@+id/collapsible_header_expanded_layout_holder" android:alpha="0.5"/>
+</RelativeLayout>

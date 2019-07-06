@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt">
+    <FrameLayout android:layout_width="match_parent" android:layout_height="match_parent" android:layout_margin="@dimen/screen_padding">
+        <View android:background="@drawable/collection_cell_bg" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/zero_padding" android:layout_marginTop="@dimen/screen_padding" android:layout_marginRight="@dimen/screen_padding" android:layout_marginBottom="@dimen/zero_padding"/>
+        <View android:background="@drawable/collection_cell_bg" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/screen_padding" android:layout_marginTop="@dimen/half_screen_padding" android:layout_marginRight="@dimen/zero_padding" android:layout_marginBottom="@dimen/half_screen_padding"/>
+        <FrameLayout android:background="@drawable/collection_cell_bg" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginLeft="@dimen/half_screen_padding" android:layout_marginTop="@dimen/zero_padding" android:layout_marginRight="@dimen/half_screen_padding" android:layout_marginBottom="@dimen/screen_padding">
+            <LinearLayout android:orientation="vertical" android:padding="@dimen/thin_separator" android:layout_width="match_parent" android:layout_height="match_parent">
+                <LinearLayout android:layout_width="match_parent" android:layout_height="@dimen/zero_padding" android:layout_weight="1">
+                    <com.contextlogic.wish.ui.image.NetworkImageView android:id="@+id/signup_category_grid_cell_image1" android:duplicateParentState="true" android:layout_width="@dimen/zero_padding" android:layout_height="match_parent" android:layout_margin="@dimen/thin_separator" android:layout_weight="1"/>
+                    <com.contextlogic.wish.ui.image.NetworkImageView android:id="@+id/signup_category_grid_cell_image2" android:duplicateParentState="true" android:layout_width="@dimen/zero_padding" android:layout_height="match_parent" android:layout_margin="@dimen/thin_separator" android:layout_weight="1"/>
+                </LinearLayout>
+                <LinearLayout android:layout_width="match_parent" android:layout_height="@dimen/zero_padding" android:layout_weight="1">
+                    <com.contextlogic.wish.ui.image.NetworkImageView android:id="@+id/signup_category_grid_cell_image3" android:duplicateParentState="true" android:layout_width="@dimen/zero_padding" android:layout_height="match_parent" android:layout_margin="@dimen/thin_separator" android:layout_weight="1"/>
+                    <com.contextlogic.wish.ui.image.NetworkImageView android:id="@+id/signup_category_grid_cell_image4" android:duplicateParentState="true" android:layout_width="@dimen/zero_padding" android:layout_height="match_parent" android:layout_margin="@dimen/thin_separator" android:layout_weight="1"/>
+                </LinearLayout>
+            </LinearLayout>
+            <FrameLayout android:id="@+id/signup_category_grid_cell_wish_view" android:background="@color/dark_translucent_white" android:visibility="invisible" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_margin="2dp">
+                <com.contextlogic.wish.ui.loading.PrimaryProgressBar android:layout_gravity="center" android:id="@+id/signup_category_grid_cell_wish_button_loading_spinner" android:layout_width="@dimen/double_screen_padding" android:layout_height="@dimen/double_screen_padding"/>
+                <com.contextlogic.wish.ui.image.AutoReleasableImageView android:layout_gravity="center" android:id="@+id/signup_category_grid_cell_check_image" android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+            </FrameLayout>
+        </FrameLayout>
+    </FrameLayout>
+</merge>

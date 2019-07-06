@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_gravity="center" android:background="@color/photo_video_viewer_background" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.contextlogic.wish.ui.grid.StaggeredGridView android:scrollbarThumbVertical="@android:color/white" android:id="@+id/photo_video_viewer_page_view_grid_view" android:scrollbars="vertical" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_margin="@dimen/sixteen_padding"/>
+    <com.contextlogic.wish.ui.text.ThemedTextView android:textSize="@dimen/text_size_body" android:textColor="@color/white" android:gravity="center" android:id="@+id/photo_video_viewer_no_items_text" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_centerInParent="true"/>
+</RelativeLayout>

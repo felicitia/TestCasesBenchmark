@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:background="@color/white" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_marginRight="@dimen/eight_padding">
+    <com.contextlogic.wish.ui.image.NetworkImageView android:id="@+id/product_details_horizontal_list_view_item_video_thumbnail" android:layout_width="@dimen/product_details_recent_videos_item_width" android:layout_height="@dimen/product_details_recent_videos_item_height" android:scaleType="centerCrop"/>
+    <com.contextlogic.wish.ui.image.AutoReleasableImageView android:id="@+id/product_details_horizontal_list_view_item_video_icon" android:layout_width="@dimen/photo_video_viewer_thumbnail_video_icon_size" android:layout_height="@dimen/photo_video_viewer_thumbnail_video_icon_size" android:src="@drawable/play" android:layout_centerInParent="true"/>
+</RelativeLayout>

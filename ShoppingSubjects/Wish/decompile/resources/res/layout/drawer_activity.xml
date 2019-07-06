@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.contextlogic.wish.ui.drawer.SelfClosingDrawerLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:id="@+id/drawer_activity_drawer_layout" android:layout_width="match_parent" android:layout_height="match_parent">
+    <FrameLayout android:layout_width="match_parent" android:layout_height="match_parent">
+        <FrameLayout android:layout_gravity="top" android:id="@+id/drawer_activity_under_toolbar_container" android:layout_width="match_parent" android:layout_height="match_parent">
+            <FrameLayout android:layout_gravity="top" android:id="@+id/drawer_activity_authenticating_view" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent">
+                <com.contextlogic.wish.ui.loading.PrimaryProgressBar android:layout_gravity="center" android:id="@+id/drawer_activity_primary_progress_bar" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/Widget.Wish.ProgressBar.Medium"/>
+                <com.contextlogic.wish.ui.loading.ThreeDotProgressBar android:layout_gravity="center" android:id="@+id/drawer_activity_three_dot_progress_bar" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+            </FrameLayout>
+            <LinearLayout android:gravity="bottom" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+                <FrameLayout android:layout_gravity="top" android:id="@+id/drawer_activity_content_view" android:visibility="gone" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1"/>
+                <com.contextlogic.wish.ui.bottomnavigation.BottomNavigationView android:layout_gravity="bottom" android:id="@+id/drawer_activity_bottom_navigation" android:visibility="gone" android:layout_width="match_parent" android:layout_height="@dimen/bottom_navigation_view_height"/>
+            </LinearLayout>
+            <com.contextlogic.wish.ui.bottomnavigation.BottomNavigationView android:layout_gravity="bottom" android:id="@+id/drawer_activity_bottom_navigation_dynamic" android:visibility="gone" android:layout_width="match_parent" android:layout_height="@dimen/bottom_navigation_view_height"/>
+        </FrameLayout>
+        <FrameLayout android:layout_gravity="top" android:id="@+id/drawer_activity_toolbar_container" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <android.support.v7.widget.Toolbar android:id="@+id/drawer_activity_toolbar" android:layout_width="match_parent" android:layout_height="?attr/actionBarSize"/>
+            <View android:layout_gravity="top" android:id="@+id/drawer_activity_toolbar_badge" android:background="@drawable/action_bar_badge_background" android:layout_width="14dp" android:layout_height="14dp" android:layout_marginLeft="@dimen/action_bar_badge_left_offset" android:layout_marginTop="@dimen/action_bar_badge_top_offset"/>
+            <com.contextlogic.wish.ui.view.TouchConsumingView android:id="@+id/drawer_activity_toolbar_mask" android:visibility="gone" android:layout_width="match_parent" android:layout_height="?attr/actionBarSize"/>
+        </FrameLayout>
+    </FrameLayout>
+    <FrameLayout android:layout_gravity="start" android:id="@+id/drawer_activity_menu_view" android:layout_width="@dimen/menu_width" android:layout_height="match_parent"/>
+    <FrameLayout android:layout_gravity="end" android:id="@+id/drawer_activity_right_drawer_view" android:layout_width="@dimen/right_drawer_width" android:layout_height="match_parent"/>
+</com.contextlogic.wish.ui.drawer.SelfClosingDrawerLayout>

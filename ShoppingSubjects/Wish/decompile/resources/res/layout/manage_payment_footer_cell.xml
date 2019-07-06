@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:tag="layout/manage_payment_footer_cell_0" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <LinearLayout android:orientation="vertical" android:id="@+id/payment_add_new_spacing" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <View android:background="@color/gray5" android:layout_width="match_parent" android:layout_height="@dimen/divide_small"/>
+        <Space android:layout_width="match_parent" android:layout_height="@dimen/twenty_four_padding"/>
+        <View android:background="@color/gray5" android:layout_width="match_parent" android:layout_height="@dimen/divide_small"/>
+    </LinearLayout>
+    <com.contextlogic.wish.ui.text.ThemedTextView android:textColor="@color/main_primary" android:id="@+id/payment_add_new_text" android:tag="binding_1" android:background="@color/white" android:padding="@dimen/sixteen_padding" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/payment_add_new" android:drawableLeft="@drawable/ic_add_black_24dp" android:drawablePadding="@dimen/twelve_padding" android:drawableStart="@drawable/ic_add_black_24dp"/>
+    <View android:background="@color/gray5" android:layout_width="match_parent" android:layout_height="@dimen/divide_small"/>
+</LinearLayout>

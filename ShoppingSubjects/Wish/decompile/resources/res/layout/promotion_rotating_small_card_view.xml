@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:paddingLeft="@dimen/four_padding" android:paddingTop="@dimen/four_padding" android:paddingRight="@dimen/four_padding" android:paddingBottom="@dimen/promotion_rotating_small_card_padding_bottom" android:layout_width="match_parent" android:layout_height="@dimen/promotion_rotating_small_card_height">
+    <LinearLayout android:orientation="vertical" android:id="@+id/promotion_rotating_small_card" android:layout_width="match_parent" android:layout_height="match_parent" android:weightSum="1">
+        <LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="horizontal" android:id="@+id/promotion_rotating_small_card_title_container" android:padding="@dimen/four_padding" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="0.5"/>
+        <View android:id="@+id/promotion_rotating_small_card_divider" android:visibility="gone" android:layout_width="match_parent" android:layout_height="@dimen/thin_separator"/>
+        <com.contextlogic.wish.ui.text.ThemedTextView android:gravity="center" android:layout_gravity="center" android:id="@+id/promotion_rotating_small_card_category" android:padding="@dimen/four_padding" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="0.5"/>
+    </LinearLayout>
+</FrameLayout>

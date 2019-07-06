@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt">
+    <item android:state_selected="false">
+        <shape android:shape="rectangle">
+            <solid android:color="@color/gray7"/>
+            <stroke android:width="@dimen/wishlist_button_border" android:color="@color/gray5"/>
+            <corners android:topRightRadius="@dimen/small_corner_radius" android:bottomRightRadius="@dimen/small_corner_radius"/>
+        </shape>
+    </item>
+    <item android:state_selected="true">
+        <shape android:shape="rectangle">
+            <solid android:color="@color/white"/>
+            <stroke android:width="@dimen/wishlist_follow_button_border" android:color="@color/gray5"/>
+            <corners android:topRightRadius="@dimen/small_corner_radius" android:bottomRightRadius="@dimen/small_corner_radius"/>
+        </shape>
+    </item>
+</selector>

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="cart_item">
+        <item quantity="other">장바구니: %1$s 항목</item>
+    </plurals>
+    <plurals name="daily_raffle_entries_text">
+        <item quantity="other">%1$d 참여</item>
+    </plurals>
+    <plurals name="daily_raffle_free_items_and_coupons_text">
+        <item quantity="other">%1$d 무료 항목</item>
+    </plurals>
+    <plurals name="follower_plural">
+        <item quantity="other">팔로워 %1$d명</item>
+    </plurals>
+    <plurals name="following_plural">
+        <item quantity="other">팔로워 %1$d명</item>
+    </plurals>
+    <plurals name="item">
+        <item quantity="other">%1$s 항목</item>
+    </plurals>
+    <plurals name="number_available">
+        <item quantity="other">%1$d 사용 가능</item>
+    </plurals>
+    <plurals name="number_of_saves">
+        <item quantity="other">저장</item>
+    </plurals>
+    <plurals name="number_said_thanks">
+        <item quantity="other">%1$d명이 감사를 표시함</item>
+    </plurals>
+    <plurals name="ratings_capitalized_no_bracket">
+        <item quantity="other">%1$s 평가</item>
+    </plurals>
+    <plurals name="store_ratings_with_bracket">
+        <item quantity="other">(%1$s 스토어 평가)</item>
+    </plurals>
+    <plurals name="user_rating">
+        <item quantity="other">사용자 평가</item>
+    </plurals>
+    <plurals name="wishlist_new_count">
+        <item quantity="other">새 상품 %1$d개</item>
+    </plurals>
+    <plurals name="wishlist_view_count">
+        <item quantity="other">%1$d 조회</item>
+    </plurals>
+</resources>

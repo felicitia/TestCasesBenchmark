@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:id="@+id/fragment_signup_free_gift_feed" android:background="@color/transparent" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.contextlogic.wish.ui.viewpager.SafeViewPager android:id="@+id/fragment_signup_free_gift_feed_viewpager" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="@dimen/login_fragment_free_gift_header_tab_height" android:layout_alignParentTop="true"/>
+    <View android:layout_gravity="top" android:id="@+id/fragment_signup_free_gift_feed_shadow" android:background="@drawable/shadow" android:layout_width="match_parent" android:layout_height="@dimen/four_padding" android:layout_below="@+id/fragment_signup_free_gift_feed_viewpager_tab_container"/>
+    <LinearLayout android:orientation="vertical" android:id="@+id/fragment_signup_free_gift_feed_viewpager_tab_container" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentTop="true">
+        <com.contextlogic.wish.activity.signup.SignupFreeGift.tabbed.SignupFreeGiftHeaderView android:id="@+id/fragment_signup_free_gift_feed_banner" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+        <com.contextlogic.wish.ui.viewpager.PagerSlidingTabStrip android:id="@+id/fragment_signup_free_gift_feed_viewpager_tabs" android:layout_width="match_parent" android:layout_height="@dimen/login_fragment_free_gift_header_tab_height"/>
+    </LinearLayout>
+</RelativeLayout>

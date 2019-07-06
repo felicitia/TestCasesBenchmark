@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt">
+    <LinearLayout android:orientation="vertical" android:id="@+id/stepsContainer" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/onfido_activity_horizontal_margin" android:layout_marginTop="35dp" android:layout_marginRight="@dimen/onfido_activity_horizontal_margin" android:layout_below="@+id/descriptionContainer"/>
+    <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/onfido_welcome_logo_margin_bottom" android:src="@drawable/onfido_ic_watermark_white" android:tint="@color/onfido_powered_by_tint" android:layout_above="@+id/next" android:layout_centerHorizontal="true"/>
+    <Button android:id="@+id/next" android:text="@string/onfido_continue" style="@style/OnfidoFlatButton"/>
+</merge>

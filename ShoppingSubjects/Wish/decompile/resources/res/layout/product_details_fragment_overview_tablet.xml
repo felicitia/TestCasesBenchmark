@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+        <View android:id="@+id/product_details_fragment_overview_spacer_view" android:layout_width="wrap_content" android:layout_height="0dp"/>
+        <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="match_parent">
+            <include android:layout_width="wrap_content" android:layout_height="match_parent" layout="@layout/product_details_fragment_overview_image_viewpager"/>
+            <com.contextlogic.wish.ui.scrollview.ObservableScrollView android:id="@+id/product_details_fragment_overview_scroller" android:layout_width="match_parent" android:layout_height="match_parent">
+                <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+                    <include layout="@layout/product_details_fragment_overview_buttons"/>
+                    <com.contextlogic.wish.ui.loading.PrimaryProgressBar android:layout_gravity="center" android:id="@+id/product_details_progress_bar" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/sixteen_padding"/>
+                    <com.contextlogic.wish.ui.loading.ThreeDotProgressBar android:layout_gravity="center_horizontal" android:id="@+id/product_details_three_dot_progress_bar" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/sixteen_padding"/>
+                    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@+id/product_details_loading_error_view" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="@dimen/sixteen_padding">
+                        <com.contextlogic.wish.ui.text.ThemedTextView android:textSize="@dimen/text_size_body" android:textColor="@color/text_secondary" android:gravity="center" android:layout_gravity="center" android:id="@+id/product_details_loading_error_message_text" android:paddingLeft="@dimen/double_screen_padding" android:paddingRight="@dimen/double_screen_padding" android:paddingBottom="@dimen/double_screen_padding" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/loading_error" android:singleLine="false"/>
+                        <com.contextlogic.wish.ui.text.ThemedTextView android:textSize="@dimen/text_size_button" android:textStyle="bold" android:textColor="@color/text_selector_main_primary" android:gravity="center" android:layout_gravity="center" android:id="@+id/product_details_try_again_button" android:layout_width="wrap_content" android:layout_height="@dimen/default_button_height" android:text="@string/try_again" android:textAllCaps="true"/>
+                    </LinearLayout>
+                    <LinearLayout android:orientation="vertical" android:id="@+id/product_details_content_container" android:layout_width="match_parent" android:layout_height="wrap_content">
+                        <include layout="@layout/product_details_fragment_overview_title_and_beyond"/>
+                    </LinearLayout>
+                </LinearLayout>
+            </com.contextlogic.wish.ui.scrollview.ObservableScrollView>
+        </LinearLayout>
+    </LinearLayout>
+    <com.contextlogic.wish.ui.image.AutoReleasableImageView android:layout_gravity="center" android:id="@+id/product_details_fragment_overview_wish_checkmark" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+</merge>

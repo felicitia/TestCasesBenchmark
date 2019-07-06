@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt">
+    <item android:state_enabled="false" android:state_checked="true">
+        <shape android:shape="oval">
+            <solid android:color="@color/switch_thumb_disabled_checked"/>
+            <size android:height="@dimen/switch_thumb_size" android:width="@dimen/switch_thumb_size"/>
+        </shape>
+    </item>
+    <item android:state_enabled="false" android:state_checked="false">
+        <shape android:shape="oval">
+            <solid android:color="@color/switch_thumb_disabled_unchecked"/>
+            <size android:height="@dimen/switch_thumb_size" android:width="@dimen/switch_thumb_size"/>
+        </shape>
+    </item>
+    <item android:state_checked="true">
+        <shape android:shape="oval">
+            <solid android:color="@color/switch_thumb_enabled_checked"/>
+            <size android:height="@dimen/switch_thumb_size" android:width="@dimen/switch_thumb_size"/>
+        </shape>
+    </item>
+    <item>
+        <shape android:shape="oval">
+            <solid android:color="@color/switch_thumb_enabled_unchecked"/>
+            <size android:height="@dimen/switch_thumb_size" android:width="@dimen/switch_thumb_size"/>
+        </shape>
+    </item>
+</selector>

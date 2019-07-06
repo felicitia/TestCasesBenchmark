@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:id="@+id/shaky_root" android:padding="@dimen/content_area_padding" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginBottom="@dimen/content_area_padding">
+    <ImageView android:layout_gravity="center_horizontal" android:paddingTop="@dimen/button_padding" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_feedback_black_48dp" android:contentDescription="@string/shaky_dialog_title"/>
+    <LinearLayout android:orientation="vertical" android:paddingTop="@dimen/title_padding" android:paddingBottom="@dimen/content_area_padding" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <TextView android:textSize="@dimen/title_textsize" android:textColor="@color/title" android:gravity="start" android:paddingBottom="@dimen/title_padding" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/shaky_dialog_title" android:textAlignment="textStart"/>
+        <TextView android:textSize="@dimen/content_textsize" android:textColor="@color/content" android:gravity="start" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/shaky_dialog_message" android:textAlignment="textStart"/>
+    </LinearLayout>
+</LinearLayout>

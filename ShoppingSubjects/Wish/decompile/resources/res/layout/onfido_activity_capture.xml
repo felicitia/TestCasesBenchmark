@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="match_parent" android:layout_height="match_parent">
+    <RelativeLayout android:fitsSystemWindows="true" android:layout_width="match_parent" android:layout_height="match_parent" android:animateLayoutChanges="true">
+        <FrameLayout android:id="@+id/fl_content_layout" android:layout_width="match_parent" android:layout_height="match_parent">
+            <com.onfido.android.sdk.capture.ui.camera.face.CameraSourcePreview android:id="@+id/camera_source" android:background="@color/onfido_dark_500" android:layout_width="match_parent" android:layout_height="match_parent"/>
+            <com.onfido.android.sdk.capture.ui.ZoomImageView android:id="@+id/preview_image" android:visibility="invisible" android:layout_width="match_parent" android:layout_height="match_parent" android:scaleType="centerCrop" android:adjustViewBounds="true" android:contentDescription="@null"/>
+        </FrameLayout>
+        <ImageView android:id="@+id/bt_capture" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/onfido_button_take_picture" android:contentDescription="@null" style="@style/OnfidoCameraButtonTakePictureStyle"/>
+        <com.onfido.android.sdk.capture.ui.camera.OverlayTextView android:id="@+id/overlayTextContainer" android:visibility="invisible" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_above="@+id/bt_capture"/>
+        <com.onfido.android.sdk.capture.ui.camera.ConfirmationStepButtons android:id="@+id/confirmation_step_buttons" android:visibility="invisible" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/onfido_confirmation_buttons_activity_horizontal_margin" android:layout_marginRight="@dimen/onfido_confirmation_buttons_activity_horizontal_margin" android:layout_marginBottom="@dimen/onfido_message_button_bottom_margin" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true"/>
+        <com.onfido.android.sdk.capture.validation.CaptureValidationBubble android:id="@+id/liveValidationBubble" android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerHorizontal="true"/>
+        <com.onfido.android.sdk.capture.validation.CaptureValidationBubble android:id="@+id/postCaptureValidationBubble" android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerHorizontal="true"/>
+        <com.onfido.android.sdk.capture.edge_detector.EdgeDetectorFrame android:id="@+id/captureFrame" android:visibility="invisible" android:layout_width="0dp" android:layout_height="0dp">
+            <com.onfido.android.sdk.capture.edge_detector.EdgeDetectorTextLabel android:id="@+id/captureLabel" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true"/>
+        </com.onfido.android.sdk.capture.edge_detector.EdgeDetectorFrame>
+        <com.onfido.android.sdk.capture.ui.camera.liveness.LivenessOverlayView android:id="@+id/livenessOverlayView" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+        <ImageView android:id="@+id/passportOverlay" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/onfido_passport_overlay" android:scaleType="fitEnd"/>
+        <android.support.v7.widget.Toolbar android:id="@+id/toolbar" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="?attr/actionBarSize"/>
+    </RelativeLayout>
+    <RelativeLayout android:id="@+id/autoCaptureInfo" android:background="@color/onfido_white" android:clipToPadding="false" android:layout_width="match_parent" android:layout_height="wrap_content" app:behavior_hideable="true" app:elevation="4dp" app:layout_behavior="android.support.design.widget.BottomSheetBehavior">
+        <include layout="@layout/onfido_auto_capture_info_layout"/>
+    </RelativeLayout>
+</android.support.design.widget.CoordinatorLayout>

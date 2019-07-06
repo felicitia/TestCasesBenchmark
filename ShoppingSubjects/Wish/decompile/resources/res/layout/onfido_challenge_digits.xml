@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:id="@+id/challenge" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <TextView android:textSize="@dimen/onfido_liveness_challenge_digits_title_size" android:textColor="@color/onfido_white" android:gravity="center" android:id="@+id/title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="4dp" android:text="@string/onfido_liveness_challenge_digits_title" android:layout_centerHorizontal="true"/>
+    <TextView android:textSize="@dimen/onfido_liveness_challenge_digits_subtitle_size" android:textColor="@color/onfido_white" android:id="@+id/subtitle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4dp" android:layout_below="@+id/title" android:layout_centerInParent="true" android:fontFamily="sans-serif-thin"/>
+</RelativeLayout>

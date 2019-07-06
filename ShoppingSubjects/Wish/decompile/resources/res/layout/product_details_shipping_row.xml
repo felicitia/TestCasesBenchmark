@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt">
+    <LinearLayout android:gravity="left|center_vertical|center_horizontal|center|start" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <com.contextlogic.wish.ui.text.ThemedTextView android:textSize="@dimen/text_size_body" android:textStyle="bold" android:textColor="@color/text_primary" android:layout_gravity="center" android:id="@+id/product_details_shipping_row_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/detail_table_standard_shipping"/>
+        <com.contextlogic.wish.ui.text.ThemedTextView android:textSize="@dimen/text_size_body" android:textColor="@color/text_primary" android:id="@+id/product_details_shipping_row_price_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/eight_padding"/>
+        <com.contextlogic.wish.ui.image.AutoReleasableImageView android:id="@+id/product_details_shipping_row_express_icon" android:visibility="gone" android:layout_width="@dimen/product_badge_image_feed_side_length" android:layout_height="@dimen/product_badge_image_feed_side_length" android:layout_marginLeft="@dimen/eight_padding" app:drawable="@drawable/fast_shipping_icon"/>
+    </LinearLayout>
+    <com.contextlogic.wish.ui.text.ThemedTextView android:textSize="@dimen/text_size_body" android:textColor="@color/text_primary" android:gravity="start" android:id="@+id/product_details_shipping_row_body_text" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+</merge>

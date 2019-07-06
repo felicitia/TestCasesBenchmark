@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="cart_item">
+        <item quantity="one">Carrito: %1$s artículo</item>
+        <item quantity="other">Carrito: %1$s artículos</item>
+    </plurals>
+    <plurals name="daily_raffle_entries_text">
+        <item quantity="one">%1$d entradas</item>
+        <item quantity="other">%1$d entradas</item>
+    </plurals>
+    <plurals name="daily_raffle_free_items_and_coupons_text">
+        <item quantity="one">%1$d artículo gratis</item>
+        <item quantity="other">%1$d artículos gratis</item>
+    </plurals>
+    <plurals name="detail_table_color">
+        <item quantity="one">Color</item>
+        <item quantity="other">Colores</item>
+    </plurals>
+    <plurals name="detail_table_size">
+        <item quantity="one">Talla</item>
+        <item quantity="other">Tallas</item>
+    </plurals>
+    <plurals name="follower_plural">
+        <item quantity="one">%1$d Seguidor</item>
+        <item quantity="other">%1$d Seguidores</item>
+    </plurals>
+    <plurals name="following_plural">
+        <item quantity="one">siguiendo a %1$d</item>
+        <item quantity="other">siguiendo a %1$d</item>
+    </plurals>
+    <plurals name="item">
+        <item quantity="one">%1$s artículo</item>
+        <item quantity="other">%1$s artículos</item>
+    </plurals>
+    <plurals name="item_added_to_cart">
+        <item quantity="one">Artículo agregado al carrito</item>
+        <item quantity="other">Artículos agregados al carrito</item>
+    </plurals>
+    <plurals name="number_available">
+        <item quantity="one">%1$d disponible</item>
+        <item quantity="other">%1$d disponibles</item>
+    </plurals>
+    <plurals name="number_of_followers">
+        <item quantity="one">seguidor</item>
+        <item quantity="other">seguidores</item>
+    </plurals>
+    <plurals name="number_of_saves">
+        <item quantity="one">Guardado</item>
+        <item quantity="other">Guardados</item>
+    </plurals>
+    <plurals name="number_said_thanks">
+        <item quantity="one">%1$d persona dice gracias</item>
+        <item quantity="other">%1$d personas dicen gracias</item>
+    </plurals>
+    <plurals name="people">
+        <item quantity="one">%1$s persona</item>
+        <item quantity="other">%1$s personas</item>
+    </plurals>
+    <plurals name="rating">
+        <item quantity="one">(%1$s calificación)</item>
+        <item quantity="other">(%1$s calificaciones)</item>
+    </plurals>
+    <plurals name="ratings_capitalized_no_bracket">
+        <item quantity="one">%1$s calificación</item>
+        <item quantity="other">%1$s calificaciones</item>
+    </plurals>
+    <plurals name="redeem_for_points_question">
+        <item quantity="one">¿Canjear por %1$d punto?</item>
+        <item quantity="other">¿Canjear por %1$d puntos?</item>
+    </plurals>
+    <plurals name="reward_points_number">
+        <item quantity="one">%1$s Punto</item>
+        <item quantity="other">%1$s Puntos</item>
+    </plurals>
+    <plurals name="selling_product">
+        <item quantity="one">Vendiendo %1$s producto</item>
+        <item quantity="other">Vendiendo %1$s productos</item>
+    </plurals>
+    <plurals name="store_ratings_with_bracket">
+        <item quantity="one">(%1$s calificación de la tienda)</item>
+        <item quantity="other">(%1$s calificaciones de la tienda)</item>
+    </plurals>
+    <plurals name="user_rating">
+        <item quantity="one">Calificación de usuario</item>
+        <item quantity="other">Calificaciones de usuarios</item>
+    </plurals>
+    <plurals name="user_review">
+        <item quantity="one">%1$s Reseña de usuario</item>
+        <item quantity="other">%1$s Reseñas de usuarios</item>
+    </plurals>
+    <plurals name="wishlist_new_count">
+        <item quantity="one">%1$d nuevas</item>
+        <item quantity="other">%1$d nuevas</item>
+    </plurals>
+    <plurals name="wishlist_view_count">
+        <item quantity="one">%1$d visualización</item>
+        <item quantity="other">%1$d visualizaciones</item>
+    </plurals>
+</resources>

@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="cart_item">
+        <item quantity="other">Keranjang: %1$s barang</item>
+    </plurals>
+    <plurals name="daily_raffle_entries_text">
+        <item quantity="other">%1$d Entri</item>
+    </plurals>
+    <plurals name="daily_raffle_free_items_and_coupons_text">
+        <item quantity="other">%1$d Barang Gratis</item>
+    </plurals>
+    <plurals name="detail_table_color">
+        <item quantity="other">Warna</item>
+    </plurals>
+    <plurals name="detail_table_size">
+        <item quantity="other">Ukuran</item>
+    </plurals>
+    <plurals name="follower_plural">
+        <item quantity="other">%1$d Pengikut</item>
+    </plurals>
+    <plurals name="following_plural">
+        <item quantity="other">Mengikuti %1$d</item>
+    </plurals>
+    <plurals name="item">
+        <item quantity="other">%1$s barang</item>
+    </plurals>
+    <plurals name="item_added_to_cart">
+        <item quantity="other">Barang Ditambahkan ke Keranjang!</item>
+    </plurals>
+    <plurals name="number_available">
+        <item quantity="other">%1$d tersedia</item>
+    </plurals>
+    <plurals name="number_of_followers">
+        <item quantity="other">pengikut</item>
+    </plurals>
+    <plurals name="number_of_saves">
+        <item quantity="other">Menyimpan</item>
+    </plurals>
+    <plurals name="number_said_thanks">
+        <item quantity="other">%1$d berterima kasih</item>
+    </plurals>
+    <plurals name="people">
+        <item quantity="other">%1$s orang</item>
+    </plurals>
+    <plurals name="rating">
+        <item quantity="other">(%1$s penilaian)</item>
+    </plurals>
+    <plurals name="ratings_capitalized_no_bracket">
+        <item quantity="other">%1$s penilaian</item>
+    </plurals>
+    <plurals name="redeem_for_points_question">
+        <item quantity="other">Tukar untuk %1$d poin?</item>
+    </plurals>
+    <plurals name="reward_points_number">
+        <item quantity="other">%1$s Poin</item>
+    </plurals>
+    <plurals name="selling_product">
+        <item quantity="other">Menjual %1$s produk</item>
+    </plurals>
+    <plurals name="store_ratings_with_bracket">
+        <item quantity="other">(peringkat toko %1$s)</item>
+    </plurals>
+    <plurals name="user_rating">
+        <item quantity="other">Penilaian Pengguna</item>
+    </plurals>
+    <plurals name="user_review">
+        <item quantity="other">%1$s Ulasan Pengguna</item>
+    </plurals>
+    <plurals name="wishlist_new_count">
+        <item quantity="other">%1$d baru</item>
+    </plurals>
+    <plurals name="wishlist_view_count">
+        <item quantity="other">%1$d kali dilihat</item>
+    </plurals>
+</resources>

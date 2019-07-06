@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <fraction name="dialog_min_width_major">65%</fraction>
+    <fraction name="dialog_min_width_minor">85%</fraction>
+    <fraction name="modal_width">70%</fraction>
+</resources>

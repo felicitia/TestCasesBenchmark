@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="cart_item">
+        <item quantity="one">Carrello: %1$s articolo</item>
+        <item quantity="other">Carrello: %1$s articoli</item>
+    </plurals>
+    <plurals name="daily_raffle_entries_text">
+        <item quantity="one">%1$d biglietto</item>
+        <item quantity="other">%1$d biglietti</item>
+    </plurals>
+    <plurals name="daily_raffle_free_items_and_coupons_text">
+        <item quantity="one">%1$d articolo gratis</item>
+        <item quantity="other">%1$d articoli gratis</item>
+    </plurals>
+    <plurals name="detail_table_color">
+        <item quantity="one">Colore</item>
+        <item quantity="other">Colori</item>
+    </plurals>
+    <plurals name="detail_table_size">
+        <item quantity="one">Misura</item>
+        <item quantity="other">Misure</item>
+    </plurals>
+    <plurals name="follower_plural">
+        <item quantity="one">%1$d follower</item>
+        <item quantity="other">%1$d follower</item>
+    </plurals>
+    <plurals name="following_plural">
+        <item quantity="one">%1$d seguito</item>
+        <item quantity="other">%1$d seguiti</item>
+    </plurals>
+    <plurals name="item">
+        <item quantity="one">%1$s articolo</item>
+        <item quantity="other">%1$s articoli</item>
+    </plurals>
+    <plurals name="item_added_to_cart">
+        <item quantity="one">Articolo aggiunto al carrello</item>
+        <item quantity="other">Articoli aggiunti al carrello</item>
+    </plurals>
+    <plurals name="number_available">
+        <item quantity="one">%1$d disponibile</item>
+        <item quantity="other">%1$d disponibili</item>
+    </plurals>
+    <plurals name="number_of_followers">
+        <item quantity="one">follower</item>
+        <item quantity="other">follower</item>
+    </plurals>
+    <plurals name="number_of_saves">
+        <item quantity="one">salvato</item>
+        <item quantity="other">salvati</item>
+    </plurals>
+    <plurals name="number_said_thanks">
+        <item quantity="one">%1$d ha ringraziato</item>
+        <item quantity="other">%1$d hanno ringraziato</item>
+    </plurals>
+    <plurals name="people">
+        <item quantity="one">%1$s persona</item>
+        <item quantity="other">%1$s persone</item>
+    </plurals>
+    <plurals name="rating">
+        <item quantity="one">(%1$s valutazione)</item>
+        <item quantity="other">(%1$s valutazioni)</item>
+    </plurals>
+    <plurals name="ratings_capitalized_no_bracket">
+        <item quantity="one">{0} valutazione</item>
+        <item quantity="other">%1$s valutazioni</item>
+    </plurals>
+    <plurals name="redeem_for_points_question">
+        <item quantity="one">Riscatta per %1$d punto?</item>
+        <item quantity="other">Riscatta per %1$d punti?</item>
+    </plurals>
+    <plurals name="reward_points_number">
+        <item quantity="one">%1$s punto</item>
+        <item quantity="other">%1$s punti</item>
+    </plurals>
+    <plurals name="selling_product">
+        <item quantity="one">%1$s prodotto in vendita</item>
+        <item quantity="other">%1$s prodotti in vendita</item>
+    </plurals>
+    <plurals name="store_ratings_with_bracket">
+        <item quantity="one">(%1$s valutazione del negozio)</item>
+        <item quantity="other">(%1$s valutazioni del negozio)</item>
+    </plurals>
+    <plurals name="user_rating">
+        <item quantity="one">Valutazione utente</item>
+        <item quantity="other">Valutazioni utente</item>
+    </plurals>
+    <plurals name="user_review">
+        <item quantity="one">%1$s Recensione utente</item>
+        <item quantity="other">%1$s Recensioni utenti</item>
+    </plurals>
+    <plurals name="wishlist_new_count">
+        <item quantity="one">%1$d nuovo</item>
+        <item quantity="other">%1$d nuovi</item>
+    </plurals>
+    <plurals name="wishlist_view_count">
+        <item quantity="one">%1$d visualizzazione</item>
+        <item quantity="other">%1$d visualizzazioni</item>
+    </plurals>
+</resources>

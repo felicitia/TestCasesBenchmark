@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.contextlogic.wish.ui.viewpager.SafeViewPager android:id="@+id/commerce_cash_fragment_viewpager" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_alignParentTop="true"/>
+    <LinearLayout android:orientation="vertical" android:id="@+id/commerce_cash_fragment_viewpager_tab_container" android:background="@drawable/wish_cash_header_background" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentTop="true">
+        <com.contextlogic.wish.activity.commercecash.CommerceCashBannerView android:id="@+id/commerce_cash_fragment_banner" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+        <com.contextlogic.wish.ui.viewpager.PagerSlidingTabStrip android:id="@+id/commerce_cash_fragment_viewpager_tabs" android:layout_width="match_parent" android:layout_height="@dimen/tab_bar_height"/>
+    </LinearLayout>
+</RelativeLayout>

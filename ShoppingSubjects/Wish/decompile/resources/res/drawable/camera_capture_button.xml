@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:shape="oval">
+    <solid android:color="@color/white"/>
+    <stroke android:width="@dimen/camera_capture_button_stroke" android:color="@color/translucent_white"/>
+    <size android:height="@dimen/camera_capture_button_size" android:width="@dimen/camera_capture_button_size"/>
+</shape>

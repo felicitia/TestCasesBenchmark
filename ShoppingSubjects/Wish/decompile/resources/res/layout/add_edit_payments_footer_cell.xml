@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.contextlogic.wish.ui.button.ThemedButton xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:textSize="@dimen/text_size_fourteen" android:textStyle="bold" android:id="@+id/payment_save_button" android:tag="layout/add_edit_payments_footer_cell_0" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/sixteen_padding" style="@style/Widget.Wish.Button"/>

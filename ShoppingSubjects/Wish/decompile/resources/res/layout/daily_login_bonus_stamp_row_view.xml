@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:id="@+id/stamp_row_row_container" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:id="@+id/daily_login_bonus_stamp_text_container" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/eight_padding" android:layout_marginTop="@dimen/sixteen_padding" android:layout_marginRight="@dimen/eight_padding" android:layout_marginBottom="@dimen/eight_padding">
+        <com.contextlogic.wish.ui.text.ThemedTextView android:textSize="@dimen/text_size_body" android:textStyle="bold" android:textColor="@color/cool_gray1" android:id="@+id/daily_login_bonus_stamp_row_discount_title" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1"/>
+        <com.contextlogic.wish.ui.text.ThemedTextView android:textSize="@dimen/text_size_caption" android:textColor="@color/cool_gray1" android:id="@+id/daily_login_bonus_stamp_row_deadline_text" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+    </LinearLayout>
+    <ScrollView android:id="@+id/stamp_row_scrollview" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginLeft="@dimen/four_padding" android:layout_marginRight="@dimen/eight_padding" android:layout_marginBottom="@dimen/sixteen_padding">
+        <LinearLayout android:orientation="horizontal" android:id="@+id/stamp_row_linear_layout" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <com.contextlogic.wish.activity.dailybonus.DailyLoginBonusStampView android:id="@+id/stamp_row_stamp_1" android:layout_width="@dimen/stamp_row_stamp_size" android:layout_height="@dimen/stamp_row_stamp_size" android:layout_marginRight="@dimen/eight_padding"/>
+            <com.contextlogic.wish.activity.dailybonus.DailyLoginBonusStampView android:id="@+id/stamp_row_stamp_2" android:layout_width="@dimen/stamp_row_stamp_size" android:layout_height="@dimen/stamp_row_stamp_size" android:layout_marginRight="@dimen/eight_padding"/>
+            <com.contextlogic.wish.activity.dailybonus.DailyLoginBonusStampView android:id="@+id/stamp_row_stamp_3" android:layout_width="@dimen/stamp_row_stamp_size" android:layout_height="@dimen/stamp_row_stamp_size" android:layout_marginRight="@dimen/eight_padding"/>
+            <com.contextlogic.wish.activity.dailybonus.DailyLoginBonusStampView android:id="@+id/stamp_row_stamp_4" android:layout_width="@dimen/stamp_row_stamp_size" android:layout_height="@dimen/stamp_row_stamp_size" android:layout_marginRight="@dimen/eight_padding"/>
+            <com.contextlogic.wish.activity.dailybonus.DailyLoginBonusStampView android:id="@+id/stamp_row_stamp_5" android:layout_width="@dimen/stamp_row_stamp_size" android:layout_height="@dimen/stamp_row_stamp_size" android:layout_marginRight="@dimen/eight_padding"/>
+            <com.contextlogic.wish.activity.dailybonus.DailyLoginBonusStampView android:id="@+id/stamp_row_stamp_6" android:layout_width="@dimen/stamp_row_stamp_size" android:layout_height="@dimen/stamp_row_stamp_size" android:layout_marginRight="@dimen/eight_padding"/>
+            <com.contextlogic.wish.activity.dailybonus.DailyLoginBonusStampView android:id="@+id/stamp_row_stamp_7" android:layout_width="@dimen/stamp_row_stamp_size" android:layout_height="@dimen/stamp_row_stamp_size"/>
+        </LinearLayout>
+    </ScrollView>
+    <View android:id="@+id/stamp_row_divider_view" android:background="@color/cool_gray4" android:layout_width="match_parent" android:layout_height="@dimen/thin_separator"/>
+</LinearLayout>

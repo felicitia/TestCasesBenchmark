@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="horizontal" android:padding="@dimen/twenty_four_padding" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <com.contextlogic.wish.ui.image.AutoReleasableImageView android:layout_gravity="top|center_vertical|center_horizontal|center" android:layout_width="@dimen/fourty_eight_padding" android:layout_height="@dimen/fourty_eight_padding" android:layout_marginRight="@dimen/twenty_four_padding" android:src="@drawable/request_settings_icon"/>
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <com.contextlogic.wish.ui.text.ThemedTextView android:textSize="@dimen/text_size_larger_subtitle" android:textStyle="bold" android:textColor="@color/black" android:id="@+id/request_settings_bottom_sheet_title" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+        <com.contextlogic.wish.ui.text.ThemedTextView android:textSize="@dimen/text_size_subtitle" android:textColor="@color/black" android:id="@+id/request_settings_bottom_sheet_message" android:paddingTop="@dimen/sixteen_padding" android:paddingBottom="@dimen/sixteen_padding" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+        <LinearLayout android:gravity="end" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <com.contextlogic.wish.ui.text.ThemedTextView android:textSize="@dimen/text_size_subtitle" android:textStyle="bold" android:textColor="@color/cool_gray2" android:id="@+id/request_settings_no_thanks_button" android:padding="@dimen/sixteen_padding" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/no_thanks" android:textAllCaps="true"/>
+            <com.contextlogic.wish.ui.text.ThemedTextView android:textSize="@dimen/text_size_subtitle" android:textStyle="bold" android:textColor="@color/main_primary" android:id="@+id/request_settings_settings_button" android:padding="@dimen/sixteen_padding" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/settings" android:textAllCaps="true"/>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

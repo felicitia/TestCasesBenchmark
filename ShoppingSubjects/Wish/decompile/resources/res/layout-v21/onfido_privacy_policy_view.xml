@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:id="@+id/root" android:background="@color/onfido_privacy_policy_overlay_color" android:clickable="true" android:clipChildren="false" android:clipToPadding="false" android:layout_width="match_parent" android:layout_height="match_parent">
+    <View android:id="@+id/circularReveal" android:background="@drawable/onfido_circle" android:layout_width="0dp" android:layout_height="0dp"/>
+    <LinearLayout android:layout_gravity="bottom" android:orientation="vertical" android:id="@+id/container" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/onfido_privacy_policy_container_horizontal_margin" android:layout_marginRight="@dimen/onfido_privacy_policy_container_horizontal_margin">
+        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/onfido_privacy_policy_watermark_bottom_margin" android:src="@drawable/onfido_ic_watermark_grey_light"/>
+        <TextView android:textSize="@dimen/onfido_privacy_policy_title_text_size" android:textStyle="bold" android:textColor="@color/onfido_white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/onfido_privacy_policy_title_bottom_margin" android:text="@string/onfido_privacy_policy_title"/>
+        <LinearLayout android:gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/onfido_privacy_policy_items_vertical_margin">
+            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/onfido_privacy_policy_check_horizontal_margin" android:src="@drawable/onfido_check_white"/>
+            <TextView android:textSize="@dimen/onfido_privacy_policy_items_text_size" android:textColor="@color/onfido_white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/onfido_privacy_policy_position_doc"/>
+        </LinearLayout>
+        <LinearLayout android:gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/onfido_privacy_policy_check_horizontal_margin" android:src="@drawable/onfido_check_white"/>
+            <TextView android:textSize="@dimen/onfido_privacy_policy_items_text_size" android:textColor="@color/onfido_white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/onfido_privacy_policy_avoid_light"/>
+        </LinearLayout>
+        <LinearLayout android:gravity="center_vertical" android:id="@+id/lastStep" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/onfido_privacy_policy_items_vertical_margin">
+            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/onfido_privacy_policy_check_horizontal_margin" android:src="@drawable/onfido_check_white"/>
+            <TextView android:textSize="@dimen/onfido_privacy_policy_items_text_size" android:textColor="@color/onfido_white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/onfido_privacy_policy_auto_capture"/>
+        </LinearLayout>
+        <TextView android:textSize="@dimen/onfido_privacy_policy_text_content_size" android:textColor="@color/onfido_white" android:gravity="center" android:id="@+id/textContent" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/onfido_privacy_policy_text_content_top_margin" android:layout_marginBottom="@dimen/onfido_privacy_policy_text_content_bottom_margin" android:text="@string/onfido_privacy_policy_terms_extended" android:lineSpacingExtra="@dimen/onfido_privacy_policy_title_text_line_height_extra"/>
+        <Button android:textColor="@color/onfido_brand_primary_500" android:id="@+id/continueButton" android:background="@drawable/onfido_privacy_policy_continue_background" android:layout_height="@dimen/onfido_privacy_policy_button_height" android:layout_marginLeft="0dp" android:layout_marginRight="0dp" android:layout_marginBottom="@dimen/onfido_privacy_policy_first_button_margin_bottom" android:text="@string/onfido_continue" style="@style/OnfidoFlatButton"/>
+        <Button android:textColor="@color/onfido_white" android:id="@+id/declineButton" android:background="@drawable/onfido_start_button_blue" android:layout_height="@dimen/onfido_privacy_policy_button_height" android:layout_marginLeft="0dp" android:layout_marginRight="0dp" android:layout_marginBottom="@dimen/onfido_privacy_policy_last_button_margin_bottom" android:text="@string/onfido_decline" android:stateListAnimator="@null" style="@style/OnfidoFlatButton"/>
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:id="@+id/webViewContainer" android:visibility="invisible" android:layout_width="match_parent" android:layout_height="match_parent">
+        <android.support.v7.widget.Toolbar android:id="@+id/toolbar" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="?attr/actionBarSize" android:elevation="4dp" app:theme="@style/OnfidoPrivacyPolicyToolbarStyle"/>
+        <FrameLayout android:background="@color/onfido_white" android:layout_width="match_parent" android:layout_height="match_parent">
+            <WebView android:id="@+id/webView" android:layout_width="match_parent" android:layout_height="match_parent"/>
+            <ProgressBar android:layout_gravity="center" android:id="@+id/progress" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:indeterminate="true"/>
+        </FrameLayout>
+    </LinearLayout>
+</FrameLayout>

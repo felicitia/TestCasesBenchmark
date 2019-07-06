@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:id="@+id/daily_giveaway_view_container" android:background="@color/daily_giveaway_cloud_color_background" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.contextlogic.wish.ui.listview.ListeningListView android:id="@+id/product_feed_gridview" android:paddingBottom="@dimen/sixteen_padding" android:clipToPadding="false" android:animationCache="false" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="@dimen/tab_bar_height" android:listSelector="@color/transparent" android:scrollingCache="false" android:cacheColorHint="@color/transparent" android:divider="@color/white" android:dividerHeight="@dimen/sixteen_padding"/>
+</LinearLayout>

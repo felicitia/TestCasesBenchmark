@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:shape="rectangle">
+    <corners android:radius="@dimen/price_chop_count_down_timer_corner_radius"/>
+    <stroke android:width="@dimen/default_border_stroke" android:color="@color/gray5"/>
+    <solid android:color="@color/white"/>
+</shape>

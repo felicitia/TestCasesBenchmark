@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <LinearLayout android:orientation="vertical" android:background="@color/white" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:background="@color/white" android:padding="@dimen/screen_padding" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <com.contextlogic.wish.ui.image.NetworkImageView android:layout_gravity="center_vertical" android:id="@+id/order_confirmed_group_buy_image" android:layout_width="@dimen/order_confirmed_view_image_size" android:layout_height="@dimen/order_confirmed_view_image_size" android:layout_marginRight="@dimen/order_confirmed_view_image_title_spacing"/>
+            <com.contextlogic.wish.ui.text.ThemedTextView android:textSize="@dimen/order_confirmed_view_title_text_size" android:textStyle="bold" android:id="@+id/order_confirmed_group_buy_title" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+        </LinearLayout>
+        <com.contextlogic.wish.activity.productdetails.groupbuy.GroupBuyItemView android:id="@+id/order_confirmed_group_buy_row" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/screen_padding" android:layout_marginRight="@dimen/screen_padding" android:layout_marginBottom="@dimen/screen_padding"/>
+        <com.contextlogic.wish.ui.text.ThemedTextView android:id="@+id/order_confirmed_group_buy_info" android:background="@color/group_buy_order_confirmation_page_message" android:padding="@dimen/screen_padding" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/screen_padding" android:layout_marginRight="@dimen/screen_padding" android:layout_marginBottom="@dimen/double_screen_padding"/>
+    </LinearLayout>
+</merge>

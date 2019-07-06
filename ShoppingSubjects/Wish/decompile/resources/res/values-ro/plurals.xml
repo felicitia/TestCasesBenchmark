@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="cart_item">
+        <item quantity="one">Coș: %1$s articol</item>
+        <item quantity="few">Coș: %1$s articole</item>
+        <item quantity="other">Coș: %1$s de articole</item>
+    </plurals>
+    <plurals name="daily_raffle_entries_text">
+        <item quantity="one">%1$d participare</item>
+        <item quantity="few">%1$d participări</item>
+        <item quantity="other">%1$d de participări</item>
+    </plurals>
+    <plurals name="daily_raffle_free_items_and_coupons_text">
+        <item quantity="one">%1$d articol gratuit</item>
+        <item quantity="few">%1$d articole gratuite</item>
+        <item quantity="other">%1$d articole gratuite</item>
+    </plurals>
+    <plurals name="detail_table_color">
+        <item quantity="one">Culoare</item>
+        <item quantity="few">Culori</item>
+        <item quantity="other">Culori</item>
+    </plurals>
+    <plurals name="detail_table_size">
+        <item quantity="one">Mărime</item>
+        <item quantity="few">Mărimi</item>
+        <item quantity="other">Mărimi</item>
+    </plurals>
+    <plurals name="follower_plural">
+        <item quantity="one">%1$d urmăritor</item>
+        <item quantity="few">%1$d urmăritori</item>
+        <item quantity="other">%1$d urmăritori</item>
+    </plurals>
+    <plurals name="following_plural">
+        <item quantity="one">%1$d urmărește</item>
+        <item quantity="few">%1$d urmăresc</item>
+        <item quantity="other">%1$d urmăresc</item>
+    </plurals>
+    <plurals name="item">
+        <item quantity="one">%1$s articol</item>
+        <item quantity="few">%1$s articole</item>
+        <item quantity="other">%1$s articole</item>
+    </plurals>
+    <plurals name="item_added_to_cart">
+        <item quantity="one">Articol adăugat în coș</item>
+        <item quantity="few">Articole adăugate în coș</item>
+        <item quantity="other">Articole adăugate în coș</item>
+    </plurals>
+    <plurals name="number_available">
+        <item quantity="one">%1$d disponibil</item>
+        <item quantity="few">%1$d disponibile</item>
+        <item quantity="other">%1$d disponibile</item>
+    </plurals>
+    <plurals name="number_of_followers">
+        <item quantity="one">urmăritor</item>
+        <item quantity="few">urmăritori</item>
+        <item quantity="other">de urmăritori</item>
+    </plurals>
+    <plurals name="number_of_saves">
+        <item quantity="one">Salvare</item>
+        <item quantity="few">Salvări</item>
+        <item quantity="other">Salvări</item>
+    </plurals>
+    <plurals name="number_said_thanks">
+        <item quantity="one">%1$d ți-a mulțumit</item>
+        <item quantity="few">%1$d ți-au mulțumit</item>
+        <item quantity="other">%1$d ți-au mulțumit</item>
+    </plurals>
+    <plurals name="people">
+        <item quantity="one">%1$s persoană</item>
+        <item quantity="few">%1$s persoane</item>
+        <item quantity="other">%1$s persoane</item>
+    </plurals>
+    <plurals name="rating">
+        <item quantity="one">(%1$s calificativ)</item>
+        <item quantity="few">(%1$s calificative)</item>
+        <item quantity="other">(%1$s calificative)</item>
+    </plurals>
+    <plurals name="ratings_capitalized_no_bracket">
+        <item quantity="one">%1$s calificativ</item>
+        <item quantity="few">%1$s calificative</item>
+        <item quantity="other">%1$s calificative</item>
+    </plurals>
+    <plurals name="redeem_for_points_question">
+        <item quantity="one">Valorifici pentru %1$d punct?</item>
+        <item quantity="few">Valorifici pentru %1$d puncte?</item>
+        <item quantity="other">Valorifici pentru %1$d puncte?</item>
+    </plurals>
+    <plurals name="reward_points_number">
+        <item quantity="one">%1$s punct</item>
+        <item quantity="few">%1$s puncte</item>
+        <item quantity="other">%1$s de puncte</item>
+    </plurals>
+    <plurals name="selling_product">
+        <item quantity="one">Comercializează %1$s produs</item>
+        <item quantity="few">Comercializează %1$s produse</item>
+        <item quantity="other">Comercializează %1$s produse</item>
+    </plurals>
+    <plurals name="store_ratings_with_bracket">
+        <item quantity="one">(%1$s evaluare magazin)</item>
+        <item quantity="few">(%1$s evaluări magazin)</item>
+        <item quantity="other">(%1$s de evaluări magazin)</item>
+    </plurals>
+    <plurals name="user_rating">
+        <item quantity="one">Recenzie utilizator</item>
+        <item quantity="few">Recenzii utilizatori</item>
+        <item quantity="other">Recenzii utilizatori</item>
+    </plurals>
+    <plurals name="user_review">
+        <item quantity="one">%1$s recenzie utilizator</item>
+        <item quantity="few">%1$s recenzii utilizatori</item>
+        <item quantity="other">%1$s recenzii utilizatori</item>
+    </plurals>
+    <plurals name="wishlist_new_count">
+        <item quantity="one">%1$d nou(ă)</item>
+        <item quantity="few">%1$d noi</item>
+        <item quantity="other">%1$d noi</item>
+    </plurals>
+    <plurals name="wishlist_view_count">
+        <item quantity="one">%1$d vizualizare</item>
+        <item quantity="few">%1$d vizualizări</item>
+        <item quantity="other">%1$d de vizualizări</item>
+    </plurals>
+</resources>

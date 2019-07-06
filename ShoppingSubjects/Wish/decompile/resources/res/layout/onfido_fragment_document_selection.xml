@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/onfido_activity_horizontal_margin" android:layout_marginTop="@dimen/onfido_document_selection_margin_top" android:text="@string/onfido_document_selection_title" style="@style/OnfidoTextStyle.Header"/>
+    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/onfido_activity_horizontal_margin" android:layout_marginTop="@dimen/onfido_document_selection_titles_margin" android:text="@string/onfido_document_selection_subtitle" style="@style/OnfidoTextStyle.Secondary"/>
+    <View android:background="@color/onfido_light_400" android:layout_width="match_parent" android:layout_height="2dp" android:layout_marginTop="@dimen/onfido_document_selection_list_margin_top"/>
+    <ScrollView android:layout_width="match_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <RelativeLayout android:id="@+id/passportContainer" android:background="?attr/selectableItemBackground" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <FrameLayout android:id="@+id/iconPassport" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/onfido_activity_horizontal_margin" android:layout_marginTop="@dimen/onfido_document_selection_icon_margin_vertical" android:layout_marginBottom="@dimen/onfido_document_selection_icon_margin_vertical" android:layout_centerVertical="true">
+                    <View android:background="@drawable/onfido_circle" android:layout_width="@dimen/onfido_document_selection_icon_dimen" android:layout_height="@dimen/onfido_document_selection_icon_dimen"/>
+                    <ImageView android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/onfido_passport"/>
+                </FrameLayout>
+                <LinearLayout android:layout_toLeftOf="@+id/passportArrow" android:layout_toRightOf="@+id/iconPassport" style="@style/OnfidoDocumentTypeDescription">
+                    <TextView android:textSize="@dimen/onfido_fs_normal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/onfido_label_doc_type_passport_up" style="@style/OnfidoTextStyle"/>
+                </LinearLayout>
+                <ImageView android:id="@+id/passportArrow" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/onfido_activity_horizontal_margin" android:src="@drawable/onfido_arrow_right_grey" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+            </RelativeLayout>
+            <View android:background="@color/onfido_light_400" android:layout_width="match_parent" android:layout_height="2dp"/>
+            <RelativeLayout android:id="@+id/drivingLicenceContainer" android:background="?attr/selectableItemBackground" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <FrameLayout android:id="@+id/iconDrivingLicence" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/onfido_activity_horizontal_margin" android:layout_marginTop="@dimen/onfido_document_selection_icon_margin_vertical" android:layout_marginBottom="@dimen/onfido_document_selection_icon_margin_vertical" android:layout_centerVertical="true">
+                    <View android:background="@drawable/onfido_circle" android:layout_width="@dimen/onfido_document_selection_icon_dimen" android:layout_height="@dimen/onfido_document_selection_icon_dimen"/>
+                    <ImageView android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/onfido_driving_licence"/>
+                </FrameLayout>
+                <LinearLayout android:layout_toLeftOf="@+id/licenseArrow" android:layout_toRightOf="@+id/iconDrivingLicence" style="@style/OnfidoDocumentTypeDescription">
+                    <TextView android:textSize="@dimen/onfido_fs_normal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/onfido_label_doc_type_driving_license_up" style="@style/OnfidoTextStyle"/>
+                </LinearLayout>
+                <ImageView android:id="@+id/licenseArrow" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/onfido_activity_horizontal_margin" android:src="@drawable/onfido_arrow_right_grey" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+            </RelativeLayout>
+            <View android:background="@color/onfido_light_400" android:layout_width="match_parent" android:layout_height="2dp"/>
+            <RelativeLayout android:id="@+id/identityCardContainer" android:background="?attr/selectableItemBackground" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <FrameLayout android:id="@+id/iconNationalId" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/onfido_activity_horizontal_margin" android:layout_marginTop="@dimen/onfido_document_selection_icon_margin_vertical" android:layout_marginBottom="@dimen/onfido_document_selection_icon_margin_vertical" android:layout_centerVertical="true">
+                    <View android:background="@drawable/onfido_circle" android:layout_width="@dimen/onfido_document_selection_icon_dimen" android:layout_height="@dimen/onfido_document_selection_icon_dimen"/>
+                    <ImageView android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/onfido_national_id"/>
+                </FrameLayout>
+                <LinearLayout android:layout_toLeftOf="@+id/idArrow" android:layout_toRightOf="@+id/iconNationalId" style="@style/OnfidoDocumentTypeDescription">
+                    <TextView android:textSize="@dimen/onfido_fs_normal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/onfido_label_doc_type_id_card_up" style="@style/OnfidoTextStyle"/>
+                </LinearLayout>
+                <ImageView android:id="@+id/idArrow" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/onfido_activity_horizontal_margin" android:src="@drawable/onfido_arrow_right_grey" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+            </RelativeLayout>
+            <View android:background="@color/onfido_light_400" android:layout_width="match_parent" android:layout_height="2dp"/>
+            <RelativeLayout android:id="@+id/residencePermitContainer" android:background="?attr/selectableItemBackground" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <FrameLayout android:id="@+id/iconResidencePermit" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/onfido_activity_horizontal_margin" android:layout_marginTop="@dimen/onfido_document_selection_icon_margin_vertical" android:layout_marginBottom="@dimen/onfido_document_selection_icon_margin_vertical" android:layout_centerVertical="true">
+                    <View android:background="@drawable/onfido_circle" android:layout_width="@dimen/onfido_document_selection_icon_dimen" android:layout_height="@dimen/onfido_document_selection_icon_dimen"/>
+                    <ImageView android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/onfido_ic_residence_card"/>
+                </FrameLayout>
+                <LinearLayout android:layout_toLeftOf="@+id/permitArrow" android:layout_toRightOf="@+id/iconResidencePermit" style="@style/OnfidoDocumentTypeDescription">
+                    <TextView android:textSize="@dimen/onfido_fs_normal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/onfido_label_doc_type_residence_permit_up" style="@style/OnfidoTextStyle"/>
+                </LinearLayout>
+                <ImageView android:id="@+id/permitArrow" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/onfido_activity_horizontal_margin" android:src="@drawable/onfido_arrow_right_grey" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+            </RelativeLayout>
+            <View android:background="@color/onfido_light_400" android:layout_width="match_parent" android:layout_height="2dp"/>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:tag="layout/add_edit_payments_header_cell_0" android:background="@color/white" android:padding="@dimen/sixteen_padding" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <com.contextlogic.wish.ui.text.ThemedTextView android:textSize="@dimen/text_size_twelve" android:textColor="@color/gray1" android:gravity="start" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/four_padding" android:text="@string/credit_or_debit_card_number"/>
+        <com.contextlogic.wish.activity.cart.billing.creditcardform.CreditCardFormCreditCardField android:id="@+id/payment_credit_card_number" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/ten_padding" android:baselineAligned="false">
+        <LinearLayout android:orientation="vertical" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1">
+            <com.contextlogic.wish.ui.text.ThemedTextView android:textSize="@dimen/text_size_twelve" android:textColor="@color/gray1" android:gravity="start" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/four_padding" android:text="@string/expiry_date_with_format"/>
+            <com.contextlogic.wish.activity.cart.billing.creditcardform.CreditCardFormExpiryDateEditText android:id="@+id/payment_expiry_date" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/ten_padding" android:layout_weight="1" android:layout_marginStart="@dimen/ten_padding">
+            <com.contextlogic.wish.ui.text.ThemedTextView android:textSize="@dimen/text_size_twelve" android:textColor="@color/gray1" android:gravity="start" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/four_padding" android:text="@string/security_code_cvv"/>
+            <com.contextlogic.wish.activity.cart.billing.creditcardform.CreditCardFormCvvEditText android:id="@+id/payment_security_code" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

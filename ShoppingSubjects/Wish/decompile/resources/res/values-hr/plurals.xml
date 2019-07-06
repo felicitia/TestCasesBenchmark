@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="cart_item">
+        <item quantity="one">Košarica: %1$s predmet</item>
+        <item quantity="few">Košarica: %1$s predmeta</item>
+        <item quantity="other">Košarica: %1$s predmeta</item>
+    </plurals>
+    <plurals name="daily_raffle_entries_text">
+        <item quantity="one">%1$d uneseni kupon</item>
+        <item quantity="few">%1$d unesena kupona</item>
+        <item quantity="other">%1$d unesenih kupona</item>
+    </plurals>
+    <plurals name="daily_raffle_free_items_and_coupons_text">
+        <item quantity="one">%1$d besplatna stavka</item>
+        <item quantity="few">%1$d besplatne stavke</item>
+        <item quantity="other">%1$d besplatnih stavki</item>
+    </plurals>
+    <plurals name="detail_table_color">
+        <item quantity="one">Boja</item>
+        <item quantity="few">Boje</item>
+        <item quantity="other">Boja</item>
+    </plurals>
+    <plurals name="detail_table_size">
+        <item quantity="one">Veličina</item>
+        <item quantity="few">Veličine</item>
+        <item quantity="other">Veličina</item>
+    </plurals>
+    <plurals name="follower_plural">
+        <item quantity="one">%1$d sljedbenik</item>
+        <item quantity="few">%1$d sljedbenika</item>
+        <item quantity="other">%1$d sljedbenika</item>
+    </plurals>
+    <plurals name="following_plural">
+        <item quantity="one">%1$d prati</item>
+        <item quantity="few">%1$d prati</item>
+        <item quantity="other">%1$d prati</item>
+    </plurals>
+    <plurals name="item">
+        <item quantity="one">%1$s artikl</item>
+        <item quantity="few">%1$s artikla</item>
+        <item quantity="other">%1$s artikala</item>
+    </plurals>
+    <plurals name="item_added_to_cart">
+        <item quantity="one">stavka dodana je u košaricu</item>
+        <item quantity="few">stavke dodane su u košaricu</item>
+        <item quantity="other">stavki dodano je u košaricu</item>
+    </plurals>
+    <plurals name="number_available">
+        <item quantity="one">%1$d dostupno</item>
+        <item quantity="few">%1$d dostupno</item>
+        <item quantity="other">%1$d dostupno</item>
+    </plurals>
+    <plurals name="number_of_followers">
+        <item quantity="one">sljedbenik</item>
+        <item quantity="few">sljedbenika</item>
+        <item quantity="other">sljedbenika</item>
+    </plurals>
+    <plurals name="number_of_saves">
+        <item quantity="one">Spremljen</item>
+        <item quantity="few">Spremljena</item>
+        <item quantity="other">Spremljenih</item>
+    </plurals>
+    <plurals name="number_said_thanks">
+        <item quantity="one">%1$d je zahvalio</item>
+        <item quantity="few">%1$d su zahvalila</item>
+        <item quantity="other">%1$d je zahvalilo</item>
+    </plurals>
+    <plurals name="people">
+        <item quantity="one">%1$s osoba</item>
+        <item quantity="few">%1$s osobe</item>
+        <item quantity="other">%1$s osoba</item>
+    </plurals>
+    <plurals name="rating">
+        <item quantity="one">(%1$s ocjena)</item>
+        <item quantity="few">(%1$s ocjene)</item>
+        <item quantity="other">(%1$s ocjena)</item>
+    </plurals>
+    <plurals name="ratings_capitalized_no_bracket">
+        <item quantity="one">%1$s ocjena</item>
+        <item quantity="few">%1$s ocjene</item>
+        <item quantity="other">%1$s ocjena</item>
+    </plurals>
+    <plurals name="redeem_for_points_question">
+        <item quantity="one">Otkupiti za %1$d bod?</item>
+        <item quantity="few">Otkupiti za %1$d boda?</item>
+        <item quantity="other">Otkupiti za %1$d bodova?</item>
+    </plurals>
+    <plurals name="reward_points_number">
+        <item quantity="one">%1$s Bodova</item>
+        <item quantity="few">%1$s Bodova</item>
+        <item quantity="other">%1$s Bodova</item>
+    </plurals>
+    <plurals name="selling_product">
+        <item quantity="one">Prodaja %1$s proizvoda</item>
+        <item quantity="few">Prodaja %1$s proizvoda</item>
+        <item quantity="other">Prodaja %1$s proizvoda</item>
+    </plurals>
+    <plurals name="store_ratings_with_bracket">
+        <item quantity="one">(%1$s ocjena trgovine)</item>
+        <item quantity="few">(%1$s ocjene trgovine)</item>
+        <item quantity="other">(%1$s ocjena trgovine)</item>
+    </plurals>
+    <plurals name="user_rating">
+        <item quantity="one">Ocjena korisnika</item>
+        <item quantity="few">Ocjene korisnika</item>
+        <item quantity="other">Ocjena korisnika</item>
+    </plurals>
+    <plurals name="user_review">
+        <item quantity="one">%1$s recenzija korisnika</item>
+        <item quantity="few">%1$s recenzije korisnika</item>
+        <item quantity="other">%1$s recenzija korisnika</item>
+    </plurals>
+    <plurals name="wishlist_new_count">
+        <item quantity="one">%1$d novih</item>
+        <item quantity="few">%1$d nova</item>
+        <item quantity="other">%1$d novih</item>
+    </plurals>
+    <plurals name="wishlist_view_count">
+        <item quantity="one">%1$d pregled</item>
+        <item quantity="few">%1$d pregleda</item>
+        <item quantity="other">%1$d pregleda</item>
+    </plurals>
+</resources>

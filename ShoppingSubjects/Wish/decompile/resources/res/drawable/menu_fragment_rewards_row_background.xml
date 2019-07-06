@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt">
+    <item android:drawable="@drawable/menu_fragment_row_selector"/>
+    <item android:left="@dimen/half_screen_padding" android:top="@dimen/half_screen_padding" android:right="@dimen/half_screen_padding" android:bottom="@dimen/menu_fragment_rewards_background_padding">
+        <shape android:shape="rectangle">
+            <solid android:color="@color/transparent"/>
+            <stroke android:width="2px" android:color="@color/main_dark"/>
+            <corners android:radius="@dimen/half_screen_padding"/>
+        </shape>
+    </item>
+</layer-list>

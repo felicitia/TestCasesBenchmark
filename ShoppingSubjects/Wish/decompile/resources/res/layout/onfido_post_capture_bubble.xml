@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:gravity="center_horizontal" android:orientation="vertical" android:id="@+id/bubbleRoot" android:layout_width="0dp" android:layout_height="0dp">
+    <ImageView android:id="@+id/bubbleArrow" android:layout_width="0dp" android:layout_height="0dp" android:layout_marginBottom="-1dp" android:src="@drawable/onfido_post_capture_bubble_arrow" android:scaleType="fitStart" android:adjustViewBounds="true"/>
+    <RelativeLayout android:id="@+id/bubbleContainer" android:background="@drawable/onfido_rounded_red_shape" android:layout_width="0dp" android:layout_height="0dp">
+        <ImageView android:id="@+id/warningIcon" android:layout_width="0dp" android:layout_height="0dp" android:layout_marginLeft="@dimen/onfido_post_capture_bubble_margin_horiz" android:layout_marginTop="@dimen/onfido_post_capture_bubble_margin_top" android:layout_marginRight="@dimen/onfido_post_capture_bubble_icon_margin_right" android:src="@drawable/onfido_error_red"/>
+        <TextView android:textSize="0sp" android:textStyle="bold" android:textColor="@color/onfido_white" android:id="@+id/bubbleTitle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/onfido_post_capture_bubble_margin_top_text" android:layout_marginRight="@dimen/onfido_post_capture_bubble_margin_horiz" android:layout_marginBottom="@dimen/onfido_post_capture_bubble_title_margin_bottom" android:includeFontPadding="false" android:layout_toRightOf="@+id/warningIcon"/>
+        <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/onfido_post_capture_bubble_margin_horiz" android:layout_marginBottom="@dimen/onfido_post_capture_bubble_margin_bottom" android:layout_below="@+id/bubbleTitle" android:layout_alignLeft="@+id/bubbleTitle">
+            <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <ImageView android:id="@+id/firstBullet" android:layout_width="@dimen/onfido_post_capture_bubble_bullet_size" android:layout_height="@dimen/onfido_post_capture_bubble_bullet_size" android:layout_marginRight="@dimen/onfido_post_capture_bubble_bullet_margin_right" android:src="@drawable/onfido_circle"/>
+                <TextView android:textSize="0sp" android:textColor="@color/onfido_white" android:id="@+id/bubbleSubtitle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:includeFontPadding="false"/>
+            </LinearLayout>
+            <LinearLayout android:id="@+id/secondBulletContainer" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/onfido_post_capture_bubble_third_title_margin_top">
+                <ImageView android:id="@+id/secondBullet" android:layout_width="@dimen/onfido_post_capture_bubble_bullet_size" android:layout_height="@dimen/onfido_post_capture_bubble_bullet_size" android:layout_marginRight="@dimen/onfido_post_capture_bubble_bullet_margin_right" android:src="@drawable/onfido_circle"/>
+                <TextView android:textSize="0sp" android:textColor="@color/onfido_white" android:id="@+id/bubbleThirdTitle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:includeFontPadding="false"/>
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+</LinearLayout>

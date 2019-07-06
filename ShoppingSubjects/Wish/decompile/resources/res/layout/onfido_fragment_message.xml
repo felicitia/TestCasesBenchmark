@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:background="@color/onfido_white" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="@dimen/onfido_activity_horizontal_margin" android:layout_centerInParent="true">
+        <ImageView android:layout_width="100dp" android:layout_height="85dp" android:layout_marginBottom="45dp" android:src="@drawable/onfido_icon_grey"/>
+        <TextView android:id="@+id/titleTv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/onfido_title_message_margin" style="@style/OnfidoTitleMessageStyle"/>
+        <TextView android:id="@+id/subtitleTv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerHorizontal="true" style="@style/OnfidoMessageStyle"/>
+    </LinearLayout>
+    <Button android:id="@+id/next" android:text="@string/onfido_continue" style="@style/OnfidoFlatButton"/>
+</RelativeLayout>

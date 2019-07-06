@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <com.contextlogic.wish.ui.text.ThemedTextView android:textSize="@dimen/text_size_button" android:textStyle="bold" android:textColor="@android:color/white" android:gravity="center" android:id="@+id/cart_fragment_cart_items_checkout_button" android:background="@drawable/orange_button_selector" android:layout_width="match_parent" android:layout_height="@dimen/default_button_height" android:layout_margin="@dimen/screen_padding" android:text="@string/checkout"/>
+    <include android:id="@+id/cart_fragment_cart_items_google_button" android:layout_width="match_parent" android:layout_height="@dimen/google_pay_button_height" android:layout_margin="@dimen/sixteen_padding" layout="@layout/buy_with_googlepay_button"/>
+    <com.contextlogic.wish.ui.button.SliderButton android:gravity="center" android:layout_gravity="center" android:id="@+id/cart_fragment_cart_items_checkout_slider_button" android:layout_width="match_parent" android:layout_height="@dimen/default_button_height" android:layout_margin="@dimen/screen_padding"/>
+</LinearLayout>
