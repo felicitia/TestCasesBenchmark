@@ -8,6 +8,7 @@ from selenium.webdriver.support.ui import WebDriverWait # available since 2.4.0
 from selenium.webdriver.support import expected_conditions as EC # available since 2.26.0
 
 time_out = 5
+sleep_time = 2
 
 class SearchTests(unittest.TestCase):
 
@@ -38,13 +39,14 @@ class SearchTests(unittest.TestCase):
         # input events: search by search_item
         # assert events: search by search_item
         search_bar.send_keys(search_item + '\n')
+        sleep(sleep_time)
         # oracle: check if search results are displayed
         self.assertTrue(self.driver.find_element_by_id('com.etsy.android:id/header_result_count_textview').is_displayed())
 
     def test_add_cart(self):
         # user inputs
         search_item = 'box'
-        item_idx = '3'
+        item_idx = '2'
 
         # transition events: go to search menu
         WebDriverWait(self.driver, time_out).until(EC.presence_of_element_located((By.ID, 'com.etsy.android:id/menu_search')))
@@ -71,7 +73,7 @@ class SearchTests(unittest.TestCase):
     def test_add_remove_cart(self):
         #user inputs
         search_item = 'box'
-        item_idx = '2'
+        item_idx = '3'
 
         # transition events: go to search menu
         WebDriverWait(self.driver, time_out).until(EC.presence_of_element_located((By.ID, 'com.etsy.android:id/menu_search')))

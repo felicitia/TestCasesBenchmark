@@ -43,8 +43,8 @@ class WelcomeTests(unittest.TestCase):
         email_or_username = self.driver.find_element_by_id('com.etsy.android:id/edit_username')
         password = self.driver.find_element_by_id('com.etsy.android:id/edit_password')
         sign_in = self.driver.find_element_by_id('com.etsy.android:id/button_signin')
-        email_or_username.send_keys('aaa')
-        password.send_keys('bbb')
+        email_or_username.send_keys(usrname_input)
+        password.send_keys(pwd_input)
         
         # assert events: click sign in button
         sign_in.click()

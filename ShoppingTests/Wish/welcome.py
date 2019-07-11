@@ -24,39 +24,39 @@ class WelcomeTests(unittest.TestCase):
         self.driver.quit()
 
     def test_sign_in_wrong(self):
-        # wait for elements
+        # user inputs
+        usrname_input = 'aaa'
+        pwd_input = 'bbb'
+
+        # input events: sign in by usrname_input and pwd_input
         WebDriverWait(self.driver, time_out).until(EC.presence_of_element_located((By.ID, 'com.contextlogic.wish:id/sign_in_fragment_email_text')))
         WebDriverWait(self.driver, time_out).until(EC.presence_of_element_located((By.ID, 'com.contextlogic.wish:id/sign_in_fragment_password_text')))
         WebDriverWait(self.driver, time_out).until(EC.presence_of_element_located((By.ID, 'com.contextlogic.wish:id/sign_in_fragment_sign_in_button')))
-        # find elements
         email = self.driver.find_element_by_id('com.contextlogic.wish:id/sign_in_fragment_email_text')
         password = self.driver.find_element_by_id('com.contextlogic.wish:id/sign_in_fragment_password_text')
         sign_in = self.driver.find_element_by_id('com.contextlogic.wish:id/sign_in_fragment_sign_in_button')
-        # testing...
-        email.send_keys('aaa')
-        password.send_keys('bbb')
+        email.send_keys(usrname_input)
+        password.send_keys(pwd_input)
+        
+        # assert events: click sign in button
         sign_in.click()
-        # oracle
+        # oracle: check if wrong sign in message is displayed
         self.assertTrue(self.driver.find_element_by_id('com.contextlogic.wish:id/multi_button_dialog_fragment_content').is_displayed())
 
     def test_sign_in_empty(self):
-        # wait for elements
+        # assert events: click sign in button
         WebDriverWait(self.driver, time_out).until(EC.presence_of_element_located((By.ID, 'com.contextlogic.wish:id/sign_in_fragment_sign_in_button')))
-        # find elements
         sign_in = self.driver.find_element_by_id('com.contextlogic.wish:id/sign_in_fragment_sign_in_button')
-        # testing...
         sign_in.click()
-        # oracle
+        # oracle: check empty message
         self.assertTrue(self.driver.find_element_by_id('com.contextlogic.wish:id/multi_button_dialog_fragment_content').is_displayed())
 
     def test_forget_pwd(self):
-        # wait for elements
+        # assert events: click forget pwd
         WebDriverWait(self.driver, time_out).until(EC.presence_of_element_located((By.ID, 'com.contextlogic.wish:id/sign_in_fragment_forgot_password_button')))
-        # find elements
         forget_pwd = self.driver.find_element_by_id('com.contextlogic.wish:id/sign_in_fragment_forgot_password_button')
-        # testing...
         forget_pwd.click()
-        # oracle
+        # oracle: check if forget pwd dialog is displayed
         self.assertTrue(self.driver.find_element_by_id('com.contextlogic.wish:id/forgot_password_fragment_reset_password_button').is_displayed())
 
 if __name__ == '__main__':
