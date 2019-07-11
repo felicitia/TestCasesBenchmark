@@ -24,7 +24,11 @@ class WelcomeTests(unittest.TestCase):
         self.driver.quit()
 
     def test_sign_in_wrong(self):
-        # go to sign in screen
+        # user inputs
+        usrname_input = 'aaa'
+        pwd_input = 'bbb'
+
+        # transition events: go to sign in screen
         WebDriverWait(self.driver, time_out).until(EC.presence_of_element_located((By.ID, 'com.etsy.android:id/btn_link')))
         get_started = self.driver.find_element_by_id('com.etsy.android:id/btn_link')
         get_started.click()
@@ -32,26 +36,23 @@ class WelcomeTests(unittest.TestCase):
         sign_in_jump = self.driver.find_element_by_id('com.etsy.android:id/btn_sign_in_dialog')
         sign_in_jump.click()
 
-        # wait for elements
+        # input events: sign in by usrname_input and pwd_input
         WebDriverWait(self.driver, time_out).until(EC.presence_of_element_located((By.ID, 'com.etsy.android:id/edit_username')))
         WebDriverWait(self.driver, time_out).until(EC.presence_of_element_located((By.ID, 'com.etsy.android:id/edit_password')))
         WebDriverWait(self.driver, time_out).until(EC.presence_of_element_located((By.ID, 'com.etsy.android:id/button_signin')))
-        
-        # find elements
         email_or_username = self.driver.find_element_by_id('com.etsy.android:id/edit_username')
         password = self.driver.find_element_by_id('com.etsy.android:id/edit_password')
         sign_in = self.driver.find_element_by_id('com.etsy.android:id/button_signin')
-        
-        # testing...
         email_or_username.send_keys('aaa')
         password.send_keys('bbb')
+        
+        # assert events: click sign in button
         sign_in.click()
-
-        # oracle
+        # oracle: check if wrong sign in message is displayed
         self.assertTrue(self.driver.find_element_by_id('com.etsy.android:id/txt_error').is_displayed())
 
     def test_sign_in_empty(self):
-        # go to sign in screen
+        # transition events: go to sign in screen
         WebDriverWait(self.driver, time_out).until(EC.presence_of_element_located((By.ID, 'com.etsy.android:id/btn_link')))
         get_started = self.driver.find_element_by_id('com.etsy.android:id/btn_link')
         get_started.click()
@@ -59,20 +60,14 @@ class WelcomeTests(unittest.TestCase):
         sign_in_jump = self.driver.find_element_by_id('com.etsy.android:id/btn_sign_in_dialog')
         sign_in_jump.click()
 
-        # wait for elements
+        # assert events: click sign in button
         WebDriverWait(self.driver, time_out).until(EC.presence_of_element_located((By.ID, 'com.etsy.android:id/button_signin')))
-        
-        # find elements
         sign_in = self.driver.find_element_by_id('com.etsy.android:id/button_signin')
-        
-        # testing...
         sign_in.click()
-
-        # oracle
-        # EditText.setError() isn't supported
+        # oracle: check empty message
 
     def test_forget_pwd(self):
-        # go to sign in screen
+        # transition events: go to sign in screen
         WebDriverWait(self.driver, time_out).until(EC.presence_of_element_located((By.ID, 'com.etsy.android:id/btn_link')))
         get_started = self.driver.find_element_by_id('com.etsy.android:id/btn_link')
         get_started.click()
@@ -80,16 +75,12 @@ class WelcomeTests(unittest.TestCase):
         sign_in_jump = self.driver.find_element_by_id('com.etsy.android:id/btn_sign_in_dialog')
         sign_in_jump.click()
 
-        # wait for elements
+        # assert events: click forget pwd button
         WebDriverWait(self.driver, time_out).until(EC.presence_of_element_located((By.ID, 'com.etsy.android:id/forgot_password_link')))
-        
-        # find elements
         forget_pwd = self.driver.find_element_by_id('com.etsy.android:id/forgot_password_link')
-        
-        # testing...
         forget_pwd.click()
 
-        # oracle
+        # oracle: check if forget pwd dialog is displayed
         self.assertTrue(self.driver.find_element_by_id('com.etsy.android:id/button_submit_password').is_displayed())
 
 if __name__ == '__main__':
